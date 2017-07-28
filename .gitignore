@@ -1,0 +1,5 @@
+# Dependency directories
+niqq-autofill-development/
+
+node_modules/
+dist/

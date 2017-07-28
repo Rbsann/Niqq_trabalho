@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Stats | Niqq</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+</head>
+
+<body>
+
+	<nav id="navBar" class="deep-purple accent-2" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Niqq Stats</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#users">Users</a></li>
+				<!--<li><a onclick="userLogout()">Logout</a></li>-->
+			</ul>
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#users">Users</a></li>
+				<!-- <li><a onclick="userLogout()">Logout</a></li>-->
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div id="users" class="section">
+			<h5>Signups</h5>
+			<p>Last 24 hours: <%= signUps.day %></p>
+			<p>Last week: <%= signUps.week %></p>
+			<p>Last month: <%= signUps.month %></p>
+			<p>Total: <%= signUps.total %></p>
+			<h5>Users</h5>
+			<table>
+				<thead>
+					<tr>
+						<th>Signup</th>
+						<th>E-mail</th>
+						<th>Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% for (var i = 0; i < users.length; i++) { %>
+						<% var user = users[i]; %>
+							<tr>
+								<td>
+									<%= user.time %>
+								</td>
+								<td>
+									<%= user.email %>
+								</td>
+								<td>
+									<%= user.data.name.first %>
+								</td>
+							</tr>
+							<% } %>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+
+</html>
