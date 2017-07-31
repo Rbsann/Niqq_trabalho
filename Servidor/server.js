@@ -31,7 +31,7 @@ console.log("Niqq API v" + general.getPackageVersion() + " (" + environment + ")
 // Run development server for website
 if (!general.isProductionEnvironment()) {
     const devServer = express();
-    devServer.use(express.static("../Site"));
+    devServer.use(express.static("../../frontend/Site"));
     devServer.listen(8085);
     console.log("Website dev server running on port 8085");
 }
