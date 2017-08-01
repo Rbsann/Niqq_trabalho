@@ -37,7 +37,7 @@ var extensionIdDevelopment = "";
 
 if (!module.exports.isProductionEnvironment()) {
     try {
-        extensionIdDevelopment = require('./devExtensionId.json');
+        extensionIdDevelopment = require('../../devExtensionId.json');
         console.log("Development extension ID was set to " + extensionIdDevelopment);
     } catch(e) {
         console.log(e.message);
