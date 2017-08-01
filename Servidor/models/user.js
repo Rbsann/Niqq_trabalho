@@ -499,6 +499,22 @@ userSchema.methods.removeAllCredentials = function() {
 	});
 };
 
+userSchema.methods.replaceAllCredentials = function(credentials) {
+	return new Promise((resolve, reject) => {
+		this.credentials = [];
+		credentials.forEach(credential => {
+			this.credentials.push({
+				url: credential.url,
+				login: credential.login,
+				password: credential.password
+			});
+		});
+		this.save()
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
+
 module.exports = mongoose.model('user', userSchema);
 
 

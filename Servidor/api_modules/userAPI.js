@@ -28,7 +28,7 @@ userRoutes.post("/getAllInfo", tokenAuth, (request, response) => {
 
 // Change password command
 // - Authorization required: email, token
-// - Request data: currentPassword, newPassword, encryptData
+// - Request data: currentPassword, newPassword, encryptedData, credentials
 // - Response data: changed
 userRoutes.post("/changePassword", tokenAuth, (request, response) => {
 	var user = response.locals.user;
@@ -39,10 +39,12 @@ userRoutes.post("/changePassword", tokenAuth, (request, response) => {
 	var currentPassword = payload.currentPassword;
 	var newPassword = payload.newPassword;
 	var encryptedData = payload.encryptedData;
+	var credentials = payload.credentials || [];
 
 	user.validatePassword(currentPassword)
-		.then(validated => user.saveNewPassword(newPassword, currentToken))
-		.then(result => user.updateData(null, encryptedData))
+		.then(_ => user.saveNewPassword(newPassword, currentToken))
+		.then(_ => user.updateData(null, encryptedData))
+		.then(_ => user.replaceAllCredentials(credentials))
 		.then(result => {
 			response.sendResult({changed: result});
 		})
@@ -91,6 +93,7 @@ userRoutes.post("/resetPassword", (request, response) => {
 		})
 		.then(result => user.newPasswordResetCode(""))
 		.then(result => user.eraseData())
+		.then(_ => user.removeAllCredentials())
 		.then(result => {
 			response.sendResult({resetDone: result});
 		})
