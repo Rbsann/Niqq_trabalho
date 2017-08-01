@@ -295,6 +295,24 @@ userRoutes.post("/getCredential", tokenAuth, (request, response) => {
 	
 });
 
+// Get array of credentials
+// - Authorization required: token
+// - Request data: -
+// - Response data: credentials: [{url, login}]
+userRoutes.post("/getAllCredentials", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+	user.findAllCredentials()
+		.then(credentials =>  {
+			response.sendResult({
+				credentials: credentials
+			});
+		})
+		.catch(error => {
+			console.log(error);
+			response.sendError("SERVER_ERROR");
+		});
+});
+
 // Update credential
 // - Authorization required: token
 // - Request data: url, login, password

@@ -431,6 +431,13 @@ userSchema.methods.findCredential = function(url) {
 	});
 };
 
+userSchema.methods.findAllCredentials = function(url) {
+	return new Promise((resolve, reject) => {
+		// remove passwords and _ids from credentials array
+		resolve(this.credentials.map(credential => ({url: credential.url, login: credential.login})));
+	});
+};
+
 userSchema.methods.addCredential = function(url, login, password) {
 	return new Promise((resolve, reject) => {
 		this.findCredential(url)
@@ -483,6 +490,14 @@ userSchema.methods.removeCredential = function(url) {
 	});
 };
 
+userSchema.methods.removeAllCredentials = function() {
+	return new Promise((resolve, reject) => {
+		this.credentials = [];
+		this.save()
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
 
 module.exports = mongoose.model('user', userSchema);
 
