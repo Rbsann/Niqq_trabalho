@@ -24,6 +24,11 @@ var userSchema = new Schema({
 	passwordResetCode: {type: String, maxlength: 100},
 	role: { type: String, default: "user" }, // user, catalogger, admin
 	signedUp: { type: Date },
+	credentials: [{
+		url: String,
+		login: String,
+		password: String
+	}],
 	data: {
 		name: {
 			first: { type: String, maxlength: 50 }
@@ -411,6 +416,69 @@ userSchema.methods.confirmEmail = function() {
 				.catch(error => reject(error));
 		} else {
 			reject(Error("EMAIL_ALREADY_CONFIRMED"));
+		}
+	});
+};
+
+userSchema.methods.findCredential = function(url) {
+	return new Promise((resolve, reject) => {
+		var credential = this.credentials.find(credential => credential.url === url);
+		if (credential) {
+			resolve(credential);
+		} else {
+			reject(Error("CREDENTIAL_URL_NOT_FOUND"));
+		}
+	});
+};
+
+userSchema.methods.addCredential = function(url, login, password) {
+	return new Promise((resolve, reject) => {
+		this.findCredential(url)
+			.then(credential => {
+				reject(Error("CREDENTIAL_URL_ALREADY_EXISTS"));
+			})
+			.catch(error => {
+				if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+					this.credentials.push({
+						url: url,
+						login: login,
+						password: password
+					});
+					return this.save();
+				}
+			})
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
+
+userSchema.methods.updateCredential = function(url, login, password) {
+	return new Promise((resolve, reject) => {
+		this.findCredential(url)
+			.then(credential => {
+				credential.login = login;
+				credential.password = password;
+				return this.save();
+			})
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
+
+userSchema.methods.removeCredential = function(url) {
+	return new Promise((resolve, reject) => {
+		var credentialIndex = this.credentials.findIndex(credential => credential.url === url);
+		if (credentialIndex > -1) {
+			this.credentials.splice(credentialIndex, 1);
+			this.save()
+				.then(() => {
+					resolve(true);
+				})
+				.catch((error) => { 
+					reject(error);
+				});
+		} else {
+			reject(Error("CREDENTIAL_URL_NOT_FOUND"));
 		}
 	});
 };

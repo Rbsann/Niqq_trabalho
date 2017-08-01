@@ -232,4 +232,117 @@ userRoutes.post("/getNewToken", tokenAuth, (request, response) => {
 		});
 });
 
+
+/////////////////////////////////////////////////////////////////////
+// Password manager API calls
+//
+
+// Add new credential
+// - Authorization required: token
+// - Request data: url, login, password
+// - Response data: added
+userRoutes.post("/addCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+	var login = payload.login;
+	var password = payload.password;
+
+	user.addCredential(url, login, password)
+		.then(_ => {
+			response.sendResult({ added: true });
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_ALREADY_EXISTS") {
+				response.sendError("CREDENTIAL_URL_ALREADY_EXISTS");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+	
+});
+
+// Get previously saved credential
+// - Authorization required: token
+// - Request data: url
+// - Response data: credential: {url, login, password}
+userRoutes.post("/getCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+
+	user.findCredential(url)
+		.then(credential => {
+			response.sendResult({ 
+				credential: {
+					url: credential.url,
+					login: credential.login,
+					password: credential.password
+				}
+			});
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+				response.sendError("INVALID_CREDENTIAL_URL");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+	
+});
+
+// Update credential
+// - Authorization required: token
+// - Request data: url, login, password
+// - Response data: updated
+userRoutes.post("/updateCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+	var login = payload.login;
+	var password = payload.password;
+
+	user.updateCredential(url, login, password)
+		.then(_ => {
+			response.sendResult({ updated: true });
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+				response.sendError("INVALID_CREDENTIAL_URL");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+});
+
+// Remove credential
+// - Authorization required: token
+// - Request data: url
+// - Response data: removed
+userRoutes.post("/removeCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+
+	user.removeCredential(url)
+		.then(_ => {
+			response.sendResult({ removed: true });
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+				response.sendError("INVALID_CREDENTIAL_URL");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+});
+
 module.exports = userRoutes;
