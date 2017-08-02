@@ -433,8 +433,8 @@ userSchema.methods.findCredential = function(url) {
 
 userSchema.methods.findAllCredentials = function(url) {
 	return new Promise((resolve, reject) => {
-		// remove passwords and _ids from credentials array
-		resolve(this.credentials.map(credential => ({url: credential.url, login: credential.login})));
+		// remove _ids from credentials array
+		resolve(this.credentials.map(credential => ({url: credential.url, login: credential.login, password: credential.password})));
 	});
 };
 
