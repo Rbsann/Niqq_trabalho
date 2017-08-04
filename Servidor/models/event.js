@@ -24,14 +24,6 @@ eventSchema.methods.store = function(){
     
 };
 
-function listAll(){
-    return new Promise((resolve, reject) => {
-        this.find({})
-            .then(events => resolve(events))
-            .catch(error => reject(error));
-    });
-}
-
 function search(params){
     return new Promise((resolve, reject) => {
         this.find(params)
@@ -41,5 +33,4 @@ function search(params){
 }
 
 module.exports = mongoose.model('event', eventSchema);
-module.exports.listAll = listAll;
 module.exports.search = search;
