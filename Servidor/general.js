@@ -34,6 +34,8 @@ module.exports.getServerPathSlash = function() {
 // Set extension IDs
 const extensionIdProduction = "dblbbnhcpppahimhikokckkglicpjngo";  // chrome store
 var extensionIdDevelopment = "";
+var catExtensionIdProduction = "";
+var catExtensionIdDevelopment = "";
 
 if (!module.exports.isProductionEnvironment()) {
     try {
@@ -43,6 +45,14 @@ if (!module.exports.isProductionEnvironment()) {
         console.log(e.message);
         console.log("\x1b[31mWarning: development extension ID is not defined\x1b[39m");
     }
+
+    try {
+        catExtensionIdDevelopment = require('../../catExtensionId.json');
+        console.log("Catalogger extension ID was set to " + catExtensionIdDevelopment);
+    } catch(e) {
+        console.log(e.message);
+        console.log("\x1b[31mWarning: catalogger extension ID is not defined\x1b[39m");
+    }
 }
 
 module.exports.getExtensionId = function () {
@@ -50,6 +60,13 @@ module.exports.getExtensionId = function () {
         return extensionIdProduction;
     }
     return extensionIdDevelopment;
+};
+
+module.exports.getCatExtensionId = function () {
+    if (module.exports.isProductionEnvironment()) {
+        return catExtensionIdProduction;
+    }
+    return catExtensionIdDevelopment;
 };
 
 module.exports.getFacebookCredentials = function () {
@@ -86,6 +103,7 @@ module.exports.isValidOrigin = function(origin) {
     var validOrigins = [];
 
     validOrigins.push("chrome-extension://" + module.exports.getExtensionId()); // extension origin
+    validOrigins.push("chrome-extension://" + module.exports.getCatExtensionId()); // cat extension origin
 
     if (module.exports.isProductionEnvironment()) {
         validOrigins.push("https://niqq.in"); // website origin
