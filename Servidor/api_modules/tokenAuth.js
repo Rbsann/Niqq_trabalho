@@ -11,7 +11,7 @@ var tokenExpirationAge = 604800; // 1 week in seconds
 module.exports = function (req, res, next) {
 	var token = req.body.token;
 	var user, tokenPayload;
-	
+
 	General.authenticateToken(token)
 		.then(payload => {
 			tokenPayload = payload;
@@ -45,10 +45,13 @@ module.exports = function (req, res, next) {
 			next();
 		})
 		.catch(error => {
-			if (error.message === "INVALID_TOKEN") { // if token was authenticated but is revoked, revoke dynasty
+			if(req.baseUrl !== '/event'){
+				if (error.message === "INVALID_TOKEN") { // if token was authenticated but is revoked, revoke dynasty
 				user.killTokenDynasty(tokenPayload.dynasty)
 					.catch(error => console.log(error));
+				}
+				sendResponseUnauthorized(res);
 			}
-			sendResponseUnauthorized(res);
+			next();
 		});
 };
