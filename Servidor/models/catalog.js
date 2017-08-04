@@ -247,7 +247,8 @@ fieldSchema.methods.getOrAddOption = function (text, value) {
 var catalogSchema = new Schema({
 	url: { type: String, required: true, unique: true, maxlength: 200 },
 	voters: { type: [String] }, // array of ids
-	fields: [fieldSchema]
+	fields: [fieldSchema],
+	validated: {type: Boolean, default: false} // if false, entry is pending manual validation
 }, { collection: "catalog" }); // set collection name
 
 // Get field by identification object in catalog entry
@@ -352,6 +353,14 @@ catalogSchema.methods.getBestFieldMappings = function () {
 	
 };
 
+catalogSchema.methods.setValidated = function(validated) {
+	return new Promise((resolve, reject) => {
+		this.validated = validated;
+		this.save()
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
 
 // Export catalog model
 module.exports = mongoose.model('Catalog', catalogSchema);
@@ -406,5 +415,27 @@ module.exports.createEntry = function (url) {
 				}
 
 			});
+	});
+};
+
+// Find entries pending validation
+// Resolve: array of entries
+// Reject: unexpected error
+module.exports.findUnvalidatedEntries = function () {
+	return new Promise((resolve, reject) => {
+		this.find({validated: false})
+			.then(entries => resolve(entries))
+			.catch(error => reject(error));
+	});
+};
+
+// Find all entries
+// Resolve: array of entries
+// Reject: unexpected error
+module.exports.findAllEntries = function () {
+	return new Promise((resolve, reject) => {
+		this.find()
+			.then(entries => resolve(entries))
+			.catch(error => reject(error));
 	});
 };
