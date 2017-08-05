@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização. Trabalho mais inteligente. Esquecer nada. | Evernote</title>
+    <meta name="description" content="Organize seu trabalho e desafogue sua vida. Com o Evernote no seu computador e nos dispositivos móveis, suas notas estão sempre com você e sempre sincronizadas.">
+    <meta name="keywords" content="">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@evernote">
+    <meta name="twitter:title" content="Organização. Trabalho mais inteligente. Esquecer nada. | Evernote">
+    <meta name="twitter:description" content="Organize seu trabalho e desafogue sua vida. Com o Evernote no seu computador e nos dispositivos móveis, suas notas estão sempre com você e sempre sincronizadas.">
+    <meta name="twitter:creator" content="@evernote">
+    <meta name="twitter:image" content="/img/meta/evernote-twitter.jpg">
+    
+    <meta property="og:title" content="Organização. Trabalho mais inteligente. Esquecer nada. | Evernote">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://en-prod-wwwsite.appspot.com/intl/pt-br/">
+    <meta property="og:image" content="/img/meta/evernote-og.jpg">
+    <meta property="og:description" content="Organize seu trabalho e desafogue sua vida. Com o Evernote no seu computador e nos dispositivos móveis, suas notas estão sempre com você e sempre sincronizadas.">
+    <meta property="og:site_name" content="Evernote">
+
+    
+<script type="text/javascript" async="" src="https://sjs.bizographics.com/insight.min.js"></script><script src="//tags.tiqcdn.com/utag/evernote/evernote-www/prod/utag.js" type="text/javascript" async=""></script><script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://sjs.bizographics.com/insight.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MP67N8C"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MP67N8C');</script>
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/home.43b26dcc829847b7c285d96d7a4b2791.css">
+    
+  </head>
+  <body class="dom-content-loaded">
+    
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP67N8C"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+
+    
+
+  
+  
+    <header class="global-header on-home">
+      <div class="row">
+
+        <div class="global-logo">
+          <a href="/intl/pt-br/">
+            <span>Evernote</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 41.103" style="enable-background:new 0 0 200 41.103;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2DBE60;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#666666;}
+</style>
+<g>
+	<g>
+		<g>
+			<path class="st0" d="M57.467,27.432h-5.342l0.035-5.732h5.409v-2.643h-5.376l0.034-5.385h5.31l0.239,2.711h2.773l-0.172-5.352
+				H46.305v2.641h2.225l-0.102,13.759h-2.122v2.639h14.177l0.342-5.698h-3.013L57.467,27.432z M75.206,13.673h2.26l-4.589,12.925
+				h-0.068l-4.622-12.925h1.884v-2.641h-8.015v2.641h1.884l6.712,16.399h3.835l6.68-16.399h1.779v-2.641h-7.739V13.673z
+				 M95.957,27.432h-5.342l0.035-5.732h5.41v-2.643h-5.375l0.033-5.385h5.309l0.239,2.711h2.774l-0.172-5.352H84.794v2.641h2.225
+				l-0.102,13.759h-2.123v2.639h14.177l0.341-5.698H96.3L95.957,27.432z M116.778,25.137c-1.747-3.056-2.192-3.509-3.939-3.993
+				v-0.072c3.357-0.867,4.419-2.849,4.419-5.037c0-2.466-1.403-5.004-5.754-5.004h-8.664v2.641h2.225l-0.102,13.759h-2.123v2.639
+				h8.081v-2.639h-2.227l0.035-5.455h0.753c1.37,0,1.782,0.243,3.563,3.787c1.985,3.995,2.292,4.308,4.827,4.308h1.918v-2.745
+				c-0.239,0.035-0.514,0.105-0.787,0.105C118.354,27.432,117.942,27.119,116.778,25.137z M110.237,19.335h-1.471l0.032-5.663h2.261
+				c1.714,0,2.569,1.043,2.569,2.779C113.627,18.223,112.257,19.335,110.237,19.335z M134.791,13.673h2.225l-0.102,10.249h-0.07
+				l-9.518-12.89h-5.549v2.641h2.226l-0.102,13.759h-2.124v2.639h7.364v-2.639h-2.228l0.103-10.91h0.068l10.034,13.55h2.809
+				l0.102-16.399h2.122v-2.641h-7.36V13.673z M152.801,10.65c-5.788,0-9.314,4.171-9.314,10.147c0,5.315,2.843,9.657,9.314,9.657
+				c5.788,0,9.315-4.169,9.315-10.18C162.116,14.992,159.273,10.65,152.801,10.65z M152.801,27.396c-3.15,0-5.479-2.467-5.479-6.741
+				c0-3.926,1.985-6.947,5.479-6.947c3.152,0,5.478,2.468,5.478,6.808C158.28,24.374,156.294,27.396,152.801,27.396z M163.69,11.031
+				l-0.205,5.352h2.84l0.139-2.711h3.766l-0.102,13.759h-2.123v2.639h8.081v-2.639h-2.227l0.102-13.759h3.768l0.136,2.711h2.843
+				l-0.204-5.352H163.69z M194.305,24.374l-0.344,3.058h-5.342l0.034-5.732h5.41v-2.643h-5.376l0.035-5.385h5.307l0.24,2.711h2.773
+				l-0.17-5.352h-14.075v2.641h2.226l-0.102,13.759h-2.124v2.639h14.177l0.342-5.698H194.305z"></path>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st1" d="M35.252,7.514c-0.299-1.596-1.248-2.383-2.107-2.692c-0.926-0.334-2.804-0.681-5.163-0.959
+				c-1.898-0.224-4.13-0.205-5.478-0.164c-0.162-1.107-0.939-2.123-1.809-2.473c-2.316-0.932-5.866-0.706-6.785-0.449
+				c-0.731,0.204-1.57,0.626-2.019,1.27c-0.302,0.431-0.466,0.982-0.468,1.752c0,0.435,0.012,1.463,0.023,2.375
+				c0.011,0.915-0.007,1.734-0.007,1.739c-0.001,0.815-0.662,1.508-1.48,1.51H6.203c-0.801,0-1.413,0.135-1.881,0.347
+				c-0.468,0.213-0.8,0.468-1.052,0.807c-0.502,0.673-0.589,1.504-0.587,2.352c0,0,0.007,0.692,0.174,2.033
+				C2.996,16,4.122,23.247,5.191,25.451c0.415,0.857,0.691,1.215,1.505,1.593c1.815,0.777,5.96,1.641,7.903,1.888
+				c1.939,0.248,3.156,0.769,3.881-0.751c0.002-0.004,0.145-0.378,0.342-0.928c0.63-1.907,0.718-3.598,0.718-4.823
+				c0-0.124,0.182-0.13,0.182,0c0,0.864-0.165,3.924,2.147,4.744c0.913,0.323,2.807,0.612,4.731,0.838
+				c1.74,0.2,3.002,0.884,3.002,5.345c0,2.714-0.57,3.086-3.552,3.086c-2.417,0-3.339,0.062-3.339-1.856
+				c0-1.552,1.535-1.389,2.673-1.389c0.508,0,0.139-0.378,0.139-1.334c0-0.953,0.596-1.521,0.032-1.535
+				c-3.934-0.108-6.248,0.014-6.248,4.931c0,4.464,1.709,5.292,7.293,5.292c4.377,0,5.92-0.143,7.728-5.748
+				c0.358-1.107,1.223-4.483,1.746-10.153C36.405,21.065,35.762,10.245,35.252,7.514z M27.621,19.474
+				c-0.541-0.019-1.061,0.015-1.546,0.093c0.137-1.102,0.592-2.454,2.204-2.398c1.785,0.062,2.034,1.748,2.041,2.889
+				C29.567,19.723,28.636,19.509,27.621,19.474z M6.048,8.302c0,0,0,0,0.002,0h3.756c0.215,0,0.389-0.175,0.389-0.388
+				c0-0.001-0.046-3.219-0.046-4.113V3.789c0-0.735,0.154-1.375,0.423-1.912l0.128-0.241c-0.014,0.002-0.028,0.009-0.043,0.023
+				L3.36,8.893C3.346,8.904,3.337,8.919,3.333,8.935C3.484,8.86,3.69,8.758,3.719,8.745C4.354,8.458,5.125,8.302,6.048,8.302z"></path>
+		</g>
+	</g>
+</g>
+</svg>
+
+          </a>
+        </div>
+
+        <a class="mobile-nav-open-btn" href="#">
+          <img src="/img/icons/nav-open-tablet.svg">
+        </a>
+
+        <div class="mobile-nav">
+
+          <a class="mobile-nav-close-btn" href="#">
+            <img src="/img/icons/nav-close-tablet.svg">
+          </a>
+
+          <nav class="global-nav">
+
+            
+              <div class="nav-section get-started">
+                <a href="/intl/pt-br/get-started" class="nav-section-header">Introdução</a>
+                <ul>
+                  
+                    
+                      <li><a href="/intl/pt-br/business">Business</a></li>
+                    
+                  
+                    
+                      <li><a href="/intl/pt-br/premium">Premium</a></li>
+                    
+                  
+                    
+                      <li><a href="/intl/pt-br/plus">Plus</a></li>
+                    
+                  
+                    
+                      <li><a href="/intl/pt-br/basic">Basic</a></li>
+                    
+                  
+                    
+                      <li class="divider"></li>
+                    
+                  
+                    
+                      <li><a href="https://help.evernote.com/hc/">Ajuda &amp; Aprendizagem</a></li>
+                    
+                  
+                    
+                      <li><a href="https://help.evernote.com/hc/categories/200001917-Troubleshooting">Suporte</a></li>
+                    
+                  
+                </ul>
+              </div>
+            
+              <div class="nav-section discover">
+                <a href="http://blog.evernote.com/ptbr/" class="nav-section-header">Descobrir</a>
+                <ul>
+                  
+                    
+                      <li><a href="http://blog.evernote.com/ptbr/">Blog</a></li>
+                    
+                  
+                    
+                      <li><a href="/intl/pt-br/community">Comunidade</a></li>
+                    
+                  
+                    
+                      <li><a href="/intl/pt-br/certified-consultants">Consultores Certificados</a></li>
+                    
+                  
+                    
+                      <li><a href="https://discussion.evernote.com/calendar/">Eventos</a></li>
+                    
+                  
+                </ul>
+              </div>
+            
+
+            <div class="nav-section footer-links">
+              <ul>
+                
+                  <li><a href="/intl/pt-br/contact">Contato</a></li>
+                
+                  <li><a href="/intl/pt-br/careers">Carreiras</a></li>
+                
+                  <li><a href="https://appcenter.evernote.com/">Centro de Aplicativo</a></li>
+                
+              </ul>
+            </div>
+
+            <div class="nav-section footer-links social-links">
+              <ul>
+                
+                  <li>
+                    <a href="https://facebook.com/evernote">
+                      <img src="/img/icons/facebook.svg" class="facebook">
+                      <span></span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://twitter.com/evernote">
+                      <img src="/img/icons/twitter.svg" class="twitter">
+                      <span></span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.linkedin.com/company/evernote">
+                      <img src="/img/icons/linkedin.svg" class="linkedin">
+                      <span></span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCr_JcNR6slxFcTtDZ8t6F0A">
+                      <img src="/img/icons/youtube.svg" class="youtube">
+                      <span></span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://medium.com/@evernote">
+                      <img src="/img/icons/medium.svg" class="medium">
+                      <span></span>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.instagram.com/evernote/">
+                      <img src="/img/icons/instagram.svg" class="instagram">
+                      <span></span>
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+
+            <div class="nav-section footer-links language-selector">
+              <a href="#" class="language-selector-toggle header">Escolha um Idioma <span class="arrow"></span></a>
+              <div class="language-selector-options header">
+                <ul>
+                  
+                    <li><a href="/intl/id/">Bahasa Indonesia</a></li>
+                  
+                    <li><a href="/intl/ms/">Bahasa Melayu</a></li>
+                  
+                    <li><a href="/intl/da/">Dansk</a></li>
+                  
+                    <li><a href="/intl/de/">Deutsch</a></li>
+                  
+                    <li><a href="/intl/en/">English (US)</a></li>
+                  
+                    <li><a href="/intl/es/">Español</a></li>
+                  
+                    <li><a href="/intl/es-latam/">Español (América Latina)</a></li>
+                  
+                    <li><a href="/intl/fr/">Français</a></li>
+                  
+                    <li><a href="/intl/it/">Italiano</a></li>
+                  
+                    <li><a href="/intl/nl/">Nederlands</a></li>
+                  
+                    <li><a href="/intl/pl/">Polski</a></li>
+                  
+                    <li><a href="/intl/pt-br/">Português (Brasil)</a></li>
+                  
+                  
+                    <li><a href="/intl/pt/">Português (Portugal)</a></li>
+                  
+                    <li><a href="/intl/fi/">Suomi</a></li>
+                  
+                    <li><a href="/intl/sv/">Svenska</a></li>
+                  
+                    <li><a href="/intl/vi/">Tiếng Việt</a></li>
+                  
+                    <li><a href="/intl/tr/">Türkçe</a></li>
+                  
+                    <li><a href="/intl/ru/">Русский</a></li>
+                  
+                    <li><a href="/intl/ar/">العربية</a></li>
+                  
+                    <li><a href="/intl/th/">ภาษาไทย</a></li>
+                  
+                    <li><a href="/intl/ko/">한국어</a></li>
+                  
+                    <li><a href="/intl/zh-cn/">中文（简体）</a></li>
+                  
+                    <li><a href="/intl/zh-tw/">中文（繁體）</a></li>
+                  
+                    <li><a href="/intl/jp/">日本語</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="utility-nav">
+            <ul>
+              <li><a href="/intl/pt-br/download" class="download">Baixar</a></li>
+              <li><a href="https://www.evernote.com/Login.action" class="login">Entrar</a></li>
+              <li class="sign-up-cta-container on-home"><a href="https://www.evernote.com/Registration.action?referralSpecifier=mweb_globalnav_1" class="button-primary sign-up-cta">Criar conta</a></li>
+              <li><a href="/intl/pt-br/download" class="button-primary get-the-app-cta">Adquira o app</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+    </header>
+
+    <div class="mobile-nav-mask"></div>
+  
+
+
+  
+
+  <script>
+    window._formValidationData = {
+      errorMessages: {"_contacting_link":"contacting","alphabet":"Apenas caracteres do alfabeto.","alphanumeric":"Apenas caracteres alfanuméricos.","date":"Uma data válida é requerida.","db_bug":"Epa! Há um erro em nosso banco de dados! Você pode nos ajudar ao {_contacting_link} com nossos engenheiros com o endereço desta página, como você chegou a esta mensagem, e este código: {C}","email":"{EMAIL} não é um endereço de e-mail válido.","email_failed_bug":"Epa! Tentamos, mas não conseguimos enviar seu e-mail! Você pode nos ajudar ao {_contacting_link} com nossos engenheiros com o endereço desta página e como você chegou a esta mensagem.","email_in_use":"Um usuário com este endereço de e-mail já existe no sistema.","email_required":"\u003cspan class=\"bold\"\u003eNecessário:\u003c/span\u003e Por favor, digite um e-mail.","hexvalue":"É necessário um valor HEX válido.","ipaddress":"Um endereço de IP válido é requerido.","name":"Um nome válido é requerido.","network":"Epa! Não conseguimos nos conectar ao servidor. Experimente verificar sua conexão e atualizar a página.","network_bug":"Epa! Algo deu errado. Você pode nos ajudar ao {_contacting_link} com nossos engenheiros com o endereço desta página, como você chegou a esta mensagem, e este código: {C}","number":"Apenas números.","password":"A senha deve ter pelo menos 6 caracteres. Senhas podem conter letras, números e pontuação.","password_length":"A senha deve conter pelo menos 6 caracteres.","password_required":"\u003cspan class=\"bold\"\u003eNecessário:\u003c/span\u003e Por favor, digite uma senha.","postal":"Um código postal válido é requerido.","request":"O servidor não conseguiu processar seu formulário. Experimente atualizar a página.","required":"Este campo é obrigatório.","telephone":"Um número de telefone válido é requerido.","url":"Uma URL válida é requerida.","year":"Um ano válido é requerido.","zipcode":"Um CEP válido é requerido."}
+    };
+  </script>
+
+  <section class="register" style="padding-top: 141px; padding-bottom: 141px;">
+    <div class="row">
+
+      <div class="container">
+        <div class="content">
+          <div class="heading-rotation-container" style="min-height: 280px;">
+            
+            <h2 class="rotator h1-like heading-1">Lembre-se de tudo.</h2>
+            <h2 class="rotator h1-like heading-2">Organize-se.</h2>
+            <h2 class="rotator h1-like heading-3">Tenha sucesso conjunto.</h2>
+            <h1>Conheça o Evernote, seu segundo cérebro.</h1>
+          </div>
+
+          <p class="description">Capture, organize e compartilhe notas de qualquer lugar. Suas melhores ideias estão sempre com você e sempre sincronizadas.</p>
+        </div>
+
+        <div class="divider-wrapper">
+          <div class="divider"></div>
+        </div>
+
+        <div class="sign-up">
+          <div class="sign-up-inner">
+            <h3>Registre-se Gratuitamente</h3>
+            <p class="google-cta">
+              <a href="https://www.evernote.com/MarketingOpenId.action?referralSpecifier=mweb_home_1g&amp;analyticsLoginOrigin=home_new" class="button-google">Cadastre-se gratuitamente com o Google</a>
+            </p>
+            <div class="or-row">
+              <div class="or-line"></div>
+              <div class="or-text">Ou</div>
+              <div class="or-line"></div>
+            </div>
+            <form id="register-form" action="https://www.evernote.com/Registration.action?referralSpecifier=mweb_home_1" method="post" novalidate="true">
+              <div class="field-item">
+                <input type="email" placeholder="E-mail" id="email" name="email" data-validate="email_required, email, email_in_use" autofocus="">
+              </div>
+              <div class="field-item">
+                <input type="password" placeholder="Senha" id="password" name="password" data-validate="password_required, password">
+              </div>
+              <p class="legal">Ao clicar em Criar Conta, estou de acordo com os <a href="/intl/pt-br/legal/terms-of-service">Termos de Serviço</a> e a <a href="/intl/pt-br/privacy/policy">Política de Privacidade</a>.</p>
+              <div class="submit-container">
+                <input type="submit" id="contact-form-submit" class="button-primary" name="register" value="Cadastre-se Gratuitamente">
+                
+              </div>
+              
+              <input type="hidden" name="_sourcePage" value="TRewqUBoP0TiMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP">
+              <div class="form-errors-container">
+                <p class="form-error email"></p>
+                <p class="form-error password active"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="learn-more">
+          <a href="https://www.evernote.com/Registration.action?referralSpecifier=mweb_homemob_1" class="button-primary">Crie sua conta gratuita</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  
+  
+
+
+  
+  <section class="benefits">
+    <div class="row">
+
+      <ul class="benefits-list">
+        
+          <li class="image-on-left">
+            <div class="image">
+              <a href="https://www.youtube.com/watch?v=9l4cm5jauC4&amp;rel=0" target="_blank">
+                <img src="/img/home/benefit-1.png">
+              </a>
+            </div>
+            <div class="content">
+              <h2>Lembre de Tudo</h2>
+              <p>Organize seu trabalho e desafogue sua vida. Colecione tudo que importa em um só lugar e encontre quando precisar, rapidamente.</p>
+              
+                <div class="link-wrapper">
+                  
+                    <a href="https://www.evernote.com/Registration.action?referralSpecifier=mweb_home_2">Crie sua conta gratuita</a>
+                  
+                </div>
+              
+            </div>
+          </li>
+        
+          <li class="image-on-right">
+            <div class="image">
+              <a href="https://www.youtube.com/watch?v=J7uQgVxLIhU&amp;rel=0" target="_blank">
+                <img src="/img/home/benefit-2.png">
+              </a>
+            </div>
+            <div class="content">
+              <h2>Trabalhe de Forma Mais Inteligente</h2>
+              <p>Aprimore suas notas com links, listas de verificação, tabelas, anexos e gravações de áudio. Mesmo notas escritas à mão são pesquisáveis.</p>
+              
+                <div class="link-wrapper">
+                  
+                    <a href="https://www.evernote.com/Registration.action?referralSpecifier=mweb_home_3">Crie sua conta gratuita</a>
+                  
+                </div>
+              
+            </div>
+          </li>
+        
+          <li class="image-on-left">
+            <div class="image">
+              <a href="https://www.youtube.com/watch?v=gGOhFmJwSX8&amp;rel=0" target="_blank">
+                <img src="/img/home/benefit-3.png">
+              </a>
+            </div>
+            <div class="content">
+              <h2>Reúna Todas as Coisas</h2>
+              <p>Equipes organizadas realizam mais. Desde o brainstorm inicial até o projeto final, faça do Evernote o hub da sua equipe e encontre a alegria da produtividade.</p>
+              
+                <div class="link-wrapper">
+                  
+                    <a href="/intl/pt-br/business">Conheça o Evernote Business</a>
+                  
+                </div>
+              
+            </div>
+          </li>
+        
+      </ul>
+
+    </div>
+  </section>
+
+
+  
+  <section class="social-proof">
+    <div class="row">
+
+      <h2>Milhões de pessoas confiam no Evernote para se manterem organizadas e conquistar mais. Descubra porquê.</h2>
+      <p class="cta">
+        
+          
+            <a href="https://www.evernote.com/Registration.action?referralSpecifier=mweb_home_4" class="button-primary">Cadastre-se Gratuitamente</a>
+          
+        
+      </p>
+
+    </div>
+  </section>
+
+
+  
+  
+    <div class="related-content">
+      <div class="row">
+        <div class="carousel-container">
+          <div class="articles slick-initialized slick-slider">
+            
+              <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 996px; transform: translate3d(0px, 0px, 0px);"><div class="article slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 332px;">
+                <div class="image">
+                  <a href="https://blog.evernote.com/ptbr/2016/02/16/4-estrategias-efetivas-para-organizar-o-evernote/" tabindex="0">
+                    <img src="/img/content-blocks/pt-br/organization-strategies.jpg">
+                  </a>
+                </div>
+                <h5>No Trabalho</h5>
+                <h3><a href="https://blog.evernote.com/ptbr/2016/02/16/4-estrategias-efetivas-para-organizar-o-evernote/" tabindex="0">4 Estratégias Efetivas para Organizar o Evernote</a></h3>
+                <p>Pesquisa, Etiquetas, Pilhas de Cadernos e Títulos de Notas, qual estratégia é melhor para você?</p>
+              </div><div class="article slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 332px;">
+                <div class="image">
+                  <a href="https://blog.evernote.com/ptbr/2017/02/15/abordagem-unica-de-albert-einstein-para-o-pensamento/" tabindex="0">
+                    <img src="/img/content-blocks/pt-br/einstein.png">
+                  </a>
+                </div>
+                <h5>No Trabalho</h5>
+                <h3><a href="https://blog.evernote.com/ptbr/2017/02/15/abordagem-unica-de-albert-einstein-para-o-pensamento/" tabindex="0">A abordagem única de Albert Einstein para o pensamento</a></h3>
+                <p>Einstein trabalha de maneiras únicas. Desde a visualização, até divagações e até mesmo uma pitada de inspiração musical, os insights criativos e pontos de vista filosóficos ajudaram a guiar o trabalho que abordamos hoje</p>
+              </div><div class="article slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 332px;">
+                <div class="image">
+                  <a href="https://blog.evernote.com/ptbr/2017/02/20/tecnicas-efetivas-brainstorming/" tabindex="0">
+                    <img src="/img/content-blocks/pt-br/brainstorm.jpg">
+                  </a>
+                </div>
+                <h5>No Trabalho</h5>
+                <h3><a href="https://blog.evernote.com/ptbr/2017/02/20/tecnicas-efetivas-brainstorming/" tabindex="0">Técnicas efetivas de brainstorming</a></h3>
+                <p>A preparação é a chave. Com a ajuda do Evernote e grandes métodos para ajudar as ideias a fluir, você e sua equipe estarão rumo à um brainstorming produtivo e satisfatório</p>
+              </div></div></div>
+            
+              
+            
+              
+            
+          </div>
+          <div class="dots-nav"></div>
+        </div>
+      </div>
+    </div>
+  
+
+
+  
+  
+
+
+  
+  
+    <footer class="global-footer">
+
+      <div class="footer-utilities">
+        <div class="row">
+
+          <div class="language-selector">
+            <a href="#" class="language-selector-toggle footer">Escolha um Idioma <span class="arrow"></span></a>
+            <div class="language-selector-options footer">
+              <ul class="left">
+                
+                  <li><a href="/intl/id/">Bahasa Indonesia</a></li>
+                
+                  <li><a href="/intl/ms/">Bahasa Melayu</a></li>
+                
+                  <li><a href="/intl/da/">Dansk</a></li>
+                
+                  <li><a href="/intl/de/">Deutsch</a></li>
+                
+                  <li><a href="/intl/en/">English (US)</a></li>
+                
+                  <li><a href="/intl/es/">Español</a></li>
+                
+                  <li><a href="/intl/es-latam/">Español (América Latina)</a></li>
+                
+                  <li><a href="/intl/fr/">Français</a></li>
+                
+                  <li><a href="/intl/it/">Italiano</a></li>
+                
+                  <li><a href="/intl/nl/">Nederlands</a></li>
+                
+                  <li><a href="/intl/pl/">Polski</a></li>
+                
+                  <li><a href="/intl/pt-br/">Português (Brasil)</a></li>
+                
+              </ul>
+              <ul class="right">
+                
+                  <li><a href="/intl/pt/">Português (Portugal)</a></li>
+                
+                  <li><a href="/intl/fi/">Suomi</a></li>
+                
+                  <li><a href="/intl/sv/">Svenska</a></li>
+                
+                  <li><a href="/intl/vi/">Tiếng Việt</a></li>
+                
+                  <li><a href="/intl/tr/">Türkçe</a></li>
+                
+                  <li><a href="/intl/ru/">Русский</a></li>
+                
+                  <li><a href="/intl/ar/">العربية</a></li>
+                
+                  <li><a href="/intl/th/">ภาษาไทย</a></li>
+                
+                  <li><a href="/intl/ko/">한국어</a></li>
+                
+                  <li><a href="/intl/zh-cn/">中文（简体）</a></li>
+                
+                  <li><a href="/intl/zh-tw/">中文（繁體）</a></li>
+                
+                  <li><a href="/intl/jp/">日本語</a></li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <ul class="social-links">
+            
+                <li>
+                  <a href="https://www.facebook.com/EvernoteBR/">
+                    <img src="/img/icons/facebook.svg" class="facebook">
+                    <span></span>
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://twitter.com/evernote_br">
+                    <img src="/img/icons/twitter.svg" class="twitter">
+                    <span></span>
+                  </a>
+                </li>
+              
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <div class="row">
+
+          <ul>
+            
+              <li class="hide-on-mobile">
+                <a href="/intl/pt-br/contact">Contato</a>
+              </li>
+            
+              <li class="hide-on-mobile">
+                <a href="/intl/pt-br/careers">Carreiras</a>
+              </li>
+            
+              <li class="hide-on-mobile">
+                <a href="https://discussion.evernote.com/">Fórum</a>
+              </li>
+            
+              <li class="">
+                <a href="https://dev.evernote.com/">Desenvolvedores</a>
+              </li>
+            
+              <li class="hide-on-mobile">
+                <a href="https://appcenter.evernote.com/">Centro de Aplicativo</a>
+              </li>
+            
+              <li class="">
+                <a href="/intl/pt-br/security">Segurança</a>
+              </li>
+            
+              <li class="">
+                <a href="/intl/pt-br/legal">Jurídico</a>
+              </li>
+            
+              <li class="">
+                <a href="/intl/pt-br/privacy">Privacidade</a>
+              </li>
+            
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <div class="row">
+          
+          <p class="copyright">© 2017 Evernote Corporation. Todos os direitos reservados.</p>
+
+        </div>
+      </div>
+    </footer>
+  
+
+
+
+    <script src="/js/manifest.457d757b15787544c402.js"></script>
+    <script src="/js/vendors.6e3abbf0071a76ecac71.js"></script>
+    
+    <script src="/js/home.ec2bcf3cd4127a982a2b.js"></script>
+    
+  
+
+<script type="text/javascript" id="">(function(a,d,c,b){a="//tags.tiqcdn.com/utag/evernote/evernote-www/prod/utag.js";d=document;c="script";b=d.createElement(c);b.src=a;b.type="text/java"+c;b.async=!0;a=d.getElementsByTagName(c)[0];a.parentNode.insertBefore(b,a)})();</script>   <script type="text/javascript" id="">_bizo_data_partner_id="9179";</script>
+<script type="text/javascript" id="">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===window.location.protocol?"https://sjs":"http://js")+".bizographics.com/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript>
+  &lt;img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=9179&amp;amp;fmt=gif"&gt;
+</noscript></body></html>

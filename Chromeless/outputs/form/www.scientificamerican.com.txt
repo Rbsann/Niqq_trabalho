@@ -1,0 +1,1843 @@
+<!DOCTYPE html><html dir="ltr" lang="en" class=" js  svg csspointerevents cssgradients csspointerevents objectfit object-fit csstransitions flexbox csstransforms brunel-deck-semibold-normal-normal-loaded brunel-deck-semibold-normal-italic-loaded brunel-poster-bold-normal-italic-loaded benton-bold-normal-loaded benton-normal-normal-loaded" data-useragent="Chromeless 1.1.0"><head><script type="text/javascript" src="https://cdn.krxd.net/userdata/get?pub=bd339c69-af54-4a21-b4f1-654bcfcd83ca&amp;technographics=1&amp;callback=Krux.ns._default.kxjsonp_userdata"></script><script type="text/javascript" src="https://beacon.krxd.net/optout_check?callback=Krux.ns._default.kxjsonp_optOutCheck"></script><script src="https://pagead2.googlesyndication.com/pagead/osd.js"></script><script src="//www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/128202141081854?v=2.7.19" async=""></script><script src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="https://nexus.ensighten.com/npg/prod-sa/code/9041cc6f9f51fc557cca555efadf83d8.js?conditionId0=422952"></script><script type="text/javascript" async="" src="https://nexus.ensighten.com/npg/prod-sa/code/1a991e0704eafeef80cc6cbbe2c7d809.js?conditionId0=650391"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20170731114946/recaptcha__en.js"></script><script type="text/javascript" async="" src="//statse.webtrendslive.com/dcszbiart00000oiar2s6w5ud_4y9j/wtid.js?callback=Webtrends.dcss.dcsobj_0.dcsGetIdCallback"></script><script type="text/javascript" src="//s.webtrends.com/js/webtrends.hm.js"></script><script src="https://nexus.ensighten.com/npg/prod-sa/serverComponent.php?r=142.07246744036306&amp;ClientID=322&amp;PageID=https%3A%2F%2Fwww.scientificamerican.com%2Fmy-account%2Fregister%2F"></script><script src="https://sb.scorecardresearch.com/beacon.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Register - Scientific American</title><link rel="stylesheet" href="/public/resources/icons-6bbdbe0c0bc51b6dcb36c6535563b1a6.css" media="all"><script src="/public/resources/webtrends-0bcb31d8811c0f17b708a1fac050891f.js"></script><script async="" src="//cdn.krxd.net/ctjs/controltag.js.c3a35cae6beb84887ab6a83973d97fa9"></script><script id="nativeads-plugin" type="text/javascript" async="" src="https://plugin.mediavoice.com/plugin.js"></script><script async="" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script type="text/javascript" async="" src="https://cdn.krxd.net/controltag/Jn7TXKj3.js"></script><script>var A17 = window.A17 || {};A17.svgSupport = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1");A17.browserSpec = (typeof document.querySelectorAll && 'addEventListener' in window && A17.svgSupport) ? "html5" : "html4";var element = document.createElement('x');element.style.cssText = 'pointer-events:auto';(function(){var doc = document.documentElement;var str = " js "+(A17.svgSupport ? " svg" : " no-svg") + (element.style.pointerEvents === 'auto' ? " csspointerevents" : " no-csspointerevents");doc.className = doc.className.replace(/\bno-js\b/,str);})();A17.loadCSS = function(href){"use strict";var ss = window.document.createElement( "link" );var ref = window.document.getElementsByTagName( "script" )[ 0 ];var sheets = window.document.styleSheets;ss.rel = "stylesheet";ss.href = href;ss.media = "only x";ref.parentNode.insertBefore( ss, ref );ss.onloadcssdefined = function( cb ){var defined;for( var i = 0; i < sheets.length; i++ ){if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){defined = true;}}if( defined ){cb();} else {setTimeout(function() {ss.onloadcssdefined( cb );});}};ss.onloadcssdefined(function() {ss.media = "all";});return ss;};A17.loadCSS("/public/resources/icons-6bbdbe0c0bc51b6dcb36c6535563b1a6.css");userHasAccessOptimizely = false;</script><link rel="apple-touch-icon-precomposed" sizes="196x196" href="/public/resources/favicons/favicon-196-73208969ab1ed3409bc55e8915ed8bae.png"><link rel="apple-touch-icon-precomposed" sizes="128x128" href="/public/resources/favicons/favicon-128-c8f859d1014234520d7e542de84686de.png"><link rel="apple-touch-icon-precomposed" sizes="96x96" href="/public/resources/favicons/favicon-96-dba133e71973e661bb307c3aeb34eef3.png"><link rel="apple-touch-icon-precomposed" sizes="32x32" href="/public/resources/favicons/favicon-32-98279223f56790c51fe10cdd69903dcc.png"><link rel="apple-touch-icon-precomposed" sizes="16x16" href="/public/resources/favicons/favicon-16-5e90814f8e355cae989b4f7a0b95829a.png"><link rel="shortcut icon" href="/public/resources/favicons/favicon-2bdc20b6b8b461ae319099c48d4f62d0.ico"><link rel="logo" type="image/svg" href="/resources/source/icon__logo--lg.svg"><meta name="msapplication-TileImage" content="/public/resources/favicons/favicon-196-73208969ab1ed3409bc55e8915ed8bae.png"><meta name="referrer" content="always"><meta class="swiftype" name="external_id" data-type="enum" content="DB9C90C8-0767-40CC-9808145972F9520B"><meta class="swiftype" name="title" data-type="string" content="Register"><meta class="swiftype" name="summary" data-type="text" content=""><meta class="swiftype" name="published_at" data-type="date" content=""><meta class="swiftype" name="lastupdate" data-type="date" content="2014-01-19T00:56:07"><meta class="swiftype" name="type" data-type="enum" content="Folder"><meta class="swiftype" name="subtype" data-type="enum" content="MyAccount"><meta class="swiftype" name="section" data-type="enum" content=""><meta class="swiftype" name="author" data-type="string" content=""><meta class="swiftype" name="primary_category" data-type="string" content=""><meta class="swiftype" name="doi" data-type="string" content=""><link rel="stylesheet" type="text/css" href="/public/resources/sa-3f73e80a8da80693769584f5dc927df7.css">
+<script type="text/javascript" src="/sciam/includes/themes/responsive/js/mura.min.js?v=6787"></script>
+	<script type="text/javascript">
+	Mura.init({
+		loginURL:"?display=login",
+		siteid:"sciam",
+		contentid:"DB9C90C8-0767-40CC-9808145972F9520B",
+		contenthistid:"52C0BD5B-D719-4CEC-86FF30AF2FC32095",
+		type:"Page",
+		subtype:"Default",
+		ismind:"false",
+		siteID:"sciam",
+		context:"",
+		jslib:"jquery",
+		nocache:0,
+		assetpath:"/sciam",
+		siteConfig:"/requirements",
+		themepath:"/sciam/includes/themes/responsive",
+		rb:"en",
+		reCAPTCHALanguage:"en",
+		preloaderMarkup: "",
+		mobileformat: "false",
+		adminpreview: "false",
+		windowdocumentdomain: "",
+		dtExample:"11/10/2018",
+	dtCh:"/",
+	dtFormat:[0,1,2],
+	dtLocale:"en-US"
+	});
+</script>
+<script src="/sciam/includes/layout_manager/js_pullquote/scripts.js"></script>
+<script type="text/javascript" src="/requirements/cfformprotect/js/cffp.js"></script>
+<meta property="og:site_name" content="Scientific American">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Register">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="http://www.scientificamerican.com/sciam/includes/themes/responsive/images/logo400x400.jpg?w=600&amp;h=335">
+	<meta property="og:url" content="https://www.scientificamerican.com/my-account/register/">
+
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@sciam">
+	<meta name="twitter:title" content="Register">
+
+
+	
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+<!-- BEGIN Krux ControlTag for "Scientific American" -->
+<script class="kxct" data-id="Jn7TXKj3" data-timing="async" data-version="3.0" type="text/javascript">
+ window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+ (function(){
+ var k=document.createElement('script');k.type='text/javascript';k.async=true;
+ k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/Jn7TXKj3.js';
+ var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+ }());
+</script>
+<!-- END Krux ControlTag -->
+	
+
+<!-- BEGIN KRUX INTERCHANGE GPT -->
+<script>
+	window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]); (function(){
+	function retrieve(n){
+	var m, k='kx'+n;
+	if (window.localStorage) {
+	return window.localStorage[k] || "";
+	} else if (navigator.cookieEnabled) {
+	m = document.cookie.match(k+'=([^;]*)'); return (m && unescape(m[1])) || "";
+	 } else {
+	 return '';
+	} }
+	Krux.user = retrieve('user');
+	Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+	})();
+</script>
+<!-- END KRUX INTERCHANGE GPT -->
+
+
+<!-- BEGIN KRUX INTERCHANGE DFP LEGACY -->
+<script class="kxint" type="text/javascript">
+ window.Krux || ((Krux = function() {
+ Krux.q.push(arguments);
+ }).q = []);
+ (function() {
+ function retrieve(n) {
+ var m, k = 'kx' + n;
+ if (window.localStorage) {
+ return window.localStorage[k] || "";
+ } else if (navigator.cookieEnabled) {
+ m = document.cookie.match(k + '=([^;]*)');
+ return (m && unescape(m[1])) || "";
+ } else {
+ return '';
+ }
+ }
+ Krux.user = retrieve('user');
+ Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : []; 
+ var dfpp = [];
+ if (Krux.user) {
+ dfpp.push('kuid=' + Krux.user);
+ }
+ for (var i = 0; i < Krux.segments.length; i++) {
+ dfpp.push('ksg=' + Krux.segments[i]);
+ }
+ Krux.dfppKeyValues = dfpp.length ? dfpp.join(';') + ';' : '';
+ })();
+</script>
+<!-- END KRUX INTERCHANGE DFP LEGACY -->
+
+<!-- Start: GPT Async -->
+<script type="text/javascript">
+	 var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+		(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') +
+		 '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+</script>
+
+
+
+<script type="text/javascript">
+dfp = {};
+
+dfp.targeting = {"primary-cat":"","topic":"","ref-url":"","type":"","author":"","title":"","tags":"nointerstitial","section":""};
+
+
+function get_screen_size(screenWidth) {
+	if (screenWidth > 1023) {
+		return "desktop";
+	}
+	else if (screenWidth <= 1023 && screenWidth > 767) {
+		return "tablet";
+	}
+	else {
+		return "mobile";
+	}
+}
+
+// refresh Ads on screen resize
+dfp.screen_size = get_screen_size(window.innerWidth);
+dfp.targeting['screen_size'] = dfp.screen_size;
+
+window.addEventListener("resize", function(){
+	var newSize = get_screen_size(window.innerWidth);
+	if (newSize != dfp.screen_size) {
+		dfp.screen_size = newSize;
+		googletag.cmd.push(function() {
+			googletag.pubads().refresh();
+		});
+	}
+});
+
+
+var gptadslots=[];
+dfp.adUnit = "/67238587/sciam.com";
+dfp.adslots = {};
+
+dfp.top = {
+	sizes : "[320, 50]",
+	name: "div-gpt-ad-top-",
+	count : 0
+};
+
+dfp.middle = {
+	sizes : "[320, 50]",
+	name: "div-gpt-ad-middle1-",
+	count : 0
+};
+
+dfp.right = {
+	sizes : "[300, 250]",
+	name: "div-gpt-ad-right1-",
+	count : 0
+};
+
+dfp.right2 = {
+	sizes : "[300, 250]",
+	name: "div-gpt-ad-right2-",
+	count : 0
+};
+
+dfp.slideshow = {
+	sizes : "[300, 250]",
+	name: "div-gpt-ad-slideshow-",
+	count : 0
+};
+
+
+googletag.cmd.push(function() {
+	dfp.top.mapping = googletag.sizeMapping().
+		addSize([1, 1 ], [320, 50]).
+		addSize([767, 1 ], [728, 90]).
+		addSize([1023, 1 ], [[728, 90], [970, 90]]).
+		build();
+
+	dfp.middle.mapping = googletag.sizeMapping().
+		addSize([1, 1 ], [320, 50]).
+		addSize([767, 1 ], [728, 90]).
+		addSize([1023, 1 ], [[728, 90], [970, 90], [970, 250]]).
+		build();
+
+	dfp.right.mapping = googletag.sizeMapping().
+		addSize([1023, 1 ], [[300, 250], [300, 600]]).
+		addSize([767, 1 ], [[300, 250], [300, 600]]).
+		addSize([1, 1 ], [300, 250]).
+		build();
+
+	dfp.right2.mapping = googletag.sizeMapping().
+		addSize([1023, 1 ], [300, 250]).
+		addSize([767, 1 ], [300, 250]).
+		addSize([1, 1 ], [300, 250]).
+		build();
+
+	dfp.slideshow.mapping = googletag.sizeMapping().
+		addSize([1023, 1 ], [300, 250]).
+		addSize([767, 1 ], [300, 250]).
+		addSize([1, 1 ], [300, 250]).
+		build();
+	
+	gptadslots[0] = googletag.defineSlot('/67238587/sciam.com', [300, 50], 'div-gpt-ad-top-1').defineSizeMapping(dfp.top.mapping).setTargeting('position',['top']).addService(googletag.pubads());
+
+	gptadslots[1] = googletag.defineOutOfPageSlot('/67238587/sciam.com', 'div-gpt-ad-interstitial-1').addService(googletag.pubads());
+
+
+	// All page-level DFP Custom Tagging goes here
+	googletag.pubads()
+		.setTargeting('section', dfp.targeting['section'])
+		.setTargeting('type', dfp.targeting['mediatype'])
+		.setTargeting('primary-cat', dfp.targeting['primary-cat'])
+		.setTargeting('topic', dfp.targeting['topic'])
+		.setTargeting('title', dfp.targeting['title'])
+		.setTargeting('tags', dfp.targeting['tags'])
+		.setTargeting('author', dfp.targeting['author'])
+		
+		.setTargeting('device', dfp.screen_size)
+		.setTargeting('ref-url', dfp.targeting['ref-url']);
+
+	googletag.pubads().setTargeting("ksg", Krux.segments);
+	googletag.pubads().setTargeting("kuid", Krux.user);
+	
+	googletag.pubads().enableSingleRequest();
+	googletag.pubads().enableAsyncRendering();
+	googletag.enableServices();
+});
+</script>
+
+<!-- End: GPT -->
+
+
+<script type="text/javascript">
+dfp.load_dfp_ad = function(adName, positionName, adContainer, adOffset) {
+	var isAdActive = false;
+
+	if (adOffset === undefined || !adOffset.length) {
+		adOffset = document.getElementById(adContainer).offsetTop-500;
+	}
+
+	window.addEventListener('scroll', function() {
+		var pageOffset = window.pageYOffset;
+
+		if((pageOffset > adOffset) && !isAdActive) {
+			isAdActive = true;
+
+			dfp[adName].count++;
+			var slotName = dfp[adName].name + dfp[adName].count;
+
+			var adSlotDiv = document.createElement('div');
+ 			adSlotDiv.id = slotName;
+ 			document.getElementById(adContainer).appendChild(adSlotDiv);
+
+ 			if (positionName == "") {
+ 				positionName = adName+dfp[adName].count;
+ 			}
+			
+			googletag.cmd.push(function() {
+				gptadslots.push( googletag.defineSlot(dfp.adUnit, dfp[adName].sizes, slotName).
+				defineSizeMapping(dfp[adName].mapping).
+				setTargeting('position',[positionName]).
+				addService(googletag.pubads()) );
+
+				dfp.adslots[positionName] = googletag.display(slotName);
+				//googletag.pubads().refresh([slot]);
+			});
+		}
+	});
+};
+
+</script>
+<script>
+(function() {
+
+		var DFP_id = dfp.adUnit;
+		//var DFP_id = "/7814368/NativeAdUnit"; // for testing purposes only
+
+		var compiledTemplateHomePopular = "";
+		var compiledTemplateHomeLatest = "";
+		var compiledTemplateHomeAgenda = "";
+		var compiledTemplateTagLatest = "";
+		var compiledTemplateArticleLatest = "";
+
+		templates();
+
+		window.NATIVEADS = window.NATIVEADS || {};
+		window.NATIVEADS_QUEUE = window.NATIVEADS_QUEUE || [];
+
+		var q = function() {
+			return window.NATIVEADS_QUEUE;
+		};
+
+		q().push(["setPropertyID", "NA-SCIEAMERLIVE-11237933"]);
+
+		switch (mura.subtype) {
+			case 'Home':
+				
+					q().push(["insertPreview", {
+						label: "HomeLatest",
+						unit: {
+							"server": "dfp",
+							"id": DFP_id,
+							"size": "2x2",
+							"targets": renderTagerting('n-latest3')
+						},
+						location: "#latest-news > article.listing:eq(2)",
+						infoText: "",
+						infoButtonText: "",
+						template: compiledTemplateHomeLatest,
+						onRender: function($element) {
+							var parent = document.getElementById('latest-news');
+							var lastChild = parent.children[5];
+							parent.removeChild(lastChild);
+						},
+						onFill: function(data) {
+							getFormattedDate(data);
+						},
+						onError: function(error) { }
+					}]); 
+				 
+
+				
+					q().push(["insertPreview", {
+						label: "HomeAgenda",
+						unit: {
+							"server": "dfp",
+							"id": DFP_id,
+							"size": "2x2",
+							"targets": renderTagerting('n-agenda4')
+						},
+						location: "#agenda-latest > article:nth-child(3)",
+						infoText: "",
+						infoButtonText: "",
+						template: compiledTemplateHomeAgenda,
+						onRender: function($element) {
+							var parent = document.getElementById('agenda-latest');
+							parent.removeChild(parent.lastChild);
+						},
+						onFill: function(data) {
+							getFormattedDate(data);
+						},
+						onError: function(error) { }
+					}]);
+				
+				
+			case 'Topic':
+
+				
+					q().push(["insertPreview", {	
+						label: "HomePopular",
+						unit: {
+							"server": "dfp",
+							"id": DFP_id,
+							"size": "2x2",
+							"targets": renderTagerting('n-popular3')
+						},
+						location: ".most-popular__grid > div.grid__col:eq(2)",
+						template: compiledTemplateHomePopular,
+						onRender: function($element) {
+							var parent = document.getElementsByClassName('most-popular')[0];
+							var parentBody = parent.children[0];
+							parentBody.removeChild(parentBody.lastChild);
+							
+						},
+						onFill: function(data) {
+							getFormattedDate(data);
+						},
+						onError: function(error) {}
+					}]);
+				
+
+			break;
+
+
+			case 'Section':
+				
+					q().push(["insertPreview", {
+						label: "TagLatest",
+							unit: {
+								"server": "dfp",
+								"id": DFP_id,
+								"size": "2x2",
+								"targets": renderTagerting('n-tag3')
+							},
+						location: "div.section-latest > article:nth-child(3)",
+						infoText: "",
+						infoButtonText: "",
+						template: compiledTemplateTagLatest,
+						onRender: function($element) {
+							var parent = document.getElementsByClassName('section-latest')[0];
+							parent.removeChild(parent.lastChild);
+						},
+						onFill: function(data) {
+							getFormattedDate(data);
+						},
+						onError: function(error) { }
+					}]);
+				
+			break;
+
+			case 'Article':
+			case 'PrintArticle':
+			case 'PartnerArticle':
+			case 'BlogPost':
+				
+					q().push(["insertPreview", {
+						label: "ArticleLatest",
+						unit: {
+							"server": "dfp",
+							"id": DFP_id,
+							"size": "2x2",
+							"targets": renderTagerting('n-article')
+						},
+						location: "#read-next > div.aside-block__body > div.related-article-group > div:nth-child(6)",
+						infoText: "",
+						infoButtonText: "",
+						template: compiledTemplateArticleLatest,
+						onRender: function($element) {
+							var parent = document.getElementById('read-next');
+							var parentBody = parent.children[1].children[0];
+							parentBody.removeChild(parentBody.lastChild);
+						},
+						onFill: function(data) {
+							getFormattedDate(data);
+						},
+						onError: function(error) { }
+					}]);
+				
+			break;
+		}
+		
+
+
+
+	q().push(["configureSecondaryPage", {
+		track: function() {
+			// if(isSponsored){
+			// return 'inbound';
+			// }
+		}
+	}]);
+
+	function templates () {
+
+
+
+		compiledTemplateHomePopular = function (Handlebars,depth0,helpers,partials,data) { this.compilerInfo = [4,'>= 1.0.0'];helpers = this.merge(helpers, Handlebars.helpers); data = data || {}; var buffer = "", stack1, stack2, options, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, self=this;function program1(depth0,data) { var buffer = "", stack1; buffer += "— " + escapeExpression(((stack1 = ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)); return buffer; } buffer += "\n<div class=\"grid__col large-up-1 medium-1-2\">\n <article class=\"listing-wide\" data-listing-template=\"Home_Popular\" data-listing-title=\""; if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <div class=\"listing-wide__thumb\">\n <a href=\""; if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <picture>\n <source media=\"(max-width: 767px)\" srcset=\""; options = {hash:{ 'width': (80), 'height': (80) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <source media=\"(min-width: 768px) and (max-width: 1023px)\" srcset=\""; options = {hash:{ 'width': (210), 'height': (140) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <img src=\""; options = {hash:{ 'width': (275), 'height': (183) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\" alt=\""; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\"></picture>\n <div class=\"listing-wide__thumb__category listing-wide__thumb__sponsor " + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.AdType)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) + "</div>\n </a>\n </div>\n <div class=\"listing-wide__inner\">\n <h3 class=\"t_listing-title\">\n <a href=\""; if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\">"; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "</a>\n </h3>\n <p class=\"t_body listing-wide__inner__desc\">\n "; if (stack2 = helpers.summary) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.summary; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\n </p>\n <div class=\"t_meta\">"; if (stack2 = helpers.pubDate) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.pubDate; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + " "; stack2 = helpers['if'].call(depth0, ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data}); if(stack2 || stack2 === 0) { buffer += stack2; } buffer += "</div>\n <div class=\"listing-wide__inner__small-sponsor\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) + "</div>\n </div>\n </article>\n</div>"; return buffer; };
+
+		compiledTemplateHomeLatest = function (Handlebars,depth0,helpers,partials,data) { this.compilerInfo = [4,'>= 1.0.0'];helpers = this.merge(helpers, Handlebars.helpers); data = data || {}; var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression, self=this;function program1(depth0,data) { var buffer = "", stack1; buffer += "— " + escapeExpression(((stack1 = ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)); return buffer; } buffer += "<article class=\"listing listing--with-thumb \" data-listing-count=\"6\" data-listing-template=\"Home\" data-listing-title=\""; if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <div class=\"t_tag medium-up-hide\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) + "</div>\n <div class=\"t_tag small-hide\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) + "</div>\n <div class=\"t_meta\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.SponsorLabel)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) + "</div>\n <h2 class=\"t_small-listing-title\"><a href=\""; if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\">"; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "</a></h2>\n <p class=\"t_meta listing__meta\">"; if (stack2 = helpers.pubDate) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.pubDate; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + " "; stack2 = helpers['if'].call(depth0, ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data}); if(stack2 || stack2 === 0) { buffer += stack2; } buffer += "</p>\n</article>"; return buffer; };
+
+		compiledTemplateTagLatest = function (Handlebars,depth0,helpers,partials,data) { this.compilerInfo = [4,'>= 1.0.0'];helpers = this.merge(helpers, Handlebars.helpers); data = data || {}; var buffer = "", stack1, stack2, options, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, self=this;function program1(depth0,data) { var buffer = "", stack1; buffer += "— " + escapeExpression(((stack1 = ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)); return buffer; } buffer += "\n<article class=\"listing-wide\" data-listing-template=\"Section\" data-listing-title=\""; if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <div class=\"listing-wide__thumb\">\n <a href=\""; if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <picture>\n <source media=\"(max-width: 767px)\" srcset=\""; options = {hash:{ 'width': (80), 'height': (80) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <source media=\"(min-width: 768px) and (max-width: 1023px)\" srcset=\""; options = {hash:{ 'width': (210), 'height': (140) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <img src=\""; options = {hash:{ 'width': (275), 'height': (183) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\" alt=\""; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\">\n </picture>\n <div class=\"listing-wide__thumb__category listing-wide__thumb__sponsor " + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.AdType)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"</div>\n </a>\n </div>\n <div class=\"listing-wide__inner\">\n <h2 class=\"t_listing-title\"><a href=\""; if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\">"; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "</a></h2>\n <p class=\"t_body listing-wide__inner__desc\">\n "; if (stack2 = helpers.summary) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.summary; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\n </p>\n <div class=\"t_meta\">"; if (stack2 = helpers.pubDate) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.pubDate; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + " "; stack2 = helpers['if'].call(depth0, ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data}); if(stack2 || stack2 === 0) { buffer += stack2; } buffer += "</div>\n <div class=\"listing-wide__inner__small-sponsor\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"</div>\n </div>\n</article>"; return buffer; };
+
+		compiledTemplateHomeAgenda = function (Handlebars,depth0,helpers,partials,data) { this.compilerInfo = [4,'>= 1.0.0'];helpers = this.merge(helpers, Handlebars.helpers); data = data || {}; var buffer = "", stack1, stack2, options, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, self=this;function program1(depth0,data) { var buffer = "", stack1; buffer += "— " + escapeExpression(((stack1 = ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)); return buffer; } buffer += "<article class=\"listing listing--with-thumb \" data-listing-count=\"4\" data-listing-template=\"Home\" data-listing-title=\""; if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <div class=\"t_tag medium-up-hide\">"+ escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"</div>\n <div class=\"t_thumb listing__thumb \">\n <a href=\""; if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\">\n <picture>\n <source media=\"(max-width: 767px)\" srcset=\""; options = {hash:{ 'width': (280), 'height': (187) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <source media=\"(min-width: 768px) and (max-width: 1023px)\" srcset=\""; options = {hash:{ 'width': (690), 'height': (460) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <source media=\"(min-width: 1024px) and (max-width: 1279px)\" srcset=\""; options = {hash:{ 'width': (450), 'height': (300) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <img src=\""; options = {hash:{ 'width': (590), 'height': (393) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\" alt=\""; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\"></picture>\n <div class=\"listing-wide__thumb__category listing-wide__thumb__sponsor "+ escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.AdType)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"\">"+ escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"</div>\n </a>\n </div>\n <h2 class=\"t_small-listing-title\">\n <a href=\""; if (stack2 = helpers.link) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.link; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\">"; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "</a>\n </h2>\n <p class=\"t_meta listing__meta\">"; if (stack2 = helpers.pubDate) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.pubDate; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + " "; stack2 = helpers['if'].call(depth0, ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data}); if(stack2 || stack2 === 0) { buffer += stack2; } buffer += "</p>\n</article>"; return buffer; };
+
+		compiledTemplateArticleLatest = function (Handlebars,depth0,helpers,partials,data) { this.compilerInfo = [4,'>= 1.0.0'];helpers = this.merge(helpers, Handlebars.helpers); data = data || {}; var buffer = "", stack1, stack2, options, functionType="function", escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, self=this;function program1(depth0,data) { var buffer = "", stack1; buffer += "— " + escapeExpression(((stack1 = ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)); return buffer; } buffer += "<div class=\"related-article-group__item\">\n <a href=\""; if (stack1 = helpers.link) { stack1 = stack1.call(depth0, {hash:{},data:data}); } else { stack1 = depth0.link; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; } buffer += escapeExpression(stack1) + "\" class=\"large-up-title-link\">\n <section class=\"related-article\">\n <div class=\"related-article__thumb\">\n <div class=\"t_tag related-article__thumb__sponsor " + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.AdType)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.Eyebrow)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"</div>\n <picture>\n <source media=\"(min-width: 768px) and (max-width: 1023px)\" srcset=\""; options = {hash:{ 'width': (330), 'height': (220) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <source media=\"(max-width: 767px)\" srcset=\""; options = {hash:{ 'width': (80), 'height': (80) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\">\n <img src=\""; options = {hash:{ 'width': (170), 'height': (113) },data:data}; buffer += escapeExpression(((stack1 = helpers.getThumbHref || depth0.getThumbHref),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "getThumbHref", options))) + "\" alt=\""; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "\"></picture>\n </div>\n <div class=\"related-article__body\">\n <div class=\"t_meta related-article__sponsor medium-down-hide\">" + escapeExpression(((stack1 = ((stack1 = depth0.custom),stack1 == null || stack1 === false ? stack1 : stack1.SponsorLabel)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1)) +"</div>\n <h3 class=\"related-article__title\">"; if (stack2 = helpers.title) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.title; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + "</h3>\n <p class=\"related-article__meta\">"; if (stack2 = helpers.pubDate) { stack2 = stack2.call(depth0, {hash:{},data:data}); } else { stack2 = depth0.pubDate; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; } buffer += escapeExpression(stack2) + " "; stack2 = helpers['if'].call(depth0, ((stack1 = depth0.author),stack1 == null || stack1 === false ? stack1 : stack1.name), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data}); if(stack2 || stack2 === 0) { buffer += stack2; } buffer += "</p>\n </div>\n </section>\n </a>\n</div>"; return buffer; };
+	}
+
+	function getFormattedDate(data) {
+		var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+		var d = new Date(data.pubDate);
+		data.pubDate = monthNames[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+
+		if (data.custom.AdType == 'Product'){
+			data.custom.AdType = "sponsor--blue";
+		}
+		else {
+			data.custom.AdType = "";
+		}
+
+		return data;
+	}
+
+})();
+
+(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0], p = d.location.protocol;
+ if (d.getElementById(id)) {return;}
+ js = d.createElement(s);
+ js.id = id; js.type = "text/javascript"; js.async = true;
+ js.src = ((p == "https:") ? p : "http:") + "//plugin.mediavoice.com/plugin.js";
+ fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "nativeads-plugin");
+
+
+
+function renderTagerting(pos) {
+	var polarTargeting = JSON.parse(JSON.stringify(dfp.targeting));
+	var ppos = [];
+	if (pos !== 'undefined') {
+		ppos = [pos];
+	}
+
+	polarTargeting['position'] = ppos;
+	return polarTargeting;
+}
+</script><meta property="fb:pages" content="22297920245"><!--script src="//cdn.optimizely.com/js/2007700279.js"></script--><!--[ if lte IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script><![ endif]--><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_140.js" async=""></script><script src="https://www.google.com/recaptcha/api.js?onload=checkForReCaptcha&amp;render=explicit&amp;hl=en" type="text/javascript"></script></head><body class="site-sciam lang-en  leaderboard-top" style=""><div style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"><symbol viewBox="0 0 26 20" id="icon-captions-off"><title>icon-captions-off</title><path d="M26 18c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h22c1.1 0 2 .9 2 2v16z"></path><text fill="#1a1a1a" transform="translate(5.745 13.658)" font-family="'Benton'" font-size="11">CC</text></symbol><symbol viewBox="0 0 26 20" id="icon-captions-on"><title>icon-captions-on</title><path fill="#b31b1b" d="M26 18c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h22c1.1 0 2 .9 2 2v16z"></path><text transform="translate(5.745 13.658)" fill="#fff" font-family="Benton" font-size="11">CC</text></symbol><symbol viewBox="0 0 20 20" id="icon-enter-fullscreen"><title>icon-enter-fullscreen</title><path fill="none" stroke="#fff" stroke-width="2" d="M1 1l7 7M1 19l7-7m4-4l6-6m-6 10l7 7"></path><path d="M0 6h2V2h4V0H0zm2 8H0v6h6v-2H2zM14 0v2h4v4h2V0zm4 18h-4v2h6v-6h-2z" fill="#fff"></path></symbol><symbol viewBox="0 0 20 20" id="icon-exit-fullscreen"><title>icon-exit-fullscreen</title><path fill="none" stroke="#b31b1b" stroke-width="2" d="M1 1l7 7M1 19l7-7m4-4l6-6m-6 10l7 7"></path><path d="M0 6h2V2h4V0H0zm2 8H0v6h6v-2H2zM14 0v2h4v4h2V0zm4 18h-4v2h6v-6h-2z" fill="#b31b1b"></path></symbol><symbol viewBox="0 0 18 18" id="icon-fast-forward"><title>icon-fast-forward</title><path d="M17.57 8.246L7 2c-.552 0-1 .448-1 1v1.954L1 2c-.552 0-1 .448-1 1v12c0 .552.448 1 1 1l5-2.955V15c0 .552.448 1 1 1l10.57-6.246c.266-.158.43-.444.43-.754s-.164-.597-.43-.754zM6 10.722l-4 2.364V4.914l4 2.364v3.444zm2 2.364V4.914L14.915 9 8 13.086z"></path></symbol><symbol viewBox="0 0 25 25" id="icon-muted"><title>icon-muted</title><path d="M16 23v-9.586l-5.02 5.02L16 23zm0-18.414V3L9.4 9H0v8h3.586L16 4.586zm4.168-1.168L.293 23.293l1.414 1.414L21.582 4.832l-1.414-1.414z"></path></symbol><symbol viewBox="-290 411.9 14 18" id="icon-pause"><title>icon-pause</title><path d="M-290 411.7h5v18.4h-5zm9 0h5v18.4h-5z"></path></symbol><symbol viewBox="0 0 16 18" id="icon-play"><title>icon-play</title><path d="M0 18V0l16 9z"></path></symbol><symbol viewBox="0 0 18 18" id="icon-restart"><title>icon-restart</title><desc>Created with Sketch.</desc><path d="M1 2c.552 0 1 .448 1 1v4.318L11 2c.552 0 1 .448 1 1v1.954L17 2c.552 0 1 .448 1 1v12c0 .552-.448 1-1 1l-5-2.955V15c0 .552-.448 1-1 1l-9-5.318V15c0 .552-.448 1-1 1s-1-.448-1-1V3c0-.552.448-1 1-1zm27 8.722l4 2.364V4.914l-4 2.364v3.444zM4 13.086V4.914L-2.915 9 4 13.086z"></path></symbol><symbol viewBox="0 0 18 21" id="icon-rewind"><title>rewind</title><desc>Created with Sketch.</desc><path d="M.43 10.754L11 17c.552 0 1-.448 1-1v-1.954L17 17c.552 0 1-.448 1-1V4c0-.552-.448-1-1-1l-5 2.955V4c0-.552-.448-1-1-1L.43 9.246C.165 9.404 0 9.69 0 10s.164.597.43.754zM29.138 6.77l4-2.364v8.172l-4-2.364V6.77zM4 9.358v8.172l-6.915-4.086L4 9.358z"></path></symbol><symbol viewBox="0 0 32 25" id="icon-volume"><title>icon-volume</title><path fill-rule="evenodd" clip-rule="evenodd" d="M9.4 9H0v8h9.4l6.6 6V3z"></path></symbol></svg></div><script>dataLayer = [{"content":{"authorization":{"status":1,"freeToAccess":1,"type":"free_to_air"},"category":{"contentSubType1":"","subjectSubType1":"","subjectType":"","contentType":"MyAccount"},"updatedAt":"","contentInfo":{"publishedAtDate":"","publishedAtTime":"","contentId":"DB9C90C8-0767-40CC-9808145972F9520B","brand":"Scientific American","publishedAt":"","author":[],"title":"Register"},"attributes":{"keywords":"","language":"en","copyright":{"native":0,"syndicated":0,"resale":0}}},"session":{"createdAt":"","authentication":{"loginStatus":"logged out"},"updatedAt":"","attributes":{},"sessionInfo":{"sessionID":"{{GA populated session ID}}"}},"version":"1.0.0","product":[],"privacy":{},"user":[{"licence":[{"category":{"licenceType":""},"licenceInfo":{"licenceName":"","licenceID":""},"attributes":{}}],"updatedAt":"","segment":{"emailSubscriber":0,"appUserMind":0,"registered":0,"customer":0,"subscriberMind":0,"appUserSA":0,"subscriber":0,"giftRecipient":0,"commented":0,"subscriberSA":0},"profile":[{"profileInfo":{"profileID":""},"attributes":{"recency":{"appLoginSA":"","appLoginMind":"","webLogin":""}}}]}],"page":{"error":{},"pageInfo":{},"category":{"pageType":"single-page"},"attributes":{},"component":[{}]}}];</script><div id="div-gpt-ad-interstitial-1" class="banner-interstitial"><script type="text/javascript">googletag.cmd.push(function() {googletag.display("div-gpt-ad-interstitial-1");});</script><div id="google_ads_iframe_/67238587/sciam.com_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/67238587/sciam.com_1" title="3rd party ad content" name="google_ads_iframe_/67238587/sciam.com_1" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div><!--[if IE 8]><![endif]--><!--[if lte IE 9]><div class="browser-update" data-behavior="browser_update"><div class="container"><p class="t_meta"><span class="browser-update__alert"><img src="/public/resources/png/icon__alert-a313300df9de48356a7faee7f3be54f5.png" alt=""></span> We're sorry, your browser is not supported. Please update to a modern browser to view this page. <a href="https://www.scientificamerican.com/page/frequently-asked-questions/?tab=about-the-site#what-are-the-technical-specifications-for-using-scientificamericancom" class="browser-update__link">Learn More</a></p><div class="browser-update__close"><a href="#" data-browser-update-close><span class="icon icon__close--black icon--subtle"></span></a></div></div></div><![endif]--><div class="browser-update" data-behavior="browser_update" id="cookie-policy"><div class="container"><p class="t_meta">We use cookies to provide you with a better onsite experience. By continuing to browse the site you are agreeing to our use of cookies in accordance with our <a class="browser-update__link" href="http://www.scientificamerican.com/page/use-of-cookies/" target="_blank">Cookie Policy</a>.</p><div class="browser-update__close"><a href="#" data-browser-update-close=""><span class="icon icon__close--black icon--subtle" data-behavior="cookie_policy" id="cookie_policy_close"></span></a></div></div></div><a class="skipnav" href="#sa_body">Skip to main content</a><div id="scientific-american"><div class="banner banner-leaderboard banner-leaderboard-top" data-banner-leaderboard=""><div id="div-gpt-ad-top-1"><script>googletag.cmd.push(function() {googletag.display("div-gpt-ad-top-1");});</script><div id="google_ads_iframe_/67238587/sciam.com_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/67238587/sciam.com_0" title="3rd party ad content" name="google_ads_iframe_/67238587/sciam.com_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div><div class="sticky-bounds" data-sticky-bounds="" data-sticky-id="site-header"><div class="sticky-header" data-sticky-container="" data-sticky-id="site-header"><div id="site-header" class="sticky-header__inner" data-behavior="sticky subscribe_hover"><div class="header-outer container"><header class="header"><div class="header__left"><a href="https://www.scientificamerican.com/store/subscribe/scientific-american-magazine/?WT.ac=SA_ecom_SA_Nav_Subscribe_white" id="subscribe-nav-btn" class="btn--small header__left__subscribe-btn">Subscribe</a><a class="header__menu-link" data-behavior="click_trigger" data-event-name="primary_nav:open" href="#"><span class="header__left__menu-btn icon icon__menu--black">Menu</span></a></div><div class="header__logo header__logo--en"><a href="https://www.scientificamerican.com/" class="icon icon__logo--lg header__logo__icon">Scientific American</a></div><div class="header__right tooltip-outer"><esi:remove><ul class="header__right__utils meta-list"><li class="meta-list__item tx_meta link" data-tooltip-trigger="" data-tooltip="region-tooltip">English <a href="#" class="icon icon--after icon--subtle icon__ddarr--black" data-behavior="tooltip" data-tooltip-width="180" data-tooltip-id="region-tooltip"></a></li><li class="meta-list__item tx_meta"><a class="link" href="https://www.scientificamerican.com/store/shopping-cart/">Cart <span class="cart-count">0</span></a></li><li class="meta-list__item tx_meta" data-behavior="sign_in_flyout"><a class="link signin-click" id="signin-click">Sign In</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.scientificamerican.com/my-account/register/" class="link register-click">Register</a><section class="signin-flyout" id="signin-flyout"><span class="icon icon__close--white" id="signin-flyout__close"></span><span class="signin-flyout__arrow"></span><form class="signin-flyout__form" action="https://www.scientificamerican.com/my-account/login/?s=1" method="post"><input type="hidden" name="slatAction" value="public:account.login"><input type="hidden" name="flyoutlogin" value="true"><input type="hidden" name="csrf_token" value="D9357E39A60D7F65B31233C619D8D902">
+				<input type="hidden" name="csrf_token_expires" value="170805002615518"><label for="emailAddress1" class="signin-flyout__form__label">Email:</label><input type="textbox" name="emailAddress" id="emailAddress1" class="signin-flyout__form__input" data-signin-email=""><label for="password1" class="signin-flyout__form__label">Password:</label><input type="password" name="password" id="password1" class="signin-flyout__form__input" data-signin-password=""><a href="https://www.scientificamerican.com/my-account/forgot-password/" class="signin-flyout__form__forgot">Forgot password?</a><button class="btn btn--small btn--inverted signin-flyout__form__submit" type="submit" data-signin-submit-btn="">Login</button><img src="/public/resources/loader-824962d9e67c8497c9ef428a9fdfad71.gif" class="signin-flyout__form__loading" alt="Loading" data-signin-loading=""></form><a href="https://www.scientificamerican.com/my-account/register/" class="signin-flyout__register">Not yet registered?</a></section></li></ul>				</esi:remove><!--esi<esi:include src="/sciam/esi-my-account.cfm?responsive=true" />--><button class="header__right__search-btn"><span class="icon icon__search--black" data-mobile-search-btn="">Search</span></button><a class="header__right__subscribe" href="https://www.scientificamerican.com/store/subscribe/scientific-american-magazine/?WT.ac=SA_ecom_SA_Nav-Subscribe-mobile">Subscribe</a><div class="tooltip tooltip--dark" id="region-tooltip"><span class="tooltip__arrow"></span><div class="account-tooltip"><ul class="account-tooltip__list"><li><a href="https://www.scientificamerican.com/">English</a></li><li><a href="https://www.scientificamerican.com/espanol/">Español</a></li><li><a href="https://www.scientificamerican.com/arabic/">العربية</a></li><li><a href="https://www.scientificamerican.com/page/international/">Other Editions</a></li></ul></div></div></div></header><div class="mobile-search" data-behavior="mobile_search"><form data-mobile-search-form="" method="GET" action="https://www.scientificamerican.com/search/"><div class="mobile-search__input-container"><label class="hide-label" for="mobile-search-input">Search</label><input class="mobile-search__input" placeholder="Search" data-mobile-search-input="" type="text" id="mobile-sidebar-search" data-behavior="search" name="q"><button type="submit" class="mobile-search__icon icon icon__search--white"></button><span data-mobile-search-close="" class="mobile-search__icon mobile-search__icon--close icon icon__close--white"></span></div></form><ul class="mobile-search__results" data-mobile-search-results="" id="mobile-search-results"></ul></div><aside class="subscribe-sidebar" data-subscribe-hover-panel="" style="width: 377px; margin-left: -47px;"></aside></div><nav class="primary-nav" data-behavior="primary_nav"><div class="primary-nav__bg"></div> <!-- bg opacity layer --><div class="primary-nav__container container"> <!-- close button for burger menu --><button class="primary-nav__close-btn"><span class="icon icon--subtle icon__close--white">Close</span></button></div><div class="primary-nav__inner" id="primary-nav__inner" data-primary-nav=""><div class="primary-nav__inner__container container"><div class="primary-nav__search-container"><form id="search-form" action="https://www.scientificamerican.com/search/" method="GET"><label for="sidebar-search" class="hide-label">Search</label><div class="primary-nav__search-bar"><input id="sidebar-search" type="text" name="q" placeholder="Search" class="primary-nav__search-input" data-behavior="search"></div><button type="submit" class="primary-nav__search-btn icon icon__search--black"></button></form></div><div class="primary-nav__search-results"><div class="primary-nav__search-results__inner"><div class="search-results"><ul class="search-results__inner" id="search-results"></ul></div></div></div><ul class="primary-nav__list" data-behavior="child_navs"><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/the-sciences/">The Sciences</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/mind/">Mind</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/health/">Health</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/tech/"> Tech</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/sustainability/">Sustainability</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/education/">Education</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/video/">Video</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/podcasts/">Podcasts</a></li><li class="primary-nav__list__item"><a href="https://blogs.scientificamerican.com/">Blogs</a></li><li class="primary-nav__list__item"><a href="https://www.scientificamerican.com/store/">Store</a></li></ul><div class="primary-nav__drawer-utils"><a href="https://www.scientificamerican.com/store/subscribe/scientific-american-magazine/?WT.ac=SA_ecom_SA_Nav_Subscribe_white" class="btn btn--small">Subscribe</a><a href="https://www.scientificamerican.com/magazine/sa/2017/08-01/" class="btn btn--small">Current Issue</a><ul class="primary-nav__drawer-utils__list" data-behavior="child_navs"><li class="primary-nav__drawer-utils__list__item"><a href="https://www.scientificamerican.com/store/shopping-cart/">Cart</a></li><esi:remove><li class="primary-nav__drawer-utils__list__item"><a href="https://www.scientificamerican.com/my-account/login/">Sign In</a></li><li class="primary-nav__drawer-utils__list__item"><a href="https://www.scientificamerican.com/my-account/register/">Register</a></li></esi:remove><!--esi<esi:include src="/sciam/esi-my-account.cfm?context=mobile&responsive=true" />--></ul><ul class="primary-nav__drawer-utils__social"><li class="primary-nav__drawer-utils__social__item"><a href="https://www.facebook.com/ScientificAmerican"><span class="icon icon--subtle icon__facebook--black">Facebook</span></a></li><li class="primary-nav__drawer-utils__social__item"><a href="https://twitter.com/sciam"><span class="icon icon--subtle icon__twitter--black">Twitter</span></a></li><li class="primary-nav__drawer-utils__social__item"><a href="https://plus.google.com/+scientificamerican/"><span class="icon icon--subtle icon__googleplus--black">Google+</span></a></li><li class="primary-nav__drawer-utils__social__item"><a href="https://www.youtube.com/user/SciAmerican"><span class="icon icon--subtle icon__youtube--black">YouTube</span></a></li><li class="primary-nav__drawer-utils__social__item"><a href="http://rss.sciam.com/ScientificAmerican-Global"><span class="icon icon--subtle icon__rss--black">RSS</span></a></li></ul></div></div></div>	</nav></div></div><main id="sa_body" class="panel main-area" data-swiftype-name="body" data-swiftype-type="text" data-swiftype-index="true"><div class="container">	<div class="landing-header container"><h1 class="tx_store-nav-title">Register</h1></div><div class="landing-main container"><script type="text/javascript" src="/sciam/jquery/jquery.js"></script>
+<script type="text/javascript" src="/sciam/includes/themes/responsive/templates/inc/assets/js/theme/jquery.simplemodal.1.4.4.min.js"></script>
+<script type="text/javascript" src="/sciam/includes/themes/responsive/templates/inc/assets/js/theme/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/sciam/includes/themes/responsive/templates/inc/assets/js/theme/slider.js"></script>
+
+
+
+<h2 class="hr-titles"><span>Create An Account</span></h2>	
+
+<form action="?s=1#checkout" method="post" id="createAccountForm" novalidate="novalidate">
+	<input type="hidden" name="slatAction" value="public:account.create,public:account.login">
+	<input type="hidden" name="sRedirectURL" value="/my-account/">
+	<input type="hidden" name="cdsAccountID" id="cdsAccountID" value="">
+	<input type="hidden" name="createAuthenticationFlag" value="1">
+	<input type="hidden" name="List_OptIn_Internal" value="1">
+	
+	
+	<div>
+		<input type="hidden" name="useProtect" value="true">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+<div style="display:none" class="cffm_applied"></div>
+
+
+
+
+
+
+	
+	<input id="fp597710F3-2A97-44E1-89CEC28E5F775D64" type="hidden" name="formfield1234567891" class="cffp_mm" value="">
+
+
+
+	
+	<input id="fp8C57D373-6CE4-48A4-987A95101BD9E2DF" type="hidden" name="formfield1234567892" class="cffp_kp" value="">
+
+
+	
+	
+	
+	
+	
+	
+	
+	<input id="fp31911366-BE1F-46A9-BAB9801B7CEAF708" type="hidden" name="formfield1234567893" value="39911010,19952820">
+
+
+
+	
+	<label style="display:none">Leave this field empty <input id="fp8D943C0A-807F-4327-A3EA89DCE69FB873" type="text" name="formfield1234567894" value=""></label>
+	</div>
+
+	<div class="my-account__constrain-width">
+		<div class="my-account__grid">
+ <div class="grid__col medium-1-2 large-up-2-2">
+				
+				<div class="control-label my-account__profile__field-item__label" style="color:red;padding-bottom:20px;">
+					
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+ 	
+ <div class="my-account__preference-option my-account__preference-option--checkbox my-account__preference-option--singleline">
+ <label>
+ <input type="checkbox" id="printSubscriberOption">
+ <span class="my-account_create_already_subscribed">I am already a Scientific American subscriber.</span>
+ </label>
+ </div>
+ 
+ 
+ <div class="cartSectionBodyRow my-account__module" id="alreadySubscriberBlock" style="display:none">
+ <span>Subscribers: enter your account number</span><span class="helptext" id="showSubscriptionInfo" style="cursor:pointer;"><strong>(Where can I find my print account number?)</strong></span>
+ <div id="subscriptionInfoImage" style="display:none">
+ 			<img src="/sciam/includes/themes/responsive/templates/inc/assets/images/global/subscription-info.jpg">
+ 		</div>
+ <div class="accountNumberForm">
+ 
+ <label class="control-label my-account__profile__field-item__label" for="accountNumber"></label>
+ <div class="controls my-account__grid">
+ 	
+ 	<div class="my-account__grid__col">
+ 		<div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ 			<label class="control-label my-account__profile__field-item__label" for="accountNumber">Account Number:</label>
+ 	<input type="text" name="accountNumber" id="accountNumber" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input">
+ </div>
+ </div>
+ <div class="my-account__grid__col">
+ 	<div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ 			<label class="control-label my-account__profile__field-item__label" for="lookupLastName">Last Name:</label>
+ 		<input type="text" name="lookupLastName" id="lookupLastName" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input">
+ 	</div>
+ </div>
+ <div class="my-account__grid__col">
+ 	<a class="btnLookup btn btn--small" id="lookupSubscriberDetails">Lookup Account</a>
+ <img id="lookupLoading" src="/sciam/includes/themes/sciam/images/global/loader.gif" style="display:none">
+ <div id="accountNumberMessage"></div>
+ </div>
+ 
+ </div>
+ </div>
+ 
+ <div id="accountNumberMessage"></div>
+ </div>
+ </div>
+ <div class="my-account__grid__col"></div>
+ 
+ </div>
+		<div class="my-account__grid">
+		
+			<div class="my-account__grid__col">		
+				
+				<div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+					<label class="control-label my-account__profile__field-item__label" for="firstName">First Name:</label>
+					
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+				 <div class="controls">
+					 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="text" name="firstName" value="" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input" tabindex="1" id="firstName">
+			
+		
+
+
+
+
+				 </div> 
+				</div>
+			</div>
+
+			<div class="my-account__grid__col">
+			 	
+ <div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ <label class="control-label my-account__profile__field-item__label" for="lastName">Last Name:</label>
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="controls">
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="text" name="lastName" value="" class="medium required my-account__profile__field-item--type-text__input" tabindex="2" id="lastName">
+			
+		
+
+
+
+
+ </div>
+ </div>
+ </div>
+
+			<div class="my-account__grid__col">
+			 
+ <div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ <label class="control-label my-account__profile__field-item__label" for="emailAddress">Email Address:</label>
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="controls">
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="text" name="emailAddress" value="" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input emailAddress" tabindex="3" id="emailAddress">
+			
+		
+
+
+
+
+ </div>
+ </div>
+ </div>
+
+ <div class="my-account__grid__col">		
+ 
+ <div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ <label class="control-label my-account__profile__field-item__label" for="emailAddressConfirm">Confirm Email Address:</label>
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="controls">
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="text" name="emailAddressConfirm" value="" class="medium my-account__profile__field-item__input my-account__profile__field-item--type-text__input emailAddressConfirm" tabindex="4" id="emailAddressConfirm">
+			
+		
+
+
+
+
+ </div>
+ </div>
+ </div>
+
+			<div class="my-account__grid__col">				
+				
+ <div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ <label class="control-label my-account__profile__field-item__label" for="password">
+ Password:
+ <span class="helptext">(Minimum 8 characters)</span>
+ </label>
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="controls">
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="password" name="password" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input password" autocomplete="off" tabindex="5" id="password">
+			
+		
+
+
+
+
+ </div>
+ </div> 
+			</div>
+
+			<div class="my-account__grid__col">				
+				
+				<div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+					<label class="control-label my-account__profile__field-item__label" for="passwordConfirm">Confirm Password:</label>
+					
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="controls">
+						
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="password" name="passwordConfirm" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input passwordConfirm" autocomplete="off" tabindex="6" id="passwordConfirm">
+			
+		
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+			<div class="my-account__grid__col">
+				<div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+				</div>
+			</div>
+
+			<div class="my-account__grid__col">
+				
+ <div class="control-group my-account__profile__field-item my-account__profile__field-item--type-text">
+ <label class="control-label my-account__profile__field-item__label" for="screenName">
+ Screen Name: <span class="helptext small">(This will be displayed when commenting)</span>
+ </label>
+ 
+ <div class="controls ">
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="text" name="screenName" value="" class="medium required my-account__profile__field-item__input my-account__profile__field-item--type-text__input screenName" tabindex="7" id="screenName">
+			
+		
+
+
+
+
+ </div>
+ </div>
+			</div>
+
+			<div class="grid__col medium-1-2 large-up-2-2 my-account_section_dotted">
+			</div>
+
+ 
+ 		<div class="cartSectionBodyRow">
+ 			<div class="control-group my-account__opt-in-preferences">
+ 				<div class="controls radioGroup emailOffers">
+ 					<div class="radioSet">
+ 						<label class="radio inline my-account_email_radio_text"><input type="radio" name="List_OptIn_External" id="List_OptIn_External0" value="0" tabindex="8"><b>No</b></label>
+ 						<label class="radio inline my-account_email_radio_text"><input type="radio" name="List_OptIn_External" id="List_OptIn_External1" value="1" tabindex="8"><b>Yes</b></label>
+ 					 <span id="emailOffersText" class="my-account_email_radio_text">I would like to receive offers emailed by Scientific American on behalf of selected partners </span>
+ 					</div>
+ 				</div>
+ 				<div class="control-group checkboxGroup my-account_toc" id="termsAndConditions">
+ <div class="controls my-account__preference-option--checkbox my-account__preference-option--singleline">
+ 
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			
+				<input type="hidden" name="acceptedTC" value="">
+				<input type="checkbox" name="acceptedTC" value="1" class="required" tabindex="9" id="acceptedTC">
+			
+		
+
+
+
+
+ <label class="accountTC my-account_email_radio_text" for="acceptedTC">I have read and agree to the <a class="labelLink my-account__profile__field-item my-account__profile__field-item--type-text my-account__profile__field-item__label" href="/page/terms-of-use/" id="tcModal">Terms of Use</a></label>
+ </div>
+ </div>
+ 			</div>
+ 		</div>	
+
+ <div id="mD025AA78-E43B-42A3-B4B6FFB41590EEB6" class="g-recaptcha-container" data-sitekey="6LdHQw0UAAAAADNIEory75HQOG5XWUWMAq1grBu3" data-theme="light" data-type="image" data-widgetid="0"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdHQw0UAAAAADNIEory75HQOG5XWUWMAq1grBu3&amp;co=aHR0cHM6Ly93d3cuc2NpZW50aWZpY2FtZXJpY2FuLmNvbTo0NDM.&amp;hl=en&amp;type=image&amp;v=r20170731114946&amp;theme=light&amp;size=normal&amp;cb=4r5dts11x2by" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div><noscript>&lt;div class="alert alert-info"&gt;&lt;p&gt;Please enable JavaScript to use this form.&lt;/p&gt;&lt;style&gt;button[type="submit"],input[type="submit"]{display:none !important;}&lt;/style&gt;</noscript>
+ 			
+ 		
+ 		<div class="control-group submit-group">
+ 			<div class="controls">
+ 				<div class="my-account__profile__form-controls">
+ 				 <button type="submit" class="btn btn--cart btn--left" id="submitCreateAccount" tabindex="10" onmousedown="dcsMultiTrack('DCS.dcssip','www.scientificamerican.com','DCS.dcsuri','?s=1#checkout','WT.action','ecom_create account','WT.ndl','51','WT.dl','51');">Create My Account</button>
+ 			 </div>
+ 			</div>
+ 		</div>	
+		</div>
+	</div>																	
+</form>
+
+<style>
+	.my-account_create_already_subscribed {
+		font-weight:lighter;
+		font-style:italic;
+	}
+	.helptext {
+		font-size: 11px;
+ font-weight: lighter;
+ padding-left: 5px;
+	}
+	.my-account_email_radio_text {
+		padding-left: 7px;
+		font-weight:lighter;
+		font-size: 13px;
+	}
+	.my-account_toc {
+		padding-left: 7px;
+	}
+	.grid__col {
+ padding-left: 30px;
+	}
+	.error {
+ font-size:small;
+ font-style:italic;
+ color:red;
+ font-weight:bold;
+ }
+	.my-account_section_dotted {
+		width:100%; 
+		border-top: 2px dotted #191919; 
+		margin-top:30px; 
+		margin-bottom:30px; 
+		font-weight:lighter
+	}
+	
+</style>
+<script type="text/javascript">
+ if (window.location.hash == "#forgot") {
+ jQuery('form#forgotpass').show();
+ }
+ 
+ jQuery('a#noSocial').click(function(){
+ jQuery('div#noSocialDek').toggle();
+ });
+ 
+ 
+</script>
+
+<br clear="all">
+
+<div id="overlay" style="display: none;"></div>
+<div id="tcOverlay" style="display: none;">
+	<div class="overlayClose" style="text-align: right;">
+		<a class="simplemodal-close">X</a>	
+	</div>
+	<div id="tcOverlayContent">
+		<div class="mura-object mura-async-object" data-object="component" data-objectid="Terms and Conditions - Popup" data-instanceid="77D4AB99-2A8B-4E52-A3EF995F5354DC23" data-render="server" data-async="false" data-objecticonclass="mi-clone" data-objectname=""><div class="mura-object-content"><p></p><p><br>
+	<strong>Terms of Use</strong><br>
+	&nbsp;<br>
+	Welcome to Scientific American.com, a service of Scientific American, a division of Nature America, Inc. Please read these Terms of Use. By using this website, you accept all the terms and conditions below.&nbsp;You may wish to print this page for your reference.<br>
+	&nbsp;<br>
+	<strong>I. General Provisions</strong><br>
+	&nbsp;<br>
+	ScientificAmercan.com includes both free and fee-based services.&nbsp;This document outlines Terms of Use for both free and fee-based services that you may purchase in the future.<br>
+	Certain subscription plans offered on ScientificAmerican.com are offered to individual customers for their personal use only.&nbsp;Schools, libraries, colleges, universities, hospitals, government agencies, businesses or other organizations requiring enterprise-wide access by multiple users to Scientific American digital content should request pricing for a Site License.&nbsp;&nbsp;<br>
+	Email:&nbsp; institutions@nature.com.&nbsp;<br>
+	Phone:&nbsp; US/Canada (800) 221-2123.&nbsp;<br>
+	International: 44(0)20 7743-4759.<br>
+	&nbsp;<br>
+	The Web is an evolving medium; we may change these Terms of Use from time to time. By continuing to use the service after we post any such changes, you accept the Terms of Use, as modified. We may change, restrict access to, suspend, or discontinue operation of this service, or any portion of this service, at any time.<br>
+	&nbsp;<br>
+	Scientific American respects the privacy of our users. Please see our Privacy Policy and Use of Cookies.&nbsp;The Terms and Conditions of the Privacy Policy may be changed from time to time, by Scientific American at its discretion, and are incorporated herein and included in this agreement.<br>
+	We invite you to bring to our attention any material on this website that you believe to be inaccurate. Please forward a copy of the material to our Webmaster at webmaster@sciam.com, along with an explanation of the error.<br>
+	&nbsp;<br>
+	<strong>II. &nbsp;Free Services on ScientificAmerican.com</strong><br>
+	&nbsp;<br>
+	Scientific American.com features both free and fee-based content services.&nbsp;Visit our site several times a day to stay abreast of “The Science that Matters.”&nbsp; Non-registered site visitors have limited access to site content and features.&nbsp;Visitors are encouraged to create an account (“register”) on ScientificAmerican.com to take advantage of additional free content and services, including the ability to comment on articles and features, and subscribe to free newsletters.<br>
+	&nbsp;<br>
+	<strong>A) Site Registration</strong><br>
+	&nbsp;<br>
+	When you create an account (“register”) on ScientificAmerican.com, you become eligible for additional content and services.&nbsp;You will be asked to provide your first and last name, your email address (subject to verification) and a password.&nbsp;You will also be asked to create a screen name.&nbsp;The screen name will be displayed if you choose to comment on an article on ScientificAmerican.com.&nbsp;You will use your email address and password to sign on to ScientificAmerican.com.&nbsp;The password you create is for your individual use only.&nbsp;You are solely responsible for maintaining the confidentiality of any password you use to access either free- or fee-based services, and agree that Scientific American will have no obligations with regarding thereto.<br>
+	&nbsp;<br>
+	As a registered user, you are eligible for free newsletters and announcements of special offers, new products and services from Scientific American.&nbsp;You agree to receive notifications, special offers, and announcements from Scientific American by email.<br>
+	&nbsp;<br>
+	Site registration is required to purchase fee-based products and services on ScientificAmerican.com<br>
+	&nbsp;<br>
+	<strong>III. Fee-Based Products and Services</strong><br>
+	&nbsp;<br>
+	Scientific American offers a variety of special editions, archival issues, eBooks, print subscriptions, digital subscriptions and print-digital subscriptions on ScientificAmerican.com.&nbsp;This section outlines the Terms and Conditions for the purchase of these products and services.<br>
+	&nbsp;<br>
+	<strong>A) &nbsp;Print Subscriptions</strong><br>
+	&nbsp;<br>
+	Print subscriptions to Scientific American or Scientific American Mind are offered on an annual basis, comprising 12 monthly issues for Scientific American or 6 bi-monthly issues for Scientific American Mind.&nbsp;Print-only subscriptions exclude access to gated feature content (“articles behind the pay wall”) on ScientificAmerican.com.&nbsp;Subscription plans priced at 12 issues for $34.99 and higher for Scientific American and 6 issues for $24.95 and higher for Scientific American include access to the Scientific American Tablet Edition for iPad or the Scientific American Mind Tablet Edition for iPad.&nbsp;Non qualifying subscription plans may be upgraded.&nbsp;Please call customer service for more information at 800 333-1199.<br>
+	&nbsp;<br>
+	1. Continuous Service Guarantee<br>
+	Print subscriptions are sold on a continuous service basis.&nbsp;You authorize Scientific American and/ or Scientific American Mind to charge your credit card for the renewal price in effect at the end of your subscription term, and annually thereafter, unless you tell us to stop.&nbsp; You may cancel at any time by contacting customer service.&nbsp;You will receive a refund on all unprocessed issues.&nbsp;If your credit card cannot be charged, you will be invoiced.<br>
+	&nbsp;<br>
+	<strong>B)&nbsp; Digital Subscription Plans</strong><br>
+	&nbsp;<br>
+	Scientific American offers a variety of digital subscription plans for Scientific American and Scientific American Mind.&nbsp;Digital subscription plans to Scientific American and Scientific American Mind are priced based on the depth of archival content included in the subscription plan.&nbsp;With the exception of the Scientific American All Access Subscription Plan with Full Archive, archival entitlements are offered on a rolling basis.&nbsp;This means that with each renewal term, archival entitlements are decremented by one year.&nbsp;Example:&nbsp;you select a Scientific American digital subscription that includes a four-year rolling archive.&nbsp;Your subscription starts with the January 2014 issue.&nbsp;Your archival entitlement includes the January 2009 to the December 2012 issue (4 years).&nbsp; For your first renewal term, beginning with the January 2015 issue, your archival entitlement includes the January 2010 to the December 2013 issue (4 years).<br>
+	&nbsp;<br>
+	1.&nbsp;Digital Subscription Formats<br>
+	Scientific American and Scientific American Mind Digital Subscriptions provide flexibility.&nbsp;Digital subscribers may read feature articles directly on ScientificAmerican.com provided that they are logged-in.&nbsp;They may also download PDF’s of issues included in their subscription.&nbsp;Digital subscribers are also entitled to the Scientific American and/or Scientific American Mind Tablet Edition(s) for iPad for issues included in the non-archive portion of their subscriptions.<br>
+	&nbsp;<br>
+	Archival content is not available in all digital formats (Browser-based, PDF, Tablet Edition).&nbsp;Features published in 2005 and later may be viewed in a web browser on ScientificAmerican.com (provided they are included in the customers Subscription Plan).&nbsp;For archival material published prior to 2005, a PDF must be downloaded from ScientificAmerican.com. &nbsp; &nbsp;<br>
+	&nbsp;<br>
+	Exclusions<br>
+	Scientific American digital subscriptions exclude Scientific American Mind paid content.&nbsp;Scientific American Mind digital subscriptions exclude Scientific American paid content.&nbsp;&nbsp;&nbsp;&nbsp;<br>
+	&nbsp;<br>
+	2.&nbsp;&nbsp;Digital Subscription Continuous Service Guarantee<br>
+	Digital subscriptions are sold on a continuous service basis.&nbsp;You authorize Scientific American and/ or Scientific American Mind to charge your credit card for the renewal price in effect at the end of your subscription term, and annually thereafter, unless you tell us to stop.<br>
+	&nbsp;<br>
+	3.&nbsp;Digital Subscription Cancellation Policy<br>
+	Digital subscriptions may be cancelled within 5 business days of order by contacting customer service.&nbsp;A refund for 11/12ths of the subscription price will be issued.&nbsp;Renewal subscriptions may be cancelled within 30 days of the renewal date.&nbsp;A refund for the un-served portion of the subscription will be extended.<br>
+	&nbsp;<br>
+	<strong>C)&nbsp;Print/Digital Combination (“Bundle”) Subscription Plans&nbsp;</strong><br>
+	&nbsp;<br>
+	1.&nbsp;Print/Digital Subscription Cancellation Policy<br>
+	Print/Digital Subscription Plans are governed by the same Terms and Conditions as Digital subscriptions with respect to cancellation policies.Subscriptions may be cancelled within 5 days of order. A refund for 11/12ths of the subscription price will be issued.Renewal subscriptions may be cancelled within 30 days of the renewal date.A refund for the un-served portion of the subscription will be extended.<br>
+	&nbsp;<br>
+	2. Print/Digital Subscription Continuous Service Guarantee<br>
+	Print/Digital Subscriptions are sold on a continuous service basis.&nbsp;You authorize Scientific American and/ or Scientific American Mind to charge your credit card for the subscription price then in effect at start of each renewal term at the price then in effect, unless you tell us to stop.<br>
+	&nbsp;<br>
+	3. Synching of print/digital subscription plan service<br>
+	The digital component of a print/digital subscription plan begins with the digital issue that is active at the time your order is placed. In the event that we must future start the print component of your subscription plan because we are out of inventory on an issue, your digital content entitlements will be synched with the expire issue of the print component with your subscription. Example: Your purchase a 12-issue print/digital subscription plan.Your digital entitlements start with the January 2014 issue. &nbsp;We are unable to start the print component of your subscription until the February 2014 issue.&nbsp;Your digital entitlements are extended through January 2015 issue rather than expiring with the December 2014 issue. This policy ensures that customers receive 12 months of synched print/digital service.<br>
+	&nbsp;<br>
+	<strong>D)&nbsp; Single Issue Purchases, Special Collections, and eBooks</strong><br>
+	&nbsp;<br>
+	The purchase of a current or archival issue of Scientific American, Scientific American Mind, a special collection, including Scientific American Classics entitles the customer to a PDF-download from ScientificAmerican.com.&nbsp;Browser-based access is available for issues of Scientific American and Scientific American Mind published later than 2005.&nbsp;Browser based access is not available for Scientific American Classics, Scientific American Briefings, special collections or anthologies.&nbsp;The purchase of a single issue or special collection from ScientificAmerican.com excludes any interactive Tablet editions available for purchase on iTunes, Amazon.com or other online marketplaces.<br>
+	Scientific American offers a variety of eBooks, which are available for purchase on ScientificAmerican.com; iTunes and Amazon.com.&nbsp;eBook purchases are for personal use only.&nbsp; Purchases of eBooks from Amazon.com or iTunes are subject to the Terms and Conditions of those online retailers.<br>
+	Single issue digital sales are final.<br>
+	&nbsp;<br>
+	<strong>E)&nbsp;Other Products and Services</strong><br>
+	&nbsp;<br>
+	Scientific American may offer other products and services on ScientificAmerican.com, including merchandise, continuing education courses through NYU Poly and travel programs through our travel partner, Insight Cruises. Unless the product or service offered specifically references the inclusion of fee-based content, the purchase of any other product or service on ScientificAmerican.com excludes any entitlement to fee-based digital or print content.<br>
+	&nbsp;<br>
+	<strong>F)&nbsp;Service and Promotional Emails</strong><br>
+	&nbsp;<br>
+	Consumers who purchase the fee-based products and services agree to receive email communications from Scientific American in connection with providing the fee-based Services ("service emails"). The service emails may include account related billing information, renewal information, and new issue/content availability notifications.&nbsp;Additionally, consumers who purchase fee-based services agree to receive announcements of promotions, products and services from Scientific American by email. Please visit “My Account” to modify your email preferences.<br>
+	&nbsp;<br>
+	<strong>IV. Fee-Based Service Charges</strong><br>
+	&nbsp;<br>
+	Certain features of this site are available only through the purchase of individual issues or a digital&nbsp;subscription or print/digital subscription plan&nbsp;("Fee-Based Services").<br>
+	&nbsp;<br>
+	A) You agree to pay, (by using a valid credit card accepted by Scientific American) the subscription charges set forth on the site, applicable taxes and other charges incurred on your account in order to access Fee-Based Services. &nbsp;Scientific American reserves the right to increase fees, surcharges, and site subscription fees, or to institute new fees at any time, upon reasonable notice by email or posted in advance on this Site. Scientific American will automatically charge your credit card for renewal of your subscription plan. The renewal charge will be the current published rate at the time of renewal for the term of your subscription. If you subscribed through a special offer, please refer to the original offer's terms and conditions. In the event Scientific American is not able to charge your account, we reserve the right to invoice you, or terminate your access to the fee-based Services.<br>
+	&nbsp;<br>
+	B) &nbsp;In addition to the charges set forth above, you are responsible for all charges associated with connecting to the site, including without limitation all telephone access lines (including long-distance charges, if applicable), telephone, cellular data charges, and computer equipment and any service fees necessary to access the Fee-Based Services.<br>
+	&nbsp;<br>
+	C)&nbsp;&nbsp;You agree to promptly update your registration data under "My Account" in the event of any known or suspected unauthorized use of your subscription, or any known or suspected breach of security, including loss, theft, or unauthorized disclosure of your password or credit card information. In the event of any known or suspected unauthorized use of your subscription or a breach of security, you will remain liable for any unauthorized use of your subscription until you update your registration data. If your credit card expires, is canceled, or lost, immediately update your registration data under "My Account".<br>
+	&nbsp;<br>
+	D) &nbsp;Age restrictions<br>
+	You represent and warrant to Scientific American that you are at least thirteen (13) years of age and you possess the legal right and ability to enter into this agreement and to use the site in accordance with this agreement.<br>
+	&nbsp;<br>
+	E)&nbsp; Financial responsibility<br>
+	You agree not to assign transfer or sublicense your rights as a user to fee-based services.&nbsp;You agree to be financially responsible for all usage or activity on your fee-based services account.<br>
+	&nbsp;<br>
+	<strong>V. &nbsp;Accuracy, Completeness And Timeliness Of The Site</strong><br>
+	&nbsp;<br>
+	The material that appears on Scientific American's site is for informational purposes only. Despite our efforts to provide useful and accurate information, errors may appear from time to time. Before you act on information you've found on our site, you should confirm any facts that are important to your decision. We are not responsible if information we make available on this site is not accurate, complete or current. Any reliance on the material on this site is at your own risk. This site may contain certain historical information. Historical information necessarily is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on the site. You agree that it is your responsibility to monitor changes to the site.<br>
+	&nbsp;<br>
+	<strong>VI.&nbsp;Ownership and Permissions</strong><br>
+	&nbsp;<br>
+	This site and the contents thereof (including but not limited to software, interfaces, files, graphics, text and data found on the site) is the property of and owned by Scientific American or its licensors and is protected by copyright, trademark and other laws of the United States and other countries. Scientific American grants you a revocable license to display and electronically copy, download and print hard copy versions of the material contained on the site for your personal and noncommercial use, provided you do not modify or delete any copyright, trademark or other proprietary notice that appears on the material you copy, download or print. No other use of any of the contents of the site is licensed, and you agree that you will not make any other use of the material on the site, including but not limited to the copying, modification, distribution, transmission, performance, broadcast, publication, licensing, reverse engineering, transfer or sale of, or the creation of derivative works from, any of the contents of the site. Requests for permission to reproduce or distribute materials found on our website should be sent to Scientific American, a division of Nature America, Inc., Permissions Department, One New York Plaza, Suite 4500, New York, NY 10004-1562&nbsp;or randp@sciam.com.<br>
+	&nbsp;<br>
+	No Framing. Without the prior written permission of Scientific American, you agree that you will not frame or establish inline links to any of the content of our website, nor may you incorporate into another website or other product or service any intellectual property of Scientific American or any of its licensors. Requests for permission to frame, or to establish inline links to, our content may be sent to the Permissions Department, at the email or physical address above.<br>
+	&nbsp;<br>
+	Trademarks. This site features trademarks, service marks and logos that are the property of Scientific American and/or its licensors. The site also may include trademarks, service marks or logos of other third parties. All of these trademarks, service marks and logos are the property of their respective owners, and you agree not to use them in any manner without the prior written permission of the applicable owner.<br>
+	&nbsp;<br>
+	<strong>VII. &nbsp;Materials You Submit</strong><br>
+	&nbsp;<br>
+	This section applies to any materials you submit to or through this website, including, without limitation, any comment you post to the site and any question you submit to the "Ask the Experts" portion of the site. You acknowledge that you are responsible for any submission you make, including the legality, reliability, appropriateness, originality and copyright of any such material. You represent, warrant, and agree you own all rights to the content you post or otherwise control sufficient rights to grant the rights you grant by these Terms of Use; that the content is accurate; that use of the content you supply does not violate this policy and will not cause injury to any person or entity; that you will not upload to, distribute or otherwise publish through this site any content that (i) is libelous, defamatory, obscene, threatening, invasive of privacy or publicity rights, infringing on intellectual property rights, abusive, illegal or otherwise objectionable, (ii) may constitute or encourage a criminal offense, violate the rights of any party or otherwise give rise to liability or violate any law, or (iii) may contain software viruses, political campaigning, chain letters, mass mailings, or any form of "spam." If you submit any video content through this site, you further represent, warrant and agree that you have the written consent or permission of each identifiable individual in such content to use their name and likeness and grant the rights you grant in these Terms of Use. You may not use a false email address, impersonate any person or entity, or otherwise mislead as to the origin of any content. You may not upload commercial content onto the site. We reserve the right (but are not under an obligation) to remove or edit any content you provide.<br>
+	&nbsp;<br>
+	If you do submit material, and unless we indicate otherwise, you grant Scientific American and its affiliates a nonexclusive, royalty-free, perpetual, irrevocable, transferable and fully sub-licensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, display and perform such content throughout the world in any media now known or hereafter invented. You grant Scientific American and its affiliates the right to use the name you submit in connection with such content, if they so choose. &nbsp;<u>You will retain any ownership rights you may have in the materials you submit,&nbsp;subject to the licenses granted to Scientific American in these Terms of Use</u>. You also understand and agree that users of this site who may access the content you submit are granted a non-exclusive license to access, use, reproduce, distribute, display and perform your content.<br>
+	&nbsp;<br>
+	<strong>Waiver:&nbsp; </strong>By submitting content to this site, you waive, and agree not to bring at any time, any claims of any type whatsoever against Scientific American or its affiliates, or their officers, directors, employees, contractors, agents, licensors or suppliers in any way arising from or relating to the submitted content, including without limitation any claims asserting: (a) infringement of rights of publicity or misappropriation of likeness or image; (b) invasion of privacy; (c) false light (such as any allegedly false or misleading portrayal of you); (d) infliction of emotional distress (whether intentional or negligent); (e) breach of contract; (f) copyright or trademark infringement; (g) defamation; (h) fraud; or (i) false designation of origin.<br>
+	&nbsp;<br>
+	<strong>VIII.&nbsp;Intellectual Property Rights of Others</strong><br>
+	&nbsp;<br>
+	We respect the intellectual property rights of others, and we request that our visitors do the same. If you think your work has been copied or used in a manner that constitutes copyright infringement, you may notify our copyright agent, who can be reached at:<br>
+	&nbsp;<br>
+	175 Fifth Avenue<br>
+	New York, NY 10010<br>
+	Attention: Legal Department<br>
+	e-mail: copyrightagent@hbpub.com<br>
+	&nbsp;</p>
+
+<p>Please include all of the following in your notification:</p>
+
+<ul>
+	<li>a physical or electronic signature of the person authorized to act on behalf of the owner of an exclusive copyright that is allegedly infringed;</li>
+	<li>a description of the copyrighted work you claim has been infringed;</li>
+	<li>a description of where the material you claim is infringing is located on the site;</li>
+	<li>your address, telephone number, email address and all other information reasonably sufficient to permit us to contact you;</li>
+	<li>a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent or the law; and</li>
+	<li>a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.&nbsp;</li>
+</ul>
+
+<p>&nbsp;<br>
+	<strong>IX. Disclaimer</strong><br>
+	&nbsp;<br>
+	YOUR USE OF THIS SITE IS AT YOUR SOLE RISK. THE SITE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE RESERVE THE RIGHT TO RESTRICT OR TERMINATE YOUR ACCESS TO THE SITE OR ANY FEATURE OR PART THEREOF AT ANY TIME. SCIENTIFIC AMERICAN EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE AND ANY WARRANTIES THAT MATERIALS ON THE SITE ARE NONINFRINGING; THAT ACCESS TO THE SITE WILL BE UNINTERRUPTED OR ERROR-FREE; THAT THE SITE WILL BE SECURE; THAT THE SITE OR THE SERVER THAT MAKES THE SITE AVAILABLE WILL BE VIRUS-FREE; OR THAT INFORMATION ON THE SITE WILL BE COMPLETE, ACCURATE OR TIMELY. IF YOU DOWNLOAD ANY MATERIALS FROM THIS SITE, YOU DO SO AT YOUR OWN DISCRETION AND RISK. YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIALS. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM SCIENTIFIC AMERICAN OR THROUGH OR FROM THE SITE SHALL CREATE ANY WARRANTY OF ANY KIND. SCIENTIFIC AMERICAN DOES NOT MAKE ANY WARRANTIES OR REPRESENTATIONS REGARDING THE USE OF THE MATERIALS ON THIS SITE IN TERMS OF THEIR COMPLETENESS, CORRECTNESS, ACCURACY, ADEQUACY, USEFULNESS, TIMELINESS, RELIABILITY OR OTHERWISE.<br>
+	&nbsp;<br>
+	IN CERTAIN STATES, THE LAW MAY NOT PERMIT THE DISCLAIMER OF CERTAIN WARRANTIES, SO THE ABOVE DISCLAIMER MAY NOT APPLY TO YOU, IN WHOLE OR IN PART. IN SUCH CASES, THE DISCLAIMER WILL APPLY TO YOU TO THE EXTENT PERMITTED BY APPLICABLE LAW.<br>
+	&nbsp;<br>
+	<strong>X. Limitation of Liability</strong><br>
+	&nbsp;<br>
+	TO THE FULLEST EXTENT PERMITTED UNDER APPLICABLE LAW, YOU UNDERSTAND AND AGREE THAT NEITHER SCIENTIFIC AMERICAN NOR ANY OF ITS AFFILIATES OR THIRD PARTY CONTENT PROVIDERS SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, PUNITIVE OR ANY OTHER DAMAGES OR LOST PROFITS RELATING TO OR RESULTING FROM YOUR USE OF OR INABILITY TO USE THIS SITE OR ANY OTHER SITE YOU ACCESS THROUGH A LINK FROM THIS SITE OR FROM ANY ACTIONS WE TAKE OR FAIL TO TAKE AS A RESULT OF EMAIL MESSAGES YOU SEND US. THESE INCLUDE DAMAGES FOR ERRORS, OMISSIONS, INTERRUPTIONS, DEFECTS, DELAYS, COMPUTER VIRUSES, YOUR LOSS OF PROFITS, LOSS OF DATA, UNAUTHORIZED ACCESS TO AND ALTERATION OF YOUR TRANSMISSIONS AND DATA, AND OTHER TANGIBLE AND INTANGIBLE LOSSES. THIS LIMITATION APPLIES REGARDLESS OF WHETHER THE DAMAGES ARE CLAIMED UNDER THE TERMS OF A CONTRACT, AS THE RESULT OF NEGLIGENCE OR OTHERWISE ARISE OUT OF OR IN CONNECTION WITH THE USE, INABILITY TO USE, OR PERFORMANCE OF THE INFORMATION, SERVICES, PRODUCTS OR MATERIALS AVAILABLE FROM THIS SITE, AND EVEN IF WE OR OUR REPRESENTATIVES HAVE BEEN NEGLIGENT OR HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, OR THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, ALL OR A PORTION OF THE ABOVE LIMITATION MAY NOT APPLY TO YOU.<br>
+	&nbsp;<br>
+	<strong>XI. Indemnification</strong><br>
+	&nbsp;<br>
+	You agree to indemnify, defend and hold harmless Scientific American and its affiliates, and their officers, directors, employees, contractors, agents, licensors and suppliers, from and against any and all losses, liabilities, expenses, damages and costs, including reasonable attorneys' fees and court costs, arising or resulting from any violation of these Terms of Use. If you cause a technical disruption of the site or the systems transmitting the site to you or others, you agree to be responsible for any and all losses, liabilities, expenses, damages and costs, including reasonable attorneys' fees and court costs, arising or resulting from that disruption.<br>
+	&nbsp;<br>
+	<strong>XII. Links</strong><br>
+	&nbsp;<br>
+	Scientific American may provide as a convenience to you, links to websites operated by other entities and persons, but makes no representations whatsoever about any other website which you may access through this one. Any link to a non-Scientific American website does not mean that Scientific American endorses or accepts any responsibility for the content, or the use of such Web site. If you use these sites, you do so at your own risk. Scientific American makes no warranty or representation regarding, and does not sponsor or endorse, any linked websites or the information or materials appearing thereon or any of products and services described thereon. Furthermore, links do not imply that Scientific American is affiliated or associated with, or that any linked site is authorized to use any trademark, trade name, logo, or copyright of Scientific American.<br>
+	&nbsp;<br>
+	<strong>XIII. &nbsp;Jurisdiction</strong><br>
+	&nbsp;<br>
+	Scientific American is organized under the laws of the State of New York in the United States of America, and this site is operated in the United States. The laws of the State of New York, without reference to the principles of conflicts of law thereof, govern these Terms of Use and your use of the site, and you irrevocably consent to the jurisdiction of the courts located in the City and State of New York for any action to enforce these Terms of Use. In the event of any legal action arising from or relating to these Terms of Use or your use of the site, you hereby waive the right to a jury trial. We recognize that it is possible for you to obtain access to this site from any jurisdiction in the world, but we have no practical ability to prevent such access. This site has been designed to comply with the laws of the State of New York and of the United States. If any material on this site, or your use of the site, is contrary to the laws of the place where you are when you access it, the site is not intended for you, and we ask you not to use the site. You are responsible for informing yourself of the laws of your jurisdiction and complying with them.<br>
+	&nbsp;<br>
+	<strong>XIV. Changes to These Terms of Use</strong><br>
+	&nbsp;<br>
+	We reserve the right, in our sole discretion, to change these Terms of Use at any time by posting revised terms on the site. It is your responsibility to check periodically for any changes we may make to these Terms of Use. Your continued use of this site following the posting of changes to these terms or other policies means you accept the changes.<br>
+	&nbsp;<br>
+	<strong>XV. Miscellaneous</strong><br>
+	&nbsp;<br>
+	If any provision of this agreement is unlawful, void or unenforceable, the remaining provisions of the agreement will remain in place. These Terms of Use constitute the entire agreement and understanding between you and Scientific American with respect to use of the website and the contents thereof, superseding all prior or contemporaneous communications. A printed version of these Terms of Use shall be admissible in judicial or administrative proceedings based on or relating to use of the website to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.<br>
+	&nbsp;<br>
+	<strong>XVI. How to Contact Us</strong><br>
+	&nbsp;<br>
+	If you have any questions or comments about these Terms of Use, please write us at:<br>
+	&nbsp;<br>
+	Scientific American<br>
+	c/o Holtzbrinck Publishing Holdings Limited Partnership<br>
+	175 Fifth Avenue<br>
+	New York, NY 10010<br>
+	Attention: Legal Department<br>
+	Thank you for visiting our site.</p><p></p></div></div>
+	</div>
+</div>
+
+<script>
+jQuery( document ).ready(function() {
+	
+	jQuery('#showSubscriptionInfo').click(function() {
+		jQuery('#subscriptionInfoImage').slideToggle('slow');
+	});
+ 
+ jQuery('#printSubscriberOption').click(function(){
+ jQuery('#alreadySubscriberBlock').toggle();
+ });	
+ 
+	jQuery('#lookupSubscriberDetails').click(function() {
+
+ jQuery("#lookupSubscriberDetails").hide();
+ jQuery('#lookupLoading').show();
+		
+		var accountLookupNumber;
+		accountLookupNumber = jQuery('#accountNumber').val();
+		var lookupLastName = jQuery('#lookupLastName').val();
+		
+		// Lookup
+		if (accountLookupNumber && lookupLastName) {
+			jQuery(this).toggleClass('progressSm');
+			
+			jQuery.ajax({
+				url: '/',
+				method: 'post',
+				data: {
+					slatAction: 'sciam:api.cdsaccountlookup',
+					cdsAccountID: accountLookupNumber,
+					lastName: lookupLastName,
+					noCDSQueryWhenLinkedFlag: true
+				},
+				dataType: 'json',
+				beforeSend: function (xhr) { xhr.setRequestHeader('X-Hibachi-AJAX', true) },
+				error: function( err ) {
+ jQuery('#lookupLoading').hide();
+					jQuery('#lookupSubscriberDetails').removeClass('progressSm');	
+					jQuery("#accountNumberMessage").show().addClass('error').html('An error occurred. Please try again later.');
+				},
+				success: function( result ) {
+					// Success
+					jQuery('#lookupSubscriberDetails').removeClass('progressSm');
+					
+					if(result.slatwallAccountExists) {
+						jQuery("#accountNumberMessage").show().addClass('error').html('This CDS account number is already associated with an account on Scientific American. Please sign in or contact sadigital@sciam.com for customer service.');
+ jQuery('#lookupLoading').hide();
+ jQuery("#lookupSubscriberDetails").show();
+					} else if(result.cdsAccountExists) {	
+						jQuery("#accountNumberMessage").show().removeClass().html('Your account will be linked.');
+						jQuery("#lookupSubscriberDetails").hide();
+ jQuery('#lookupLoading').hide();
+					
+						// NAME
+						var accountName = result.cdsAccount.name;
+						var accountFirstName = accountName.split(' ').slice(0, -1).join(' ');
+						var accountLastName = accountName.split(' ').slice(-1).join(' ');
+						
+						jQuery("#cdsAccountID").val(result.cdsAccount.accountNumber);
+						jQuery("#emailAddress").val(result.cdsAccount.email);
+						jQuery("#emailAddressConfirm").val(result.cdsAccount.email);
+						jQuery("#firstName").val(accountFirstName);
+						jQuery("#lastName").val(accountLastName);
+						
+						// CDS ACCOUNT NUMBER
+						/* console.log( result );
+						console.log( result.cdsAccount.accountNumber );
+						console.log( result.cdsAccount.name );
+						console.log( result.cdsAccount.email ); */
+					} else {
+						jQuery("#accountNumberMessage").show().addClass('error').html('An account with the information provided could not be found, please try again');
+ jQuery('#lookupLoading').hide();
+ jQuery("#lookupSubscriberDetails").show();
+					}
+				}
+			});		
+		}
+ else {
+ jQuery("#accountNumberMessage").show().addClass('error').html('Please enter both the account number and the last name');
+ jQuery('#lookupLoading').hide();
+ jQuery("#lookupSubscriberDetails").show();
+ }
+	});
+
+	jQuery.validator.addMethod("specialChars", function( value, element ) {
+ var regex = new RegExp("^[a-zA-Z0-9]+$");
+ var key = value;
+
+ if (!regex.test(key)) {
+ return false;
+ }
+ return true;
+ }, "Must be letters and numbers only");
+ 
+	jQuery("#createAccountForm").validate({
+		errorClass: "my-account__profile__field-item--type-text__input--error",
+ errorElement: "label",
+ errorPlacement: function(error, element) {
+ 	//console.log("error", error);
+ 	error.css("font-size", "small");
+ 	error.css("font-style", "italic");
+ 	error.css("color", "#EF2451");
+ 	error.css("font-weight", "bold");
+
+ if (element.attr("name") == "emailAddress" ){
+ error.insertAfter('label[for=emailAddress]').text();
+ }
+ if (element.attr("name") == "emailAddressConfirm" ){
+ error.insertAfter('label[for=emailAddressConfirm]').text();
+ }
+ if (element.attr("name") == "password" ){
+ error.insertAfter('label[for=password]').text();
+ }
+ if (element.attr("name") == "passwordConfirm" ){
+ error.insertAfter('label[for=passwordConfirm]').text();
+ }
+ if (element.attr("name") == "screenName" ){
+ error.insertAfter('label[for=screenName]').text();
+ }
+ if (element.attr("name") == "firstName" ){
+ error.insertAfter('label[for=firstName]').text();
+ }
+ if (element.attr("name") == "lastName" ){
+ error.insertAfter('label[for=lastName]').text();
+ }
+ if (element.attr("name") == "List_OptIn_External" ){
+ error.insertAfter('span[id="emailOffersText"]').text();
+ }
+ if (element.attr("name") == "acceptedTC" ){
+ error.insertAfter('label[for=acceptedTC]').text();
+ }
+ },
+		rules: {
+			screenName: {
+				required: true,
+				minlength: 6,
+				specialChars: true,
+				remote: {
+					url: '/?slatAction=sciam:api.usernameLookup',
+					type: "post",
+					dataType: 'json',
+					data: {
+						username: function() {
+							return jQuery(".screenName").val();
+						}							
+					},
+					beforeSend: function (xhr) { xhr.setRequestHeader('X-Hibachi-AJAX', true) }
+				}
+			},
+			emailAddress: {
+				required: true,
+				email: true
+			},
+			emailAddressConfirm: {
+				required: true,
+				email: true,
+				equalTo: ".emailAddress"
+			},
+			password: {
+				required: true,
+				minlength: 8
+			},
+			passwordConfirm: {
+				required: true,
+				minlength: 8,
+				equalTo: ".password"
+			},
+			firstName: {
+				required: true,
+				minlength: 1
+			},
+			lastName: {
+				required: true,
+				minlength: 1
+			},
+			List_OptIn_External: {
+				required: true
+			},
+			acceptedTC: {
+				required: true
+			}
+		},
+		messages: {
+			screenName: {
+				required: "required",
+				minlength: "Must include at least 6 characters",
+				specialChars: "Must be letters and numbers only",
+				remote: ("Screenname is already in use")
+			},
+			emailaddress: {
+				required: "required",
+				email: "Enter a valid e-mail address"
+			},
+			emailAddressConfirm: {
+				required: "required",
+				email: "Enter a valid e-mail address",
+				equalTo: "E-mail address does not match"
+			},
+			password: {
+				required: "required",
+				minlength: "Must be at least 8 characters"
+			},
+			passwordConfirm: {
+				required: "required",
+				minlength: "Must be at least 8 characters",
+				equalTo: "Password does not match"
+			},
+			firstName: {
+				required: "required"
+			},
+			lastName: {
+				required: "required"
+			},
+			List_OptIn_External: {
+				required: "required"
+			},
+			acceptedTC: {
+				required: "required"
+			}
+		},
+		success: function(label){
+			jQuery('div.left').css('styleFloat');
+			label.html("&nbsp;").addClass("valid");
+		}		
+	});	
+	
+	function processForm() {
+		if (jQuery("#createAccountForm").valid()) {
+			jQuery('#createAccountForm').submit();
+		}
+		return false;
+	}	
+});
+</script></div></div><br clear="all"><div id="overlay" style="display: none;"></div><div id="tcOverlay" style="display: none;"><div class="overlayClose" style="text-align: right;"><a class="simplemodal-close">X</a>	</div><div id="tcOverlayContent"></div></div><aside class="tout_subscribe container"><h2 class="tout_subscribe-title">Every Issue. Every Year. 1845 - Present</h2><p class="small-hide">Neuroscience. Evolution. Health. Chemistry. Physics. Technology.</p><a href="http://www.scientificamerican.com/store/subscribe/scientific-american-magazine/?WT.ac=SA_ecom_SA_FooterPromo" class="btn editable-button">Subscribe Now!</a><picture><source media="(max-width: 767px)" srcset="/sciam/cache/file/E82AEBA1-0A06-4B0F-9B1CFF1CE6BD8745_source.png?w=220&amp;h=100"><source media="(min-width: 768px) and (max-width: 1023px)" srcset="/sciam/cache/file/E82AEBA1-0A06-4B0F-9B1CFF1CE6BD8745_source.png?w=420&amp;h=190"><img src="/sciam/cache/file/BD1A6893-C362-486B-B0FBB38C1A104C46_source.png?w=385&amp;h=375" alt="Every Issue. Every Year. 1845 - Present"></picture></aside></main></div></div><div class="footer-outer"><footer id="footer" class="container"><p>Follow us</p><ul class="footer_followUs"><li><a href="https://www.facebook.com/ScientificAmerican" title="Facebook" target="_blank"><span class="icon icon--subtle icon__facebook--black">Facebook</span></a></li><li><a href="https://twitter.com/sciam" title="Twitter" target="_blank"><span class="icon icon--subtle icon__twitter--black">Twitter</span></a></li><li><a href="https://plus.google.com/+scientificamerican/" title="Google+" target="_blank"><span class="icon icon--subtle icon__googleplus--black">Google+</span></a></li><li><a href="https://www.youtube.com/user/SciAmerican" title="YouTube" target="_blank"><span class="icon icon--subtle icon__youtube--black">YouTube</span></a></li><li><a href="http://rss.sciam.com/ScientificAmerican-Global" title="RSS"><span class="icon icon--subtle icon__rss--black">RSS</span></a></li></ul><div class="panel"><div class="grid"><div class="col grid__col grid__col--first">
+	<ul class="footer-links">
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/store/">Store</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/about-scientific-american/">About</a></li>
+		<li class="footer-links__item t_meta">
+ <a href="https://www.scientificamerican.com/pressroom/">Press Room</a>
+ </li>
+		<li class="footer-links__item large-up-hide" data-footer-reveal-parent=""><a data-behavior="footer_reveal" href="#">More </a></li>
+	</ul>
+</div>
+
+<div class="grid__col small-first-col medium-down-hide">
+	<ul class="footer-links">
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/frequently-asked-questions/">FAQs</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/contact-us/">Contact Us</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/sitemap">Site Map</a></li>
+	</ul>
+</div>
+
+<div class="grid__col medium-first-col small-first-col medium-down-hide">
+	<ul class="footer-links">
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/mediakit/">Advertise</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/ad-sections/">Special Ad Sections</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/custom-media-and-partnerships/">SA Custom Media</a></li>
+	</ul>
+</div>
+
+<div class="grid__col small-first-col medium-down-hide">
+	<ul class="footer-links">
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/terms-of-use/">Terms of Use</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/privacy-policy/">Privacy Policy</a></li>
+		<li class="footer-links__item t_meta"><a href="https://www.scientificamerican.com/page/use-of-cookies/">Use of Cookies</a></li>
+	</ul>
+</div></div></div><div class="panel"><div class="tx_meta footer_disclosure">Scientific American is part of Springer Nature, which owns or has commercial relations with thousands of scientific publications (many of them can be found at <a href="http://www.springernature.com/us" target="_blank">www.springernature.com/us</a>). Scientific American maintains a strict policy of editorial independence in reporting developments in science to our readers.</div><small><em>© 2017 Scientific American, a Division of Nature America, Inc.<br><br>All Rights Reserved.</em></small></div></footer></div><div class="wt-track-wrap" data-behavior="wt_tracking"></div><noscript>&lt;img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcszbiart00000oiar2s6w5ud_4y9j/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=10.4.12&amp;amp;dcssip=www.sciam.com"/&gt;</noscript>		
+<script>WT={"sa_cstatus_registrant":"0","sa_access_status":"","sa_cstatus_customer":"0","sa_cattop":"","sa_cat":"","doi":"","sa_authors":"","sa_article_id":"","dcssip":"www.sciam.com","cg_s":"Footer Page","sa_cstatus_subscriber":"0","z_cg_ecollection":"","z_css":"desktop","cg_n":"Scientific American","sa_cstatus_sitelicense":"0","sa_issue":"","sa_pubdate":"","css":""};</script>
+<script type="text/javascript" src="//nexus.ensighten.com/npg/prod-sa/Bootstrap.js"></script><script src="/public/resources/main-be902c0377b35c49bc3fabb099912c23.js"></script><noscript>&lt;div&gt;&lt;img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-403331h&amp;amp;cg=0&amp;amp;cc=1&amp;amp;ts=noscript" width="1" height="1" alt="" /&gt;&lt;/div&gt;</noscript><div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=r20170731114946&amp;k=6LdHQw0UAAAAADNIEory75HQOG5XWUWMAq1grBu3#eikxrhb5wwpr" title="recaptcha challenge" frameborder="0" scrolling="no" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups allow-popups-to-escape-sandbox" name="eikxrhb5wwpr" style="width: 100%; height: 100%;"></iframe></div></div><iframe id="google_osd_static_frame_2248568603369" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe><img class="pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links" style="width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;"><div class="kxhead" data-id="Jn7TXKj3" style="display:none !important;"><span class="kxtag kxinvisible" data-id="20634"></span><span class="kxtag kxinvisible" data-id="20636"><script>
+// this tag is intentionally blank
+</script></span><span class="kxtag kxinvisible" data-id="20637"></span><span class="kxtag kxinvisible" data-id="20638"></span><span class="kxtag kxinvisible" data-id="20640"><script>
+(function(){
+  var kuid = Krux('get', 'user');
+  if (kuid) {
+    Krux('require:http').pixel({
+      url: "//loadm.exelator.com/load",
+      data: {
+          _kdpid: 'e4942ff0-4070-4896-a7ef-e6a5a30ce9f9',
+          buid: kuid,
+          p: '204',
+          g: '270',
+          j: '0'
+      }});
+  }
+  })();
+</script></span><span class="kxtag kxinvisible" data-id="20649"><script>
+(function() {
+
+    Krux('scrape', {
+        'page_attr_keywords': {
+            meta_name: 'keywords'
+        }
+    });
+    Krux('scrape', {
+        'page_attr_author': {
+            meta_name: 'author'
+        }
+    });
+    Krux('scrape', {
+        'page_attr_WT.cg_s': {
+            js_global: "dcs.WT.cg_s"
+        }
+    });
+    Krux('scrape', {
+        'page_attr_WT.sa_cat': {
+            js_global: "dcs.WT.sa_cat"
+        }
+    });
+    Krux('scrape', {
+        'page_attr_WT.sa_cattop': {
+            js_global: "dcs.WT.sa_cattop"
+        }
+    });
+    Krux('scrape', {
+        'user_attr_WT.sa_cstatus_registrant': {
+            js_global: "dcs.WT.sa_cstatus_registrant"
+        }
+    });
+    Krux('scrape', {
+        'user_attr_WT.sa_cstatus_customer': {
+            js_global: "dcs.WT.sa_cstatus_customer"
+        }
+    });
+    Krux('scrape', {
+        'user_attr_WT.z_cg_ecollection': {
+            js_global: "dcs.WT.z_cg_ecollection"
+        }
+    });
+    Krux('scrape', {
+        'user_attr_WT.sa_access_status': {
+            js_global: "dcs.WT.sa_access_status"
+        }
+    });
+    Krux('scrape', {
+        'user_attr_WT.sa_issue': {
+            js_global: "dcs.WT.sa_issue"
+        }
+    });
+    Krux('scrape', {
+        'user_attr_WT.sa_cstatus_subscriber': {
+            js_global: "dcs.WT.sa_cstatus_subscriber"
+        }
+    });
+    Krux('scrape', {
+        'page_attr_sciam_url_path_1': {
+            url_path: '1'
+        }
+    });
+
+
+})();
+</script></span><span class="kxtag kxinvisible" data-id="20651"><script type="text/javascript">Krux('social.init');</script></span><span class="kxtag kxinvisible" data-id="20654"><script>
+(function() {
+  if (Krux('get', 'user') != null) {
+      new Image().src = 'https://usermatch.krxd.net/um/v2?partner=google';
+  }
+})();
+</script></span><span class="kxtag kxinvisible" data-id="23680"><script>new Image().src = 'https://usermatch.krxd.net/um/v2?partner=vdna';</script></span></div></body><iframe id="kx-proxy-Jn7TXKj3" src="https://cdn.krxd.net/partnerjs/xdi/proxy.3d2100fd7107262ecb55ce6847f01fa5.html#!kxcid=Jn7TXKj3&amp;kxt=https%3A%2F%2Fwww.scientificamerican.com&amp;kxcl=cdn&amp;kxp=" style="display: none; visibility: hidden; height: 0; width: 0;"></iframe></html>

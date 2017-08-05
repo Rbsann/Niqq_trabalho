@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"><html lang="en" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" class="js csstransforms csstransforms3d csstransitions"><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/9557dbf16c?a=9052762&amp;v=1044.a6554e7&amp;to=ZFADMkRTVxcEARdRWl0aIAVCW1YKSgYRTUVSWT4BU0ZmAgoQDg%3D%3D&amp;rst=2050&amp;ref=https://developer.nvidia.com/developer-program/signup&amp;ap=164&amp;be=793&amp;fe=2037&amp;dc=1339&amp;af=err,xhr,stn,ins&amp;perf=%7B%22timing%22:%7B%22of%22:1501896617272,%22n%22:0,%22f%22:240,%22dn%22:242,%22dne%22:594,%22c%22:594,%22s%22:608,%22ce%22:747,%22rq%22:747,%22rp%22:779,%22rpe%22:780,%22dl%22:782,%22di%22:1339,%22ds%22:1339,%22de%22:1428,%22dc%22:2036,%22l%22:2036,%22le%22:2042%7D,%22navigation%22:%7B%7D%7D&amp;at=SBcARAxJRBk%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1044.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYOUF9SCxAJVFRQAAcF"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="https://developer.nvidia.com/sites/all/themes/devzone_base/favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="https://developer.nvidia.com/developer-program/signup">
+<link rel="shortlink" href="https://developer.nvidia.com/group/node/874688/subscribe/og_user_node">
+<meta property="og:site_name" content="NVIDIA Developer">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://developer.nvidia.com/developer-program/signup">
+<meta property="og:title" content="Join group">
+  <title>Join group | NVIDIA Developer</title>
+  <link type="text/css" rel="stylesheet" href="https://developer.nvidia.com/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://developer.nvidia.com/sites/default/files/css/css_hTLrwzbU9bZhjvzx-j5entbJFEHkjJyd6RgHEla8FhA.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://developer.nvidia.com/sites/default/files/css/css_VWGhZkkR4B4tMJA7PC_wov8dAxaI-MS03BCM3K8jjJA.css" media="screen">
+<link type="text/css" rel="stylesheet" href="https://developer.nvidia.com/sites/default/files/css/css_IwkZpyQN-v7ZZ7XAmISxsA-_ZAbxWp5FcQwxfrlpXLM.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://developer.nvidia.com/sites/default/files/css/css_HAdMSfW0uw2TqsneJVRuSpCstEIwKmTVKGyjF6MSDs4.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://developer.nvidia.com/sites/default/files/css/css_o2tBxLiEmx1VuOyLzDAcl-31mJiW3sLW86aIoJrExkE.css" media="all">
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="https://developer.nvidia.com/sites/default/files/js/js_TmFfA3BXvZk6IUuc7H4KkXGE9yFnuSuqrqEqPoBx4Pc.js"></script>
+<script src="https://developer.nvidia.com/sites/default/files/js/js_oZD9-WvfiElJ5KPavqu9ZAQiZcfWlzNCzxFHpedR9dI.js"></script>
+<script src="//assets.adobedtm.com/b92787824f2e0e9b68dc2e993f9bd995339fe417/satelliteLib-7ba51e58dc61bcb0e9311aadd02a0108ab24cc6c.js"></script><script src="https://assets.adobedtm.com/b92787824f2e0e9b68dc2e993f9bd995339fe417/scripts/satellite-57adc78464746d3e8a000ed9.js"></script>
+<script src="https://developer.nvidia.com/sites/default/files/js/js_g0r14t83CyFOie9dtTvScCfDLjFx09CaftsI4p5WL58.js"></script>
+<script src="https://developer.nvidia.com/sites/default/files/js/js_JP3TlCqKqiqPuAoTWfdvYhA4HjA1QSa33gLy1Yy6iPA.js"></script>
+<script src="https://developer.nvidia.com/sites/default/files/js/js_ujvfCOkic6-J5xOfG_FT806Sc7pplQicv8hNGg7Qu7M.js"></script>
+<script src="https://developer.nvidia.com/sites/default/files/js/js_l5btn51RKPWhysN-Uc97uKxkxOc43jmkEqMAdH3vEBc.js"></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-1273456-46', 'auto');ga('send', 'pageview');</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"devzone_base","theme_token":"erutYkFymHzCdOUDp4GVMcFs-EDiAhPkTd16xcRLndg","js":{"0":1,"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.menu.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.autocomplete.min.js":1,"\/\/assets.adobedtm.com\/b92787824f2e0e9b68dc2e993f9bd995339fe417\/satelliteLib-7ba51e58dc61bcb0e9311aadd02a0108ab24cc6c.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"misc\/form.js":1,"sites\/all\/modules\/contrib\/codefilter\/codefilter.js":1,"sites\/all\/modules\/contrib\/gss\/scripts\/autocomplete.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/hint\/hint.js":1,"sites\/all\/themes\/devzone_base\/js\/membership-forms.js":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.js":1,"sites\/all\/modules\/contrib\/select_or_other\/select_or_other.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/custom\/nvidia_og_membership\/js\/nvidia_og_membership.js":1,"sites\/all\/themes\/devzone_base\/js\/jquery.migrate.min.js":1,"sites\/all\/themes\/devzone_base\/js\/jquery.isotope.js":1,"sites\/all\/themes\/devzone_base\/js\/jquery.sidr.js":1,"sites\/all\/themes\/devzone_base\/js\/application.js":1,"sites\/all\/themes\/devzone_base\/js\/scripts.js":1,"sites\/all\/themes\/devzone_base\/js\/adroll.js":1,"sites\/all\/themes\/devzone_base\/js\/bootstrap.min.js":1,"1":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"sites\/all\/modules\/contrib\/codefilter\/codefilter.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/location\/location.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/contrib\/addtoany\/addtoany.css":1,"sites\/all\/themes\/bootstrap\/css\/overrides.css":1,"sites\/all\/themes\/devzone_base\/css\/application.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"gss":{"key":"000841979776854404513:41w2zzjvamy"},"urlIsAjaxTrusted":{"\/developer-program\/signup":true,"\/developer-program\/signup?destination=group\/node\/874688\/subscribe\/og_user_node":true},"nvidia_og_membership":{"email_check_url":"\/nvidia_og_membership\/email_check","delay":0.75},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+<script src="https://assets.adobedtm.com/b92787824f2e0e9b68dc2e993f9bd995339fe417/scripts/satellite-594a6ce764746d506700c2a3.js"></script><script src="https://assets.adobedtm.com/b92787824f2e0e9b68dc2e993f9bd995339fe417/s-code-contents-72887b31a9638f8b3cff7981a426c38c354f6412.js"></script></head>
+<body class="html not-front not-logged-in no-sidebars page-group page-group-node page-group-node- page-group-node-874688 page-group-node-subscribe page-group-node-subscribe-og-user-node" style="">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+
+<!--Navbar-->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="nvidia-dropdown">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <div class="logo-header">
+        <a class="navbar-brand first-logo" href="/" title="Home">
+          <img alt="Home" src="/sites/all/themes/devzone_base/images/nvidia.png">
+        </a>
+        <a class="navbar-brand second-logo" href="/" title="Home">
+          <img alt="Home" src="https://developer.nvidia.com/sites/all/themes/devzone_base/logo.png">
+        </a>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+
+              <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/computeworks" title="">COMPUTEWORKS</a></li>
+<li class="leaf"><a href="/gameworks" title="">GAMEWORKS</a></li>
+<li class="leaf"><a href="/embedded-computing" title="">JETPACK</a></li>
+<li class="leaf"><a href="/designworks" title="">DESIGNWORKS</a></li>
+<li class="last leaf"><a href="/drive">DRIVE</a></li>
+</ul>            <ul class="nav navbar-nav navbar-margin navbar-right navbar-margin-media login-nav">
+                  <li class="search" id="search-top">
+            <div class="search-form" id="search-top-form">
+              <form class="gss form-search content-search" action="/developer-program/signup" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">Search form</h2>
+    <div class="input-group"><input title="Enter the terms you wish to search for." placeholder="Search..." class="form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit" class="btn btn-default"><i class="icon glyphicon glyphicon-search" aria-hidden="true"></i></button></span></div><button class="element-invisible btn btn-primary form-submit" id="edit-submit" name="op" value="Search" type="submit">Search</button>
+<input type="hidden" name="form_build_id" value="form-PckZA2NW0RbfpluvP2xlovsWpeYY8zdq9Bk4hC24Hd0">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>            </div>
+          </li>
+        
+                  <li class="member-area-link">
+            <a href="/developer-program" class="member-area-link-locked link-theme-devzone_base"><i class="fa fa-lock fa-fw"></i>Register Now</a>          </li>
+        
+          
+                      <li class="dropdown">
+              <form action="/developer-program/signup?destination=group/node/874688/subscribe/og_user_node" method="post" id="user-login-form" accept-charset="UTF-8"><div><div id="toboggan-container" class="toboggan-container"><div id="toboggan-login-link-container" class="toboggan-login-link-container"><a href="/user/login?destination=group/node/874688/subscribe/og_user_node" id="toboggan-login-link" class="toboggan-login-link">Log in</a></div><div id="toboggan-login" class="user-login-block toggleboggan_setup-processed" style="display: none;"><div class="form-type-textfield form-item-name form-item form-group">
+ <input placeholder="Email" class="form-control form-text required" type="text" id="edit-name--2" name="name" value="" size="15" maxlength="60">
+</div>
+<div class="form-type-password form-item-pass form-item form-group">
+ <input placeholder="Password" class="form-control form-text required" type="password" id="edit-pass" name="pass" size="15" maxlength="128">
+</div>
+<input type="hidden" name="form_build_id" value="form-ceKtJ7r7peMhYHvAaPygxMoZFKMylCqROv2tlp6Ybvs">
+<input type="hidden" name="form_id" value="user_login_block">
+<button class="btn btn-default form-submit" id="edit-submit--2" name="op" value="Log in" type="submit">Log in</button>
+<a href="/user/password" title="Request new password via e-mail.">Forgot password?</a></div></div></div></form>            </li>
+          
+      </ul>
+  </div>
+</div>
+</nav>
+
+<div id="wrapper">
+          
+  <div id="content-background" class="white-background">
+        <div id="console">
+      <div class="container">
+                      </div>
+    </div>
+    
+    <div class="separator"></div>
+    <div class="container">
+      
+                      <div class="separator"></div>
+      
+      
+      <div class="row">
+
+        
+        <section class="col-sm-12">
+                    <div class="page-header element-hidden">
+            <h1 class="title">
+              Join group            </h1>
+          </div>
+          
+                    <a id="main-content"></a>
+
+            <div class="region region-content">
+    <ul class="nvidia-registration-form-navigation nvidia-registration-form-navigation-one-step"><li class="item active first last">Create Your Account</li>
+</ul><section id="block-system-main" class="block block-system clearfix">
+
+      
+  <form class="user-info-from-cookie nvidia-form-step-1 user-register-form ds-1col user-info-from-cookie-processed" enctype="multipart/form-data" action="/developer-program/signup" method="post" id="nvidia-og-membership-registration-form" accept-charset="UTF-8"><div><div class="ds-1col ds-form clearfix">
+
+  
+  <div id="edit-account" class="form-wrapper form-group"><div id="edit-account" class="form-wrapper form-group"><div class="form-type-textfield form-item-mail form-item form-group">
+  <label for="edit-mail">E-mail address <span class="form-required" title="This field is required.">*</span></label>
+ <input class="nvidia-og-membership-mail form-control form-text required jquery-once-1-processed" type="text" id="edit-mail" name="mail" value="" size="60" maxlength="254" placeholder="E-mail address *">
+<p class="help-block">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</p>
+<span class="error-message email-not-correct" style="display: none;"><i class="fa fa-times"></i>Something about that is not right</span><span class="error-message email-blank" style="display: none;"><i class="fa fa-times"></i>We need to know your email</span><span class="error-message email-exists" style="display: none;"><i class="fa fa-times"></i>That email is already in our database.<br><a href="/user/login">Sign In</a> or <a href="/user/password">reset</a> your password</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Check your email for a confirmation</span></div>
+<input type="hidden" name="timezone" value="America/Los_Angeles">
+</div></div><div class="field-type-text field-name-field-user-first-name field-widget-text-textfield form-wrapper form-group" id="edit-field-user-first-name"><div class="field-type-text field-name-field-user-first-name field-widget-text-textfield form-wrapper form-group" id="edit-field-user-first-name"><div id="field-user-first-name-add-more-wrapper"><div class="form-type-textfield form-item-field-user-first-name-und-0-value form-item form-group">
+  <label for="edit-field-user-first-name-und-0-value">First Name <span class="form-required" title="This field is required.">*</span></label>
+ <input class="text-full form-control form-text required" type="text" id="edit-field-user-first-name-und-0-value" name="field_user_first_name[und][0][value]" value="" size="60" maxlength="255" placeholder="First Name *">
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>We need to know your first name</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Looks good!</span></div>
+</div></div></div><div class="field-type-text field-name-field-user-last-name field-widget-text-textfield form-wrapper form-group" id="edit-field-user-last-name"><div class="field-type-text field-name-field-user-last-name field-widget-text-textfield form-wrapper form-group" id="edit-field-user-last-name"><div id="field-user-last-name-add-more-wrapper"><div class="form-type-textfield form-item-field-user-last-name-und-0-value form-item form-group">
+  <label for="edit-field-user-last-name-und-0-value">Last Name <span class="form-required" title="This field is required.">*</span></label>
+ <input class="text-full form-control form-text required" type="text" id="edit-field-user-last-name-und-0-value" name="field_user_last_name[und][0][value]" value="" size="60" maxlength="255" placeholder="Last Name *">
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>We need to know your first name</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Looks good!</span></div>
+</div></div></div><div class="field-type-text field-name-field-user-company-name field-widget-text-textfield form-wrapper form-group" id="edit-field-user-company-name"><div class="field-type-text field-name-field-user-company-name field-widget-text-textfield form-wrapper form-group" id="edit-field-user-company-name"><div id="field-user-company-name-add-more-wrapper"><div class="form-type-textfield form-item-field-user-company-name-und-0-value form-item form-group">
+  <label for="edit-field-user-company-name-und-0-value">Organization Name <span class="form-required" title="This field is required.">*</span></label>
+ <input class="text-full form-control form-text required" type="text" id="edit-field-user-company-name-und-0-value" name="field_user_company_name[und][0][value]" value="" size="60" maxlength="255" placeholder="Organization Name *">
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>We need to know your organization name</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Looks good!</span></div>
+</div></div></div><div class="field-type-location field-name-field-user-country-and-state field-widget-location form-wrapper form-group" id="edit-field-user-country-and-state"><div class="field-type-location field-name-field-user-country-and-state field-widget-location form-wrapper form-group" id="edit-field-user-country-and-state"><div id="field-user-country-and-state-add-more-wrapper"><div class="form-type-select form-item-field-user-country-and-state-und-0-country form-item form-group">
+  <label for="edit-field-user-country-and-state-und-0-country">Country <span class="form-required" title="This field is required.">*</span></label>
+ <select class="location_auto_country form-control form-select required" id="edit-field-user-country-and-state-und-0-country" name="field_user_country_and_state[und][0][country]"><option value="" selected="selected">Country *</option><option value="af">Afghanistan</option><option value="ax">Aland Islands</option><option value="al">Albania</option><option value="dz">Algeria</option><option value="as">American Samoa</option><option value="ad">Andorra</option><option value="ao">Angola</option><option value="ai">Anguilla</option><option value="aq">Antarctica</option><option value="ag">Antigua and Barbuda</option><option value="ar">Argentina</option><option value="am">Armenia</option><option value="aw">Aruba</option><option value="au">Australia</option><option value="at">Austria</option><option value="az">Azerbaijan</option><option value="bs">Bahamas</option><option value="bh">Bahrain</option><option value="bd">Bangladesh</option><option value="bb">Barbados</option><option value="by">Belarus</option><option value="be">Belgium</option><option value="bz">Belize</option><option value="bj">Benin</option><option value="bm">Bermuda</option><option value="bt">Bhutan</option><option value="bo">Bolivia</option><option value="ba">Bosnia and Herzegovina</option><option value="bw">Botswana</option><option value="bv">Bouvet Island</option><option value="br">Brazil</option><option value="io">British Indian Ocean Territory</option><option value="vg">British Virgin Islands</option><option value="bn">Brunei</option><option value="bg">Bulgaria</option><option value="bf">Burkina Faso</option><option value="bi">Burundi</option><option value="kh">Cambodia</option><option value="cm">Cameroon</option><option value="ca">Canada</option><option value="cv">Cape Verde</option><option value="bq">Caribbean Netherlands</option><option value="ky">Cayman Islands</option><option value="cf">Central African Republic</option><option value="td">Chad</option><option value="cl">Chile</option><option value="cn">China</option><option value="cx">Christmas Island</option><option value="cc">Cocos (Keeling) Islands</option><option value="co">Colombia</option><option value="km">Comoros</option><option value="cg">Congo (Brazzaville)</option><option value="cd">Congo (Kinshasa)</option><option value="ck">Cook Islands</option><option value="cr">Costa Rica</option><option value="hr">Croatia</option><option value="cu">Cuba</option><option value="cw">Curaçao</option><option value="cy">Cyprus</option><option value="cz">Czech Republic</option><option value="dk">Denmark</option><option value="dj">Djibouti</option><option value="dm">Dominica</option><option value="do">Dominican Republic</option><option value="ec">Ecuador</option><option value="eg">Egypt</option><option value="sv">El Salvador</option><option value="gq">Equatorial Guinea</option><option value="er">Eritrea</option><option value="ee">Estonia</option><option value="et">Ethiopia</option><option value="fk">Falkland Islands</option><option value="fo">Faroe Islands</option><option value="fj">Fiji</option><option value="fi">Finland</option><option value="fr">France</option><option value="gf">French Guiana</option><option value="pf">French Polynesia</option><option value="tf">French Southern Territories</option><option value="ga">Gabon</option><option value="gm">Gambia</option><option value="ge">Georgia</option><option value="de">Germany</option><option value="gh">Ghana</option><option value="gi">Gibraltar</option><option value="gr">Greece</option><option value="gl">Greenland</option><option value="gd">Grenada</option><option value="gp">Guadeloupe</option><option value="gu">Guam</option><option value="gt">Guatemala</option><option value="gg">Guernsey</option><option value="gn">Guinea</option><option value="gw">Guinea-Bissau</option><option value="gy">Guyana</option><option value="ht">Haiti</option><option value="hm">Heard Island and McDonald Islands</option><option value="hn">Honduras</option><option value="hk">Hong Kong S.A.R., China</option><option value="hu">Hungary</option><option value="is">Iceland</option><option value="in">India</option><option value="id">Indonesia</option><option value="ir">Iran</option><option value="iq">Iraq</option><option value="ie">Ireland</option><option value="im">Isle of Man</option><option value="il">Israel</option><option value="it">Italy</option><option value="ci">Ivory Coast</option><option value="jm">Jamaica</option><option value="jp">Japan</option><option value="je">Jersey</option><option value="jo">Jordan</option><option value="kz">Kazakhstan</option><option value="ke">Kenya</option><option value="ki">Kiribati</option><option value="kw">Kuwait</option><option value="kg">Kyrgyzstan</option><option value="la">Laos</option><option value="lv">Latvia</option><option value="lb">Lebanon</option><option value="ls">Lesotho</option><option value="lr">Liberia</option><option value="ly">Libya</option><option value="li">Liechtenstein</option><option value="lt">Lithuania</option><option value="lu">Luxembourg</option><option value="mo">Macao S.A.R., China</option><option value="mk">Macedonia</option><option value="mg">Madagascar</option><option value="mw">Malawi</option><option value="my">Malaysia</option><option value="mv">Maldives</option><option value="ml">Mali</option><option value="mt">Malta</option><option value="mh">Marshall Islands</option><option value="mq">Martinique</option><option value="mr">Mauritania</option><option value="mu">Mauritius</option><option value="yt">Mayotte</option><option value="mx">Mexico</option><option value="fm">Micronesia</option><option value="md">Moldova</option><option value="mc">Monaco</option><option value="mn">Mongolia</option><option value="me">Montenegro</option><option value="ms">Montserrat</option><option value="ma">Morocco</option><option value="mz">Mozambique</option><option value="mm">Myanmar</option><option value="na">Namibia</option><option value="nr">Nauru</option><option value="np">Nepal</option><option value="nl">Netherlands</option><option value="an">Netherlands Antilles</option><option value="nc">New Caledonia</option><option value="nz">New Zealand</option><option value="ni">Nicaragua</option><option value="ne">Niger</option><option value="ng">Nigeria</option><option value="nu">Niue</option><option value="nf">Norfolk Island</option><option value="mp">Northern Mariana Islands</option><option value="kp">North Korea</option><option value="no">Norway</option><option value="om">Oman</option><option value="pk">Pakistan</option><option value="pw">Palau</option><option value="ps">Palestinian Territory</option><option value="pa">Panama</option><option value="pg">Papua New Guinea</option><option value="py">Paraguay</option><option value="pe">Peru</option><option value="ph">Philippines</option><option value="pn">Pitcairn</option><option value="pl">Poland</option><option value="pt">Portugal</option><option value="pr">Puerto Rico</option><option value="qa">Qatar</option><option value="re">Reunion</option><option value="ro">Romania</option><option value="ru">Russia</option><option value="rw">Rwanda</option><option value="bl">Saint Barthélemy</option><option value="sh">Saint Helena</option><option value="kn">Saint Kitts and Nevis</option><option value="lc">Saint Lucia</option><option value="mf">Saint Martin (French part)</option><option value="pm">Saint Pierre and Miquelon</option><option value="vc">Saint Vincent and the Grenadines</option><option value="ws">Samoa</option><option value="sm">San Marino</option><option value="st">Sao Tome and Principe</option><option value="sa">Saudi Arabia</option><option value="sn">Senegal</option><option value="rs">Serbia</option><option value="sc">Seychelles</option><option value="sl">Sierra Leone</option><option value="sg">Singapore</option><option value="sx">Sint Maarten</option><option value="sk">Slovakia</option><option value="si">Slovenia</option><option value="sb">Solomon Islands</option><option value="so">Somalia</option><option value="za">South Africa</option><option value="gs">South Georgia and the South Sandwich Islands</option><option value="kr">South Korea</option><option value="ss">South Sudan</option><option value="es">Spain</option><option value="lk">Sri Lanka</option><option value="sd">Sudan</option><option value="sr">Suriname</option><option value="sj">Svalbard and Jan Mayen</option><option value="sz">Swaziland</option><option value="se">Sweden</option><option value="ch">Switzerland</option><option value="sy">Syria</option><option value="tw">Taiwan</option><option value="tj">Tajikistan</option><option value="tz">Tanzania</option><option value="th">Thailand</option><option value="tl">Timor-Leste</option><option value="tg">Togo</option><option value="tk">Tokelau</option><option value="to">Tonga</option><option value="tt">Trinidad and Tobago</option><option value="tn">Tunisia</option><option value="tr">Turkey</option><option value="tm">Turkmenistan</option><option value="tc">Turks and Caicos Islands</option><option value="tv">Tuvalu</option><option value="vi">U.S. Virgin Islands</option><option value="ug">Uganda</option><option value="ua">Ukraine</option><option value="ae">United Arab Emirates</option><option value="gb">United Kingdom</option><option value="us">United States</option><option value="um">United States Minor Outlying Islands</option><option value="uy">Uruguay</option><option value="uz">Uzbekistan</option><option value="vu">Vanuatu</option><option value="va">Vatican</option><option value="ve">Venezuela</option><option value="vn">Vietnam</option><option value="wf">Wallis and Futuna</option><option value="eh">Western Sahara</option><option value="ye">Yemen</option><option value="zm">Zambia</option><option value="zw">Zimbabwe</option></select>
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>We need to know your country</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Looks good!</span></div>
+</div></div></div><div class="field-type-text field-name-field-user-industry field-widget-select-or-other form-wrapper form-group" id="edit-field-user-industry"><div class="field-type-text field-name-field-user-industry field-widget-select-or-other form-wrapper form-group" id="edit-field-user-industry"><div class="form-type-select-or-other form-item-field-user-industry-und form-item form-group">
+ <div class="select-or-other select-or-other-processed">
+<div class="form-type-select form-item-field-user-industry-und-select form-item form-group">
+  <label for="edit-field-user-industry-und-select">What is the primary industry segment in which you work? <span class="form-required" title="This field is required.">*</span></label>
+ <select class="select-or-other-select form-control form-select required" id="edit-field-user-industry-und-select" name="field_user_industry[und][select]"><option value="" selected="selected">Industry *</option><option value="aerospace">Aerospace</option><option value="architecture_engineering_construction">Architecture / Engineering / Construction</option><option value="automotive">Automotive</option><option value="cloud_services">Cloud Services</option><option value="consulting_services">Consulting Services</option><option value="defense">Defense</option><option value="energy_oil_gas">Energy / Oil &amp; Gas</option><option value="financial_services">Financial Services</option><option value="game_development">Game Development</option><option value="government_national_labs">Government / National Labs</option><option value="hardware_semiconductor">Hardware / Semiconductor</option><option value="healthcare_life_sciences">Healthcare &amp; Life Sciences</option><option value="higher_education_research">Higher Education / Research</option><option value="internet_telecommunications">Internet / Telecommunications</option><option value="it_services">IT Services</option><option value="manufacturing">Manufacturing</option><option value="media_entertainment">Media &amp; Entertainment</option><option value="retail_etail">Retail / Etail</option><option value="software">Software</option><option value="select_or_other">Other (please specify)</option></select>
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>We need to know your industry segment</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Looks good!</span></div>
+<div class="form-type-textfield form-item-field-user-industry-und-other form-item form-group" style="display: none;">
+ <input class="select-or-other-other form-control form-text" type="text" id="edit-field-user-industry-und-other" name="field_user_industry[und][other]" value="" size="60" maxlength="255">
+</div>
+
+</div>
+
+</div>
+</div></div><div class="field-type-list-text field-name-field-user-affinity field-widget-options-buttons form-wrapper form-group" id="edit-field-user-affinity"><div class="field-type-list-text field-name-field-user-affinity field-widget-options-buttons form-wrapper form-group" id="edit-field-user-affinity"><div class="form-type-checkboxes form-item-field-user-affinity-und form-item form-group">
+  <label for="edit-field-user-affinity-und">Which development areas interest you? <span class="form-required" title="This field is required.">*</span></label>
+ <div id="edit-field-user-affinity-und" class="form-checkboxes"><div class="form-type-checkbox form-item-field-user-affinity-und-accelerated-computing form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-accelerated-computing" name="field_user_affinity[und][accelerated_computing]" value="accelerated_computing" class="form-checkbox">  <label for="edit-field-user-affinity-und-accelerated-computing">Accelerated Computing </label>
+
+</div>
+<div class="form-type-checkbox form-item-field-user-affinity-und-autonomous-machines form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-autonomous-machines" name="field_user_affinity[und][autonomous_machines]" value="autonomous_machines" class="form-checkbox">  <label for="edit-field-user-affinity-und-autonomous-machines">Autonomous Machines </label>
+
+</div>
+<div class="form-type-checkbox form-item-field-user-affinity-und-deep-learning form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-deep-learning" name="field_user_affinity[und][deep_learning]" value="deep_learning" class="form-checkbox">  <label for="edit-field-user-affinity-und-deep-learning">Deep Learning </label>
+
+</div>
+<div class="form-type-checkbox form-item-field-user-affinity-und-design-visualization form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-design-visualization" name="field_user_affinity[und][design_visualization]" value="design_visualization" class="form-checkbox">  <label for="edit-field-user-affinity-und-design-visualization">Design &amp; Visualization </label>
+
+</div>
+<div class="form-type-checkbox form-item-field-user-affinity-und-game-development form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-game-development" name="field_user_affinity[und][game_development]" value="game_development" class="form-checkbox">  <label for="edit-field-user-affinity-und-game-development">Game Development </label>
+
+</div>
+<div class="form-type-checkbox form-item-field-user-affinity-und-self-driving-cars form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-self-driving-cars" name="field_user_affinity[und][self_driving_cars]" value="self_driving_cars" class="form-checkbox">  <label for="edit-field-user-affinity-und-self-driving-cars">Self Driving Cars </label>
+
+</div>
+<div class="form-type-checkbox form-item-field-user-affinity-und-virtual-reality form-item checkbox">
+ <input type="checkbox" id="edit-field-user-affinity-und-virtual-reality" name="field_user_affinity[und][virtual_reality]" value="virtual_reality" class="form-checkbox">  <label for="edit-field-user-affinity-und-virtual-reality">Virtual Reality </label>
+
+</div>
+</div>
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>We need to know your development areas</span><span class="valid-message" style="display: none;"><i class="fa fa-check"></i>Looks good!</span></div>
+</div></div></div>
+
+  <input type="hidden" name="form_build_id" value="form-eMQuMlsgGnBoOS-5OH6G-R6yibsUhrDOZQAbTmPyiD0">
+<input type="hidden" name="form_id" value="nvidia_og_membership_registration_form">
+<fieldset class="panel panel-default form-wrapper" id="edit-legal">
+            <legend class="panel-heading">
+        <div class="panel-title fieldset-legend">
+          Terms and Conditions of Use        </div>
+      </legend>
+          <div class="panel-body">
+        <div class="form-type-textarea form-item-conditions form-item form-group">
+  <label for="edit-conditions">Terms &amp; Conditions </label>
+ <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea readonly="readonly" class="form-control form-textarea" id="edit-conditions" name="conditions" cols="60" rows="10">NVIDIA REGISTERED DEVELOPER PROGRAM AGREEMENT
+
+Welcome to the NVIDIA Developer Web Site, and thank you for joining one of our Registered Developer Programs. To get access to all the cool stuff available to you through this program, we need to first get some legalese out of the way. Our lawyers tell us that things need to be said in a certain verbose way, which you will find further below, but basically, here’s what we want to get across:
+
+•	Program Changes - We’re always looking to improve our site, so we may change things from time to time and we want you to understand that we have the right to do that. If you continue using the program, you’re agreeing to that change. 
+•	Protect Your Account - It’s your account, so it’s your job to protect it and be responsible for it.  Also, if you give us your personal information, we have the right to use it in certain ways according to our Privacy Policy. 
+•	Materials - We’re probably going to post interesting stuff for you to use, but that’s totally our call. Any items we post can be removed anytime and any software will have its own license and we may not be able to respond to all your inquiries or requests. For other stuff, you get a non-exclusive right to use it subject to certain restrictions (for example, no modifying it or giving it to someone else – for a full list, read below). The rights you get are what we explicitly say they are – no implied licenses or interpretational assumptions.  
+•	Everything in the program that we own is protected by our IP rights, so just keep that in mind. Also, please no illegal activity. 
+•	Feedback - One of the very important things we get out of this program is your feedback on the stuff we provide.  As you use the stuff we make available to you and find things you want to share with us, we want to hear about it.  You agree that we own that feedback (since it’s about our stuff) and that your feedback is confidential (just between us, since we’re giving you access to stuff that not everyone gets), so no reposting that information publically.  
+•	Confidentiality - Speaking of confidentiality, we ask you to keep certain information between us, and only give others access to that information if they are associated with you in specific ways (see below for the details).  
+•	Your membership of any of our programs does not limit the way we engage with other developers in any way.
+•	Termination - Your membership in this program may be revoked at any time, for any reason. It’s very unlikely this will happen, but that’s what happens when things are free. Sorry.
+•	No Warranties - Everything we’re providing here is "as is". You use it at your own risk.  We’re not warranting anything, period. Our liability for damages is also limited. Ah, the price of free.  
+•	Communication - We may communicate with you from time to time.
+•	Third Party Rights - Not everything in the program is ours, so you’re responsible for reviewing whatever other requirements and rights are associated with that stuff.
+•	Boilerplate – There’s some additional information about governing law, export controls, assignment, etc. that you should read in the in the legalese below. 
+
+Alright, time to grab a cup (or two or three) of coffee and see how our lawyers say it..
+
+
+Acceptance of Terms 
+THIS REGISTERED DEVELOPER PROGRAM AGREEMENT ("AGREEMENT") IS A LEGAL AGREEMENT BETWEEN YOU, THE LICENSEE (A SINGLE PERSON, INSTITUTION, OR LEGAL ENTITY) ("YOU" or "YOUR"), AND NVIDIA CORPORATION, A DELAWARE CORPORATION HAVING ITS PRINCIPAL PLACE OF BUSINESS AT 2701 SAN TOMAS EXPRESSWAY, SANTA CLARA CA AND ITS SUBSIDIARIES ("NVIDIA") FOR THE REGISTERED DEVELOPER PROGRAM "DEVZONE" ("PROGRAM").  NVIDIA IS WILLING TO PROVIDE THE PROGRAM TO YOU ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF THE TERMS CONTAINED IN THIS AGREEMENT. PLEASE READ THE AGREEMENT CAREFULLY. BY ACCEPTING THIS AGREEMENT BY PRESSING “AGREE”, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU ARE UNWILLING TO BE BOUND BY ALL OF THE TERMS, PRESS “CANCEL” AND YOU WILL BE UNABLE TO BECOME A REGISTERED DEVELOPER.
+
+Amending Terms
+NVIDIA reserves the right to amend this Agreement at any time and without notice. Your continued participation in the Program following any amendment of the Agreement will signify Your assent to and acceptance of its revised terms, which are hereby incorporated into this Agreement by reference.  Your accessing, viewing, browsing and/or using the Program, Site or Materials after NVIDIA posts changes to this Agreement constitutes Your acceptance and agreement to those changes, whether or not You actually reviewed them. 
+
+Developer Access
+As a Registered Developer, You are provided with access to a password-protected Registered Developer site (the “Site”). 
+•	You are responsible for maintaining the confidentiality of the information You submit through Your account and the corresponding password, and for restricting access to Your account. 
+•	You agree to accept responsibility for all activities that occur under Your account or password.  
+•	NVIDIA reserves the right to refuse service, terminate accounts and to remove or edit content submitted by You in Your account. Information submitted to NVIDIA through the Site are governed according to NVIDIA’s Privacy Policy, located at http://www.nvidia.com/object/privacy_policy.html. 
+
+NVIDIA may provide You with the ability to download certain software, information, content, or other materials through the Site (collectively, “Materials”), as described more fully on the Site.  
+•	NVIDIA owns and operates the Site and shall have the right at any time to change or discontinue any aspect or feature of it. Such changes, modifications, additions or deletions shall be effective upon such changes having been made to the Site.  
+•	Further, NVIDIA may change, suspend or discontinue the Program or Site or cease providing certain or all Materials to You at any time upon NVIDIA’s sole discretion NVIDIA may make changes to the Materials, or to items referenced therein, at any time and without notice, and/or may restrict Your access to or impose limits upon parts or all of the Materials, Site or Program without notice or liability, but is not obligated to support or update the Materials, Site or Program.  
+
+Use Restrictions
+Certain Materials provided to You by NVIDIA are accompanied by a separate license agreement; You acknowledge and agree that such license agreement shall govern Your use of such Materials, in addition to this Agreement.  You further agree that in the event of any inconsistency between this Agreement and the corresponding provisions in the license agreement, the license agreement shall govern. 
+
+For all other Materials made available to You for download hereunder, then subject to Your compliance with the terms and conditions of this Agreement, NVIDIA hereby grants You a nonexclusive, nontransferable, right and license to use the Materials for Your personal, non-commercial internal use.  
+•	You shall not (nor allow, authorize or assist others to): decompile, reverse engineer, disassemble, modify, sublicense, network, rent, lease, loan, timeshare, sell, transmit, distribute, disclose, publicly display, publish, reproduce, create derivative works based on, assign or transfer the Materials to any other person or entity.  
+•	You shall not remove any copyright, other intellectual property or proprietary notices from the Materials.
+
+
+The Site, including all its Materials, is protected by copyright, trademark and all other laws protecting such property, and all rights, title, and interest in it belongs to NVIDIA or its subsidiaries, licensors, or its suppliers. NVIDIA’s trademarks may be used publicly with permission only from NVIDIA, and nothing in this Agreement shall be construed as granting such permission. Fair use of NVIDIA’s trademarks in advertising and promotion of NVIDIA products requires proper acknowledgment. This Agreement does not grant You any right or license to incorporate or make use of any NVIDIA intellectual property in any product. Except as expressly set forth herein, no other rights or licenses are granted or to be implied under any NVIDIA intellectual property.
+
+You agree not to exploit the Program, Site, or any Materials provided to You in any unauthorized way.  Use of the Site or Materials to engage in any kind of illegal activity, or to enable others to do so, is expressly prohibited.  
+
+Feedback
+•	As a condition of participating in the Program, You agree to provide NVIDIA with any suggestions, comments or other feedback, whether verbally or in written or source code form, including any and all test results, error data, bugs, reports or other information, however learned and by whomever collected, relating to the Materials provided by NVIDIA to You hereunder (collectively defined as "Feedback").  
+•	You agree not to provide NVIDIA with Feedback that (a) breaches obligations of confidentiality owed to a third party; (b) infringes any third party intellectual property rights or any applicable law; or (c) constitutes “spam” or is unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, libelous, obscene, vulgar, invasive of another’s privacy, hateful, or racially, ethnically, or otherwise objectionable.  
+•	All Feedback is the exclusive property and Confidential Information (as defined below) of NVIDIA, and You hereby assign all Feedback to NVIDIA at no cost.  NVIDIA may freely use, reproduce, license, distribute, and otherwise commercialize the Feedback without the payment of any royalties or fees, but is under no obligation to use or incorporate Feedback in any way.  
+•	You further agree that NVIDIA shall be free to use any general knowledge, skills and experience, (including, but not limited to, ideas, concepts, know-how, or techniques) ("Residuals"), contained in 
+(i)	Feedback provided by You to NVIDIA; 
+(ii)	Your products shared or disclosed to NVIDIA in connection with the Feedback; or 
+(iii)	Your confidential information voluntarily provided to NVIDIA in connection with the Feedback, which are retained in the memories of NVIDIA’s employees, agents, or contractors who have had access to such Residuals. 
+Subject to the terms and conditions of this Agreement, NVIDIA’s employees, agents, or contractors shall not be prevented from using Residuals as part of such employee’s, agent’s or contractor’s general knowledge, skills, experience, talent, and/or expertise. NVIDIA shall not have any obligation to limit or restrict the assignment of such employees, agents or contractors or to pay royalties for any work resulting from the use of Residuals.
+
+Freedom of Action
+You agree that this Agreement is nonexclusive and NVIDIA may currently or in the future be developing software, other technology or confidential information internally, or receiving confidential information from other parties that may be similar to the Feedback and Your confidential information, which may be provided to NVIDIA in connection with Feedback by You. Accordingly, You agree that nothing in this Agreement will be construed as a representation or inference that NVIDIA will not develop, design, manufacture, acquire, market products, or have products developed, designed, manufactured, acquired, or marketed for NVIDIA, that compete with the Your products or confidential information.
+
+Confidential Information
+“Confidential Information” shall mean (i) any technical or proprietary information disclosed by NVIDIA to You hereunder that is not generally known or that a reasonable person would understand to be confidential or proprietary based on the content of the information and the circumstances of its disclosure, whether or not explicitly designated as confidential information, including, but not limited to, all Materials provided to You as a Registered Developer under the Program; and (ii) all Feedback.  
+
+•	You agree to protect the confidentiality of the Confidential Information of NVIDIA the same manner that You protect the confidentiality of Your own proprietary and Confidential Information of like kind, but in no event using less than a reasonable standard of care.  
+•	You shall not disclose or use any Confidential Information of NVIDIA for any purpose outside the scope of this Agreement, except with NVIDIA’s prior written permission.  
+•	You shall not disclose Confidential Information to any third parties, including any affiliates, subsidiaries, parent or sister companies, without the express prior written approval of NVIDIA. You shall disclose Confidential Information only to other individuals who: (i) have a need to know in order for You to carry out the uses for which Confidential Information is provided hereunder; and (ii) have agreed in writing to be bound to nondisclosure terms at least as comprehensive as those set forth herein. 
+•	Additionally, if Confidential Information is provided in written form, any copies that are made will be identified on each page as belonging to NVIDIA and marked “NVIDIA CONFIDENTIAL INFORMATION”. 
+•	You acknowledge that unauthorized disclosure or use of NVIDIA’s Confidential Information could cause NVIDIA irreparable harm and significant injury that may be difficult to ascertain; You thereby agree that NVIDIA will have the right to seek injunctive relief to enforce Your obligations under this Agreement in addition to any other rights and remedies it may have.  
+
+Exclusions.  The term “Confidential Information” does not include any materials or information to the extent that You can demonstrate that such materials or information: (1) has been published or is otherwise readily available to the public other than by a breach of this Agreement; (2) has been rightfully received by You from a third party without confidential limitations; or (3) has been independently developed for You by personnel or agents having no access to the NVIDIA Confidential Information. 
+
+Return and Destruction of Confidential Information.  All obligations of confidentiality shall survive the termination of this Agreement. NVIDIA may, at any time: (i) cease disclosing Confidential Information to You without any liability; and/or (ii) request in writing the return or destruction of all or any part of its Confidential Information disclosed hereunder, and all copies thereof, and You shall promptly comply with such request at its own expense, and certify in writing to NVIDIA its compliance.
+
+NO WARRANTIES
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PROGRAM, SITE AND ALL MATERIALS PROVIDED HEREUNDER ARE PROVIDED "AS IS" AND NVIDIA AND ITS SUPPLIERS DISCLAIM ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT.
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL NVIDIA OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE PROGRAM OR ANY MATERIALS THEREUNDER, EVEN IF NVIDIA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  IF, NOTWITHSTANDING ANY OTHER PROVISIONS OF THIS AGREEMENT, NVIDIA IS FOUND TO BE LIABLE TO YOU FOR ANY DAMAGE OR LOSS THAT ARISES OUT OF OR IS IN ANY WAY CONNECTED TO THIS AGREEMENT, NVIDIA’S ENTIRE LIABILITY FOR DIRECT DAMAGES UNDER THIS AGREEMENT SHALL BE LIMITED TO FIFTY DOLLARS ($50.00).
+
+Communication
+NVIDIA may correspond with You from time to time in the form of phone calls and/or emails and may include, but not be limited to, marketing materials, technical information, and updates and/or changes regarding the Program. By agreeing to this Agreement, You consent that NVIDIA may provide You with such communications.
+
+Termination
+NVIDIA may terminate this Agreement at any time or suspend You as a Registered Developer in the Program at any time at NVIDIA’s sole discretion.  You may terminate your participation as a Registered Developer at any time, for any reason, by notifying NVIDIA in writing, at which point this Agreement will terminate. Upon termination or suspension, all of Your rights and licenses under this Agreement shall cease (including Your right to access the Program and Site), and You will immediately destroy the Materials or return all copies of the Materials to NVIDIA, and certify to NVIDIA in writing that such actions have been completed.  Those provisions in this Agreement, which by their nature need to survive the termination or expiration of this Agreement, shall survive termination or expiration of the Agreement, including but not limited to the sections entitled "Feedback", "Freedom of Action", "Confidential Information", "No warranties", "No Liability for Consequential Damages", "Communication", "Termination", and "Miscellaneous". 
+
+Third Party Notices
+Certain Materials provided to You may be accompanied by their own licensing terms, in which case such licensing terms will govern Your use of that particular third party materials.  The license terms associated with those programs apply to Your use of them.  You are solely responsible for verifying and obtaining the necessary licenses from such third party with respect to Your use therein.
+
+The linked sites are not under the control of NVIDIA and NVIDIA is not responsible for the content of any linked site or any link contained in a linked site, and reserves the right to remove any link at any time. NVIDIA does not endorse companies or products to which it links. If You decide to access any of the third party sites linked to this Site, You do this entirely at Your own risk.
+
+MISCELLANEOUS (NVIDIA’s standard legal requirements)
+Applicable Law and Jurisdiction
+Claims arising under this Agreement shall be governed by the laws of Delaware, excluding its principles of conflict of laws and the United Nations Convention on Contracts for the Sale of Goods. The state and/or federal courts residing in Santa Clara County, California shall have exclusive jurisdiction over any dispute or claim arising out of this Agreement. You may not export the Materials in violation of applicable export laws and regulations.
+
+Government Restricted Rights
+All Materials delivered under this Agreement are subject to US export control laws and may be subject to export or import regulations in other countries. You agree that You will not ship, transfer or export the Software into any country, or use the Materials   in any manner, prohibited by the United States Bureau of Industry and Security or any export laws, restrictions or regulations. You agree to comply strictly with all such laws and regulations and acknowledge that You have the responsibility to obtain such licenses to export, re-export, import or use as may be required after delivery to You.
+
+Certain of the Materials have been developed entirely at private expense and is commercial computer software provided with RESTRICTED RIGHTS. Use, duplication or disclosure of the Materials by the U.S. Government or a U.S. Government subcontractor is subject to the restrictions set forth in the Agreement under which the Materials were obtained pursuant to DFARS 227.7202-3(a) or as set forth in subparagraphs (c)(1) and (2) of the Commercial Computer Software - Restricted Rights clause at FAR 52.227-19, as applicable. Contractor/manufacturer is NVIDIA, 2701 San Tomas Expressway, Santa Clara, CA 95050. Use of the Materials by the Government constitutes acknowledgment of NVIDIA’s proprietary rights therein.
+
+Independent Contractor; No Waiver; Severability; Entire Agreement, etc.  
+Your relationship to NVIDIA is that of an independent contractor, and neither party is an agent or partner of the other. You will not have, and will not represent to any third party that it has, any authority to act on behalf of NVIDIA.  If any provision of this Agreement is inconsistent with, or cannot be fully enforced under, the law, such provision will be construed as limited to the extent necessary to be consistent with and fully enforceable under the law. This Agreement is the final, complete and exclusive agreement between the parties relating to the subject matter hereof, and supersedes all prior or contemporaneous understandings and agreements relating to such subject matter, whether oral or written. This Agreement is solely between NVIDIA and You.  There are no third party beneficiaries, express or implied, to this Agreement.  No failure or delay on the part of either party in the exercise of any right, power or remedy under this Agreement or under law, or to insist upon or enforce performance by the other party of any of the provisions of this Agreement or under law, shall operate as a waiver thereof, nor shall any single or partial exercise of any right, power or remedy preclude other or further exercise thereof, or the exercise of any other right, power or remedy; rather the provision, right, or remedy shall be and remain in full force and effect.  This Agreement may only be modified in writing signed by an authorized officer of NVIDIA.  This Agreement, and Your rights and obligations herein, may not be assigned, subcontracted, delegated, or otherwise transferred by You without NVIDIA’s prior written consent, and any attempted assignment, subcontract, delegation, or transfer in violation of the foregoing will be null and void.   The terms of this Agreement shall be binding upon assignees.
+
+Rev 2014-02 </textarea><div class="grippie"></div></div>
+</div>
+<div class="form-type-checkbox form-item-extras-1 form-item checkbox">
+ <input type="checkbox" id="edit-extras-1" name="extras-1" value="1" class="form-checkbox required">  <label for="edit-extras-1">I am 13 years of age or older <span class="form-required" title="This field is required.">*</span></label>
+
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>Sorry, you must be at least 13</span></div>
+<div class="form-type-checkbox form-item-legal-accept form-item checkbox">
+ <input type="checkbox" id="edit-legal-accept" name="legal_accept" value="1" class="form-checkbox required">  <label for="edit-legal-accept"><strong>Accept</strong> Terms &amp; Conditions of Use <span class="form-required" title="This field is required.">*</span></label>
+
+<span class="error-message" style="display: none;"><i class="fa fa-times"></i>Please, accept terms</span></div>
+  </div>
+  </fieldset>
+<button class="btn btn-primary form-submit notValid" id="edit-finish" name="op" value="Submit" type="submit">Submit</button>
+</div></form>
+</section> <!-- /.block -->
+  </div>
+                  </section>
+
+        
+      </div>
+    </div>
+    <div class="separator"></div>
+  </div>
+  
+  <footer>
+    <div class="footer-links">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="padding-md-footer">
+                <div class="logo-footer"></div>
+              </div>
+            </div>
+                      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 padding-section-footer">
+                <div class="region region-footer-menu">
+    <div class="block block-menu" id="block-menu-menu-footer-menu">
+  <div class="block-content zone-select">
+    <ul class="menu nav"><li class="first leaf"><a href="/computeworks" title="">COMPUTEWORKS</a></li>
+<li class="leaf"><a href="/gameworks" title="">GAMEWORKS</a></li>
+<li class="leaf"><a href="/embedded-computing" title="">JETPACK</a></li>
+<li class="last leaf"><a href="/designworks" title="">DESIGNWORKS</a></li>
+</ul>  </div>
+</div>
+  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                                </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-boilerplate">
+      <div class="container">
+        <div class="boilerplate">
+                    <div class="col-xs-12 col-sm-12 col-lg-9 padding-sm-bottom">
+            Copyright © 2017 NVIDIA Corporation                          <ul class="legal_links"><li class="first leaf"><a href="http://www.nvidia.com/object/legal_info.html">Legal Information</a></li>
+<li class="last leaf"><a href="http://www.nvidia.com/object/privacy_policy.html">Privacy Policy</a></li>
+</ul>                      </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  <iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_nvidia_0" src="https://nvidia.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fdeveloper.nvidia.com%2Fdeveloper-program%2Fsignup" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe><script>_satellite.pageBottom();</script>
+<script src="https://developer.nvidia.com/sites/default/files/js/js_GwCWfYD7BVi62WfAEr1qMBoCTw0JX9dKnZPpgobm_sc.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9557dbf16c","applicationID":"9052762","transactionName":"ZFADMkRTVxcEARdRWl0aIAVCW1YKSgYRTUVSWT4BU0ZmAgoQDg==","queueTime":0,"applicationTime":164,"atts":"SBcARAxJRBk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div id="sidr" class="sidr left"><div class="sidr-inner">
+
+              <ul class="menu nav navbar-nav"><li class="first leaf"><a href="/computeworks" title="">COMPUTEWORKS</a></li>
+<li class="leaf"><a href="/gameworks" title="">GAMEWORKS</a></li>
+<li class="leaf"><a href="/embedded-computing" title="">JETPACK</a></li>
+<li class="leaf"><a href="/designworks" title="">DESIGNWORKS</a></li>
+<li class="last leaf"><a href="/drive">DRIVE</a></li>
+</ul>            <ul class="nav navbar-nav navbar-margin navbar-right navbar-margin-media login-nav">
+                  <li class="search" id="search-top">
+            <div class="search-form" id="search-top-form">
+              <form class="gss form-search content-search" action="/developer-program/signup" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">Search form</h2>
+    <div class="input-group"><input title="Enter the terms you wish to search for." placeholder="Search..." class="form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit" class="btn btn-default"><i class="icon glyphicon glyphicon-search" aria-hidden="true"></i></button></span></div><button class="element-invisible btn btn-primary form-submit" id="edit-submit" name="op" value="Search" type="submit">Search</button>
+<input type="hidden" name="form_build_id" value="form-PckZA2NW0RbfpluvP2xlovsWpeYY8zdq9Bk4hC24Hd0">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>            </div>
+          </li>
+        
+                  <li class="member-area-link">
+            <a href="/developer-program" class="member-area-link-locked link-theme-devzone_base"><i class="fa fa-lock fa-fw"></i>Register Now</a>          </li>
+        
+          
+                      <li class="dropdown">
+              <form action="/developer-program/signup?destination=group/node/874688/subscribe/og_user_node" method="post" id="user-login-form" accept-charset="UTF-8"><div><div id="toboggan-container" class="toboggan-container"><div id="toboggan-login-link-container" class="toboggan-login-link-container"><a href="/user/login?destination=group/node/874688/subscribe/og_user_node" id="toboggan-login-link" class="toboggan-login-link">Log in</a></div><div id="toboggan-login" class="user-login-block toggleboggan_setup-processed" style="display: none;"><div class="form-type-textfield form-item-name form-item form-group">
+ <input placeholder="Email" class="form-control form-text required" type="text" id="edit-name--2" name="name" value="" size="15" maxlength="60">
+</div>
+<div class="form-type-password form-item-pass form-item form-group">
+ <input placeholder="Password" class="form-control form-text required" type="password" id="edit-pass" name="pass" size="15" maxlength="128">
+</div>
+<input type="hidden" name="form_build_id" value="form-ceKtJ7r7peMhYHvAaPygxMoZFKMylCqROv2tlp6Ybvs">
+<input type="hidden" name="form_id" value="user_login_block">
+<button class="btn btn-default form-submit" id="edit-submit--2" name="op" value="Log in" type="submit">Log in</button>
+<a href="/user/password" title="Request new password via e-mail.">Forgot password?</a></div></div></div></form>            </li>
+          
+      </ul>
+  </div></div></body></html>

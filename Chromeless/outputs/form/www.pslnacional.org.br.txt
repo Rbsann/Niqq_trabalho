@@ -1,0 +1,451 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css-alg/appform.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js-alg/jquery.validate-1.8.1.js"></script>
+  <script type="text/javascript" src="js-alg/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="js-alg/appform.js"></script>
+
+  <title>Partido Social Liberal</title>
+</head>
+
+<body class="js-page-body">
+
+  <div class="app-wrapper">
+    <div class="app-header">
+        <a href="http://livres.psl.org.br"><img width="60" src="livres/img-alg/livres-logo.png"></a>
+    </div>
+
+    <div class="app-container">
+
+      <h1 class="app-brand">
+        <a href="/">
+          <img src="img-alg/psl-logo.svg" alt="Partido Social Liberal">
+        </a>
+      </h1>
+
+      <h2>Siga o <strong>PSL</strong> nas redes sociais</h2>
+
+      <div class="app-social-links">
+        <a class="app-btn app-btn-facebook" href="https://www.facebook.com/PSLnacional17/" target="_blank">
+          <span><i class="fa fa-facebook-official fa-fw"></i> Facebook</span>
+        </a>
+
+        <a class="app-btn app-btn-twitter" href="https://twitter.com/PSLnacional" target="_blank">
+          <span><i class="fa fa-twitter fa-fw"></i></span>
+        </a>
+
+        <a class="app-btn app-btn-instagram" href="https://www.instagram.com/pslnacional17/" target="_blank">
+          <span><i class="fa fa-instagram fa-fw"></i></span>
+        </a>
+
+        <a class="app-btn app-btn-youtube" href="https://www.facebook.com/PSLnacional17/videos/1000964159984367/?autoplay_reason=gatekeeper&amp;video_container_type=0&amp;app_id=2392950137" target="_blank">
+          <span><i class="fa fa-youtube-play fa-fw"></i></span>
+        </a>
+      </div>
+
+      <a class="app-btn app-btn-instagram app-btn-block js-toggle-sidebar" href="#">
+        <span><strong>Em que acreditamos</strong></span>
+      </a>
+      <a class="app-btn app-btn-instagram app-btn-block js-toggle-sidebar2" href="#" style="margin-top:4px;">
+        <span><strong>Perguntas Frequentes</strong></span>
+      </a>
+      <a class="app-btn app-btn-instagram app-btn-block js-toggle-sidebar4" href="#" style="margin-top:4px;">
+        <span><strong>Fique por dentro</strong></span>
+      </a>
+      <a class="app-btn app-btn-instagram app-btn-block js-toggle-sidebar3" href="#" style="margin-top:4px;">
+        <span><strong>Filie-se</strong></span>
+      </a>
+    </div>
+
+    <footer class="app-footer">
+      <address>
+        PSL - Partido Social Liberal<br>
+        DIR. Nacional: SCS, Quadra 01, Bloco E, sala 1203, Ed. Ceará – Brasília/DF – CEP: 70.303-900
+        Fone: 61. 3322-1721 e 3225-1805
+      </address>
+    </footer>
+  </div>
+
+  <aside class="app-sidebar">
+    <div class="app-sidebar-inner">
+      <button class="app-sidebar-close js-toggle-sidebar"><span>×</span></button>
+
+      <h1>Nossas ideias</h1>
+
+      <h2>1. Livre cooperação social</h2>
+
+      <p>Cooperação é melhor do que coerção. Defendemos que as pessoas sejam capazes de viver pacificamente - juntas e livres - em uma sociedade onde a cooperação e as trocas voluntárias prevaleçam sobre a coerção e a violência.</p>
+
+      <p>Em poucas palavras: que a autonomia contratual seja a regra, e não a exceção. Que políticos, burocratas e entes monopolistas não assumam o protagonismo dos cidadãos, organizações da sociedade civil e empresas. Que trabalho e geração de riqueza prevaleçam sobre impostos e burocracia.</p>
+
+      <h2>2. Federalismo</h2>
+
+      <p>Dar mais poderes ao agente mais próximo e mais diretamente interessado na solução dos problemas garante maior efetividade, além de evitar a concentração de uma quantidade excessiva de atribuições nas mesmas mãos.</p>
+
+      <p>Desta forma, pleiteamos que tudo aquilo que puder ser feito pelo indivíduo, assim deve ser feito. As atividades que não puderem ser realizadas pelos cidadãos isoladamente, que sejam primeiramente de responsabilidade das famílias, associações ou empresas. Apenas posteriormente, o município, o estado e, por último, o governo federal devem se envolver.</p>
+
+      <h2>3. Governo limitado</h2>
+
+      <p>Um governo é um conjunto de instituições por meio das quais nós, como sociedade, mediamos nossos conflitos, defendemos nossos direitos e atendemos a determinadas necessidades comuns. Para estabelecer e fazer funcionar as instituições, nós os cidadãos constituímos servidores públicos, isto é, agentes do Estado.</p>
+
+      <p>Considerando que o cidadão é mais livre quanto mais o governo deixar de regular a sua vida, e com o propósito de evitar abusos pelos agentes do Estado, defendemos um governo limitado, descentralizado e com separação de poderes.</p>
+
+      <h2>4. Estado de Direito e Império da Lei</h2>
+
+      <p>O Estado deve se subordinar à lei e aos direitos fundamentais. Numa palavra: o Direito curva o poder, colocando-o sob o império da lei.</p>
+
+      <p>Sob o ponto de vista prático, isso significa que o governo, os poderes locais e regionais, os órgãos, funcionários ou agentes dos poderes devem observar, respeitar e cumprir as normas jurídicas em vigor, tal como devem fazê-lo os entes privados.</p>
+
+      <h2>5. Democracia Representativa, Transparente e Plural</h2>
+
+      <p>Apesar de todas as suas imperfeições, a democracia representativa  regime de governo baseado na escolha de representantes políticos por meio de eleições periódicas  é a melhor opção disponível.</p>
+
+      <p>Os representantes eleitos do povo devem corresponder à vontade dos seus eleitores. Essa representação demanda uma verdadeira mentalidade de prestação de contas, além de canais  de diálogo e comunicação que garantam o efetivo respeito pela vontade e opinião do eleitor. As tecnologias de informação e comunicação são aqui um novo suporte com enormes potencialidades a serem desenvolvidos.</p>
+
+      <h2>6. Qualidade de vida com inclusão social</h2>
+
+      <p>Defendemos a focalização dos programas sociais para as pessoas em condição de maior vulnerabilidade. O Estado deve ampliar a oportunidade de acesso a educação e saúde de qualidade para os mais pobres, concentrando-se no financiamento dos serviços em parceria com a gestão da iniciativa privada, com a integração dos individuos ao mercado, preservando o poder de decisão nas mãos dos cidadãos através da adoção de Vale-Educação (voucher), Escolas Comunitárias (charter-schools) e programas congêneres.</p>
+
+      <p>Devemos combater o clientelismo diminuindo a interferência de políticos e burocratas, fazendo com que os próprios individuos sejam protagonistas de sua história.</p>
+    </div>
+  </aside>
+
+  <aside class="app-sidebar2">
+    <div class="app-sidebar-inner">
+      <button class="app-sidebar-close2 js-toggle-sidebar2 "><span>×</span></button>
+
+      <h1 id="title_faq">Perguntas Frequentes</h1>
+      <ul class="hotlinks">
+        <li><a href="#faq1">O que o PSL defende?</a></li>
+        <li><a href="#faq2">O PSL é de Direita ou de Esquerda?</a></li>
+        <li><a href="#faq3">O que é o social-liberalismo?</a></li>
+        <li><a href="#faq4">O que significa ser social-liberal?</a></li>
+        <li><a href="#faq5">Mas SOCIAL e LIBERAL não são ideias contrárias?</a></li>
+        <li><a href="#faq6">O social-liberalismo defende os ricos e as grandes empresas ou aos pobres?</a></li>
+        <li><a href="#faq7">O que é dever do Estado no contexto atual?</a></li>
+        <li><a href="#faq8">Existem países onde o social-liberalismo foi posto em prática?</a></li>
+      </ul>
+
+      <h2 id="faq1">1. O que o PSL defende?</h2>
+      <p>O PSL defende que uma sociedade livre é o principal motor para a superação da pobreza e o desenvolvimento do país. Precisamos de cidadãos livres, um governo eficiente com atribuições limitadas, poder descentralizado, maior autonomia aos municípios e engajamento da sociedade civil. </p>
+      <p>A relação entre governantes e cidadãos também precisa ser modificada. Políticos e servidores públicos olham para os brasileiros de cima para baixo. Isso precisa ser modificado para uma lógica de prestação, cujo maior objetivo é garantir a paz para o cidadão, parando de interferir indevidamente na vida das pessoas, e mantendo uma atuação baseada nos valores de livre-mercado, democracia, Estado de Direito e transparência em todas as suas instâncias.</p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+      </p><h2 id="faq2">2. O PSL é de Direita ou de Esquerda?</h2>
+      <p>Aos olhos de um conservador, o Partido Social Liberal é um partido mais a esquerda. Defendemos um auto-governo (liberdade) nos costumes. Em outras palavras, que cada pessoa seja livre para viver sua vida como melhor lhe parecer. Para o PSL, governo não deve ser babá de adulto.</p>
+      <p>Aos olhos de um socialista ou mesmo um social-democrata, o Partido Social Liberal está mais a direita. Defendemos um auto-governo (liberdade) também em questões econômicas. Isto é, buscamos uma economia baseada em trocas voluntárias, em que as pessoas possam trabalhar e colaborar livremente.</p>
+      <p>Pode parecer clichê, mas não acreditamos no eixo "direita vs esquerda" como o mais elucidativo para definir uma posição política. Preferimos o eixo "liberdade vs. autoritarismo". E nesse eixo, sem dúvidas, estamos do lado da liberdade.</p>
+      <p>O PSL defende o social-liberalismo, isto é, um liberalismo com preocupação social. E fazemos o alerta: social vem de sociedade. A sociedade deve prevalecer sobre o estado, assim como a colaboração e a liberdade devem prevalecer sobre o autoritarismo, a imposição e a violência.</p>
+      <p>-&gt; Leia mais sobre essa questão: <a href="https://goo.gl/RtEblO" target="_blank">https://goo.gl/RtEblO</a></p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+      </p><h2 id="faq3">3. O que é o social-liberalismo?</h2>
+      <p>Nas palavras de José Guilherme Merquior, "o liberalismo moderno é um social-liberalismo, é um liberalismo que não tem mais aquela ingenuidade, aquela inocência diante da complexidade do fenômeno social, que o liberalismo clássico tinha. O liberalismo moderno não possui complexos frente à questão social, que ele assume." </p>
+      <p>Por muitos anos, no Brasil, ser liberal tem sido associado a ser antissocial, ter falta de empatia, incapacidade de exercer alteridade. Não se preocupar com o próximo, em resumo. Nada mais errado. Ser liberal é acreditar que a liberdade - não somente a nossa, mas também a daqueles de quem discordamos - nos levará a um mundo mais próspero, com mais autonomia, com menos violência e pobreza.</p>
+      <p>Uma defesa puramente egoísta da liberdade não tem grandes méritos. Pense bem: é quase instintivo querer liberdade para fazer o que queremos. O maior diferencial do liberalismo, o ponto que distingue liberais de não-liberais, é o compromisso em defender a liberdade do outro - mesmo quando a escolha do outro contraria a nossa própria vontade. É o "amor à liberdade alheia", como pedia Joaquim Nabuco.</p>
+      <p>No seu manifesto abolicionista, Joaquim Nabuco faz um convite aos brasileiros: “eduquem os seus filhos, eduquem-se a si mesmos, no amor da liberdade alheia.” Mas vejam como é difícil amar a liberdade dos outros. É conveniente amar a liberdade que aproveitamos diretamente. O empresário quer ter liberdade econômica, o crente liberdade religiosa e o artista quer ter livre expressão. Mas quando se tenta universalizar essas mesmas liberdades, logo vem o empresário reclamar de concorrência predatória, o crente querer oficializar sua religião e o artista querer censurar o crítico.Nabuco não pedia para amarmos a liberdade em abstrato, mas a liberdade concreta. A liberdade que não se resume à teoria, mas se realiza em pessoas. É a capacidade do hétero amar a liberdade do gay, do secularista amar a liberdade do cristão, do empresário amar a liberdade de seu concorrente.</p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+      </p><h2 id="faq4">4. O que significa ser social-liberal?</h2>
+      <p>Ser social-liberal é ter compromisso com a liberdade, sobretudo com a liberdade de quem mais precisa. É acreditar que devemos empoderar o brasileiro e mudar o centro do poder, tirando as decisões de Brasília e levando para dentro da nossa casa. É ter como prioridade cortar as mordomias e privilégios de políticos e apadrinhados, e lutar diariamente pelo respeito aos direitos fundamentais de quem está distante do poder.</p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+
+      </p><h2 id="faq5">5. Mas SOCIAL e LIBERAL não são ideias contrárias?</h2>
+      <p>Não. Apesar de por muito tempo ter sido associada ao socialismo e à defesa do Estado no Brasil, a palavra Social remete a Sociedade e não significa estatismo. Para o PSL, Social expressa a nossa preocupação com os profundos problemas sociais existentes no Brasil. Defendemos a construção de uma sociedade livre, com o engajamento de grandes redes de cooperação para a resolução dos diversos problemas, com a mínima interferência do poder político e da burocracia.</p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+      </p><h2 id="faq6">6. O social-liberalismo defende os ricos e as grandes empresas ou aos pobres?</h2>
+      <p>Não. O social-liberalismo é oposto ao patrimonialismo e à política do compadrio. Os indivíduos não devem ser sujeitados ao abuso do poder econômico do binômio capital-Estado. O antídoto para isso é a cooperação social através do mercado, com um ambiente propício a criatividade, inovação e trocas voluntárias entre os agentes privados. </p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+      </p><h2 id="faq7">7. O que é dever do Estado no contexto atual?</h2>
+      <p>O Estado deve prover primariamente os serviços de segurança e justiça, além de promover a emancipação de seus cidadãos facilitando o acesso dos mais pobres a serviços de educação, saúde e previdência.</p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+      </p><h2 id="faq8">8. Existem países onde o social-liberalismo foi posto em prática?</h2>
+      <p>Sim, em diferentes escalas e peculiaridades, o social-liberalismo é exercido em países como Hong Kong, Suíça, Suécia, Dinamarca e Nova Zelândia. Observe o índice de liberdade humana elaborado pelo Cato Institute, em 2015: <a href="http://goo.gl/L7Bg6B" target="_blank">http://goo.gl/L7Bg6B</a></p>
+      <p class="up"><a href="#title_faq"><img src="img-alg/up.png"> Voltar para o topo</a>
+
+    </p></div>
+  </aside>
+
+  <aside class="app-sidebar3">
+    <div class="app-sidebar-inner">
+      <button class="app-sidebar-close3 js-toggle-sidebar3 "><span>×</span></button>
+        <form class="filiacao" action="processa-form.php" method="post" novalidate="novalidate">
+        <div class="content row validationGroup" aria-hidden="false">
+                <div class="validationPart">
+                    <h3>Se identificou com os valores social-liberais?<br>Filie-se ao PSL</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Insira seus seus dados</h3>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6">
+                                <label>Nome Completo</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="required form-control nomecompleto" required="" data-val="true" data-val-required="O campo Nome é obrigatório" id="Nome" maxlength="250" name="Nome" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6">
+                                <label>CPF</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_CPF  required form-control cpf" required="" data-val="true" data-val-required="O campo CPF é obrigatório" id="CPF" maxlength="250" name="CPF" type="text" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-12">
+                                <label>Email</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_email required form-control email" data-val="true" data-val-required="O campo Email é obrigatório" id="Email" maxlength="250" name="Email" type="email" pattern="[^ @]*@[^ @]*">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6">
+                                <label>Celular</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Celular required form-control tel " data-val="true" data-val-required="O campo Celular é obrigatório" id="Celular" maxlength="15" name="Celular" type="text" value="" autocomplete="off">
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6">
+                                <label>Data de Nascimento</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_DataNascimento dateBR  required form-control  " data-val="true" data-val-date="The field Data de Nascimento must be a date." data-val-required="O campo Data de Nascimento é obrigatório" id="DataNascimento" maxlength="250" name="DataNascimento" type="text" value="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Insira suas informações eleitorais</h3>
+                            <p>Se você não lembrar tudo, <a target="_blank" href="http://www.tse.jus.br/eleitor/servicos/titulo-e-local-de-votacao/">clique aqui</a> para consultar o site do TSE</p>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6">
+                                <label>Nº do título (apenas números)</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="form-control tituloEleitoral required tb_Filiado_TituloEleitoral" data-val="true" data-val-required="O campo Título Eleitoral é obrigatório" id="TituloEleitoral" maxlength="12" name="TituloEleitoral" type="text" value="">
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3">
+                                <label>Zona</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Zona  required form-control  " data-val="true" data-val-required="O campo Zona é obrigatório" id="Zona" maxlength="3" name="Zona" type="text" value="">
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3">
+                                <label>Seção</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Secao  required form-control  " data-val="true" data-val-required="O campo Seção é obrigatório" id="Secao" maxlength="4" name="Secao" type="text" value="">
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6" aria-hidden="false">
+                                <label>UF</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <select class="form-control required uf" data-val="true" data-val-number="The field UF must be a number." id="UF" name="UF" tabindex="0" aria-invalid="false"><option value=""></option>
+                                        <option value="01">Acre</option>
+                                        <option value="02">Alagoas</option>
+                                        <option value="03">Amazonas</option>
+                                        <option value="04">Amapá</option>
+                                        <option value="05">Bahia</option>
+                                        <option value="06">Ceará</option>
+                                        <option value="07">Distrito Federal</option>
+                                        <option value="08">Espírito Santo</option>
+                                        <option value="09">Goiás</option>
+                                        <option value="10">Maranhão</option>
+                                        <option value="11">Minas Gerais</option>
+                                        <option value="12">Mato Grosso do Sul</option>
+                                        <option value="13">Mato Grosso</option>
+                                        <option value="14">Pará</option>
+                                        <option value="15">Paraíba</option>
+                                        <option value="16">Pernambuco</option>
+                                        <option value="17">Piauí</option>
+                                        <option value="18">Paraná</option>
+                                        <option value="19">Rio de Janeiro</option>
+                                        <option value="20">Rio Grande do Norte</option>
+                                        <option value="21">Rondônia</option>
+                                        <option value="22">Roraima</option>
+                                        <option value="23">Rio Grande do Sul</option>
+                                        <option value="24">Santa Catarina</option>
+                                        <option value="25">Sergipe</option>
+                                        <option value="26">São Paulo</option>
+                                        <option value="27">Tocantins</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6" aria-hidden="true">
+                                <label>Município</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="form-control  municipio" id="Cidade" maxlength="250" name="Cidade" type="text" required="" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Insira seu Endereço</h3>
+                            <div class="clearfix"></div>
+
+
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3" aria-hidden="false">
+                                <label>CEP</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="form-control required tb_Filiado_Cep cep" id="Cep" maxlength="250" name="Cep" type="text" value="" tabindex="0" aria-invalid="false" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3" aria-hidden="false">
+                                <label>Estado</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <select class="form-control required tb_Filiado_Estado" data-val="true" id="EstadoId" name="EstadoId" tabindex="0" aria-invalid="false"><option value=""></option>
+                                        <option value="01">Acre</option>
+                                        <option value="02">Alagoas</option>
+                                        <option value="03">Amazonas</option>
+                                        <option value="04">Amapá</option>
+                                        <option value="05">Bahia</option>
+                                        <option value="06">Ceará</option>
+                                        <option value="07">Distrito Federal</option>
+                                        <option value="08">Espírito Santo</option>
+                                        <option value="09">Goiás</option>
+                                        <option value="10">Maranhão</option>
+                                        <option value="11">Minas Gerais</option>
+                                        <option value="12">Mato Grosso do Sul</option>
+                                        <option value="13">Mato Grosso</option>
+                                        <option value="14">Pará</option>
+                                        <option value="15">Paraíba</option>
+                                        <option value="16">Pernambuco</option>
+                                        <option value="17">Piauí</option>
+                                        <option value="18">Paraná</option>
+                                        <option value="19">Rio de Janeiro</option>
+                                        <option value="20">Rio Grande do Norte</option>
+                                        <option value="21">Rondônia</option>
+                                        <option value="22">Roraima</option>
+                                        <option value="23">Rio Grande do Sul</option>
+                                        <option value="24">Santa Catarina</option>
+                                        <option value="25">Sergipe</option>
+                                        <option value="26">São Paulo</option>
+                                        <option value="27">Tocantins</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-6" aria-hidden="false">
+                                <label>Cidade</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="form-control required tb_Filiado_Cidade" id="CidadeId" name="CidadeId" maxlength="250" type="text" value="" tabindex="0" aria-invalid="false" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3">
+                                <label>Logradouro</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Endereco  required form-control  " data-val="true" data-val-required="O campo Endereco é obrigatório" id="Endereco" maxlength="250" name="Endereco" type="text" value="">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3">
+                                <label>Número</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Numero  required form-control  " data-val="true" data-val-required="O campo Numero é obrigatório" id="Numero" maxlength="50" name="Numero" type="text" value="">
+                                </div>
+
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3">
+                                <label>Complemento</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Complemento form-control  " id="Complemento" maxlength="50" name="Complemento" type="text" value="">
+                                </div>
+
+                            </div>
+
+                            <div class="form-group col-md-6 col-sm-12 col-lg-3">
+                                <label>Bairro</label>
+                                <div class="input-content" style="width: 100%;">
+                                    <input class="tb_Filiado_Bairro  required form-control  " data-val="true" data-val-required="O campo Bairro é obrigatório" id="Bairro" maxlength="250" name="Bairro" type="text" value="">
+                                </div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Termos</h3>
+                            <div class="clearfix"></div>
+                            <div class="form-group" flex="100">
+                                <label class="checkbox">
+                                    <input data-val="true" data-val-required="The Termo1 field is required." id="Termo1" name="Termo1" type="checkbox" required=""><i></i>Declaro que gozo plenamente de direitos políticos no Brasil e estou de acordo com o <a href="EstatutoPSL2011.pdf" target="_blank">estatuto</a> e os valores do PSL. Declaro que me enquadro dentro dos critérios definidos pela lei da <a href="http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp64.htm?﻿" target="_blank">Ficha Limpa</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="submit" name="btnPagar" value="FILIAR" id="btnFiliar" class="app-btn" tabindex="0">
+                    </div>
+                    <div>
+                        <h4>Ao clicar em FILIAR você estará com o seu processo de filiação pendente e receberá o desenvolvimento do seu processo de filiação por e-mail</h4>
+                        Em caso de dúvidas envie um e-mail para filiacao@psl.org.br﻿
+                    </div>
+                    <div class="mensagem">
+                      <div class="sucesso">
+                      <div class="alert alert-success" role="alert"> <strong>Tudo certo!</strong> Sua solicitação de filiação foi enviada com sucesso. Aguarde contato no seu email.</div>
+                      </div>
+                      <div class="falha">
+                        <div class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                          <span class="sr-only">Erro:</span>
+                          Houve algum erro no envio de sua filiação :( Por favor tenta de novo!
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="clear">
+                </div>
+        </div>
+        </form>
+    </div>
+  </aside>
+  <aside class="app-sidebar4">
+    <div class="app-sidebar-inner">
+      <button class="app-sidebar-close4 js-toggle-sidebar4"><span>×</span></button>
+
+      <h1>Fique por dentro</h1>
+      <iframe src="https://indigo-livres.nationbuilder.com/formulario" width="100%" height="700" frameborder="0" scrolling="no">
+      </iframe>
+
+    </div>
+  </aside>
+
+
+
+
+</body></html>

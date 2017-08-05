@@ -1,0 +1,399 @@
+<!DOCTYPE html><html xmlns:ng="http://angularjs.org"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+        <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=Edge, chrome=1">
+        <title>Cadastro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+        <meta charset="utf-8">
+
+        <link rel="shortcut icon" type="image/png" href="/pc/cf/images/favicon.ico">
+
+        <link rel="stylesheet" media="screen" href="/pc/cf/css/autocomplete.min.css">
+        
+             <link rel="stylesheet" media="screen" href="https://s.glbimg.com/pc/cf/css/site-201783115511.min.css"> 
+        
+        <link rel="stylesheet" media="screen" href="/dyn-assets/4728/header.css">
+
+        <!--[if lte IE 7]><!-->
+        <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20170731114946/recaptcha__pt_br.js"></script><script src="https://s.glbimg.com/pc/cf/javascripts/json2.js"></script>
+        <!--<![endif]-->
+
+        <!--[if lte IE 8]><!-->
+        <script type="text/javascript" src="https://s.glbimg.com/pc/cf/javascripts/es5-shim.min.js"></script>
+        <script type="text/javascript" src="https://s.glbimg.com/pc/cf/javascripts/array.generics.js"></script>
+        <script type="text/javascript">
+            document.createElement('welcome');
+            document.createElement('welcome-link');
+            document.createElement('salutation');
+            document.createElement('autocomplete');
+        </script>
+
+        <script type="text/javascript">
+            var _gaq = window._gaq || [];
+             _gaq.push(
+                 ['_setAccount', 'UA-296593-6'],
+                 ['_setDomainName', '.login.globo.com'],
+                 ['_trackPageview']
+             );
+        </script>
+
+        <script type="text/javascript" src="https://s.glbimg.com/pc/cf/javascripts/ui-utils-ieshiv.min.js"></script>
+        <!--<![endif]-->
+
+        <!--[if lt IE 9]><!-->
+        <script type="text/javascript" src="https://s.glbimg.com/pc/cf/javascripts/html5shiv.min.js"></script>
+        <!--<![endif]-->
+
+    </head>
+
+    <body>
+        <div id="ng-app" ng-app="FlowApp" class="cadun-flow-container ng-scope" ng-controller="MainController" ng-init="initialize('//flow.cadun.globo.com', 4728, 'https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F')">
+
+            <main>
+                <header ng-globoid-sdk-hidden="" focus-on="alertFocus" class="ng-isolate-scope">
+                    <div class="header dynamic-window-sized">
+                        <img src="https://s.glbimg.com/pc/cf/images/logos-globocom-header.png" align="absmiddle" class="product-logo" height="54px">
+                    </div>
+
+                    
+                </header>
+
+                <header ng-globoid-sdk="" class="empty-header dynamic-window-sized ng-hide ng-isolate-scope"></header>
+
+                <div ng-controller="NotificationAreaController" ng-init="init()" class="ng-hide notification-container ng-scope" ng-show="isValid()">
+                    <div class="notification-area">
+                        <div class="dynamic-window-sized">
+                            <span class="notification-area-description ng-binding"></span>
+                            <span class="notification-area-price ng-binding"></span>
+                            <span class="notification-area-extrainfo ng-binding"></span>
+                        </div>
+                    </div>
+                    <span class="notification-area-arrow"></span>
+                </div>
+
+                <div ng-globoid-sdk="" class="alert ng-hide ng-isolate-scope" ng-show="hasMessageToShow()" ng-class="{'alert-success': alertMessage.type == 'success', 'alert-error': alertMessage.type == 'error', 'alert-warning': alertMessage.type == 'warn', 'alert-with-product': false}">
+
+                    <div class="alert-wrapper dynamic-window-sized">
+                        <div class="icon"></div>
+                        <div class="alert-message ng-binding" ng-bind-html="alertMessage.content"></div>
+                    </div>
+                </div>
+                <div ng-globoid-sdk="" class="sdk-container ng-isolate-scope">
+                    
+<header ng-globoid-sdk="" class="dynamic-window-sized ng-hide ng-isolate-scope"></header>
+<div ng-controller="RegistrationController" ng-form="form" ng-init="init()" class="ng-scope ng-pristine ng-invalid ng-invalid-required ng-invalid-recaptcha">
+    <!-- ngInclude:  --><div id="tpl-content" class="container ng-scope" ng-include="" src="currentTpl">
+    <div ng-globoid-sdk-hidden="" class="title-wrapper dynamic-window-sized ng-scope ng-isolate-scope">
+        <welcome title="cadastre-se" subtitle="faça seu cadastro na" whitelabel-name="Globo.com" class="serviceAllowsFacebook ng-isolate-scope"><div class="title-logo">
+    <h1 class="ng-binding">cadastre-se</h1>
+    <span class="subtitle ng-binding">faça seu cadastro na</span> <!-- ngIf: !showLogo -->
+    <!-- ngIf: showLogo --><span ng-if="showLogo" class="globo-img ng-scope">&nbsp;</span><!-- end ngIf: showLogo -->
+</div></welcome>
+        <welcome-link link-to="authentication" service-id="4728" query-string="?tam=widget&amp;url=https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F" prefix="Já tem cadastro?" text="Entre." position="top" class="ng-isolate-scope"><div class="welcome-link top" ng-show="showSignUp">
+    <span class="ng-binding">Já tem cadastro?</span>
+    <a href="/login/4728?tam=widget&amp;url=https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F" ng-click="clickAction()" class="ng-binding">Entre.</a>
+</div></welcome-link>
+        <hr class="strong-title-separator">
+    </div>
+
+    <div class="container ng-scope">
+        <hr ng-globoid-sdk-hidden="" class="title-separator ng-isolate-scope">
+        <div id="content" class="form-container dynamic-window-sized" ng-class="{'noborder': facebookFieldsToHide.nome}">
+            
+            <!-- ngInclude:  --><div ng-globoid-sdk-hidden="" ng-include="" src="'/assets/partials/social_btns.html'" class="ng-scope ng-isolate-scope"><div class="social-login-container ng-scope" ng-controller="SocialController" ng-init="init()" ng-show="currentTpl == 'login-tmpl' || currentTpl == 'form-tmpl'">
+
+    <div class="social-login-title">
+        Ou use sua conta do Facebook:
+    </div>
+
+    <div class="social-network-wrapper">
+        <button class="social-network-button facebook-button" ng-click="facebookAuth()"><span>&nbsp;</span>Entre com o Facebook</button>
+    </div>
+
+    <div class="social-login-footnote">
+        Nunca postaremos sem a sua permissão
+    </div>
+
+    <div class="divider ng-hide" ng-show="currentTpl == 'login-tmpl'">
+        <hr>
+        <span>Ou entre com o login </span>
+        <!-- ngIf: whitelabelName != 'Globo.com' -->
+        <!-- ngIf: whitelabelName == 'Globo.com' --><span ng-if="whitelabelName == 'Globo.com'" class="globo-img ng-scope"></span><!-- end ngIf: whitelabelName == 'Globo.com' -->
+    </div>
+
+    <div class="divider" ng-show="currentTpl == 'form-tmpl'">
+        <hr>
+        <span>Ou faça seu cadastro </span>
+        <!-- ngIf: whitelabelName != 'Globo.com' -->
+        <!-- ngIf: whitelabelName == 'Globo.com' --><span ng-if="whitelabelName == 'Globo.com'" class="globo-img ng-scope"></span><!-- end ngIf: whitelabelName == 'Globo.com' -->
+    </div>
+</div>
+</div>
+            
+
+            <form name="form" class="form-fields-container ng-pristine ng-invalid ng-invalid-required ng-invalid-recaptcha" ng-submit="register()">
+                <fieldset class="no-legend">
+                    <div class="field" ng-hide="facebookFieldsToHide.nome">
+                        <label for="nome">Nome</label>
+                        <input required="required" type="text" id="nome" name="nome" placeholder="" ng-model="registrationForm.user.nome" ng-class="{submitted:registrationForm.submitted, 'has-visited': (blur_nome &amp;&amp; form.nome.$invalid)}" ng-blur="blur_nome=true" ng-init="blur_nome=false" ng-pattern="/^[^!?\$&amp;*,.\-_+=%;:@#\^~`|\\\/\(\)\{\}\[\],.]{3,}$/" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern">
+
+                        <div class="validation-message ng-hide" ng-show="(blur_nome || registrationForm.submitted) &amp;&amp; form.nome.$invalid">
+                            <span class="error" ng-show="form.nome.$error.required">O nome deve ser informado.</span>
+                            <span class="error ng-hide" ng-show="form.nome.$error.pattern">Você precisa informar um nome válido.</span>
+                        </div>
+                    </div>
+
+                    <div class="field" ng-hide="facebookFieldsToHide.email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" ng-model="registrationForm.user.email" autocomplete="off" required="" allowed-email="" ng-model-options="{updateOn: 'blur', debounce: {default: 500}}" ng-blur="blur_email=true" autocapitalize="none" ng-class="{submitted:registrationForm.submitted, 'has-visited': (blur_email &amp;&amp; form.email.$invalid)}" ng-init="blur_email=false" class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+                        <div class="validation-message ng-hide" ng-show="(blur_email || registrationForm.submitted) &amp;&amp; form.email.$invalid">
+                            <span class="error ng-hide" ng-show="form.email.$error.email">Verifique se seu e-mail está escrito corretamente.</span>
+                            <span class="error" ng-show="form.email.$error.required">Você precisa informar um e-mail.</span>
+                            <span class="error ng-hide" ng-show="form.email.$error.unique">Ops! Esse e-mail já está em uso.</span>
+                        </div>
+                        <div class="validation-message ng-hide" ng-show="facebookFieldsToHide.emailValidation">
+                            <span class="error">O Facebook não nos enviou o seu e-mail, favor preencher.</span>
+                        </div>
+                    </div>
+
+                    <div class="field" ng-hide="facebookFieldsToHide.senha">
+                        <label for="senha">Senha <span class="separator-dot">·</span><span class="hint">&nbsp;8 a 15 caracteres</span></label>
+                        <input type="password" name="senha" id="senha" autocomplete="off" maxlength="15" ng-model="registrationForm.user.senha" required="" ng-minlength="8" ng-maxlength="15" ng-model-options="{ debounce: 500 }" ng-blur="blur_senha=true" ng-init="blur_senha=false" ng-class="{submitted:registrationForm.submitted, 'has-visited': (blur_senha &amp;&amp; form.senha.$invalid)}" class="ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-minlength">
+                        <div class="validation-message ng-hide" ng-show="(blur_senha || registrationForm.submitted) &amp;&amp; form.senha.$invalid">
+                            <span class="error ng-hide" ng-show="form.senha.$error.minlength">A senha deve ter pelo menos 8 caracteres.</span>
+                            <span class="error ng-hide" ng-show="form.senha.$error.maxlength">A senha deve ter no máximo 15 caracteres.</span>
+                            <span class="error" ng-show="form.senha.$error.required">Você precisa definir uma senha.</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+                
+
+<div class="field">
+    <label id="recaptcha_label_msg">Verificação de segurança</label>
+    <div id="vrecaptcha" vc-recaptcha="" key="'6Lc65AYUAAAAAMnAyp9jwGkxrEt2-KAJ4M3h6KMt'" ng-model="registrationForm.captcha" on-success="setCaptchaResponse(response)" on-expire="captchaExpired()" class="ng-isolate-scope ng-pristine ng-valid"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6Lc65AYUAAAAAMnAyp9jwGkxrEt2-KAJ4M3h6KMt&amp;co=aHR0cHM6Ly9sb2dpbi5nbG9iby5jb206NDQz&amp;hl=pt-BR&amp;v=r20170731114946&amp;size=normal&amp;cb=nvaw1ufnblj6" title="widget recaptcha" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+</div>
+
+
+                <!-- ngInclude: '/assets/partials/terms_of_use.html' --><div ng-include="'/assets/partials/terms_of_use.html'" class="ng-scope"><div class="termos ng-scope">
+    <input class="terms-of-use-field ng-pristine ng-invalid ng-invalid-required" type="checkbox" name="termos" id="termsOfUse" ng-model="registrationForm.user.termsOfUse" required="" ng-blur="blur_termos=true" ng-init="blur_termos=false">
+
+    <label class="terms-of-use-label" for="termsOfUse">Li e concordo com os
+        <a ng-click="openTermsOfUse()" href="javascript:void(0)">Termos de Uso</a> e
+        <a ng-click="openPrivacyPolicy()" href="javascript:void(0)">Política de Privacidade</a>.
+    </label>
+
+    <div class="validation-message ng-hide" ng-show="(form.termos.$dirty || blur_termos || registrationForm.submitted) &amp;&amp; form.termos.$invalid">
+        <span class="error" ng-show="form.termos.$error.required">
+            Você precisa concordar com os Termos de Uso e Política de Privacidade.
+        </span>
+    </div>
+</div></div>
+
+                <div class="actions">
+                    <button type="submit" class="button ng-binding" ng-disabled="!form.$valid" disabled="disabled">
+                        Cadastrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="dynamic-window-sized ng-scope">
+        <welcome-link link-to="authentication" service-id="4728" query-string="?tam=widget&amp;url=https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F" prefix="Já tem cadastro?" text="Entre." position="bottom" class="ng-isolate-scope"><div class="welcome-link bottom" ng-show="showSignUp">
+    <span class="ng-binding">Já tem cadastro?</span>
+    <a href="/login/4728?tam=widget&amp;url=https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F" ng-click="clickAction()" class="ng-binding">Entre.</a>
+</div></welcome-link>
+    </div>
+</div>
+</div>
+
+<script type="text/ng-template" id="form-tmpl">
+    <div ng-globoid-sdk-hidden class="title-wrapper dynamic-window-sized">
+        <welcome title="cadastre-se" subtitle="faça seu cadastro na" whitelabel-name="Globo.com" class="serviceAllowsFacebook"></welcome>
+        <welcome-link link-to="authentication" service-id="4728" query-string="?tam=widget&amp;url=https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F"
+                      prefix="Já tem cadastro?" text="Entre." position="top"></welcome-link>
+        <hr class="strong-title-separator"/>
+    </div>
+
+    <div class="container">
+        <hr ng-globoid-sdk-hidden class="title-separator"/>
+        <div id="content" class="form-container dynamic-window-sized"
+             ng-class="{'noborder': facebookFieldsToHide.nome}">
+            
+            <div ng-globoid-sdk-hidden ng-include src="'/assets/partials/social_btns.html'"></div>
+            
+
+            <form name="form" class="form-fields-container" ng-submit="register()">
+                <fieldset class="no-legend">
+                    <div class="field" ng-hide="facebookFieldsToHide.nome">
+                        <label for="nome">Nome</label>
+                        <input required="required" type="text" id="nome" name="nome" placeholder=""
+                        ng-model="registrationForm.user.nome" ng-class="{submitted:registrationForm.submitted, 'has-visited': (blur_nome && form.nome.$invalid)}" ng-blur="blur_nome=true"
+                        ng-init="blur_nome=false" ng-pattern="/^[^!?\$&*,.\-_+=%;:@#\^~`|\\\/\(\)\{\}\[\],.]{3,}$/" />
+
+                        <div class="validation-message" ng-show="(blur_nome || registrationForm.submitted) && form.nome.$invalid">
+                            <span class="error" ng-show="form.nome.$error.required">O nome deve ser informado.</span>
+                            <span class="error" ng-show="form.nome.$error.pattern">Você precisa informar um nome válido.</span>
+                        </div>
+                    </div>
+
+                    <div class="field" ng-hide="facebookFieldsToHide.email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email"  ng-model="registrationForm.user.email" autocomplete="off"
+                            required allowed-email ng-model-options="{updateOn: 'blur', debounce: {default: 500}}" ng-blur="blur_email=true" autocapitalize="none"
+                            ng-class="{submitted:registrationForm.submitted, 'has-visited': (blur_email && form.email.$invalid)}" ng-init="blur_email=false"/>
+                        <div class="validation-message" ng-show="(blur_email || registrationForm.submitted) && form.email.$invalid">
+                            <span class="error" ng-show="form.email.$error.email">Verifique se seu e-mail está escrito corretamente.</span>
+                            <span class="error" ng-show="form.email.$error.required">Você precisa informar um e-mail.</span>
+                            <span class="error" ng-show="form.email.$error.unique">Ops! Esse e-mail já está em uso.</span>
+                        </div>
+                        <div class="validation-message" ng-show="facebookFieldsToHide.emailValidation">
+                            <span class="error">O Facebook não nos enviou o seu e-mail, favor preencher.</span>
+                        </div>
+                    </div>
+
+                    <div class="field" ng-hide="facebookFieldsToHide.senha">
+                        <label for="senha">Senha <span class="separator-dot">&middot;</span><span class="hint">&nbsp;8 a 15 caracteres</span></label>
+                        <input type="password" name="senha" id="senha" autocomplete="off" maxlength="15"
+                        ng-model="registrationForm.user.senha" required ng-minlength="8" ng-maxlength="15" ng-model-options="{ debounce: 500 }" ng-blur="blur_senha=true"
+                        ng-blur="blur_senha=true" ng-init="blur_senha=false" ng-class="{submitted:registrationForm.submitted, 'has-visited': (blur_senha && form.senha.$invalid)}"/>
+                        <div class="validation-message" ng-show="(blur_senha || registrationForm.submitted) && form.senha.$invalid">
+                            <span class="error" ng-show="form.senha.$error.minlength">A senha deve ter pelo menos 8 caracteres.</span>
+                            <span class="error" ng-show="form.senha.$error.maxlength">A senha deve ter no máximo 15 caracteres.</span>
+                            <span class="error" ng-show="form.senha.$error.required">Você precisa definir uma senha.</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+                
+
+<div class="field">
+    <label id="recaptcha_label_msg">Verificação de segurança</label>
+    <div
+    id="vrecaptcha"
+    vc-recaptcha
+    key="'6Lc65AYUAAAAAMnAyp9jwGkxrEt2-KAJ4M3h6KMt'"
+    ng-model="registrationForm.captcha"
+    on-success="setCaptchaResponse(response)"
+    on-expire="captchaExpired()"
+    ></div>
+</div>
+
+
+                <div ng-include="'/assets/partials/terms_of_use.html'"></div>
+
+                <div class="actions">
+                    <button type="submit" class="button" ng-disabled="!form.$valid">
+                        {{facebookFieldsToHide.nome ? 'Concluir' : 'Cadastrar'}}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="dynamic-window-sized">
+        <welcome-link link-to="authentication" service-id="4728" query-string="?tam=widget&amp;url=https%3A%2F%2Fintervencao.globo.com%2Fintervencoes%2Fshow.do%3Fpopin%3Dtrue%26servicoId%3D4728%26urlIntervencao%3D%2F%2Fs.glbimg.com%2Fgl%2Fba%2Fbarra-globocom.callback.html%2523http%253A%252F%252Fwww.globo.com%252F"
+                      prefix="Já tem cadastro?" text="Entre." position="bottom"></welcome-link>
+    </div>
+</script>
+
+<script type="text/ng-template" id="confirmation-email-tmpl">
+    <section class="form-container dynamic-window-sized social-network-wrapper" ng-controller="SocialController">
+        <div ng-include=" '/assets/partials/email_confirmation.html' "></div>
+    </section>
+</script>
+
+<script type="text/ng-template" id="social-account-email-tmpl">
+    <section class="form-container dynamic-window-sized social-network-wrapper" ng-controller="SocialController">
+        <salutation></salutation>
+
+        <form class="form-fields-container" name="form" novalidate>
+            <div class="text-content">
+                <h2>Informe seu e-mail</h2>
+
+                <p>
+                    Para continuar precisamos saber seu endereço de e-mail.
+                </p>
+            </div>
+
+            <fieldset class="one-fieldset">
+                <div class="field">
+                    <label for="email">E-mail</label>
+
+                    <input type="email" name="email" id="email"  ng-model="user.email" autocomplete="off" required
+                        ng-class="{'has-visited': user.email.$invalid}"
+                    />
+
+                    <div class="validation-message ng-hide" ng-show="form.email.$dirty && form.email.$invalid">
+                        <span class="error" ng-show="form.email.$error.email">Ops! Você precisa informar um e-mail válido.</span>
+                        <span class="error" ng-show="form.email.$error.required">Você precisa informar um e-mail.</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button type="submit" class="button" analytics-on="click"
+                                                     analytics-category="Tela de Login Facebook"
+                                                     analytics-event="Informe Email"
+                                                     analytics-label="Confirmar"
+                                                     ng-click="setUserEmail()">Confirmar</button>
+            </div>
+        </form>
+    </section>
+</script>
+
+<script type="text/ng-template" id="social-loading-feedback">
+    <section class="dynamic-window-sized social-network-wrapper" ng-controller="SocialController">
+        <div class="ajax-loader"></div>
+    </section>
+</script>
+
+<script type="text/ng-template" id="terms-of-use-tmpl">
+    <section class="dynamic-window-sized social-network-wrapper form-container" ng-controller="SocialController">
+        <div ng-include=" '/assets/partials/salutation.html' "></div>
+        <div ng-include=" '/assets/partials/terms_of_use_disclaimer.html' "></div>
+        <form class="form-fields-container" name="form">
+            <div ng-include=" '/assets/partials/terms_of_use.html' "></div>
+            <div class="actions">
+                <button type="submit" class="button" ng-click="confirmTermsOfUse()" ng-disabled="form.$invalid">Prosseguir</button>
+            </div>
+        </form>
+    </section>
+</script>
+
+
+<script type="text/javascript">
+    _gaq.push(['_setCustomVar', 11, 'Cadastro', 'Cadastro', 3]);
+</script>
+
+
+                </div>
+            </main>
+
+            
+        </div>
+
+        <script type="text/javascript">
+            // inject vars from backend into js app
+            var serviceId = 4728;
+            var fbAppId = '289255557788943';
+            var debug = false;
+            var service = {"id":4728,"name":"Portal Globo.com","whitelabelName":"Globo.com","isFree":true,"signUpUrl":null,"facebookAppId":"289255557788943"};
+            var cdnHost = 'https://s.glbimg.com/pc/cf/';
+        </script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&amp;render=explicit&amp;hl=pt-BR" async="" defer=""></script>
+        
+             <script type="text/javascript" src="https://s.glbimg.com/pc/cf/javascripts/built-201783115511.min.js"></script> 
+        
+
+        
+
+        
+            <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async="async"></script>
+        
+
+    
+
+
+<div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe src="https://www.google.com/recaptcha/api2/bframe?hl=pt-BR&amp;v=r20170731114946&amp;k=6Lc65AYUAAAAAMnAyp9jwGkxrEt2-KAJ4M3h6KMt#e173kvdt2t6r" title="desafio reCAPTCHA" frameborder="0" scrolling="no" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups allow-popups-to-escape-sandbox" name="e173kvdt2t6r" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

@@ -1,0 +1,798 @@
+<!DOCTYPE html><!--
+	~ Copyright (c) - UOL Inc, Todos os direitos reservados
+	~
+	~ Este arquivo e uma propriedade confidencial do Universo Online Inc. Nenhuma
+	~ parte do mesmo pode ser copiada, reproduzida, impressa ou transmitida por
+	~ qualquer meio sem autorizacao expressa e por escrito de um representante
+	~ legal do Universo Online Inc.
+	~
+	~ All rights reserved
+	~
+	~ This file is a confidential property of Universo Online Inc. No part of this
+	~ file may be reproduced or copied in any form or by any means without written
+	~ permisson from an authorized person from Universo Online Inc.
+--><html lang="pt-br"><head><script src="https://connect.facebook.net/signals/config/1215367275155199?v=2.7.19" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script>
+
+		<meta charset="iso-8859-1">
+	
+	<meta name="description" content="" description="Cadastre-se j&amp;aacute; no PagSeguro e fa&amp;ccedil;a compras online com seguran&amp;ccedil;a. Fique protegido contra golpes em transa&amp;ccedil;&amp;otilde;es na internet com o PagSeguro.">
+	
+		
+
+	<title>Cadastro no PagSeguro UOL Comprador | Crie sua conta no PagSeguro</title>
+    <link rel="Shortcut Icon" href="https://stc.pagseguro.uol.com.br/pagseguro/i/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://stc.pagseguro.uol.com.br/pagseguro/i/apple-icon-57x57.1501686848683.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://stc.pagseguro.uol.com.br/pagseguro/i/apple-icon-72x72.1501686848683.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://stc.pagseguro.uol.com.br/pagseguro/i/apple-icon-114x114.1501686848683.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://stc.pagseguro.uol.com.br/pagseguro/i/apple-icon-144x144.1501686848683.png">
+		<link href="https://plus.google.com/110196150821143075058" rel="publisher">
+
+												<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/bundles/lib.registration.1501686848683.scss">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/lib/commons/pagseguro.payments.1501686848683.css">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/lib/commons/widgets/pagseguro.tooltip.1501686848683.css">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/etc/modal.1501686848683.css">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/lib/ibanking/pagseguro.turing.1501686848683.css">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/views/ibanking/nc/form.1501686848683.scss">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/lib/commons/pagseguro.footer.1501686848683.css">
+					<link rel="stylesheet" type="text/css" href="https://stc.pagseguro.uol.com.br/pagseguro/c/lib/commons/widgets/pagseguro.alerts.1501686848683.css">
+					    	
+	
+
+	<!-- roimeter -->
+	 		<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/3rdparty/rm/clicklogger_namespace.1501686848683.js"></script>
+			<!-- roimeter -->
+
+			
+<script type="text/javascript" async="" src="https://dna.uol.com.br/js/dna.min.js"></script><style type="text/css">@font-face{font-family:"UOLText";src:url(//stc.uol.com/c/webfont/projeto-grafico/uol-font/uol-text-regular.eot?v5);src:local("?"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-font/uol-text-regular.eot?v5#iefix) format("embedded-opentype"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-font/uol-text-regular.woff?v5) format("woff"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-font/uol-text-regular.ttf?v5) format("truetype"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-font/uol-text-regular.svg?v5#uol-text-regular) format("svg");font-weight:400;font-style:normal}@font-face{font-family : "UOLIcons";src:url(//stc.uol.com/c/webfont/projeto-grafico/uol-icones-e-setas/uol-icones-e-setas.eot?v5);src:url(//stc.uol.com/c/webfont/projeto-grafico/uol-icones-e-setas/uol-icones-e-setas.eot?v5#iefix) format("embedded-opentype"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-icones-e-setas/uol-icones-e-setas.woff?v5) format("woff"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-icones-e-setas/uol-icones-e-setas.ttf?v5) format("truetype"), url(//stc.uol.com/c/webfont/projeto-grafico/uol-icones-e-setas/uol-icones-e-setas.svg?v5#uol-icones-e-setas) format("svg");font-weight : 400;font-style : normal};</style><script async="" src="//static.hotjar.com/c/hotjar-249639.js?sv=5"></script><script src="//tracker.bt.uol.com.br/partner?source=tagmanager"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(http://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+	<!-- BODY -->
+						
+	
+	<body class=" page_form   default ">
+	<!-- END -->
+	<div id="pagseguro-wrapper">
+										<div class="ecommerce-nav-placeholder" style="background-color: #262626; height: 28px;">
+			<div id="append-ecommerce-nav"><div id="barrauolecommerce" style="background-color: rgb(38, 38, 38); height: 28px; max-height: 28px; color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 14px; line-height: normal; font-family: UOLText; width: 100%; position: relative; margin: 0px; padding: 0px; z-index: 1;"><div id="barrawidth" style="position: relative; height: 100%; max-width: 960px; margin: 0px auto;"><ul style="height: 100%; margin: 0px; padding: 0px; list-style: none; background: rgb(38, 38, 38); z-index: 6000000; float: left; display: inline-block;"><li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;"><a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=16&amp;grp=src:210;chn:117;thm:barrauol-host;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;oper=11&amp;redir=http://www.uolhost.com.br/" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">UOL HOST</a></li><li style="height: 100%; background-color: rgb(79, 119, 67); display: inline-block;"><a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=32&amp;oper=11&amp;grp=src:210;chn:117;thm:barrauol-pagseguro;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;redir=http://pagseguro.uol.com.br" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">PagSeguro</a></li></ul><a class="logouol" href="http://www.uol.com.br/" style="line-height: 28px; font-size: 36px; width: 62px; position: absolute; top: 0px; left: 50%; color: rgb(255, 255, 255); text-decoration: none; text-align: right; margin-left: -37px; height: 28px;"><i style="font-family: UOLIcons; font-style: normal; display: inline-block; padding-top: 1px; padding-left: 15px;">Ç</i><img src="data:image/png;base64,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" style="border: none; position: absolute; width: 20px; height: 20px; top: 4px; left: 0px;"></a><ul style="height: 100%; margin: 0px; padding: 0px; list-style: none; background: rgb(38, 38, 38); z-index: 6000000; float: right; display: inline-block;"><li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;"><a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=https://clicklogger.rm.uol.com.br/?prd=32&amp;oper=11&amp;grp=src:210;chn:117;thm:barrauol-moderninha;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;oper=11&amp;redir=https://pagseguro.uol.com.br/venda-presencial/moderninha.html" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">Moderninha</a></li><li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;"><a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=7&amp;grp=src:210;chn:117;thm:barrauol-cliques;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;oper=11&amp;redir=http://cliques.uol.com.br/" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">UOL Cliques</a></li><li style="height: 100%; background-color: rgb(38, 38, 38); display: inline-block;"><a href="http://click.uol.com.br/?rf=barraecommerce&amp;u=http://clicklogger.rm.uol.com.br/?prd=16&amp;oper=11&amp;grp=src:210;chn:117;thm:barrauol-crieseusite;creative:barrauol-ecommerce&amp;msr=Cliques%20de%20Origem:1&amp;redir=http://www.uolhost.uol.com.br/site-pronto/" style="font-family: UOLText; text-decoration: none; color: rgb(255, 255, 255); padding: 0px 18px; vertical-align: middle; line-height: 28px; font-size: 15px; display: block; height: 100%;">Crie seu site</a></li></ul><div id="dropDown" style="position: absolute; height: 100%; margin: 0px; list-style: none; float: left; display: none; cursor: pointer; z-index: 2;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIyMDdBMjZFOUY3RDExRTU5RTBGQjUyNUE1REE1MkFCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIyMDdBMjZGOUY3RDExRTU5RTBGQjUyNUE1REE1MkFCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjIwN0EyNkM5RjdEMTFFNTlFMEZCNTI1QTVEQTUyQUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjIwN0EyNkQ5RjdEMTFFNTlFMEZCNTI1QTVEQTUyQUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6TOfVYAAACQUlEQVR42uzcvU3DQBiA4YSCnzGYADEAQqKCOZBCyyYUEX+ZBApALABCVFBEGQMqcxdc0cSRHcXH9zzSLXD3co4t8Q2rqhoQ14YtEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAAogWwn9ZNWp9pfadVWWtd+Qw+0rpOa2/Zwxwu8Y8hO2mN0zr1d9Nb+TAnaZ2n9dVlAPnw79M6sMdFeE7ruEkETR8BY4dflMO0Lrq6AfIz/8WeFvk4yGf31vYGOLOXRRqmNeriEXBkL4u18OyaPALya8amvSxSPrvtrr8D8I80CWBmm4o17SKAR/tYrIcufgPkz4uv9a9KynoNzGf33vYGyO+RE/tZnKtFh9/0BhjUvyTvBr9fmOi/p7RO6reA1r8BsvxNOX9bvq2vFvp77V82PfxlboC/vwlG9UeG3bS27Pva3/Wn9Q++SZNrv20ABPsOgAAQAAJAAAgAASAABIAAEAACQAAIAAEQIgDzAcwHoKfMB2DOfIDgzAfAfIDozAfAfIDozAeg/SNgZpuKZT5AcOYDBH8NNB8gMPMBAjMfIPC1bz5AwHd98wFY3XcABIAAEAACQAAIAAEgAASAABAAAkAACIAQAZgPYD4APWU+AHPmAwRnPgDmA0RnPgDmA0RnPgDtHwEz21Qs8wGCMx8g+Gug+QCBmQ8QmPkAga998wECvuubD8DqvgMgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAD01o8AAwA2r+sp4cwcRgAAAABJRU5ErkJggg==" style="height: 18px; padding: 5px;"></div></div></div></div>
+		</div>
+																																																				
+<!-- viewport $viewport -->
+
+
+						<header id="main-header" class="new-menu" data-omniture-section="Header">
+	<div class="wrapper main-info clearfix">
+												
+		<figure id="logo">
+			 <a href="/" title="A forma mais completa de vender dentro e fora da internet" class="omniture-click" data-omniture-action="Logo PagSeguro"> 
+				
+				
+	
+	<img src="https://stc.pagseguro.uol.com.br/pagseguro/i/logos/logo_pagseguro200x41.1501686848683.png" alt="PagSeguro UOL">
+			 </a> 		</figure>
+
+		
+					</div>
+
+	</header>
+	
+			
+								
+									<div id="main-wrapper" class="wrapper">
+					
+	<section id="steps" class="ps-steps-wizard">
+	<div class="wrapper">
+		<ol class="steps-guide view_conclusion_steps-guide">
+												<li>Escolha o tipo da conta</li>
+														<li class="active">Seus dados</li>
+									<li>Conclusão</li>
+		</ol>
+	</div>
+</section>
+<section id="content" class="view_content">
+	<div class="wrapper">
+		<!-- MENSAGENS -->
+						<!-- END -->
+
+		
+		
+		<input type="hidden" name="acsrfToken" value="Y4.NfNLUYgGgqdFZFLF4lzoC5cy8ltzlo2V93djy7mQ2-1501896433274-14400000-9">
+
+		<!-- FORM DE LOGIN -->
+		<!--
+  ~ Copyright (c) - UOL Inc, Todos os direitos reservados
+  ~
+  ~ Este arquivo e uma propriedade confidencial do Universo Online Inc. Nenhuma
+  ~ parte do mesmo pode ser copiada, reproduzida, impressa ou transmitida por
+  ~ qualquer meio sem autorizacao expressa e por escrito de um representante
+  ~ legal do Universo Online Inc.
+  ~
+  ~ All rights reserved
+  ~
+  ~ This file is a confidential property of Universo Online Inc. No part of this
+  ~ file may be reproduced or copied in any form or by any means without written
+  ~ permisson from an authorized person from Universo Online Inc.
+  -->
+
+<section id="login-info">
+  <h1>Acesse sua conta</h1>
+	<h2 id="title2-login-modal" class="hide">Você já possui uma conta no PagSeguro!</h2>
+  <div class="mails-cpf hide">
+      <p>Os endereços de e-mail utilizados foram:</p>
+      <ul id="emails"><!-- --></ul>
+  </div>
+  <h3>Informe seu e-mail e sua senha para prosseguir</h3>
+	<div class="login-wrapper">
+        <form action="/login.jhtml" method="post" id="login-form" novalidate="true">
+    		<input type="hidden" name="acsrfToken" value="Y4.NfNLUYgGgqdFZFLF4lzoC5cy8ltzlo2V93djy7mQ2-1501896433274-14400000-9">
+            <input type="hidden" id="login-skin-input" name="skin" value="ps">
+    		<input type="hidden" id="login-redir-input" name="dest" value="REDIR|https://pagseguro.uol.com.br/transaction/search.jhtml">
+            
+        	<fieldset id="emailLogin" class="field">
+            	<label for="login-email-input">E-mail</label>
+            	<input type="text" id="login-email-input" name="user" value="" class="full required" readonly="readonly" fieldref="user">
+            </fieldset>
+
+            <fieldset id="passwordLogin" class="field">
+            	<label for="login-password-input">Senha</label>
+            	<input type="password" name="pass" id="login-password-input" maxlength="32" class="medium required" fieldref="pass"><button type="submit" class="green-button" id="login-submit-button">Entrar</button>
+				<p><a id="forgetPass" href="https://pagseguro.uol.com.br/atendimento/esqueciSenha.jhtml?email=" title="Esqueci a minha senha">Esqueci a minha senha</a></p>
+            </fieldset>
+
+				<fieldset class="or another-email hide">
+            <legend align="center">OU</legend>
+			<p id="register-other"><i class="icon mail"></i><span class="link">Quero me cadastrar utilizando <strong>outro e-mail.</strong></span></p>
+		</fieldset>
+		
+		<fieldset class="or another-cpf hide">
+			<legend align="center">OU</legend>
+			<p id="register-with-other"><i class="icon mail"></i><span class="link">Quero me cadastrar utilizando <strong>outro CPF.</strong></span></p>
+		</fieldset>
+
+                <fieldset class="or cpf-or hide">
+            <legend align="center">OU</legend>
+            <p id="register-with-other"><i class="icon mail"></i><span class="link">Quero criar meu cadastro no <strong>PagSeguro.</strong></span></p>
+        </fieldset>
+        		</form>
+    <p class="link-modal-login"><a href="/atendimento/fale_conosco.jhtml">Fale conosco</a></p>
+	</div>
+</section>
+		<!-- END -->
+
+		<!-- FORM DE CADASTRO -->
+		<section id="register">
+	<form id="registration" method="post" action="/registration/confirmPersonalAccountRegistration.jhtml" novalidate="true">
+		
+		
+		<nav id="tabs">
+													<ul>
+					<li id="comprador-tab" class="active"><span rel="pessoal" title="Comprador"><i class="icon buyer small"></i>Comprador</span></li>
+									<li id="vendedor-tab"><span rel="vendedor" title="Vendedor"><i class="icon seller small"></i> Vendedor</span></li>
+								</ul>
+					</nav>
+
+		<input id="personType" name="personType" type="hidden" value="">
+<input id="isOutboundRegistration" name="isOutboundRegistration" type="hidden" value="">
+<input id="isCompact" name="isCompact" type="hidden" value="">
+<input id="uriBackButton" name="uriBackButton" type="hidden" value="">
+<input id="updateAddress" name="updateAddress" type="hidden" value="false">
+<input id="showFirstPanel" name="showFirstPanel" type="hidden" value="false">
+<input id="showLojaVirtual" name="showLojaVirtual" type="hidden" value="false">
+<input id="campaignId" name="campaignId" type="hidden" value="">
+
+			
+
+
+
+<input type="hidden" name="accountType" value="Pessoal">
+<input type="hidden" name="omniTypeAccount" value="Pessoal">
+<input type="hidden" name="afc" value=""> <input type="hidden" name="campaignCode" value=""> <input type="hidden" name="cmpid" value=""> <input type="hidden" id="allowBuyerRegistration" value="true">
+<input type="hidden" id="allowCompanyRegistration" value="true">
+<input type="hidden" id="allowSellerRegistration" value="true">
+<input type="hidden" name="acsrfToken" value="Y4.NfNLUYgGgqdFZFLF4lzoC5cy8ltzlo2V93djy7mQ2-1501896433274-14400000-9">
+<input type="hidden" name="sandboxRegistration" value="false">
+<input type="hidden" id="registrationConfirmRedir" name="registrationConfirmRedir" value="">
+<input type="hidden" name="outboundCode" value="">
+<input type="hidden" name="suggestionCode" value="">
+
+		<div id="account-info" class="fields-block">
+	    	<h2>
+    	    		                <span>Dados cadastrais</span>
+    		    	    	</h2>
+		<fieldset id="email" class="field required-field">
+		<label for="email-input">Email</label>
+        <input type="text" id="email-input" name="email" value="" maxlength="60" class="full preventCopy validate prospectInitializer prospectField" fieldref="email" data-prospectindex="2">
+	</fieldset>
+	<fieldset id="emailConfirmation" class="field required-field">
+		<label for="email-confirmation-input">Confirme o e-mail</label>
+		<input type="text" id="email-confirmation-input" name="emailConfirmation" value="" maxlength="60" class="full preventCopy validate" fieldref="emailConfirmation">
+	</fieldset>
+
+	<fieldset id="password" class="field required-field">
+        <label for="password-input">Senha <a class="passwordDetail questionMark" href="#passwordTip_content" rel="tooltip-0">?</a></label>
+        <ul class="passwordTip">
+           <li>- Use entre 8 e 16 caracteres
+                            : <span class="supportText characterCountContainer">Sua senha possui <span class="characterCount" title="Quantidade de caracteres deste campo">0 caractere</span>
+                        </span></li>
+            <li>- Utilize ao menos duas das opções: <span class="supportText">letra maiúscula, letra minúscula, número ou caractere especial</span></li>
+        </ul>
+        <div class="passwordInputHolder">
+            <input type="password" id="password-input" name="password" maxlength="32" class="medium preventCopy validate" fieldref="password">
+            <div class="passwordStrength pstrength">
+                <span>Força de senha</span>
+                <div class="bar" style="background-position: 0px 0px;">&nbsp;</div>
+            </div>
+        </div>
+
+        <!-- TOOLTIP DE SENHA -->
+        <div id="passwordTip_content">
+
+	<p class="title">Dicas de segurança</p>
+
+	<ul>
+		<li>
+			- Não utilize sequências numéricas ou de teclado
+		</li>
+		 
+		<li>
+			- Não use seu e-mail como senha
+		</li>
+		 
+		<li>
+			- Sua senha é secreta. Nenhum funcionário a serviço do UOL está autorizado a solicitá-la.
+		</li>
+		
+	</ul>
+
+	<span class="arrow_tip"></span>
+
+</div>        <!-- END -->
+
+    </fieldset>
+	<fieldset id="passwordConfirmation" class="field required-field">
+		<label for="password-confirmation-input">Confirme a sua senha</label>
+		<input type="password" id="password-confirmation-input" name="passwordConfirmation" maxlength="32" class="medium preventCopy validate" fieldref="passwordConfirmation">
+	</fieldset>
+
+</div>		<div id="account-switch" class="fields-block hide ">
+		
+	<ul>
+									<li class="active">
+					<label for="vendedor-choice">
+						<input type="radio" id="vendedor-choice" name="accountSwitch" value="true" checked=""> Pessoa física
+						<span>Utilize o mesmo CPF cadastrado em sua conta bancária. Só assim será possivel transferir seu saldo PagSeguro para ela.</span>
+					</label>
+				</li>
+							
+							<li>
+					<label for="empresarial-choice">
+						<input type="radio" id="empresarial-choice" name="accountSwitch" value="true"> Pessoa jurídica
+						<span><strong>Esta conta requer CNPJ e conta corrente Pessoa Jurídica.</strong> Utilize o mesmo CNPJ cadastrado em sua conta bancária. Só assim será possivel transferir seu saldo PagSeguro para ela.</span>
+					</label>
+				</li>
+						</ul>
+
+		 	<div id="info-seller" class="uolMsg uolMsg-medium uolMsg-info ">
+					<dl>
+				<dt>Crie sua conta utilizando o mesmo CPF cadastrado em sua conta bancária</dt>
+				<dd>Só assim será possível realizar transações entre sua conta PagSeguro e sua conta bancária</dd>
+			</dl>
+				
+	</div>
+
+		 	<div id="info-enterprise" class="uolMsg uolMsg-medium uolMsg-info ">
+					<dl>
+				<dt>Esse tipo de conta requer CNPJ e conta corrente Pessoa Jurídica</dt>
+				<dd>Crie a sua conta utilizando o mesmo CNPJ cadastrado em sua conta bancária, pois só assim será possível realizar transações entre a sua conta PagSeguro e a sua conta bancária.</dd>
+			</dl>
+				
+	</div>
+</div>					<div id="profile-info" class="fields-block" style="display: block;">
+				
+				<h3 class="block-name">Dados pessoais</h3>
+				<fieldset id="name" class="field required-field">
+	<label for="name-input">Nome completo</label>
+
+			<input type="text" id="name-input" name="name" value="" maxlength="50" class="full letters validate prospectIndex prospectField" fieldref="name" data-prospectindex="1">
+		<small class="insertion-guide">Informe seu nome e sobrenome. Ex.: Carlos de Oliveira</small>
+	</fieldset>
+
+<div class="split-fields">
+<fieldset id="birthdayDate" class="field hide">
+	<label for="born-birthday-input">Data de nascimento</label>
+
+	    	<input id="born-birthday-input" name="birthdayDate" value="" maxlength="10" class="normal date mask" mask="99/99/9999" type="text">
+    	<small class="insertion-guide">Exemplo: 22/05/1986</small>
+	</fieldset>
+
+<fieldset id="cpf" class="field  check-cpf   required-field">
+	<label for="cpf-input">CPF</label>
+
+			<input id="cpf-input" name="cpf" maxlength="11" value="" class="medium mask validate" mask="999.999.999-99" type="text" fieldref="cpf">
+	</fieldset>
+
+<fieldset id="motherName" class="field required-field">
+	<label for="mother-name-input">Nome completo da mãe</label>
+    <input type="text" id="mother-name-input" name="motherName" value="" maxlength="50" class="full letters validate" fieldref="motherName">
+</fieldset>
+</div>
+
+				<fieldset id="homePhoneNumber" class="field required-field">
+	<label for="home-phone-ddd">Telefone residencial</label>
+			<input id="home-phone-ddd" name="homePhoneDDD" maxlength="2" value="" class="tiny number validate prospectField" type="text" fieldref="homePhoneDDD" data-prospectindex="3">
+		<input id="home-phone-number" name="homePhoneNumber" maxlength="8" value="" class="normal number validate prospectField" type="text" fieldref="homePhoneNumber" data-prospectindex="4">
+	</fieldset>
+
+<div class="split-fields">
+    	
+    <fieldset id="workPhoneNumber" class="field hide">
+    	<label for="work-phone-ddd">Telefone comercial</label>
+					<input id="work-phone-ddd" name="workPhoneDDD" maxlength="2" value="" class="tiny number prospectField" type="text" data-prospectindex="5">
+			<input id="work-phone-number" name="workPhoneNumber" maxlength="8" value="" class="normal number prospectField" type="text" data-prospectindex="6">
+		    </fieldset>
+</div>				<fieldset id="companyName" class="field hide">
+	<label for="company-name-input">Razão social</label>
+			<input type="text" id="company-name-input" name="companyName" value="" maxlength="50" class="full company-name preventCopy prospectIndex prospectField" data-prospectindex="0">
+	</fieldset>
+<fieldset id="trademark" class="field hide">
+	<label for="trademark-input">Nome fantasia</label>
+			<input type="text" id="trademark-input" name="trademark" value="" maxlength="30" class="full">
+	</fieldset>
+<div class="split-fields">
+    <fieldset id="cnpj" class="field hide">
+    	<label for="cnpj-input">CNPJ</label>
+					<input id="cnpj-input" name="cnpj" value="" maxlength="14" class="medium mask" mask="99.999.999/9999-99" type="text">
+		    </fieldset><fieldset id="celPhoneNumber" class="field required-field">
+    	<label for="cel-phone-ddd">Telefone celular</label>
+    	    		<input id="cel-phone-ddd" name="celPhoneDDD" maxlength="2" value="" class="tiny number validate prospectField" type="text" fieldref="celPhoneDDD" data-prospectindex="7">
+    		<input id="cel-phone-number" name="celPhoneNumber" maxlength="9" value="" class="normal number validate prospectField" type="text" fieldref="celPhoneNumber" data-prospectindex="8">
+    	    </fieldset>
+</div>
+<div class="split-fields">
+<fieldset id="workPhoneNumber2" class="field hide">
+	<label for="work-phone-ddd-2">Telefone comercial 2</label>
+			<input id="work-phone-ddd-2" name="workPhoneDDD2" maxlength="2" value="" class="tiny number" type="text">
+		<input id="work-phone-number-2" name="workPhoneNumber2" maxlength="8" value="" class="normal number" type="text">
+	</fieldset>
+</div>
+				<fieldset id="site" class="field hide">
+	<label for="site-input">Site</label>
+			<input type="text" id="site-input" name="site" value="" maxlength="255" class="full placeholderDecorator">
+		<small class="insertion-guide">Informe seu site. Ex.: http://www.seusite.com.br</small>
+	</fieldset>				<div id="address-info">
+		<fieldset id="postalAreaCode" class="field required-field">
+		<label for="cep-input">CEP</label>
+					<input id="cep-input" name="postalAreaCode" maxlength="8" value="" class="normal postalCode mask" mask="99999-999" type="text"><button type="button" id="findCep" class="pagseguro-button gray-theme">Buscar</button>
+			<small class="guides">Não sabe o seu CEP? <a id="searchCep" title="Pesquisar Cep" href="/registration/showCepSearch.jhtml" class="modal">Pesquisar</a>.</small>
+			</fieldset>
+	<div id="cep-info" class=" hide ">
+		<fieldset id="address" class="field required-field">
+			<label for="address-input">Endereço residencial</label>
+							<input type="text" id="address-input" name="address" value="" maxlength="150" class="full validate" fieldref="address">
+					</fieldset>
+		<div class="split-fields">
+	    	<fieldset id="addressNumber" class="field required-field">
+				<label for="address-number-input">Número</label>
+									<input type="text" id="address-number-input" name="addressNumber" value="" maxlength="20" class="medium validate" fieldref="addressNumber">
+					    	</fieldset>
+	    	<fieldset id="addressComplement" class="field optional-field">
+                  <label for="address-complement-input">Complemento <small class="optional">(Opcional)</small></label>
+									<input type="text" id="address-complement-input" name="addressComplement" value="" maxlength="40" class="medium validate" fieldref="addressComplement">
+							</fieldset>
+		</div>
+		<fieldset id="addressDistrict" class="field required-field">
+			<label for="address-district-input">Bairro</label>
+							<input type="text" id="address-district-input" name="addressDistrict" value="" maxlength="60" class="full validate" fieldref="addressDistrict">
+				<select id="address-district-select" name="addressDistrictHelper" class="full hide">
+				</select>
+					</fieldset>
+		<div class="split-fields">
+	    	<fieldset id="addressCity" class="field required-field">
+				<label for="address-city-input">Cidade</label>
+									<input type="text" id="address-city-input" name="addressCity" value="" maxlength="60" class="medium validate" fieldref="addressCity">
+					    	</fieldset>
+	    	<fieldset id="addressState" class="field required-field">
+	    		<label for="address-state-input">Estado</label>
+									<input type="text" id="address-state-input" name="addressState" value="" maxlength="3" class="tiny letters validate" fieldref="addressState">
+					    	</fieldset>
+		</div>
+	</div>
+	</div>
+			</div>
+			<div id="partner-info" class="fields-block hide">
+				<h3 class="block-name">Dados do proprietário ou sócio da empresa</h3>
+				<fieldset id="partnerName" class="field hide">
+	<label for="partner-name-input">Nome completo</label>
+			<input type="text" id="partner-name-input" name="partnerName" value="" maxlength="50" class="full letters">
+		<small class="insertion-guide">Informe o nome e sobrenome. Ex.: Carlos de Oliveira</small>
+	</fieldset>
+<div class="split-fields">
+
+	<fieldset id="partnerCpf" class="field hide">
+		<label for="partner-cpf-input">CPF</label>
+					<input id="partner-cpf-input" name="partnerCpf" maxlength="11" value="" class="medium mask" mask="999.999.999-99" type="text">
+			</fieldset>
+
+	<fieldset id="partnerBirthdayDate" class="field hide">
+		<label for="partner-birthday-date-input">Data de nascimento</label>
+					<input id="partner-birthday-date-input" name="partnerBirthdayDate" value="" maxlength="10" class="normal date mask" mask="99/99/9999" type="text">
+			<small class="insertion-guide">Exemplo: 22/05/1986</small>
+			</fieldset>
+
+	<fieldset id="partnerMotherName" class="field hide">
+		<label for="mother-name-input">Nome completo da mãe</label>
+		<input type="text" id="partner-mother-name-input" name="partnerMotherName" value="" maxlength="50" class="full letters">
+	</fieldset>
+</div>
+			</div>
+			<div id="commercial-info" class="fields-block hide">
+				<h3 class="block-name">Segurança</h3>
+				<fieldset id="secretPhrase" class="field  hide">
+	<label for="phrase-input">Frase de segurança <br><span class="counter">(<strong>80</strong> caracteres restantes)</span></label>
+	<input type="text" id="phrase-input" name="secretPhrase" value="" maxlength="80" class="full counter-input">
+	<small class="insertion-guide">Para garantir a autenticidade das mensagens enviadas pelo PagSeguro, a frase de segurança é exibida em <br>todos os e-mails.</small>
+</fieldset>				<fieldset id="productMainCategory" class="field hide">
+            <label for="main-category-input">Categoria que melhor define o seu tipo de negócio
+        </label>
+        <select id="main-category-input" name="productMainCategory" class="full">
+                            <option value="">Selecione</option>
+                            <option value="44">Arquitetura e Engenharia</option>
+                            <option value="1">Arte e Antiguidades</option>
+                            <option value="2">Artigos Religiosos</option>
+                            <option value="3">Automóveis e Acessórios</option>
+                            <option value="4">Bebês</option>
+                            <option value="5">Brinquedos e Colecionáveis</option>
+                            <option value="6">Cama, Mesa e Banho</option>
+                            <option value="8">Celulares e Telefonia</option>
+                            <option value="51">Clube de Compras</option>
+                            <option value="10">Comida, Bebida e Nutricional</option>
+                            <option value="9">Comércio Variado</option>
+                            <option value="11">Construção e Jardinagem</option>
+                            <option value="43">Consultoria Empresarial</option>
+                            <option value="12">Conteúdo Adulto</option>
+                            <option value="7">Câmeras</option>
+                            <option value="59">Dentistas</option>
+                            <option value="52">Descarga de áudio/vídeo</option>
+                            <option value="35">Desenvolvimento de Software</option>
+                            <option value="13">Educação</option>
+                            <option value="14">Eletrodomésticos</option>
+                            <option value="15">Eletrônicos</option>
+                            <option value="47">Entidades Públicas</option>
+                            <option value="16">Esporte</option>
+                            <option value="49">Eventos</option>
+                            <option value="17">Filmes, Seriados e Shows</option>
+                            <option value="18">Flores e Cestas</option>
+                            <option value="40">Fotografia e Gravação</option>
+                            <option value="22">Hardware e Acessórios</option>
+                            <option value="19">Hospedagem de Sites</option>
+                            <option value="20">Imóveis</option>
+                            <option value="21">Indústria e Agronegócios</option>
+                            <option value="28">Instrumentos Musicais</option>
+                            <option value="48">Jogos Online</option>
+                            <option value="24">Jogos, Lazer e Divertimento</option>
+                            <option value="25">Jóias e Relógios</option>
+                            <option value="50">Leilão de um centavo</option>
+                            <option value="26">Livros</option>
+                            <option value="55">Materiais de construção</option>
+                            <option value="58">Médicos</option>
+                            <option value="27">Móveis e Decoração</option>
+                            <option value="46">Outras atividades profissionais</option>
+                            <option value="29">Papelaria</option>
+                            <option value="30">Perfumaria e Cosméticos</option>
+                            <option value="57">Personal Trainers</option>
+                            <option value="31">Pet Shop</option>
+                            <option value="45">Publicidade e Pesquisas de Mercado</option>
+                            <option value="32">Roupas e Acessórios</option>
+                            <option value="56">Salões de Beleza</option>
+                            <option value="33">Saúde</option>
+                            <option value="41">Seguros e outros serviços financeiros</option>
+                            <option value="34">Serviços</option>
+                            <option value="42">Serviços Jurídicos</option>
+                            <option value="39">Telecomunicações</option>
+                            <option value="36">Terceiro Setor</option>
+                            <option value="54">Táxi</option>
+                            <option value="37">Utensílios domésticos</option>
+                            <option value="38">Viagem e Turismo</option>
+                    </select>
+    </fieldset>
+				<fieldset id="softDescriptor" class="field hide">
+	<label for="soft-descriptor-input">Identificação na fatura do cartão <br> <span class="counter ">(<strong>13</strong> caracteres restantes)</span></label>
+			<input type="hidden" name="softDescriptor" value="">
+		<input type="text" id="soft-descriptor-input" name="softDescriptorHelper" value="" maxlength="13" class="full counter-input normalize">
+			<small class="insertion-guide">Nome que identificará a sua loja na fatura do cartão de crédito dos seus clientes.</small>
+
+			<p id="readerSerialNumber">
+				<input type="hidden" id="readerSerialNumber-input" name="readerSerialNumber" value="">
+			</p>
+
+			<p id="mobiPromotionId">
+				<input type="hidden" id="mobiPromotionId-input" name="mobiPromotionId" value="">
+			</p>
+			<p id="mobiPromotionName">
+				<input type="hidden" name="mobiPromotionName" value="">
+			</p>
+			
+			<p id="appId">
+			    <input type="hidden" name="appId" value=""> 			</p>
+			
+	</fieldset>							</div>
+			<div id="extra-info" class="fields-block" style="display: block;">
+									
+<fieldset id="captcha" class="field   required-field hide">
+
+	<h3>Verificação anti-fraude</h3>
+	<div class="turing">
+		<input type="hidden" name="omniHasTuring" value="false">
+    	<input type="hidden" value="yptLrcmHIUXWuNa9QEhO73sqTP.fYoFv-BijbMAl6ZzeSgD0wVGJ51kd4KRC8x2nasUBfAUi.APZYdN4oJo0Pdp6fHZGPJoSWLrwWjrJNt4Vuj-DuO7JajIVNOu=" name="turingkey" id="turingkey">
+		
+		<label for="turingwordkey">Digite o que você vê na imagem abaixo</label>
+		
+		<figure class="turing-img">
+			<img id="imgturing" alt="imagem para verificação antifraude" src="https://pagseguro.captcha.uol.com.br/n/yptLrcmHIUXWuNa9QEhO73sqTP.fYoFv-BijbMAl6ZzeSgD0wVGJ51kd4KRC8x2nasUBfAUi.APZYdN4oJo0Pdp6fHZGPJoSWLrwWjrJNt4Vuj-DuO7JajIVNOu=.jpg">
+		</figure>		
+		<ul class="turing-actions">
+			<li>
+				<input type="text" name="captcha" id="turingwordkey" maxlength="50" class="normal validate" fieldref="captcha">			
+			</li>
+    		<li>
+    			<button type="button" id="refreshturing"><img alt="Não consegue entender a imagem? Clique para ver outra" src="https://stc.pagseguro.uol.com.br/pagseguro/i/ico_reload_turing.1501686848683.gif"></button>
+    			<small>Não consegue entender a imagem?<br>Clique para ver outra</small>
+    		</li>
+    		<li>
+    			<button type="button" id="audturing" name="yptLrcmHIUXWuNa9QEhO73sqTP.fYoFv-BijbMAl6ZzeSgD0wVGJ51kd4KRC8x2nasUBfAUi.APZYdN4oJo0Pdp6fHZGPJoSWLrwWjrJNt4Vuj-DuO7JajIVNOu=.wav"><img alt="Clique para ouvir o que está escrito" src="https://stc.pagseguro.uol.com.br/pagseguro/i/ico_ouvir_turing.1501686848683.gif"></button>
+    			<small>Clique para ouvir o que está escrito</small>
+    		</li>
+    	</ul>
+	</div>	
+</fieldset>
+
+	
+					<div id="contract-info" class="">
+		<ul>
+			<li>
+				<fieldset id="newsletterEnabled" class="field optional-field">
+					<input type="checkbox" id="newsletter-input" name="newsletterEnabled" value="s" class="validate" fieldref="newsletterEnabled">&nbsp;<label for="newsletter-input">Quero receber e-mails com novidades do PagSeguro<small class="optional">(Opcional)</small></label>
+				</fieldset>
+			</li>
+		</ul>
+</div>
+			</div>
+			
+			<fieldset class="field no-action-field">
+				<p class="action"><button type="submit" id="continue" class="pagseguro-button green-theme meddium">Finalizar</button></p>
+			</fieldset>
+
+								<fieldset class="field no-action-field">
+  <label><span class="text-acept">Ao clicar no botão você concorda com os termos do <a href="https://pagseguro.uol.com.br/registration/contractPF.jhtml" target="_blank" title="termos do Contrato do PagSeguro">Contrato do PagSeguro</a>.</span></label>
+</fieldset>
+				</form>
+</section>
+		<!-- END -->
+	</div>
+</section>
+
+					<div id="showtaxes" style="display: none;">
+	<div class="wrapper">
+		Com o PagSeguro você só paga quando vende. Confira as <a href="/taxas-e-tarifas.jhtml" class="link show-taxes-info" target="_blank">taxas e tarifas Padrão do PagSeguro</a>
+	</div>
+</div>
+	
+								</div>	
+
+
+<footer id="main-footer" class="minimal">
+	<div class="wrapper" data-omniture-section="footer 2015">
+		<nav class="links">
+			<dl class="solutions">
+				<dt>Soluções para</dt>
+				<dd><a class="omniture-click" data-omniture-action="Vendedores" href="/vender/">Vendedores</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Compradores" href="/comprar/">Compradores</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Desenvolvedores" href="/v2/guia-de-integracao/index.html">Desenvolvedores</a></dd>
+			</dl>
+			<dl class="contacts">
+				<dt>Contato</dt>
+				<dd><a class="omniture-click" data-omniture-action="Fale com o PagSeguro" href="/atendimento/ligue-para-o-pagseguro.jhtml">Fale com o PagSeguro</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Contato comercial" href="/atendimento/contato_comercial.jhtml">Contato comercial</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Envie um e-mail" href="/atendimento/novo_atendimento.jhtml">Envie um e-mail</a></dd>
+			</dl>
+			<dl class="doubts">
+				<dt>Ajuda</dt>
+				<dd><a class="omniture-click" data-omniture-action="Perguntas frequentes" href="/atendimento/perguntas_frequentes.jhtml">Perguntas frequentes</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Como funciona a disputa" href="https://pagseguro.uol.com.br/para_voce/como_funciona_a_disputa.jhtml">Como funciona a disputa</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Fórum de desenvolvedores" href="http://forum.pagseguro.uol.com.br" target="_blank">Fórum de desenvolvedores</a></dd>
+			</dl>
+			<dl class="security">
+				<dt>Segurança</dt>
+				<dd><a class="omniture-click" data-omniture-action="Segurança e privacidade" href="https://sac.uol.com.br/info/protecao_privacidade/normas_protecao_privacidade.jhtm">Segurança e privacidade</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Dicas de segurança" href="/dicas-de-seguranca-online.jhtml">Dicas de segurança</a></dd>
+			</dl>
+			<dl class="knowPS">
+				<dt>Conheça o PagSeguro</dt>
+				<dd><a class="omniture-click" data-omniture-action="Parceiros Integradores" href="/para_seu_negocio/parceiros_integradores.jhtml">Parceiros Integradores</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Regras de uso" href="/regras-de-uso.jhtml">Regras de uso</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Sobre o PagSeguro" href="/sobre_o_pagseguro.jhtml">Sobre o PagSeguro</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Taxas e tarifas" href="/taxas-e-tarifas.jhtml">Taxas e tarifas</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Contrato" href="/contrato_de_servicos.jhtml">Contrato</a></dd>
+				<dd><a class="omniture-click" data-omniture-action="Politica de troca" href="/venda-presencial/politica-de-troca.jhtml">Política de troca</a></dd>
+			</dl>
+		</nav>
+		<aside>
+			<dl class="social">
+				<dt>Acompanhe o PagSeguro</dt>
+				<dd><a class="omniture-click" href="http://www.facebook.com/pagseguro" target="_blank" title="PagSeguro no Facebook" data-omniture-action="facebook">Curta nossa página</a></dd>
+				<dd><a class="omniture-click" href="http://blogpagseguro.com.br/" target="_blank" title="Blog do PagSeguro" data-omniture-action="Blog">Blog do PagSeguro</a></dd>
+				<dd><a class="omniture-click" href="https://www.youtube.com/user/PagSeguro/videos" target="_blank" title="Vídeos do PagSeguro" data-omniture-action="youtube">Vídeos do PagSeguro</a></dd>
+				<dd><a class="omniture-click" href="https://www.instagram.com/pagseguro/?hl=pt" target="_blank" title="Siga no Instagram" data-omniture-action="instagram">Siga no Instagram</a></dd>
+				<dd><a class="omniture-click" href="https://www.linkedin.com/company/pagseguro-uol?trk=top_nav_home" target="_blank" title="Siga no LinkedIn" data-omniture-action="linkedin">Siga no LinkedIn</a></dd>
+			</dl>
+			<dl class="selos-seguranca">
+				<dd><a class="omniture-click" href="/selo/pci/index.html" target="_blank" data-omniture-action="pci-dss"><img src="https://stc.pagseguro.uol.com.br/pagseguro/i/selo/pci.1501686848683.png" title="Selo PCI DSS" alt="Selo PCI DSS"></a></dd>
+				<dd><a class="omniture-click" href="http://www.uoldiveo.com.br/solucoes/servicos-gerenciados-de-seguranca.html?utm_source=parceiro&amp;utm_medium=selo&amp;utm_term=seguranca&amp;utm_campaign=parceiromss" target="_blank" data-omniture-action="uol-diveo"><img src="https://stc.pagseguro.uol.com.br/pagseguro/i/selo/diveo.1501686848683.png" title="Site protegido por UOLDIVEO" alt="Site protegido por UOLDIVEO"></a></dd>
+			</dl>
+			<div class="securityPS">Todas as páginas do PagSeguro estão <br>em ambiente de segurança</div>
+		</aside>
+	</div>
+	<div class="info-data-uol">
+		<div class="wrapper">
+			<div class="dataUOL">
+				<p>						
+	© 1996-<time>2017</time> O melhor conteúdo. Todos os direitos reservados. <br>
+	PAGSEGURO INTERNET S/A - CNPJ/MF  08.561.701/0001-01  - Av. Brigadeiro Faria Lima, 1.384, São Paulo - SP - CEP 01452-002
+</p>			</div>
+		</div>
+	</div>
+</footer>
+		</div> 
+				<script type="text/javascript">
+	var typeAccount = "";
+	
+	 		pageName="cadastro-preencher-dados";
+	
+	var Config = window.config || {};
+	Config.Metricas = {
+	 'estation'      : 'pagseguro',
+	 'channel'       : 'cadastro',
+	 'subchannel'    : [pageName],
+	 'errorsystem'   : '',
+	 'errorcad'      : [''],
+	 'typepage'      : 'cadastro',
+	 'titulo'        : pageName,
+	 'login'         : '',
+     'typeAccount'   : typeAccount
+	};
+</script>
+	
+	<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/etc/jquery/jquery-1.8.2.min.1501686848683.js"></script>
+		
+	<!-- Remarketing -->
+
+	
+	<input type="hidden" id="remarketingOn" value="TURN,MSN,FACEBOOK,CONVERSION">
+
+	
+	
+
+	
+<input type="hidden" id="openTour" value="">
+	
+			
+
+
+
+
+									
+<!-- tag manager params -->
+<script type="text/javascript">
+	window.universal_variable = {
+		version: '1.0.0',
+		page: {
+			type: "Basket",
+			category: "",
+			breadcrumb: [],
+			url: "https://pagseguro.uol.com.br/registration/registration.jhtml",
+			logged: false		},
+							basket: {
+				currency: "BRL",
+				line_items: [
+											{
+								product: {
+		id: "",
+		url: "https://pagseguro.uol.com.br/registration/registration.jhtml",
+		description: [],
+		sku_code: "",
+		category: "Comprador", 		subcategory: "", 		unit_sale_price: "",
+		unit_price: ""
+	}
+								},
+						{
+								product: {
+		id: "",
+		url: "https://pagseguro.uol.com.br/registration/registration.jhtml",
+		description: [],
+		sku_code: "",
+		category: "Vendedor", 		subcategory: "", 		unit_sale_price: "",
+		unit_price: ""
+	}
+								}
+									]
+			},
+				device: /^m\./i.test(document.location.hostname) ? 'mobile' : 'desktop'
+	};
+</script>
+<!-- tag manager params -->	
+			
+		<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/polyfill/browser-normalization.1501686848683.sjs"></script>
+										<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/bundles/lib.registration.1501686848683.sjs"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/bundles/modal.1501686848683.sjs"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/commons/pagseguro.tooltip.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/ibanking/pagseguro.taxesinfo.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/ibanking/pagseguro.omniture.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/ibanking/pagseguro.turing.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/etc/jquery/jquery-masked.min.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/commons/pagseguro.validations.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/views/commons/form.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/commons/pagseguro.prospect.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/pagescripts/ibanking/cadastro/prospect.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/pagescripts/ibanking/cadastro/web/registration.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/ibanking/pagseguro.dna.1501686848683.js"></script><script type="text/javascript" src="https://dna.uol.com.br/js/dna.min.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/commons/pagseguro.metrics.1501686848683.js"></script>
+					<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/../../../../../pagseguro/j/lib/commons/pagseguro.remarketing.1501686848683.js"></script>
+				<!-- Google Code for Smart Pixel Remarketing List -->
+<script type="text/javascript"> 
+/* <![CDATA[ */ 
+var google_conversion_id = 1056650882; 
+var google_conversion_language = "en"; 
+var google_conversion_format = "3"; 
+var google_conversion_color = "ffffff"; 
+var google_conversion_label = "3wSzCPbtzAIQgu3s9wM"; 
+var google_conversion_value = 0;
+var google_custom_params = {
+	pagetype:'nc - form',
+	g:'P'
+}
+var google_remarketing_only = true;
+/* ]]> */ 
+</script> 
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js"> 
+</script><img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1056650882/?random=1501896687871&amp;cv=8&amp;fst=1501896687871&amp;num=1&amp;fmt=3&amp;value=0&amp;label=3wSzCPbtzAIQgu3s9wM&amp;bg=ffffff&amp;hl=en&amp;guid=ON&amp;u_h=1440&amp;u_w=2560&amp;u_ah=1417&amp;u_aw=2480&amp;u_cd=24&amp;u_his=31&amp;u_tz=-180&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;data=pagetype%3Dnc%20-%20form%3Bg%3DP&amp;frm=0&amp;url=https%3A%2F%2Fpagseguro.uol.com.br%2Fregistration%2Fregistration.jhtml%3Ftipo%3Dcadastro&amp;tiba=PagSeguro%20-%20A%20solu%C3%A7%C3%A3o%20completa%20para%20pagamentos%20online" style="display:none"> 
+<noscript> 
+&lt;div style="display:inline;"&gt; 
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/1056650882/?label=3wSzCPbtzAIQgu3s9wM&amp;amp;guid=ON&amp;amp;script=0"/&gt; 
+&lt;/div&gt; 
+</noscript>		
+    		
+                        <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function() {
+                                            $.getScript("https://tm.jsuol.com.br/uoltm.js?id=ymvz3k");
+                                    });
+            </script>
+            	
+	
+	
+
+	
+
+<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/lib/commons/pagseguro.analytics.1501686848683.js">
+</script>
+		
+
+    <div class="ps-gas hide">
+        <input type="hidden" value="" name="psGasUser" id="psGasUser">
+        <input type="hidden" value="" name="psGasType" id="psGasType">
+        <input type="hidden" value="tFpNTY-vOw2RfS5ytkcLfA**.ps4" name="psGasHash" id="psGasHash">
+    </div>
+
+<!--        <script type="text/javascript" src="https://cloud.gastecnologia.com.br/pgs/agt/afp.js"></script>
+
+        <script type="text/javascript" src="https://cloud.gastecnologia.com.br/pgs/agt/agt.js"></script>
+
+        <script type="text/javascript" src="https://cloud.gastecnologia.com.br/pgs/agt/gas-toolkit.js"></script>
+
+        <script type="text/javascript" src="https://cloud.gastecnologia.com.br/pgs/agt/gas.js"></script>-->
+
+        <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/j/pagescripts/ibanking/components/ps-gas/ps-gas.1501686848683.js">
+    </script>
+
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button id="cboxPrevious"></button><button id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><button id="cboxClose"></button></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><script type="text/javascript" src="https://stc.pagseguro.uol.com.br/3rdparty/omtr/pagseguro.js"></script><img id="remarketing_turn_geral_0" class="hide remarketing remarketing_geral" border="0" width="1" height="1" src="https://r.turn.com/r/beacon?cid=&amp;b2=cNMHeAStojTGsZFpR0h9frmJVCyZ3z1eUL8ePGyR5wt98_st7KpdVLJ1I51q2mZlj9X3ISjyQi2Fd4bEJAkHIw"><img id="remarketing_msn_geral_1" class="hide remarketing remarketing_geral" border="0" width="1" height="1" src="https://view.atdmt.com/action/mmn_PGS_Geral"><img id="remarketing_facebook_geral_2" class="hide remarketing remarketing_geral" border="0" width="1" height="1" src="https://www.facebook.com/tr?id=1425099884432564&amp;ev=NoScript"><div id="dna-uol-wrapper" style="width: 1px; height: 1px; position: absolute; top: 1px; left: 1px; overflow: hidden;"></div><iframe src="https://tm.uol.com.br/mercurio.html" id="tm-remote-storage" style="position:absolute;width:1px;height:1px;left:-9999px;display:none;" data-loaded="true"></iframe><script src="//me.jsuol.com.br/aud/pagseguro.js" async=""></script><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/XBwzv5Yrm_1.js?version=42#channel=f38f52a6d75be64&amp;origin=https%3A%2F%2Fpagseguro.uol.com.br" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f35c057edb23258" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" src="https://www.facebook.com/connect/ping?client_id=190329594333794&amp;domain=pagseguro.uol.com.br&amp;origin=1&amp;redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Dfd4ddd25b4262%26domain%3Dpagseguro.uol.com.br%26origin%3Dhttps%253A%252F%252Fpagseguro.uol.com.br%252Ff38f52a6d75be64%26relation%3Dparent&amp;response_type=token%2Csigned_request%2Ccode&amp;sdk=joey" style="display: none;"></iframe></div></div></div><iframe style="display: none;"></iframe><form target="GAS_IFR" method="POST" action="https://log.gastecnologia.com.br/event/pgs/"><input type="hidden" name="user" value="{&quot;user&quot;:&quot;&quot;,&quot;channel&quot;:&quot;&quot;,&quot;sessionId&quot;:&quot;tFpNTY-vOw2RfS5ytkcLfA**.ps4&quot;}"><input type="hidden" name="gasToolkit" value="{&quot;environment&quot;:{&quot;os&quot;:{},&quot;browser&quot;:{}},&quot;shouldInstall&quot;:&quot;none&quot;,&quot;scenarioDescription&quot;:&quot;Warsaw&quot;,&quot;responseBy&quot;:&quot;none&quot;}"><input type="hidden" name="agentless" value="{&quot;el&quot;:&quot;CwI0UFkG33cRngybcRXLB1vChD/B4NbZ5vhxeIZTF2+SQXrEDY9RMvlxBim7cACd\nXxvIYhVvpsZ/ruzrOUN49uXl5XEJxgA8n0x4obE4FyunRC49PpUhVS0WCzBq0N8C\njpE9pXzNwGRYr3XZksjU47vwe3fDRWJNSRm3toeEIHh002lyBBwEszhDPi+LA0VS\n+ufXJFykmYpOTkCTfv1cqsA5/TZSAC4oZ0sSXAktc1AfOf3FzRnPeAThwN4Vq6K7\n4SUNSkKsoG/dmeHkyTXBiqOK7mMRxc9rYlMyFHdQap7+cERti6sTHrOpHMpzC3Gf\nV5xrC9ZnjOLU1EQf3VZ5M8VfumaVODYC3a6sGIi0WC6ZJbXcqHI5IgAoCrUjasmP\nTVPvS8zhQWJPbSkUh8bkjtdVHIHUM/XPC5dnFZQK877/BZd3MzsReRmH8pm3CirQ\n0WaQpcG8rcTPC3yT+22Xd4VCtd2DQ3rvahMB2NgPrsFq0N/z/+fNVZ1GL6CHudll\nlmTGQItrgOIvm01A9L09D1Fj0RMrOdDXoqXPryk/z8aprAASc0xBBzS7f7rU/+kB\n+sn1dK0OZ32c3VXQWyvZZnOGYGJIq9K87oRCKF1AgKD2MV4vxELVwW0zUTB0tC/D\niKgcG+dBGxKPK0IuC1ORrqxM39O4sarhKFi40JNdqogjOqSh55y08NBDV9oYIYVg\n0v4gDPrq2SU3TxTUBOHAmtUVTL7ctMTI5et9NbdCLMTZTPY+I6bXl7I5I8WE3Z1c\nJswic9M6u5CbA8BTiKaEroYVtWZIZCXIkeSLsiUM7SEqziQD86h/UnCiPzkDSu4a\nWuBtmtQIw4PRbQfMOpS1KAMV2XVVhxBi5BIQp3+nN9vMm0S29a/19ge9ZZuoGpvL\n368mkE1L/WIFPr35NNGbqSIJpZ0kpUxOJxPIx+vCPhrfdwmge335zqjt7VoDv7hx\nqMYPIAiswpNg8Oijar+WAwFLuAGwpPXLtV9361AfNigiUR68SciDx2lCKOjVLqso\nkiPa4sc+soUIJ/4OUfnRLmiX3+coU8qM1YkLe9swVcY4i+lVrkp/ofxRyZLO4ARb&quot;,&quot;wd&quot;:&quot;&quot;,&quot;bio&quot;:&quot;&quot;}"></form><iframe src="//tm.uol.com.br/dynad-track-cookies.html?name=DEretargeting&amp;expname=DEretargetingExp&amp;expires=30&amp;client=563" width="0" height="0" margineidth="0" marginheight="0" frameborder="0" scrolling="no" style="width: 0px; height: 0px; border: 0px; display: none;"></iframe><script type="text/javascript" src="https://t5.dynad.net/lsep/?l=216&amp;ord=1501896689&amp;c=,"></script><iframe src="https://tm.uol.com.br/uoldna.html" style="display: none;"></iframe><iframe src="https://tm.uol.com.br/purge-clients.html?name=DEretargeting&amp;expname=DEretargetingExp&amp;expdomain=1" style="width: 0px; display: none; opacity: 0; border: 0px;"></iframe><iframe src="https://tm.uol.com.br/purge-clients.html?name=dynad_rt&amp;expname=dynad_rt_exp&amp;expdomain=1" style="width: 0px; display: none; opacity: 0; border: 0px;"></iframe><iframe src="https://s.dynad.net/stack/KMA9C2O70iP6CHSgXk0LGaQ8ML9m6vJE4RIi1Rf61p4.html?v68" style="position: absolute; width: 1px; height: 1px; left: -9999px;"></iframe></body></html>
