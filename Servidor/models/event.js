@@ -10,11 +10,14 @@ var eventSchema = new mongoose.Schema({
     eventAction: {type: String, required: true}
 });
 
-eventSchema.methods.store = function(){
+eventSchema.methods.store = function(user){
     return new Promise((resolve, reject) => {
 
         if(!this.eventCategory || !this.eventAction)
             reject("INVALID_EVENT");
+        
+        if(user)
+            this.userId = user._id;
         
         this.timestamp = Date.now();
         this.save()
