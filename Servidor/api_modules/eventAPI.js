@@ -8,9 +8,8 @@ const Event = require('../models/event.js');
 
 eventRoutes.post('/new', tokenAuth, (request, response) => {
     let event = new Event(request.body);
-    console.log(response.locals.user);
     let user = response.locals.user || null;
-    
+
     event.store(user)
          .then(() => response.status(204).end())
          .catch(error => response.status(503).end());
