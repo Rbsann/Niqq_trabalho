@@ -10,6 +10,10 @@ var eventSchema = new mongoose.Schema({
     eventAction: {type: String, required: true}
 });
 
+/* 
+Armazena um evento válido na base de dados. Um evento é válido deve ter 
+os atributos eventCategory,eventAction e timestamp. O atributo userId é opcional.
+*/
 eventSchema.methods.store = function(user){
     return new Promise((resolve, reject) => {
 
@@ -27,6 +31,10 @@ eventSchema.methods.store = function(user){
     
 };
 
+// Busca por eventos na base de dados. 
+// Exemplo de parâmetro:
+// { "eventCategory" : "account" }
+// Retorna todos os eventos de categoria account
 function search(params){
     return new Promise((resolve, reject) => {
         this.find(params)
