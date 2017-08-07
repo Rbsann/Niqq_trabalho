@@ -28,7 +28,7 @@ userRoutes.post("/getAllInfo", tokenAuth, (request, response) => {
 
 // Change password command
 // - Authorization required: email, token
-// - Request data: currentPassword, newPassword, encryptData
+// - Request data: currentPassword, newPassword, encryptedData, credentials
 // - Response data: changed
 userRoutes.post("/changePassword", tokenAuth, (request, response) => {
 	var user = response.locals.user;
@@ -39,10 +39,12 @@ userRoutes.post("/changePassword", tokenAuth, (request, response) => {
 	var currentPassword = payload.currentPassword;
 	var newPassword = payload.newPassword;
 	var encryptedData = payload.encryptedData;
+	var credentials = payload.credentials || [];
 
 	user.validatePassword(currentPassword)
-		.then(validated => user.saveNewPassword(newPassword, currentToken))
-		.then(result => user.updateData(null, encryptedData))
+		.then(_ => user.saveNewPassword(newPassword, currentToken))
+		.then(_ => user.updateData(null, encryptedData))
+		.then(_ => user.replaceAllCredentials(credentials))
 		.then(result => {
 			response.sendResult({changed: result});
 		})
@@ -91,6 +93,7 @@ userRoutes.post("/resetPassword", (request, response) => {
 		})
 		.then(result => user.newPasswordResetCode(""))
 		.then(result => user.eraseData())
+		.then(_ => user.removeAllCredentials())
 		.then(result => {
 			response.sendResult({resetDone: result});
 		})
@@ -229,6 +232,137 @@ userRoutes.post("/getNewToken", tokenAuth, (request, response) => {
 		.catch(error => {
 			console.log(error);
 			response.sendError("SERVER_ERROR");
+		});
+});
+
+
+/////////////////////////////////////////////////////////////////////
+// Password manager API calls
+//
+
+// Add new credential
+// - Authorization required: token
+// - Request data: url, login, password
+// - Response data: added
+userRoutes.post("/addCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+	var login = payload.login;
+	var password = payload.password;
+
+	user.addCredential(url, login, password)
+		.then(_ => {
+			response.sendResult({ added: true });
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_ALREADY_EXISTS") {
+				response.sendError("CREDENTIAL_URL_ALREADY_EXISTS");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+	
+});
+
+// Get previously saved credential
+// - Authorization required: token
+// - Request data: url
+// - Response data: credential: {url, login, password}
+userRoutes.post("/getCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+
+	user.findCredential(url)
+		.then(credential => {
+			response.sendResult({ 
+				credential: {
+					url: credential.url,
+					login: credential.login,
+					password: credential.password
+				}
+			});
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+				response.sendError("INVALID_CREDENTIAL_URL");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+	
+});
+
+// Get array of credentials
+// - Authorization required: token
+// - Request data: -
+// - Response data: credentials: [{url, login}]
+userRoutes.post("/getAllCredentials", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+	user.findAllCredentials()
+		.then(credentials =>  {
+			response.sendResult({
+				credentials: credentials
+			});
+		})
+		.catch(error => {
+			console.log(error);
+			response.sendError("SERVER_ERROR");
+		});
+});
+
+// Update credential
+// - Authorization required: token
+// - Request data: url, login, password
+// - Response data: updated
+userRoutes.post("/updateCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+	var login = payload.login;
+	var password = payload.password;
+
+	user.updateCredential(url, login, password)
+		.then(_ => {
+			response.sendResult({ updated: true });
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+				response.sendError("INVALID_CREDENTIAL_URL");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
+		});
+});
+
+// Remove credential
+// - Authorization required: token
+// - Request data: url
+// - Response data: removed
+userRoutes.post("/removeCredential", tokenAuth, (request, response) => {
+	var user = response.locals.user;
+
+	var payload = request.body;
+	var url = payload.url;
+
+	user.removeCredential(url)
+		.then(_ => {
+			response.sendResult({ removed: true });
+		})
+		.catch(error => {
+			if (error.message === "CREDENTIAL_URL_NOT_FOUND") {
+				response.sendError("INVALID_CREDENTIAL_URL");
+			} else {
+				console.log(error);
+				response.sendError("SERVER_ERROR");
+			}
 		});
 });
 

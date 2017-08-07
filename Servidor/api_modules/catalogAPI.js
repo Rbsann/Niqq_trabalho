@@ -37,7 +37,11 @@ catalogRoutes.post("/getEntry", tokenAuth, (request, response) => {
 	} else {
 		var url = payload.url;
 		Catalog.findEntryByURL(url)
-			.then(catalogEntry => catalogEntry.getBestFieldMappings())
+			.then(catalogEntry => {
+				if (catalogEntry.fields.length === 0)
+					throw Error("URL_NOT_FOUND");
+				return catalogEntry.getBestFieldMappings();
+			})
 			.then(bestFieldMappings => {
 				response.sendResult({fields: bestFieldMappings});
 			})
@@ -119,14 +123,55 @@ var updateMappings = function (catalogEntry, fields, catalogger = false) {
 				)))
 				.catch(error => { throw error; })
 		))
-			.then(() => catalogEntry.save())
-			.then(() => {
-				resolve(true);
+			.then(_ => catalogEntry.save())
+			.then(_ => {
+				if (catalogger)
+					return catalogEntry.setValidated(true);
+				return true;
 			})
-			.catch(error => {
-				reject(error);
-			});
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
 	});
 };
+
+var cataloggerAuth = function (req, res, next) {
+	var user = res.locals.user;
+	if (user.role === "catalogger") {
+		next();
+	} else {
+		res.status(401).end();
+	}
+};
+
+// Get catalog entries
+// - Authorization required: token, role=catalogger
+// - Request data: -
+// - Response data: entries
+catalogRoutes.post("/getEntries", tokenAuth, cataloggerAuth, (req, res) => {
+	Catalog.findAllEntries()
+		.then(entries => {
+			res.sendResult({entries: entries});
+		})
+		.catch(error => {
+			console.log(error);
+			res.sendError("SERVER_ERROR");
+		});
+});
+
+// Add entry to catalog backlog
+// - Authorization required: token, role=catalogger
+// - Request data: url
+// - Response data: added
+catalogRoutes.post("/addToBacklog", tokenAuth, cataloggerAuth, (req, res) => {
+	var payload = request.body;
+	Catalog.createEntry(payload.url)
+		.then(_ => {
+			res.sendResult({added: true});
+		})
+		.catch(error => {
+			console.log(error);
+			res.sendError("SERVER_ERROR");
+		});
+});
 
 module.exports = catalogRoutes;
