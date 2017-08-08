@@ -34,7 +34,7 @@ module.exports.getServerPathSlash = function() {
 // Set extension IDs
 const extensionIdProduction = "dblbbnhcpppahimhikokckkglicpjngo";  // chrome store
 var extensionIdDevelopment = "";
-var catExtensionIdProduction = "";
+var catExtensionIdProduction = "ipcadfkodklddgjocomecmcifcmnffgb";
 var catExtensionIdDevelopment = "";
 
 if (!module.exports.isProductionEnvironment()) {
