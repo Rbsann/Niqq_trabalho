@@ -434,7 +434,7 @@ module.exports.findUnvalidatedEntries = function () {
 // Reject: unexpected error
 module.exports.findAllEntries = function () {
 	return new Promise((resolve, reject) => {
-		this.find()
+		this.find().sort({validated: 'asc'})
 			.then(entries => resolve(entries))
 			.catch(error => reject(error));
 	});
