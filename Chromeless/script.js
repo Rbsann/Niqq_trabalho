@@ -1,10 +1,13 @@
 const { Chromeless } = require('chromeless');
 const fs = require("fs");
-const forms = require("./forms.json");
-const notforms = require("./notforms.json");
 
 async function run(url, form) {
-  const chromeless = new Chromeless();
+  const chromeless = new Chromeless({
+    remote: {
+      endpointUrl: 'https://3pw6tmr8d3.execute-api.us-east-1.amazonaws.com/dev/',
+      apiKey: 'zK6yJfLD7i6qbMCtNvR1u7l1Y0hnPdVM8IIByHBz'
+    },
+  });
   
   chromeless.queue.chrome.options.viewport = {width: 1024, height: 2000, scale: 1};
   chromeless.queue.chrome.options.launchChrome = false;
@@ -27,38 +30,46 @@ async function run(url, form) {
   else
     path += "notform/";
 
-  fs.createReadStream(screenshot).pipe(fs.createWriteStream(path+domain+".png"));
+  // Salvar localmente:
+  // fs.createReadStream(screenshot).pipe(fs.createWriteStream(path+domain+".txt"));
 
-  let streamHtml = fs.createWriteStream(path+domain+".txt");
-  streamHtml.write(html);
-  streamHtml.end();
+  let file = fs.createWriteStream(path+domain+".txt");
+  file.write(screenshot);
+  file.write(html);
+  file.end();
+
+  // Salvar no S3
+  // console.log(screenshot); // prints local file path or S3 url
+  // console.log(html);
 
   await chromeless.end();
 }
 
-async function runForm () {
-  if (forms.length > 0) {
-    let url = forms.pop();
+run("https://carrinho.ricardoeletro.com.br/Cliente/Cadastro", true).catch(console.error.bind(console));
 
-    run(url, true)
-      .then(_ => {
-        runForm();
-      })
-      .catch(console.error.bind(console));
-  }
-}
+// async function runForm () {
+//   if (forms.length > 0) {
+//     let url = forms.pop();
 
-var runNotForm = async function () {
-  if (notforms.length > 0) {
-    let url = notforms.pop();
+//     run(url, true)
+//       .then(_ => {
+//         runForm();
+//       })
+//       .catch(console.error.bind(console));
+//   }
+// }
 
-    run(url, false)
-      .then(_ => {
-        runNotForm();
-      })
-      .catch(console.error.bind(console));
-  }
-}
+// var runNotForm = async function () {
+//   if (notforms.length > 0) {
+//     let url = notforms.pop();
 
-runForm();
-runNotForm();
+//     run(url, false)
+//       .then(_ => {
+//         runNotForm();
+//       })
+//       .catch(console.error.bind(console));
+//   }
+// }
+
+// runForm();
+// runNotForm();
