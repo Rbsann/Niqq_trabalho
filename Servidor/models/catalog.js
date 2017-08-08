@@ -49,7 +49,10 @@ var mappingIdentifiers = [
 	"phone",
 	"DOB",
 	"gender",
-	"address"
+	"address",
+	"CPF_space",
+	"password",
+	"unknown"
 ];
 
 var mappingSubIdentifiers = {
@@ -59,16 +62,19 @@ var mappingSubIdentifiers = {
 		"full"
 	],
 	"address": [
-		"type",
-		"street",
-		"number",
+        "ZIP",
+        "number",
 		"complement",
-		"ZIP",
+		"street",
 		"city",
 		"neighborhood",
-		"state",
+        "state",
+        "type",
 		"reference",
-		"country"
+        "country",
+        "ZIP_part1",
+        "ZIP_part2",
+        "ZIP_space"
 	],
 	"cellphone": [
 		"country",
