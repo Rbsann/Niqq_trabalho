@@ -32,10 +32,10 @@ autofillRoutes.post("/processForm", tokenAuth, (request, response) => {
 });
 
 // Get form score command
-// - Authorization required: email, token
+// - Authorization required: none
 // - Request data: inputs, selects
 // - Response data: formScore
-autofillRoutes.post("/getFormScore", tokenAuth, (request, response) => {
+autofillRoutes.post("/getFormScore", (request, response) => {
 	var payload = request.body;
 	processFormPromise([payload.inputs, payload.selects])
 		.then(calculateFormScorePromise)
