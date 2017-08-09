@@ -255,7 +255,8 @@ var catalogSchema = new Schema({
 	url: { type: String, required: true, unique: true, maxlength: 200 },
 	voters: { type: [String] }, // array of ids
 	fields: [fieldSchema],
-	validated: {type: Boolean, default: false} // if false, entry is pending manual validation
+	validated: {type: Boolean, default: false}, // if false, entry is pending manual validation
+	isForm: {type: Boolean, default: true}
 }, { collection: "catalog" }); // set collection name
 
 // Get field by identification object in catalog entry
@@ -370,6 +371,15 @@ catalogSchema.methods.setValidated = function(validated) {
 	});
 };
 
+catalogSchema.methods.setForm = function(isForm) {
+	return new Promise((resolve, reject) => {
+		this.isForm = isForm;
+		this.save()
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
+
 // Export catalog model
 module.exports = mongoose.model('Catalog', catalogSchema);
 
@@ -440,9 +450,9 @@ module.exports.findUnvalidatedEntries = function () {
 // Find all entries
 // Resolve: array of entries
 // Reject: unexpected error
-module.exports.findAllEntries = function () {
+module.exports.findAllFormEntries = function () {
 	return new Promise((resolve, reject) => {
-		this.find().sort({validated: 'asc'})
+		this.find({isForm: {$ne: false}}).sort({validated: 'asc'})
 			.then(entries => resolve(entries))
 			.catch(error => reject(error));
 	});
