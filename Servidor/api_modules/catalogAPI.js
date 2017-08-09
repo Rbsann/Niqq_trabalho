@@ -114,6 +114,8 @@ catalogRoutes.post("/updateEntry", tokenAuth, (request, response) => {
 /*jshint loopfunc:true */ // allow functions within loops
 var updateMappings = function (catalogEntry, fields, catalogger = false) {
 	return new Promise((resolve, reject) => {
+		if (catalogger)
+			catalogEntry.fields = [];
 		Promise.all(fields.map(reqField =>
 			catalogEntry.getOrAddField(reqField.fieldTag, reqField.fieldType, reqField.name, reqField.id, reqField.placeholder)
 				.then(field => field.updateMapping(reqField.mappingIdentifier, reqField.mappingSubIdentifier, reqField.mappingIndex, catalogger))
