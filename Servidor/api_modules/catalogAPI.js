@@ -120,7 +120,7 @@ var updateMappings = function (catalogEntry, fields, catalogger = false) {
 			catalogEntry.getOrAddField(reqField.fieldTag, reqField.fieldType, reqField.name, reqField.id, reqField.placeholder)
 				.then(field => field.updateMapping(reqField.mappingIdentifier, reqField.mappingSubIdentifier, reqField.mappingIndex, catalogger))
 				.then(field => Promise.all(reqField.options.map(reqOption =>
-					field.getOrAddOption(reqOption.text, reqOption.value)
+					field.getOrAddOption(reqOption.text, reqOption.value, reqOption.id || null)
 						.then(option => option.updateMapping(reqOption.mappingIdentifier, reqField.mappingIdentifier, reqField.mappingSubIdentifier, catalogger))
 				)))
 				.catch(error => { throw error; })
