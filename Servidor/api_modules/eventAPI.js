@@ -6,17 +6,21 @@ const Event = require('../models/event.js');
     Autenticação nesta API é opcional!
 */
 
-// Quando a api receber uma requisição de verbo POST, 
 eventRoutes.post('/new', tokenAuth, (request, response) => {
-    //Monta um objeto evento com os dados enviados pela extensão
-    let event = new Event(request.body);
-    // Se tiver, pega o usuário autenticado da requisição para associar ao evento
+    let event = request.body;
     let user = response.locals.user || null;
-
-    // Salva o evento na base de dados e 
-    event.store(user)
+    
+    Event.save(event, user)
          .then(() => response.status(200).end())
          .catch(error => response.status(503).end());
+});
+
+eventRoutes.get('/all', (request, response) => {
+    Event.listAll()
+        .then((events) => {
+            response.status(200).json(events);
+        })
+        .catch((err) => { response.status(500).json(err);});
 });
 
 module.exports = eventRoutes;

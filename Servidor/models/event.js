@@ -1,47 +1,42 @@
-const mongoose = require('mongoose');
 const User = require('./user.js');
+const knex = require('../relational_db.js');
+const tableName = 'event';
 
-mongoose.Promise = global.Promise;
 
-var eventSchema = new mongoose.Schema({
-    userId: { type: String},
-    timestamp: {type: Date, required: true},
-    eventCategory: {type: String, required: true},
-    eventAction: {type: String, required: true}
-});
+// Lista todos os eventos salvos no banco (sem paginação)
+function listAll(){
+    return knex(tableName).select().table(tableName);
+}
 
 /* 
 Armazena um evento válido na base de dados. Um evento é válido deve ter 
 os atributos eventCategory,eventAction e timestamp. O atributo userId é opcional.
 */
-eventSchema.methods.store = function(user){
+function save(event, user){
     return new Promise((resolve, reject) => {
+        if(user && event.userId !== user._id)
+            reject('INVALID_USER');
 
-        if(!this.eventCategory || !this.eventAction)
-            reject("INVALID_EVENT");
-        
-        if(user)
-            this.userId = user._id;
-        
-        this.timestamp = Date.now();
-        this.save()
+        event.timeStamp = new Date();
+        console.log(event.timeStamp);
+        knex(tableName).insert(event)
             .then(() => resolve())
-            .catch(err => reject(err));
-    });
-    
-};
-
-// Busca por eventos na base de dados. 
-// Exemplo de parâmetro:
-// { "eventCategory" : "account" }
-// Retorna todos os eventos de categoria account
-function search(params){
-    return new Promise((resolve, reject) => {
-        this.find(params)
-            .then(events => resolve(events))
-            .catch(error => reject(error));
+            .catch((error) => reject(error));
     });
 }
 
-module.exports = mongoose.model('event', eventSchema);
-module.exports.search = search;
+function listByUserId(userId){
+    return new Promise((resolve, reject) => {
+        if(!userId)
+            reject("INVALID_USER");
+
+        knex(tableName)
+            .where('userId', userId)
+            .then((events) => resolve(events))
+            .catch((error) => reject(error));
+    });
+}
+
+module.exports.listAll = listAll;
+module.exports.save = save;
+module.exports.listByUserId = listByUserId;
