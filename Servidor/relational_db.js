@@ -3,14 +3,14 @@ const development = {
     database: 'eventTracker',
     host: '127.0.0.1',
     user: 'root',
-    password: 'root',
+    password: 'root'
 };
 
 const production = {
     database: 'eventTracker',
-    host: '',
-    user: '',
-    password: '',
+    host: '127.0.0.1',
+    user: 'root',
+    password: 'root'
 };
 
 /*
