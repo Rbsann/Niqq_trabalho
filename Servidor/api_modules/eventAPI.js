@@ -1,5 +1,5 @@
 const eventRoutes = require('express').Router();
-const Event = require('../models/event.js');
+const EventManager = require('../models/event.js');
 const General = require('../general.js');
 
 
@@ -8,18 +8,25 @@ const General = require('../general.js');
 */
 
 eventRoutes.post('/new', getEmailFromToken, (request, response) => {
-    let event = request.body;
-    event.email = response.locals.email;
-    delete event.token;
+    let payload = request.body;
+    if (payload.category === undefined || payload.action === undefined){
+        response.status(400).send("malformed request");
+        return;
+    }
+
+    let event = new EventManager.Entry(payload.category, payload.action, response.locals.email);
     
-    Event.save(event)
-         .then(() => response.status(200).send("event saved"))
-         .catch(error => response.status(503).send("error"));
+    event.insert()
+        .then(() => response.status(200).send("event saved"))
+        .catch(error => {
+            console.log(error);
+            response.status(503).send("error");
+        });
 });
 
 eventRoutes.get('/all', (request, response) => {
     // response.send("all events");
-    Event.listAll()
+    EventManager.listAll()
         .then((events) => {
             response.status(200).json(events);
         })

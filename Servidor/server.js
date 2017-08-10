@@ -3,12 +3,12 @@ const express = require('express');
 const app = express();
 
 // Local module imports
-const mongo = require('./mongo.js');
+// const mongo = require('./mongo.js');
 const routes = require('./routes.js');
 const general = require('./general.js');
 
 // Connect to MongoDB
-mongo.connect();
+// mongo.connect();
 
 // Get execution parameters
 var environment = general.getEnvironment();

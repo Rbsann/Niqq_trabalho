@@ -1,7 +1,7 @@
 // Import modules
 var bodyParser = require('body-parser');
 var general = require('./general.js');
-const mongo = require('./mongo.js');
+// const mongo = require('./mongo.js');
 
 // Import API routes
 var autofillAPI = require('./api_modules/autofillAPI.js');
@@ -75,20 +75,20 @@ routes.use(function(request, response, next) {
 // Tratamento dos Gets
 routes.get('/', function (request, response) {
 	var serverInstance = "Niqq API v" + general.getPackageVersion() + " (" + general.getEnvironment() + ")";
-	if (mongo.isConnected()) {
+	// if (mongo.isConnected()) {
 		response.send(serverInstance + "<br>OK");
-	} else {
-		response.status(500).send(serverInstance + "<br><strong>Error: DB is down</strong>");
-	}
+	// } else {
+	// 	response.status(500).send(serverInstance + "<br><strong>Error: DB is down</strong>");
+	// }
 });
 
 // API routes
-routes.use('/autofill', autofillAPI);
-routes.use('/account', accountAPI);
-routes.use('/catalog', catalogAPI);
-routes.use('/user', userAPI);
-routes.use('/email', emailAPI);
-routes.use('/auth/fb', authFacebook);
+// routes.use('/autofill', autofillAPI);
+// routes.use('/account', accountAPI);
+// routes.use('/catalog', catalogAPI);
+// routes.use('/user', userAPI);
+// routes.use('/email', emailAPI);
+// routes.use('/auth/fb', authFacebook);
 routes.use('/event', eventAPI);
 
 // export routes object
