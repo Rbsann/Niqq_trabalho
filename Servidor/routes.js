@@ -37,6 +37,7 @@ routes.use(function (request, response, next) {
 		next();
 
 	} else {
+		console.log("Invalid origin attempt: " + origin);
 		response.status(403).end(); // invalid origin
 	}
 });

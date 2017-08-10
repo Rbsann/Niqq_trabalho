@@ -60,7 +60,7 @@ function generateDataStructure(){
 */
 function createEventTable(table){
     table.increments('id').primary();
-    table.string('userId', 40).nullable();
+    table.string('email', 60).nullable();
     table.string('eventCategory', 40).notNull();
     table.string('eventAction', 40).notNull();
     table.dateTime('timestamp').notNull();
@@ -75,4 +75,7 @@ function connect(){
     return require('knex')({ client: 'mysql', connection : connectionConfig });
 }
 
-module.exports = connect();
+module.exports = function() {
+    generateDataStructure();
+    return connect();
+}();

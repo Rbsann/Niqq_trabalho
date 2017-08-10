@@ -93,6 +93,7 @@ module.exports.isValidOrigin = function(origin) {
     } else {
         validOrigins.push("http://localhost:8085"); // website origin
         validOrigins.push("http://localhost:8080"); // api origin
+        validOrigins.push("chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop");  // postman extension origin
     }
 
     return validOrigins.includes(origin);

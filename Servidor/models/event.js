@@ -14,14 +14,13 @@ os atributos eventCategory,eventAction e timestamp. O atributo userId é opciona
 */
 function save(event, user){
     return new Promise((resolve, reject) => {
-        if(user && event.userId !== user._id)
-            reject('INVALID_USER');
 
         event.timeStamp = new Date();
         knex(tableName)
             .insert(event)
             .then(() => resolve())
             .catch((error) => {
+                console.log(error);
                 reject(error);
             });
     });
@@ -33,7 +32,7 @@ function listByUserId(userId){
             reject("INVALID_USER");
 
         knex(tableName)
-            .where('userId', userId)
+            .where('email', email)  // retornar objeto evento
             .then((events) => resolve(events))
             .catch((error) => reject(error));
     });
