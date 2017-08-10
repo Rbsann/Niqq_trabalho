@@ -10,6 +10,8 @@ const mongo = require('./mongo.js');
 const general = require('./general.js');
 const User = require("./models/user.js");
 
+const statsAPI = require('./api_modules/statsAPI.js');
+
 // Connect to MongoDB
 mongo.connect();
 
@@ -31,6 +33,9 @@ app.use(basicAuth({
     challenge: true,
     realm: "NiqqStatsRealm"
 }));
+
+// Configura o uso da API de dados estatísticos dos eventos
+app.use('/events', statsAPI);
 
 app.get("/", (req, res) => {
     User.getList()
@@ -66,7 +71,6 @@ app.get("/", (req, res) => {
         })
         .catch(error => console.log(error));
 });
-
 // Start server
 app.listen(port);
 console.log("Niqq Stats v" + general.getPackageVersion() + " (" + environment + ") running on localhost:" + port);

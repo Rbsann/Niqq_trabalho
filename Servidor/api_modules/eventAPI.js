@@ -15,12 +15,12 @@ eventRoutes.post('/new', tokenAuth, (request, response) => {
          .catch(error => response.status(503).end());
 });
 
-eventRoutes.get('/all', (request, response) => {
-    Event.listAll()
-        .then((events) => {
-            response.status(200).json(events);
-        })
-        .catch((err) => { response.status(500).json(err);});
-});
+// eventRoutes.get('/all', (request, response) => {
+//     Event.listAll()
+//         .then((events) => {
+//             response.status(200).json(events);
+//         })
+//         .catch((err) => { response.status(500).json(err);});
+// });
 
 module.exports = eventRoutes;

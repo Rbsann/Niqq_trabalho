@@ -48,6 +48,7 @@ function count(params){
     });
 }
 
+
 module.exports.listAll = listAll;
 module.exports.save = save;
 module.exports.listByUserId = listByUserId;
