@@ -49,7 +49,10 @@ var mappingIdentifiers = [
 	"phone",
 	"DOB",
 	"gender",
-	"address"
+	"address",
+	"CPF_space",
+	"password",
+	"unknown"
 ];
 
 var mappingSubIdentifiers = {
@@ -59,16 +62,19 @@ var mappingSubIdentifiers = {
 		"full"
 	],
 	"address": [
-		"type",
-		"street",
-		"number",
+        "ZIP",
+        "number",
 		"complement",
-		"ZIP",
+		"street",
 		"city",
 		"neighborhood",
-		"state",
+        "state",
+        "type",
 		"reference",
-		"country"
+        "country",
+        "ZIP_part1",
+        "ZIP_part2",
+        "ZIP_space"
 	],
 	"cellphone": [
 		"country",
@@ -205,11 +211,11 @@ fieldSchema.methods.updateMapping = function (mappingIdentifier, mappingSubIdent
 // Get option from field
 // Resolve: option
 // Reject: OPTION_NOT_FOUND or unexpected error
-fieldSchema.methods.getOption = function (text, value) {
+fieldSchema.methods.getOption = function (text, value, id = null) {
 	return new Promise((resolve, reject) => {
 		for (let optionIterator = 0; optionIterator < this.options.length; optionIterator++) {
 			let option = this.options[optionIterator];
-			if (option.text === text && option.value === value) {
+			if (option.text === text && option.value === value && option.id === id) {
 				resolve(option);
 				return;
 			}
@@ -221,19 +227,20 @@ fieldSchema.methods.getOption = function (text, value) {
 // Get or add an option to field
 // Resolve: option
 // Reject: unexpected error
-fieldSchema.methods.getOrAddOption = function (text, value) {
+fieldSchema.methods.getOrAddOption = function (text, value, id = null) {
 	return new Promise((resolve, reject) => {
-		this.getOption(text, value)
+		this.getOption(text, value, id)
 			.then(option => resolve(option))
 			.catch(error => {
 				if (error.message === "OPTION_NOT_FOUND") {
 					var newOption = {
 						text: text,
 						value: value,
+						id: id,
 						mappings: []
 					};
 					this.options.push(newOption);
-					resolve(this.getOption(text, value));
+					resolve(this.getOption(text, value, id));
 				} else {
 					reject(error);
 				}
@@ -248,7 +255,8 @@ var catalogSchema = new Schema({
 	url: { type: String, required: true, unique: true, maxlength: 200 },
 	voters: { type: [String] }, // array of ids
 	fields: [fieldSchema],
-	validated: {type: Boolean, default: false} // if false, entry is pending manual validation
+	validated: {type: Boolean, default: false}, // if false, entry is pending manual validation
+	isForm: {type: Boolean, default: true}
 }, { collection: "catalog" }); // set collection name
 
 // Get field by identification object in catalog entry
@@ -342,6 +350,7 @@ catalogSchema.methods.getBestFieldMappings = function () {
 					var processedOption = {
 						text: option.text,
 						value: option.value,
+						id: option.id,
 						mappingIdentifier: bestOptionMapping.identifier
 					};
 
@@ -356,6 +365,15 @@ catalogSchema.methods.getBestFieldMappings = function () {
 catalogSchema.methods.setValidated = function(validated) {
 	return new Promise((resolve, reject) => {
 		this.validated = validated;
+		this.save()
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
+
+catalogSchema.methods.setForm = function(isForm) {
+	return new Promise((resolve, reject) => {
+		this.isForm = isForm;
 		this.save()
 			.then(_ => resolve(true))
 			.catch(error => reject(error));
@@ -432,9 +450,9 @@ module.exports.findUnvalidatedEntries = function () {
 // Find all entries
 // Resolve: array of entries
 // Reject: unexpected error
-module.exports.findAllEntries = function () {
+module.exports.findAllFormEntries = function () {
 	return new Promise((resolve, reject) => {
-		this.find()
+		this.find({isForm: {$ne: false}}).sort({validated: 'asc'})
 			.then(entries => resolve(entries))
 			.catch(error => reject(error));
 	});

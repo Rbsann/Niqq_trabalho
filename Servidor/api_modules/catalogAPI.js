@@ -38,8 +38,8 @@ catalogRoutes.post("/getEntry", tokenAuth, (request, response) => {
 		var url = payload.url;
 		Catalog.findEntryByURL(url)
 			.then(catalogEntry => {
-				if (catalogEntry.fields.length === 0)
-					throw Error("URL_NOT_FOUND");
+				if (catalogEntry.fields.length === 0 || !catalogEntry.isForm)
+					throw Error("URL_NOT_FORM");
 				return catalogEntry.getBestFieldMappings();
 			})
 			.then(bestFieldMappings => {
@@ -48,6 +48,8 @@ catalogRoutes.post("/getEntry", tokenAuth, (request, response) => {
 			.catch((error) => {
 				if (error.message === "URL_NOT_FOUND") {
 					response.sendError("ENTRY_NOT_FOUND");
+				} else if (error.message === "URL_NOT_FORM") {
+					response.sendError("ENTRY_NOT_FORM");
 				} else {
 					console.log(error);
 					response.sendError("SERVER_ERROR");
@@ -114,11 +116,13 @@ catalogRoutes.post("/updateEntry", tokenAuth, (request, response) => {
 /*jshint loopfunc:true */ // allow functions within loops
 var updateMappings = function (catalogEntry, fields, catalogger = false) {
 	return new Promise((resolve, reject) => {
+		if (catalogger)
+			catalogEntry.fields = [];
 		Promise.all(fields.map(reqField =>
 			catalogEntry.getOrAddField(reqField.fieldTag, reqField.fieldType, reqField.name, reqField.id, reqField.placeholder)
 				.then(field => field.updateMapping(reqField.mappingIdentifier, reqField.mappingSubIdentifier, reqField.mappingIndex, catalogger))
 				.then(field => Promise.all(reqField.options.map(reqOption =>
-					field.getOrAddOption(reqOption.text, reqOption.value)
+					field.getOrAddOption(reqOption.text, reqOption.value, reqOption.id || null)
 						.then(option => option.updateMapping(reqOption.mappingIdentifier, reqField.mappingIdentifier, reqField.mappingSubIdentifier, catalogger))
 				)))
 				.catch(error => { throw error; })
@@ -143,12 +147,12 @@ var cataloggerAuth = function (req, res, next) {
 	}
 };
 
-// Get catalog entries
+// Get catalog form entries
 // - Authorization required: token, role=catalogger
 // - Request data: -
 // - Response data: entries
 catalogRoutes.post("/getEntries", tokenAuth, cataloggerAuth, (req, res) => {
-	Catalog.findAllEntries()
+	Catalog.findAllFormEntries()
 		.then(entries => {
 			res.sendResult({entries: entries});
 		})
@@ -158,20 +162,34 @@ catalogRoutes.post("/getEntries", tokenAuth, cataloggerAuth, (req, res) => {
 		});
 });
 
-// Add entry to catalog backlog
+// Set entry as form or not form
 // - Authorization required: token, role=catalogger
-// - Request data: url
-// - Response data: added
-catalogRoutes.post("/addToBacklog", tokenAuth, cataloggerAuth, (req, res) => {
-	var payload = request.body;
-	Catalog.createEntry(payload.url)
-		.then(_ => {
-			res.sendResult({added: true});
-		})
-		.catch(error => {
-			console.log(error);
-			res.sendError("SERVER_ERROR");
-		});
+// - Request data: url, isForm
+// - Response data: done
+catalogRoutes.post("/setForm", tokenAuth, cataloggerAuth, (req, res) => {
+	var payload = req.body;
+	if (payload.url === undefined || payload.isForm === undefined) {
+		res.sendError("Malformed request");
+	} else {
+		var url = payload.url || "";
+		var isForm = payload.isForm || false;
+		var entry;
+		Catalog.findEntryByURL(url)
+			.then(catalogEntry => {
+				entry = catalogEntry;
+				return catalogEntry.setForm(isForm);
+			})
+			.then(_ => entry.setValidated(!isForm)) // if form, set unvalidated; if not form, set validated
+			.then(_ => res.sendResult({done: true}))
+			.catch(error => {
+				if (error.message === "URL_NOT_FOUND") {
+					res.sendError("ENTRY_NOT_FOUND");
+				} else {
+					console.log(error);
+					res.sendError("SERVER_ERROR");
+				}
+			});
+	}
 });
 
 module.exports = catalogRoutes;
