@@ -1,5 +1,5 @@
 const User = require('./user.js');
-var knex = require('../relational_db.js');
+const knex = require('../relational_db.js');
 const tableName = 'event';
 
 
@@ -22,7 +22,6 @@ function save(event, user){
             .insert(event)
             .then(() => resolve())
             .catch((error) => {
-                console.log(error);
                 reject(error);
             });
     });
