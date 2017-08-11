@@ -1,4 +1,4 @@
-const { Chromeless } = require('chromeless');
+const Chromeless = require('chromeless').default;
 const fs = require("fs");
 
 ///
@@ -12,6 +12,9 @@ async function run(url, form) {
     },
   });
   
+  setTimeout(_ => {
+    chromeless.end();
+  }, 30000); // Seta timeout da funcao
   chromeless.queue.chrome.options.viewport = {width: 1024, height: 2000, scale: 1};
   chromeless.queue.chrome.options.launchChrome = false;
 
@@ -22,7 +25,7 @@ async function run(url, form) {
 
   const screenshot = await chromeless
     .goto(url)
-    .wait(3000)
+    .wait(5000)
     .screenshot();
 
   var domain = url.split("/")[2];

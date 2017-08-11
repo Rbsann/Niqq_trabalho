@@ -4,7 +4,7 @@ var notforms = require("./notforms.json");
 
 
 var runForm = function () {
-  if (forms.length > 0) {
+  while(forms.length > 0) {
     let url = forms.pop();
 
     chromeless.run(url, true);
@@ -12,14 +12,20 @@ var runForm = function () {
 };
 
 var runNotForm = function () {
-  if (notforms.length > 0) {
+  while(notforms.length > 0) {
     let url = notforms.pop();
 
     chromeless.run(url, false);
   }
 };
 
-// runForm();
-// runNotForm();]
-chromeless.run("https://id.atlassian.com/signup", true);
-chromeless.run("https://carrinho.ricardoeletro.com.br/Cliente/Cadastro", true);
+try {
+  setTimeout(_ => {
+      throw "Timeout";
+    }, 120000); // Seta timeout da funcao
+  runForm();
+  runNotForm();
+}
+catch(error) {
+  console.log(error);
+}
