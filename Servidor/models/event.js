@@ -1,5 +1,5 @@
 const User = require('./user.js');
-const knex = require('../relational_db.js');
+const knex = require('../relational_db.js')();
 const tableName = 'event';
 
 /*

@@ -11,6 +11,7 @@ var accountAPI = require('./api_modules/accountAPI.js');
 var emailAPI = require('./api_modules/emailAPI.js');
 var authFacebook = require('./api_modules/facebookAPI.js');
 var eventAPI = require('./api_modules/eventAPI.js');
+var statsAPI = require('./api_modules/statsAPI.js');
 
 const routes = require('express').Router();
 
@@ -90,6 +91,7 @@ routes.get('/', function (request, response) {
 // routes.use('/email', emailAPI);
 // routes.use('/auth/fb', authFacebook);
 routes.use('/event', eventAPI);
+routes.use('/stats', statsAPI);
 
 // export routes object
 module.exports = routes;

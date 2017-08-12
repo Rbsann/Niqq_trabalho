@@ -1,56 +1,51 @@
+const database = 'eventTracker';
+
 // Objetos de comunicação com o database
 const development = {
-    database: 'eventTracker',
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'root'
+	host: '127.0.0.1',
+	user: 'root',
+	password: 'root'
 };
 
 const production = {
-    database: 'eventTracker',
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'root'
+	host: '127.0.0.1',
+	user: 'root',
+	password: 'root'
 };
-
 /*
-    Cria uma conexão com o banco de dados. Para alterar o SGDB do projeto, basta alterar 
-    o campo client. Knex suporta MySQL, PostgreSQL, Oracle, MSSQL e Sqlite3 (local).
+	Cria uma conexão com o banco de dados. Para alterar o SGDB do projeto, basta alterar 
+	o campo client. Knex suporta MySQL, PostgreSQL, Oracle, MSSQL e Sqlite3 (local).
 */
 const connectionConfig = process.argv[2] ? development : production;
 
-var knex = require('knex')({
-    client: 'mysql',
-    connection: connectionConfig
-});
-
 /*
-    Cria a estrutura no banco, caso não exista
+	Cria a estrutura no banco, caso não exista
 */
-function generateDataStructure(){
-    knex.raw('create database if not exists ' + connectionConfig.database + ';')
-        .then(function(){
-            knex.destroy();
-
-            //Reinicia a conexão com database definido e cria a tabela de eventos
-            knex = require('knex')({ client: 'mysql', connection : connectionConfig });
-            
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-}
-    
-// Cria a tabela de eventos no banco caso não exista ainda.
-function connect(){
-    // generateDataStructure();
-    // return knex;
-
-    //TODO: refatorar
-    return require('knex')({ client: 'mysql', connection : connectionConfig });
-}
+var connection = null;
 
 module.exports = function() {
-    generateDataStructure();
-    return connect();
-}();
+	return connection;
+};
+
+module.exports.connect = function() {
+	return new Promise((resolve, reject) => {
+		if (connection === null) {
+			var knex = require('knex')({
+				client: 'mysql',
+				connection: connectionConfig
+			});
+			knex.raw('create database if not exists ' + database + ';')
+				.then(function () {
+					knex.destroy();
+					connectionConfig.database = database;
+					//Reinicia a conexão com database definido e cria a tabela de eventos
+					connection = require('knex')({ client: 'mysql', connection: connectionConfig });
+					resolve();
+				})
+				.catch(error => reject(error));
+		} else {
+			reject(Error("ALREADY_CONNECTED"));
+		}
+	});
+	
+};
