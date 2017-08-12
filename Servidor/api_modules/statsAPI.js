@@ -1,10 +1,19 @@
 const router = require('express').Router();
 const Stats = require('../models/stats.js');
 const plotly = require('plotly')("DemoAccount", "lr1c37zw81"); // Preencher com dados corretos depois
-
 /*
     Autenticação nesta API é opcional!
 */
+
+router.get('/test', (req, res) => {
+    Stats.extension()
+        .then(counts => console.log(counts))
+        .catch(error => console.log(error));
+    Stats.fill()
+        .then(dataTot => console.log(dataTot))
+        .catch(error => console.log(error));
+    res.send('ok');
+});
 
 // Quando a api receber uma requisição de verbo POST, 
 router.get('/', function (req, res, next){ //cria pagina para visualizar stats
