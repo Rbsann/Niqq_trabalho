@@ -6,7 +6,7 @@ const plotly = require('plotly')("DemoAccount", "lr1c37zw81"); // Preencher com 
 */
 
 router.get('/test', (req, res) => {
-    Stats.extension()
+    Stats.formsCompared()
         .then(counts => console.log(counts))
         .catch(error => console.log(error));
     Stats.fill()
