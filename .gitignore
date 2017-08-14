@@ -3,3 +3,5 @@ niqq-autofill-development/
 
 node_modules/
 dist/
+
+/Chromeless/outputs
