@@ -10,7 +10,7 @@ const Users = require('./user.js');
 const signupPages = ["SignupFormPage", "FractionedSignupPage"];
 
 //TODO: mudar para nome que explica melhor o que a função faz
-function extension() {
+function formsCompared() {
 	return new Promise((resolve, reject) => {
 		var result = {}; // dicionário com contagem de eventos no formato: {página: Number}
 		// executa paralelamente as promises do vetor de promises retornado pelo .map e resolve um vetor com as resoluções delas só depois de todas terminarem
@@ -42,7 +42,7 @@ function extension() {
 }
 
 //TODO: transformar em promise usando Promise.all e map sobre o array de actions
-function formSignUp() {
+function fracSignup() {
 	return new Promise((resolve, reject) => {
 		var actions = ['pageView', 'endSignupStep1', 'endSignupStep2', 'signupCompletedWithDownload', 'signupCompletedWithoutDownload'];
 		resolve({pageView: 0, endSignupStep1: 0, endSignupStep2: 0, signupCompletedWithDownload: 0, signupCompletedWithoutDownload: 0}); //TODO: resolver nesse formato
@@ -123,5 +123,5 @@ function fill() {
 }
 	
 module.exports.fill = fill;
-module.exports.extension = extension;
-module.exports.formSignUp = formSignUp;
+module.exports.formsCompared  = formsCompared;
+module.exports.fracSignup = fracSignup;
