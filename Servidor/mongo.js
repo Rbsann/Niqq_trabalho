@@ -1,11 +1,14 @@
+const general = require("./general.js");
+
+var uri = "";
 // Escolhe uri do banco de acordo com o parâmetro de execução
-var env = process.argv[2] || 'prod';
-switch (env) {
-    case 'dev':
-        var uri = 'mongodb://thiago:123456@ds149059.mlab.com:49059/niqqdb';
+switch (general.getEnvironment()) {
+	case 'dev':
+	case 'test':
+        uri = "mongodb://thiago:123456@ds149059.mlab.com:49059/niqqdb";
         break;
     case 'prod':
-        var uri = 'mongodb://niqqDBProduction:(senha.DBProduction.Niqq)@127.0.0.1:27017/niqqdb';
+        uri = "mongodb://niqqDBProduction:(senha.DBProduction.Niqq)@127.0.0.1:27017/niqqdb";
         break;
 }
 
@@ -21,13 +24,11 @@ mongoose.Promise = global.Promise;
 
 // Conecta ao MongoDB
 module.exports.connect = function(){
-	mongoose.connect(uri, { useMongoClient: true })
-		.then(() => {
-			console.log("Connectado no MongoDB!");
-		})
-		.catch((err) => {
-			console.log(err);
-		});
+	return new Promise((resolve, reject) => {
+		mongoose.connect(uri, { useMongoClient: true })
+			.then(_ => resolve(true))
+			.catch(err => reject(err));
+	});
 };
 
 // Retorna true se mongo estiver conectado

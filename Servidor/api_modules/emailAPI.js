@@ -104,8 +104,10 @@ var sendEmail = function ([from, to, subject, message]) {
 				}
 			});
 		} else {
-			console.log("Sending email:");
-			console.log(mailOptions);
+			if (!general.isTestEnvironment()) {
+				console.log("Sending email:");
+				console.log(mailOptions);
+			}
 			resolve(true);
 		}
 		

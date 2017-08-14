@@ -11,7 +11,7 @@ module.exports.getPackageVersion = () => packageInfo.version;
 
 // Get parameters from execution arguments
 module.exports.getEnvironment = function () {
-    return process.argv[2] || "prod";
+    return process.env.NODE_ENV || process.argv[2] || "prod";
 };
 module.exports.getPort = function () {
     return process.argv[3] || 8080;
@@ -20,9 +20,13 @@ module.exports.getServerPath = function () {
     return process.argv[4] || "/";
 };
 module.exports.isProductionEnvironment = function () {
-    if (module.exports.getEnvironment() === "dev")
-        return false;
-    return true;
+    return module.exports.getEnvironment() === "prod";
+};
+module.exports.isDevelopmentEnvironment = function () {
+    return module.exports.getEnvironment() === "dev";
+};
+module.exports.isTestEnvironment = function() {
+    return module.exports.getEnvironment() === "test";
 };
 module.exports.getServerPathSlash = function() {
     var serverPath = module.exports.getServerPath();

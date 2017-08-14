@@ -24,7 +24,7 @@ routes.use(function (request, response, next) {
 	if (method === "get") { // allow all get requests
 		next();
 
-	} else if (general.isValidOrigin(origin)) { // verify request origin before continuing
+	} else if (general.isValidOrigin(origin) || general.isTestEnvironment()) { // verify request origin before continuing
 		response.header("Access-Control-Allow-Origin", origin);
 
 		if (method === "options") { // if CORS preflight request, respond with allowed methods, headers and max-age
