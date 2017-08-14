@@ -48,6 +48,7 @@ router.get('/fracSignup', function(req, res, next){// stats do form
 });
 
 router.get('/formsCompared', function(req, res, next){// stats de download/install e tempo para unistall
+    console.log("cheguei aqui!");
     Stats.formsCompared().then((contagem) => {
         var chart = {
             type: 'bar',
@@ -58,7 +59,8 @@ router.get('/formsCompared', function(req, res, next){// stats de download/insta
                     }]
                 }
             };
-        res.status(200).json(chart);
+        // res.status(200).json(chart);
+        res.redirect(req.originalUrl + ':8123/graphs');
     })
     .catch((err) => {
         console.log(err);
