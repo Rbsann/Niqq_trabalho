@@ -650,6 +650,16 @@ module.exports.getByFacebookId = function (facebookId) {
 	});
 };
 
+// Remove user by email
+module.exports.removeByEmail = function(email) {
+	return new Promise((resolve, reject) => {
+		module.exports.getByEmail(email)
+			.then(user => user.remove())
+			.then(_ => resolve(true))
+			.catch(error => reject(error));
+	});
+};
+
 // Get array of users
 module.exports.getList = function (params) {
 	return new Promise((resolve, reject) => {

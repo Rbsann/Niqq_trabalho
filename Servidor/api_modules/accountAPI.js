@@ -139,4 +139,23 @@ accountRoutes.post('/confirmEmail', function(request, response) {
 		});
 });
 
+if (general.isTestEnvironment()) {
+	// Remove  user
+	// - Request data: email
+	// - Response data: done
+	accountRoutes.post('/removeUser', function(request, response) {
+		var payload = request.body;
+		User.removeByEmail(payload.email)
+			.then(_ => response.sendResult({ done: true }))
+			.catch(error => {
+				if (error.message === "USER_NOT_FOUND") {
+					response.sendResult({ done: true });
+				} else {
+					response.sendError("SERVER_ERROR");
+					console.log(error);
+				}
+			});
+	});
+}
+
 module.exports = accountRoutes;
