@@ -22,6 +22,12 @@
   },
   "scripts": {
     "start": "nodemon server.js dev",
-    "stats": "nodemon statsServer.js dev"
+    "stats": "nodemon statsServer.js dev",
+    "test": "NODE_ENV=test mocha tests/API.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
   }
 }
