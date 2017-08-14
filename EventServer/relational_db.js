@@ -1,4 +1,5 @@
-const database = 'eventTracker';
+const database = 'event_tracker_automatico';
+// const database = 'eventTracker';
 
 // Objetos de comunicação com o database
 const development = {

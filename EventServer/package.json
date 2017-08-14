@@ -1,0 +1,22 @@
+{
+  "name": "eventserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "relational_db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-basic-auth": "^1.1.1",
+    "knex": "^0.13.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.14.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1"
+  }
+}

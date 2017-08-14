@@ -1,12 +1,11 @@
 const router = require('express').Router();
 const Stats = require('../models/stats.js');
-const plotly = require('plotly')("DemoAccount", "lr1c37zw81"); // Preencher com dados corretos depois
 /*
     Autenticação nesta API é opcional!
 */
 
 router.get('/test', (req, res) => {
-    Stats.extension()
+    Stats.formsCompared()
         .then(counts => console.log(counts))
         .catch(error => console.log(error));
     Stats.fill()
@@ -16,9 +15,9 @@ router.get('/test', (req, res) => {
 });
 
 // Quando a api receber uma requisição de verbo POST, 
-router.get('/', function (req, res, next){ //cria pagina para visualizar stats
-    res.render('stats');
-});
+// router.get('/', function (req, res, next){ //cria pagina para visualizar stats
+//     res.render('stats');
+// });
 
 router.get('/botSignup', function(req, res, next){ //clicavel, on-click mostra stats do fill up do bot
     var contagem = Stats.botSignUpPage();
@@ -36,7 +35,7 @@ router.get('/botSignup', function(req, res, next){ //clicavel, on-click mostra s
     });
 });
 
-router.get('/formSignup', function(req, res, next){// stats do form
+router.get('/fracSignup', function(req, res, next){// stats do form
     var contagem = Stats.formSignUp();
     var data = [
         {
@@ -48,17 +47,23 @@ router.get('/formSignup', function(req, res, next){// stats do form
     res.json(data);
 });
 
-router.get('/extension', function(req, res, next){// stats de download/install e tempo para unistall
-    var contagem = Stats.extension();
-    var data = [
-            {
-                x: ["downBot", "downForm", "install"],
-                y: contagem,
-                type: "bar"
-            }
-        ];
-    res.json(data);
-    var graphOptions = { filename: "basic-bar", fileopt: "overwrite" };
+router.get('/formsCompared', function(req, res, next){// stats de download/install e tempo para unistall
+    Stats.formsCompared().then((contagem) => {
+        var chart = {
+            type: 'bar',
+            data:{
+                    labels: ["SignupFormPage", "SignupFrac", "Install"],
+                    datasets: [{
+                        data: [contagem['SignupFormPage'], contagem['FractionedSignupPage'], contagem['Install']]
+                    }]
+                }
+            };
+        res.status(200).json(chart);
+    })
+    .catch((err) => {
+        console.log(err);
+        res.status(500).end();
+    });
 });
 
 router.get('/fill', function(req, res, next){// fill e histograma de tempo de fill.data-download.data

@@ -14,19 +14,16 @@
     "express-rate-limit": "^2.8.0",
     "fuse.js": "2.6.2",
     "jsonwebtoken": "^7.2.1",
-    "knex": "^0.13.0",
-    "moment": "^2.18.1",
     "mongodb": "^2.2.22",
     "mongoose": "^4.2.6",
-    "mysql": "^2.14.1",
     "nodemailer": "^4.0.1",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
-    "passport-facebook": "^2.1.1",
-    "plotly": "^1.0.6"
+    "passport-facebook": "^2.1.1"
   },
   "scripts": {
     "start": "nodemon server.js dev",
-    "stats": "nodemon statsServer.js dev"
+    "stats": "nodemon statsServer.js dev",
+    "debug": "node --debug-brk=5858 statsServer.js dev"
   }
 }

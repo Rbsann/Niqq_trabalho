@@ -1,4 +1,4 @@
-const User = require('./user.js');
+// const User = require('./user.js');
 const knex = require('../relational_db.js')();
 const tableName = 'event';
 
@@ -33,9 +33,6 @@ knex.schema.createTableIfNotExists(tableName, table => {
 function listAll() {
 	return knex(tableName).select().table(tableName);
 }
-
-
-
 
 function listByEmail(email) {
 	return new Promise((resolve, reject) => {

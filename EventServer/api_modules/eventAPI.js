@@ -33,7 +33,6 @@ eventRoutes.get('/all', (request, response) => {
         .catch((err) => { response.status(500).json(err);});
 });
 
-
 function getEmailFromToken (request, response, next) {
     var token = request.body.token;
     response.locals.email = null;

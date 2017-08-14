@@ -1,11 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const knex = require('../relational_db.js');//editar nome da file
-const deasync = require('deasync-promise');
 
 const moment = require('moment');// package pra calcular a demora pra usar a extensao
 const Events = require('./event.js');
-const Users = require('./user.js');
 
 const signupPages = ["SignupFormPage", "FractionedSignupPage"];
 
@@ -19,7 +17,13 @@ function formsCompared() {
 		        .then(count => { 
 		            result[page] = count[0]["count(`action`)"]; // coloca contagem no dicionário de resultado
 		        });
-		}))
+			}))
+			.then(_ => {
+				return knex().count('action').where({ category: 'extension', action: 'install' }).from('event')
+		        .then(count => { 
+		            result['Install'] = count[0]["count(`action`)"]; // coloca contagem no dicionário de resultado
+		        });
+			})
 		    .then(_ => resolve(result))
 		    .catch(error => reject(error));
 
