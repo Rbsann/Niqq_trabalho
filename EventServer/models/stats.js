@@ -6,6 +6,7 @@ const moment = require('moment');// package pra calcular a demora pra usar a ext
 const Events = require('./event.js');
 
 const signupPages = ["SignupFormPage", "FractionedSignupPage"];
+const actionsFrac=['pageView', 'endSignupStep1', 'endSignupStep2', 'signupCompletedWithDownload', 'signupCompletedWithoutDownload'];
 
 //TODO: mudar para nome que explica melhor o que a função faz
 function formsCompared() {
@@ -48,8 +49,17 @@ function formsCompared() {
 //TODO: transformar em promise usando Promise.all e map sobre o array de actions
 function fracSignup() {
 	return new Promise((resolve, reject) => {
-		var actions = ['pageView', 'endSignupStep1', 'endSignupStep2', 'signupCompletedWithDownload', 'signupCompletedWithoutDownload'];
-		resolve({pageView: 0, endSignupStep1: 0, endSignupStep2: 0, signupCompletedWithDownload: 0, signupCompletedWithoutDownload: 0}); //TODO: resolver nesse formato
+		var actions ={}; //
+		//['pageView', 'endSignupStep1', 'endSignupStep2', 'signupCompletedWithDownload', 'signupCompletedWithoutDownload'];
+		Promise.all(actionsFrac.map(acoes =>{
+			return knex().count('action').where({category:"FractionedSignupPage",action:acoes})
+			.then(=>){
+				actions[acoes]=count[0]["count('action')"];
+			};
+		});
+		.then(_=>resolve(actions))
+		.catch(error =>reject(error));
+		//resolve({pageView: 0, endSignupStep1: 0, endSignupStep2: 0, signupCompletedWithDownload: 0, signupCompletedWithoutDownload: 0}); //TODO: resolver nesse formato
 	});
 	
 

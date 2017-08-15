@@ -19,35 +19,57 @@ router.get('/test', (req, res) => {
 //     res.render('stats');
 // });
 
-router.get('/botSignup', function(req, res, next){ //clicavel, on-click mostra stats do fill up do bot
-    var contagem = Stats.botSignUpPage();
-    var data = [
-        {
-            x: ["Ended", "Downloaded", "Not Downloaded"],
-            y: contagem,
-            type: "bar"
-        }
-    ];
-    res.json(data);
-    var graphOptions = { filename: "basic-bar", fileopt: "overwrite" };
-    plotly.plot(data, graphOptions, function (err, msg) {
+//router.get('/botSignup', function(req, res, next){ //clicavel, on-click mostra stats do fill up do bot
+ //   var contagem = Stats.botSignUpPage();
+ //   var data = [
+  //      {
+   //         x: ["Ended", "Downloaded", "Not Downloaded"],
+    //        y: contagem,
+   //         type: "bar"
+  //      }
+  //  ];
+   // res.json(data);
+   // var graphOptions = { filename: "basic-bar", fileopt: "overwrite" };
+  //  plotly.plot(data, graphOptions, function (err, msg) {
         //console.log(msg);
+    //});
+//});
+
+//router.get('/fracSignup', function(req, res, next){// stats do form
+  //  var contagem = Stats.formSignUp();
+   // var data = [
+     //   {
+       //     x: ["pView", "step1", "step2", "down", "notDown"],
+         //   y: contagem,
+          //  type: "bar"
+       // }
+   // ];
+   // res.json(data);
+//});
+
+
+router.get('/fracSignup', function(req, res, next){// stats do frac sign up
+    console.log("cheguei aqui!");
+    Stats.fracSignup().then((contagem) => {
+        var chart = {
+            type: 'bar',
+            data:{
+                    labels: ["pageView", "endSignupStep1", "endSignupStep2","signupCompletedWithDownload","signupCompletedWithoutDownload"],
+                    datasets: [{
+                        data: [contagem['pageView'], contagem['endSignupStep1'], contagem['endSignupStep2'],contagem['signupCompletedWithDownload'],contagem['signupCompletedWithoutDownload']]
+                    }]
+                }
+            };
+        res.status(200).json(chart);
+        // res.redirect(req.originalUrl + ':8123/graphs');
+    })
+    .catch((err) => {
+        console.log(err);
+        res.status(500).end();
     });
 });
-
-router.get('/fracSignup', function(req, res, next){// stats do form
-    var contagem = Stats.formSignUp();
-    var data = [
-        {
-            x: ["pView", "step1", "step2", "down", "notDown"],
-            y: contagem,
-            type: "bar"
-        }
-    ];
-    res.json(data);
-});
-
-router.get('/formsCompared', function(req, res, next){// stats de download/install e tempo para unistall
+//Ta certa a sintaxe de stats.formsCompared...?
+router.get('/formsCompared', function(req, res, next){ // stats de download/install e tempo para unistall
     console.log("cheguei aqui!");
     Stats.formsCompared().then((contagem) => {
         var chart = {

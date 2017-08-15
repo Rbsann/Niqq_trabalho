@@ -33,12 +33,14 @@
     </nav>
 <div class="row">
     <div class="col m4">
-        <select style="display:block ! important;">
+        <form name ="select" id="button" action="">
+        <select name="opcoes" style="display:block ! important;">
         <option value="formsCompared">Comparacao das forms</option>
         <option value ="fracSignup">Fractioned form</option>
         <option value ="fill">  Tempo medio para a primeira utilizacao</option>
         </select>
-        <button type="button" id="getGraph" value="Submit">
+        <button  id="getGraph" value="Submit">
+        </form>
     </div>
 </div>
     
@@ -54,7 +56,12 @@
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script>
-            $("button").click(function(){
+
+            document.getElementById('button').acoes.onchange = function() {
+            var newaction = this.value;
+            document.getElementById('store').action = 'http://127.0.0.1:8080/stats/'+newaction;
+            };
+            $("#button").submit(function(event){
                 $.get({url: "http://127.0.0.1:8080/stats/formsCompared",
                  crossDomain: true,
                 //  type:'GET',
