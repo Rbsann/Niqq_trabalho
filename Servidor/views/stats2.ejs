@@ -13,13 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     
-    <script>
-        $("button").click(function(){
-            $.ajax({url: "demo_test.txt", success: function(result){
-                $("#div1").html(result);
-        }});
-});
-    </script>
+   
 </head>
 
 <body>
@@ -37,22 +31,41 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-   
-<form class ="opcoes" action="http://127.0.0.1:8080/stats/formsCompared" method="GET">
-<select style="display:block ! important;">
-   <option value="formsCompared">Comparacao das forms</option>
-   <option value ="fracSignup">Fractioned form</option>
-   <option value ="fill">  Tempo medio para a primeira utilizacao</option>
-</select>
-<input type="submit" value="Submit">
-</form>
-<div id="render_chart">
-
+<div class="row">
+    <div class="col m4">
+        <select style="display:block ! important;">
+        <option value="formsCompared">Comparacao das forms</option>
+        <option value ="fracSignup">Fractioned form</option>
+        <option value ="fill">  Tempo medio para a primeira utilizacao</option>
+        </select>
+        <button type="button" id="getGraph" value="Submit">
+    </div>
+</div>
+    
+<div class="row">
+    <div class="col m4">
+        <div id="render_chart">
+            <canvas id="chart" width="400" height="400"></canvas>
+        </div>
+    </div>
 </div>
    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
      crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
+    <script>
+            $("button").click(function(){
+                $.get({url: "http://127.0.0.1:8080/stats/formsCompared",
+                 crossDomain: true,
+                //  type:'GET',
+                 headers: { 'Access-Control-Allow-Origin': '*' },
+                 success: function(result){
+                    let context = document.getElementById("chart").getContext('2d');
+                    let graph = new Chart(context, result);
+                    $("#render_chart").html(graph);
+            }});
+    });
+        </script>
 
 </body>
 </html>

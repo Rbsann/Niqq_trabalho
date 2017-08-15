@@ -87,6 +87,7 @@ app.get("/", (req, res) => {
         })
         .catch(error => console.log(error));
 });
+
 // Start server
 app.listen(port);
 console.log("Niqq Stats v" + general.getPackageVersion() + " (" + environment + ") running on localhost:" + port);

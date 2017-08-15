@@ -47,7 +47,11 @@ app.set("trust proxy");
 // }));
 
 // Configura o uso da API de dados estatísticos dos eventos
-
+app.all('/*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+  });
 
 app.get("/", (req, res) => {
     res.render('stats');

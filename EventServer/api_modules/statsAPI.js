@@ -59,8 +59,8 @@ router.get('/formsCompared', function(req, res, next){// stats de download/insta
                     }]
                 }
             };
-        // res.status(200).json(chart);
-        res.redirect(req.originalUrl + ':8123/graphs');
+        res.status(200).json(chart);
+        // res.redirect(req.originalUrl + ':8123/graphs');
     })
     .catch((err) => {
         console.log(err);
