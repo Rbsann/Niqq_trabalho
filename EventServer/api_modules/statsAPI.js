@@ -49,7 +49,6 @@ router.get('/test', (req, res) => {
 
 
 router.get('/fracSignup', function(req, res, next){// stats do frac sign up
-    console.log("cheguei aqui!");
     Stats.fracSignup().then((contagem) => {
         var chart = {
             type: 'bar',
@@ -68,7 +67,7 @@ router.get('/fracSignup', function(req, res, next){// stats do frac sign up
         res.status(500).end();
     });
 });
-//Ta certa a sintaxe de stats.formsCompared...?
+
 router.get('/formsCompared', function(req, res, next){ // stats de download/install e tempo para unistall
     console.log("cheguei aqui!");
     Stats.formsCompared().then((contagem) => {
@@ -82,7 +81,6 @@ router.get('/formsCompared', function(req, res, next){ // stats de download/inst
                 }
             };
         res.status(200).json(chart);
-        // res.redirect(req.originalUrl + ':8123/graphs');
     })
     .catch((err) => {
         console.log(err);
@@ -91,17 +89,13 @@ router.get('/formsCompared', function(req, res, next){ // stats de download/inst
 });
 
 router.get('/fill', function(req, res, next){// fill e histograma de tempo de fill.data-download.data
-    var tempo = Stats.fill();
-    var data = [
-        {
-            x: tempo,
-            type: "histogram"
-        }
-    ];
-    var graphOptions = { filename: "basic-histogram", fileopt: "overwrite" };
-    plotly.plot(data, graphOptions, function (err, msg) {
-        //console.log(msg);
-    });
+    Stats.fill()
+        .then((time) => {
+            res.status(200).json(time);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
 });
 
 module.exports = router;

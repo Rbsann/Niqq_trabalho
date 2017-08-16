@@ -20,7 +20,7 @@ routes.use(bodyParser.json());
 
 // // CORS handling middleware
 routes.use(function (request, response, next) {
-	var origin = request.get("origin");
+	// var origin = request.get("origin");
 	var method = request.method.toLowerCase();
 
 	if (method === "get") { // allow all get requests
