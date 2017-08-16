@@ -53,7 +53,7 @@ router.get('/fracSignup', function(req, res, next){// stats do frac sign up
         var chart = {
             type: 'bar',
             data:{
-                    labels: ["pageView", "endSignupStep1", "endSignupStep2","signupCompletedWithDownload","signupCompletedWithoutDownload"],
+                    labels: ["p.View", "S. Step1", "S. Step2","Download","not download"],
                     datasets: [{
                         data: [contagem['pageView'], contagem['endSignupStep1'], contagem['endSignupStep2'],contagem['signupCompletedWithDownload'],contagem['signupCompletedWithoutDownload']]
                     }]
