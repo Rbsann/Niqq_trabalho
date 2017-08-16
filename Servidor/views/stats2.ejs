@@ -31,165 +31,114 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-<div class="row">
-    <div class="col m4">
-        <select id="opcoes" name="opcoes" style="display:block ! important;">
-        <option value="formsCompared">Comparacao das forms</option>
-        <option value ="fracSignup">Fractioned form</option>
-        <option value ="fill">  Tempo medio para a primeira utilizacao</option>
-        </select>
-    </div>
-</div>
-    
-<div class="row">
-    <div class="col m4">
-        <div id="render_chart">
-            <canvas id="chart" width="400" height="400"></canvas>
-            <svg ></svg>
+    <div class="container">
+        <div class="row">
+            <div class="col m4" style="margin-top: 20px;">
+                <select id="opcoes" name="opcoes" style="display:block ! important;">
+                    <option value="formsCompared">Comparacao das forms</option>
+                    <option value ="fracSignup">Fractioned form</option>
+                    <option value ="fill">  Tempo medio para a primeira utilizacao</option>
+                </select>
+            </div>
         </div>
+        <div class="row">
+                <div class="col m4">
+                    <svg style="padding-left: 20px" ></svg>
+                    <div id="render_chart" >
+                    </div>
+                </div>
+            </div>
     </div>
-</div>
+    
+    
    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
      crossorigin="anonymous"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <script>
-            // document.getElementById('opcoes').opcoes.onChange = function() {
-            // var newaction = this.value;
-            // document.getElementById('store').action = 'http://127.0.0.1:8080/stats/'+newaction;
-            // };
-            // $("button").click(function(event){
-            //     $.post("http://127.0.0.1:8080/stats/formsCompared",
-            //         {
-            //              opcoes: "teste"
-            //         })
-            //         .done(function(graphData){
-            //             let context = document.getElementById("chart").getContext('2d');
-            //             let graph = new Chart(context, graphData);
-            //             $("chart").html(graph);
-            //         });
-            // });
-            $(function(){
-                // bind change event to select
-                $('#opcoes').on('change', function () {
-                    $.get("http://127.0.0.1:8080/stats/" + $('#opcoes').val())
-                    .done(function(graphData){
-                        if($('#opcoes').val() === 'fill')
-                            createHistogram(graphData);
-                        else{
-                            let context = document.getElementById("chart").getContext('2d');
-                            let graph = new Chart(context, graphData);
-                            $("chart").html(graph);
-                        }
-                    });
+        var apiUrl = "http://127.0.0.1:8080/stats/";
+        
+        function showSvg(){
+            $('canvas').hide();
+            $('svg').show();
+        }
+
+        function showCanvas(){
+            $('svg').hide();
+            $('#render_chart').html('');
+            $('#render_chart').html('<canvas id="chart" width="500" height="500" ></canvas>');
+            $('canvas').show();
+        }
+        $(function(){
+            $('#opcoes').on('change', function () {
+                $.get(apiUrl + $('#opcoes').val())
+                .done(function(graphData){
+                    if($('#opcoes').val() === 'fill'){
+                        showSvg();
+                        createHistogram(graphData);
+                    }else{
+                        showCanvas();
+                        let context = document.getElementById("chart").getContext('2d');
+                        let graph = new Chart(context, graphData);
+                        $("chart").html(graph);
+                    }
                 });
             });
+        });
 
-            function createHistogram(data){
-                // var data = d3.range(1000).map(d3.randomBates(10));
+        function createHistogram(data){
+            data = [0,0,0,0,0,0,0,0,3,3,3,4,4,4,4, 3,3,3,3,3,3,3,3,3,1,2,3,4,5,5,6,6,7,3,2,2,12];
+            var width=500,
+                height=500,
+                padding=50;
 
-                var width=300,
-                    height=300,
-                    padding=50;
+            var histogram = d3.layout.histogram()
+                            .bins(3)
+                            (data)
 
-                var histogram=d3.layout.histogram()
-                                .bins(10)
-                                (data)
+            var canvas = d3.select("svg")
+            .attr("width",width)
+            .attr("height",height+padding);
 
+            var y=d3.scale.linear()
+                .domain ([0,d3.max(histogram.map(function (i) {return i.length; }))])
+                .range([0,height]);
 
-                var canvas=d3.select("body").append("svg")
-                .attr("width",width)
-                .attr("height",height+padding);
+            var x=d3.scale.linear()
+                    .domain([0,d3.max(data)])
+                    .range([0,width])
 
-                var y=d3.scale.linear()
-                    .domain ([0,d3.max(histogram.map(function i {return i.length; }))])
-                    .range([0,height]);
+            var xAxis=d3.svg.axis()
+                        .scale(x)
+                        .orient("bottom");
 
-                var x=d3.scale.linear()
-                        .domain([0,d3.max(map)])
-                        .range([0,width])
+            var group=canvas.append("g")
+                    .attr("transform","translate(0," +height+ ")")
+                    .call(xAxis);
 
-                var xAxis=d3.svg.axis()
-                            .scale(x)
-                            .orient("bottom");
-
-                var group=canvas.append("g")
-                        .attr("transform","translate(0," +height+ ")")
-                        .call(xAxis);
-
-                var bars=canvas.selectAll(".bar")
+            var bars=canvas.selectAll(".bar")
                 .data(histogram)
                 .enter()
                 .append("g")
                 .attr("transform","translate(20,0)")
 
-                bars.append("rect")
+            bars.append("rect")
                 .attr("x",function (d) {return x(d.x); })
-                .attr("y", function(d) {return 300- y(d.y);})
+                .attr("y", function(d) {return 500- y(d.y);})
                 .attr("width",function(d) {return d.dx; })
                 .attr("height",function(d) {return y(d.y) ;})
                 .attr("fill","steelblue");
 
-                bars.append("text")
-                    .attr("x", function(d) {return x(d.x); })
-                    .attr("y",function(d) {return 300- y(d.y); })
-                    .attr("dx",function(d) {return x(d.dx)/2; })
-                    .attr("dy","20px")      
-                    .attr("fill","#fff")
-                    .attr("text-anchor","middle")
-                    .text(function(d) {return d.y})
-
-
-
-
-
-
-
-               // var formatCount = d3.format(",.0f");
-
-                //var svg = d3.select("svg"),
-                 //   margin = {top: 10, right: 30, bottom: 30, left: 30},
-                 //   width = +svg.attr("width") - margin.left - margin.right,
-                 //   height = +svg.attr("height") - margin.top - margin.bottom,
-                  //  g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-//
-              //  var x = d3.scaleLinear()
-                 //   .rangeRound([0, width]);
-
-               // var bins = d3.histogram()
-                  //  .domain(x.domain())
-                  //  .thresholds(x.ticks(20))
-                  //  (data);
-
-              //  var y = d3.scaleLinear()
-                   // .domain([0, d3.max(bins, function(d) { return d.length; })])
-                  //  .range([height, 0]);
-
-               // var bar = g.selectAll(".bar")
-              //  .data(bins)
-               // .enter().append("g")
-               //  .attr("class", "bar")
-                 //   .attr("transform", function(d) { return "translate(" + x(d.x0) + "," + y(d.length) + ")"; });
-
-                // bar.append("rect")
-                //     .attr("x", 1)
-                //     .attr("width", x(bins[0].x1) - x(bins[0].x0) - 1)
-                //     .attr("height", function(d) { return height - y(d.length); });
-
-                // bar.append("text")
-                //     .attr("dy", ".75em")
-                //     .attr("y", 6)
-                //     .attr("x", (x(bins[0].x1) - x(bins[0].x0)) / 2)
-                //     .attr("text-anchor", "middle")
-                //     .text(function(d) { return formatCount(d.length); });
-
-               // g.append("g")
-                 //   .attr("class", "axis axis--x")
-                 //   .attr("transform", "translate(0," + height + ")")
-                 //   .call(d3.axisBottom(x));
-            }
-        </script>
-
+            bars.append("text")
+                .attr("x", function(d) {return x(d.x); })
+                .attr("y",function(d) {return 500- y(d.y); })
+                .attr("dx",function(d) {return x(d.dx)/2; })
+                .attr("dy","20px")      
+                .attr("fill","#fff")
+                .attr("text-anchor","middle")
+                .text(function(d) {return d.y})
+        }
+    </script>
 </body>
 </html>
