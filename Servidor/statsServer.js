@@ -2,7 +2,6 @@
 const express = require('express');
 const basicAuth = require('express-basic-auth');
 const moment = require("moment");
-// const relational_db = require('./relational_db.js');
 
 const app = express();
 
@@ -11,21 +10,9 @@ const mongo = require('./mongo.js');
 const general = require('./general.js');
 const User = require("./models/user.js");
 
-// const statsAPI = require('./api_modules/statsAPI.js');
 
 // Connect to MongoDB
 mongo.connect();
-
-// Connect to SQL database
-// relational_db.connect()
-//     .then(_ => {
-//         // Set up express routes
-//         const routes = require('./routes.js');
-//         // app.use(serverPath, routes);
-//         // app.listen(port);
-//         // console.log("Niqq API v" + general.getPackageVersion() + " (" + environment + ") running on localhost:" + port + serverPath);
-//     })
-//     .catch(error => console.log(error));
 
 // Get execution parameters
 var environment = general.getEnvironment();
@@ -33,6 +20,9 @@ var port = 8123;
 
 // Set ejs as view engine
 app.set("view engine", "ejs");
+
+// Makes js folder open
+app.use(express.static('views/js'));
 
 // Detect correct client IP address when behind reverse proxy
 app.set("trust proxy");
@@ -46,11 +36,8 @@ app.set("trust proxy");
 //     realm: "NiqqStatsRealm"
 // }));
 
-// Configura o uso da API de dados estatísticos dos eventos
-// app.use('/events', statsAPI);
-
-app.get("/graphs", (req, res) => {
-    res.render('stats2');
+app.get("/charts", (req, res) => {
+    res.render('charts');
 });
 
 app.get("/", (req, res) => {

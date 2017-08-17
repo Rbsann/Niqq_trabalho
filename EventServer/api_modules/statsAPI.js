@@ -27,7 +27,6 @@ router.get('/fractionedSignup', function(req, res, next){// stats do frac sign u
                 }
             };
         res.status(200).json(chart);
-        // res.redirect(req.originalUrl + ':8123/graphs');
     })
     .catch((err) => {
         console.log(err);
@@ -36,7 +35,6 @@ router.get('/fractionedSignup', function(req, res, next){// stats do frac sign u
 });
 
 router.get('/formsCompared', function(req, res, next){ // stats de download/install e tempo para unistall
-    console.log("cheguei aqui!");
     Stats.formsCompared().then((contagem) => {
         var chart = {
             type: 'bar',
@@ -55,13 +53,14 @@ router.get('/formsCompared', function(req, res, next){ // stats de download/inst
     });
 });
 
-router.get('/fill', function(req, res, next){// fill e histograma de tempo de fill.data-download.data
+router.get('/fill', function(req, res, next){
     Stats.fill()
         .then((time) => {
             res.status(200).json(time);
         })
         .catch((error) => {
             console.log(error);
+            res.status(500).end();
         });
 });
 

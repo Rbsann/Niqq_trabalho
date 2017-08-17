@@ -9,9 +9,6 @@ const app = express();
 // Local module imports
 const general = require('./general.js');
 
-// const statsAPI = require('./api_modules/statsAPI.js');
-// const eventAPI = require('./api_modules/eventAPI.js');
-
 // Connect to SQL database
 relational_db.connect()
     .then(_ => {
