@@ -90,7 +90,7 @@ module.exports.isValidOrigin = function(origin) {
     if (module.exports.isProductionEnvironment()) {
         validOrigins.push("https://niqq.in"); // website origin
         validOrigins.push("https://api.niqq.in"); // api origin
-        validOrigins.push("chrome-extension://hgmfkcpljonaonplipkeekofohkdmlka");  // test extension origin
+        validOrigins.push("chrome-extension://pdpdfmmplfidggmhaihamgpppfdepffb");  // test extension origin
     } else {
         validOrigins.push("http://localhost:8085"); // website origin
         validOrigins.push("http://localhost:8080"); // api origin
