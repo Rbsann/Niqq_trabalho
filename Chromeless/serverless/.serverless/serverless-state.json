@@ -11,7 +11,7 @@
       "name": "aws",
       "runtime": "nodejs6.10",
       "environment": {
-        "DEBUG": false,
+        "DEBUG": "*",
         "AWS_IOT_HOST": "a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com"
       },
       "apiKeys": [
@@ -225,7 +225,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/chromeless-serverless/dev/1502206841618-2017-08-08T15:40:41.618Z/chromeless-serverless.zip"
+                "S3Key": "serverless/chromeless-serverless/dev/1502909928357-2017-08-16T18:58:48.357Z/chromeless-serverless.zip"
               },
               "FunctionName": "chromeless-serverless-dev-run",
               "Handler": "src/run.default",
@@ -240,7 +240,7 @@
               "Timeout": 300,
               "Environment": {
                 "Variables": {
-                  "DEBUG": false,
+                  "DEBUG": "*",
                   "AWS_IOT_HOST": "a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com",
                   "CHROMELESS_S3_BUCKET_NAME": {
                     "Fn::Join": [
@@ -257,6 +257,7 @@
                       ]
                     ]
                   },
+                  "CHROMELESS_S3_OBJECT_KEY_PREFIX": "",
                   "CHROMELESS_S3_BUCKET_URL": {
                     "Fn::GetAtt": [
                       "Bucket",
@@ -271,14 +272,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "RunLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q": {
+          "RunLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "RunLambdaFunction"
               },
-              "CodeSha256": "a/Hir50bmJLjywXgWCWrq4lqca+JEQvqGLogCA4Ey8Q="
+              "CodeSha256": "93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0h+Eoo="
             }
           },
           "VersionLambdaFunction": {
@@ -288,7 +289,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/chromeless-serverless/dev/1502206841618-2017-08-08T15:40:41.618Z/chromeless-serverless.zip"
+                "S3Key": "serverless/chromeless-serverless/dev/1502909928357-2017-08-16T18:58:48.357Z/chromeless-serverless.zip"
               },
               "FunctionName": "chromeless-serverless-dev-version",
               "Handler": "src/version.default",
@@ -303,7 +304,7 @@
               "Timeout": 6,
               "Environment": {
                 "Variables": {
-                  "DEBUG": false,
+                  "DEBUG": "*",
                   "AWS_IOT_HOST": "a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com"
                 }
               }
@@ -313,14 +314,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "VersionLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q": {
+          "VersionLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "VersionLambdaFunction"
               },
-              "CodeSha256": "a/Hir50bmJLjywXgWCWrq4lqca+JEQvqGLogCA4Ey8Q="
+              "CodeSha256": "93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0h+Eoo="
             }
           },
           "SessionLambdaFunction": {
@@ -330,7 +331,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/chromeless-serverless/dev/1502206841618-2017-08-08T15:40:41.618Z/chromeless-serverless.zip"
+                "S3Key": "serverless/chromeless-serverless/dev/1502909928357-2017-08-16T18:58:48.357Z/chromeless-serverless.zip"
               },
               "FunctionName": "chromeless-serverless-dev-session",
               "Handler": "src/session.default",
@@ -345,7 +346,7 @@
               "Timeout": 10,
               "Environment": {
                 "Variables": {
-                  "DEBUG": false,
+                  "DEBUG": "*",
                   "AWS_IOT_HOST": "a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com"
                 }
               }
@@ -355,14 +356,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "SessionLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q": {
+          "SessionLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SessionLambdaFunction"
               },
-              "CodeSha256": "a/Hir50bmJLjywXgWCWrq4lqca+JEQvqGLogCA4Ey8Q="
+              "CodeSha256": "93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0h+Eoo="
             }
           },
           "DisconnectLambdaFunction": {
@@ -372,7 +373,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/chromeless-serverless/dev/1502206841618-2017-08-08T15:40:41.618Z/chromeless-serverless.zip"
+                "S3Key": "serverless/chromeless-serverless/dev/1502909928357-2017-08-16T18:58:48.357Z/chromeless-serverless.zip"
               },
               "FunctionName": "chromeless-serverless-dev-disconnect",
               "Handler": "src/disconnect.default",
@@ -387,7 +388,7 @@
               "Timeout": 10,
               "Environment": {
                 "Variables": {
-                  "DEBUG": false,
+                  "DEBUG": "*",
                   "AWS_IOT_HOST": "a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com"
                 }
               }
@@ -397,14 +398,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "DisconnectLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q": {
+          "DisconnectLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DisconnectLambdaFunction"
               },
-              "CodeSha256": "a/Hir50bmJLjywXgWCWrq4lqca+JEQvqGLogCA4Ey8Q="
+              "CodeSha256": "93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0h+Eoo="
             }
           },
           "ApiGatewayRestApi": {
@@ -550,7 +551,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1502206842861": {
+          "ApiGatewayDeployment1502909929541": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -578,11 +579,11 @@
                 }
               ]
             },
-            "DependsOn": "ApiGatewayDeployment1502206842861"
+            "DependsOn": "ApiGatewayDeployment1502909929541"
           },
           "ApiGatewayUsagePlan": {
             "Type": "AWS::ApiGateway::UsagePlan",
-            "DependsOn": "ApiGatewayDeployment1502206842861",
+            "DependsOn": "ApiGatewayDeployment1502909929541",
             "Properties": {
               "ApiStages": [
                 {
@@ -818,25 +819,25 @@
           "RunLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "RunLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q"
+              "Ref": "RunLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo"
             }
           },
           "VersionLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "VersionLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q"
+              "Ref": "VersionLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo"
             }
           },
           "SessionLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SessionLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q"
+              "Ref": "SessionLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo"
             }
           },
           "DisconnectLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DisconnectLambdaVersionaHir50bmJLjywXgWCWrq4lqcaJEQvqGLogCA4Ey8Q"
+              "Ref": "DisconnectLambdaVersion93Diz5ivyuiTV1Jn8nptGnYh1tGMrAt1oq5YX0hEoo"
             }
           },
           "ServiceEndpoint": {
@@ -876,7 +877,7 @@
     },
     "custom": {
       "stage": "dev",
-      "debug": false,
+      "debug": "*",
       "awsIotHost": "a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com",
       "chrome": {
         "functions": [
@@ -917,6 +918,7 @@
               ]
             ]
           },
+          "CHROMELESS_S3_OBJECT_KEY_PREFIX": "",
           "CHROMELESS_S3_BUCKET_URL": {
             "Fn::GetAtt": [
               "Bucket",
@@ -1062,7 +1064,7 @@
     "artifact": "/Users/thiago/Documents/pessoal/niqq/backend/Chromeless/serverless/.build/.serverless/chromeless-serverless.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/chromeless-serverless/dev/1502206841618-2017-08-08T15:40:41.618Z",
+    "artifactDirectoryName": "serverless/chromeless-serverless/dev/1502909928357-2017-08-16T18:58:48.357Z",
     "artifact": "chromeless-serverless.zip"
   }
 }
