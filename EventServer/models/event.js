@@ -57,10 +57,11 @@ function listByEmail(email) {
 
 
 class Entry {
-	constructor(category, action, email = null) {
+	constructor(category, action, sender, email = null) {
 		this.email = email;
 		this.category = category;
 		this.action = action;
+		this.from = sender;
 		this.timestamp = new Date();
 	}
 

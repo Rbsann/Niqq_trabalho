@@ -14,7 +14,7 @@ eventRoutes.post('/new', getEmailFromToken, (request, response) => {
         return;
     }
 
-    let event = new EventManager.Entry(payload.category, payload.action, response.locals.email);
+    let event = new EventManager.Entry(payload.category, payload.action, payload.from, response.locals.email);
     
     event.insert()
         .then(() => response.status(200).send({error: false}))
