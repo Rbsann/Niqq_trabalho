@@ -18,8 +18,6 @@ relational_db.connect()
         // Set up express routes
         const routes = require('./routes.js');
         app.use(serverPath, routes);
-        // app.use('/events', eventAPI);
-        // app.use('/stats', statsAPI);
         app.listen(port);
         // console.log("Niqq API v" + general.getPackageVersion() + " (" + environment + ") running on localhost:" + port + serverPath);
     })
@@ -29,10 +27,6 @@ relational_db.connect()
 var environment = general.getEnvironment();
 var port = general.getPort();
 var serverPath = general.getServerPath();
-// var port = 8123;
-
-// Set ejs as view engine
-// app.set("view engine", "ejs");
 
 // Detect correct client IP address when behind reverse proxy
 app.set("trust proxy");
@@ -58,5 +52,4 @@ app.get("/", (req, res) => {
 });
 
 // Start server
-// app.listen(port);
 console.log("Niqq Stats v" + general.getPackageVersion() + " (" + environment + ") running on localhost:" + port);

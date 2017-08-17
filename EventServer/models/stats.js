@@ -1,100 +1,65 @@
 const express = require('express');
 const router = express.Router();
-const knex = require('../relational_db.js');//editar nome da file
+const knex = require('../relational_db.js');
 
-const moment = require('moment');// package pra calcular a demora pra usar a extensao
+const moment = require('moment');
 const Events = require('./event.js');
 
 const signupPages = ["SignupFormPage", "FractionedSignupPage"];
 const actionsFrac = ['pageView', 'endSignupStep1', 'endSignupStep2', 'signupCompletedWithDownload', 'signupCompletedWithoutDownload'];
-//TODO: mudar para nome que explica melhor o que a função faz
+
 function formsCompared() {
 	return new Promise((resolve, reject) => {
-		var result = {}; // dicionário com contagem de eventos no formato: {página: Number}
-		// executa paralelamente as promises do vetor de promises retornado pelo .map e resolve um vetor com as resoluções delas só depois de todas terminarem
+		var result = {};
+
 		Promise.all(signupPages.map(page => {
 		    return knex().count('action').where({ category: page, action: 'signupCompletedWithDownload' }).from('event')
 		        .then(count => {
-					result[page] = count[0]["count(`action`)"]; // coloca contagem no dicionário de resultado
+					result[page] = count[0]["count(`action`)"];
 					
 		        });
 			}))
 			.then(_ => {
 				return knex().count('action').where({ category: 'extension', action: 'install' }).from('event')
 		        .then(count => { 
-				    result['Install'] = count[0]["count(`action`)"]; // coloca contagem no dicionário de resultado
+				    result['Install'] = count[0]["count(`action`)"];
 		        });
 			})
 		    .then(_ => resolve(result))
 		    .catch(error => reject(error));
-
-		// código equivalente sem uso de map
-		// Promise.all([
-		// 	knex().count('action').where({ category: "FractionedSignupPage", action: 'signupCompletedWithDownload' }).from('event')
-		// 		.then(count => {
-		// 			result.FractionedSignupPage = count[0]["count(`action`)"];
-		// 		}),
-		// 	knex().count('action').where({ category: "SignupFormPage", action: 'signupCompletedWithDownload' }).from('event')
-		// 		.then(count => {
-		// 			result.SignupFormPage = count[0]["count(`action`)"];
-		// 		})
-		// ])
-		// 	.then(_ => resolve(result))
-		// 	.catch(error => reject(error));
-
-
 	});
 }
 
 //TODO: transformar em promise usando Promise.all e map sobre o array de actions
-function fracSignup() {
+function fractionedSignup() {
 	return new Promise((resolve, reject) => {
 		var actions ={};
-		Promise.all(actionsFrac.map(acoes =>{
-			return knex().count('action').where({category:"FractionedSignupPage", action:acoes}).from('event')
+
+		Promise.all(actionsFrac.map(action =>{
+			return knex().count('action').where({category:"FractionedSignupPage", action:action}).from('event')
 			.then(count => {
-				actions[acoes] = count[0]["count(`action`)"];
+				actions[action] = count[0]["count(`action`)"];
 			});
 		}))
 		.then(_=> resolve(actions))
 		.catch(error =>reject(error));
 	});
-	
-
-	// var pView, step1, step2, down, notDown;
-	// knex('event').where({ category: 'formSignup', action: 'pageView' }).count('action').then(function (contagem4) {
-	// 	pView = contagem4;
-	// 	knex('event').where({ category: 'formSignup', action: 'endSignupStep1' }).count('action').then(function (contagem5) {
-	// 		step1 = contagem5;
-	// 		knex('event').where({ category: 'formSignup', action: 'endSignupStep2' }).count('action').then(function (contagem6) {
-	// 			step2 = contagem6;
-	// 			knex('event').where({ category: 'formSignup', action: 'signupCompletedWithDownload' }).count('action').then(function (contagem7) {
-	// 				down = contagem7;
-	// 				knex('event').where({ category: 'formSignup', action: 'signupCompletedWithoutDownload' }).count('action').then(function (contagem8) {
-	// 					notDown = contagem8;
-	// 					return [pView, step1, step2, down, notDown];
-	// 				});
-	// 			});
-	// 		});
-	// 	});
-	// });
 }
 
-// promise que resolve ("retorna") uma lista de emails de usuarios que deram fill e signupcompletedwithdownload
 function findActiveUserEmails() {
 	return new Promise((resolve, reject) => {
 		knex().select('email').from('event').where({ action: 'fill' }).distinct('email')
-			.then(emails => { // função que recebe vetor de linhas do banco cujos emails deram fill
-				return Promise.all(emails.map(email => { // ver uso de map na função extension
+			.then(emails => {
+				return Promise.all(emails.map(email => {
 					return knex().select('email').from('event').where({ email: email.email, action: 'signupCompletedWithDownload' })
 						.then(event => {
-							return event[0].email; // retorna string do email para o Promise.all
+							return event[0].email;
 						})
 						.catch(error => reject(error));
 				}));
 			})
-			.then(activeUserEmails => { // resultado do Promise.all é um vetor com os emails do usuários que fizeram download
-				resolve(activeUserEmails); // resultado final da promise retornada pela função findActiveUserEmails
+			.then(activeUserEmails => {
+				resolve(activeUserEmails);
 			})
 			.catch(error => {
 				reject(error);
@@ -102,10 +67,10 @@ function findActiveUserEmails() {
 	});
 }
 
-//TODO: transformar em promise usando como base a função findActiveUserEmails e extension
 function getTimestamps(emails) {
 	let signupDate = {};
 	let fillDate = {};
+
 	return new Promise((resolve, reject) => {
 		return Promise.all(emails.map(email => {
 			return knex().select('timestamp').from('event').where({ email: email, action: 'signupCompletedWithDownload' })
@@ -130,44 +95,30 @@ function getTimestamps(emails) {
 			reject(error);
 		});
 	});
-	// let dataTot = [], dataFill = [], dataSignup = [];
-
-	// for (let i = 0; i < validUsers.length; i++) {
-	// 	let datefill = deasync(knex('event').where({ email: validUsers[i].email, action: 'fill' }).min('timestamp'));
-	// 	dataFill.push((datefill[0])['min(`timestamp`)']);
-
-	// 	let dateSignup = deasync(knex('event').where({ email: validUsers[i].email, action: 'signupCompletedWithDownload' }).select('timestamp'));
-	// 	dataSignup.push((dateSignup[0].timestamp));
-
-	// 	dataTot[i] = moment(dataFill[i]).diff(dataSignup[i], 'minutes');
-	// }
-
-	// return dataTot; //TODO: pensar em nome melhor
 }
 
-function subDate(dates){
+function processDates(dates){
 	return new Promise((resolve, reject) => {
 		let signupDate = dates[0];
 		let fillDate = dates[1];
-		let dataTot = [];
+		let dateDifferences = [];
 		let emails = Object.keys(signupDate);
-		console.log(emails);
+
 		for(let i = 0; i < emails.length; i++){
-			dataTot[i] = moment(fillDate[emails[i]]).diff(signupDate[emails[i]], 'minutes');
+			dateDifferences[i] = moment(fillDate[emails[i]]).diff(signupDate[emails[i]], 'minutes');
 		}
 
-		resolve(dataTot);
+		resolve(dateDifferences);
 	});
 }
 
 function fill() {
 	return new Promise((resolve, reject) => {
-		// executas as promises findActiveUserEmails e getTimestamps sequencialmente, sendo que a getTimestamps recebe o que a findActiveUserEmails resolveu
 		findActiveUserEmails()
-			.then((emails) => getTimestamps(emails))
-			.then((dates) => subDate(dates))
-			.then(dataTot => {
-				resolve(dataTot);
+			.then(getTimestamps)
+			.then(processDates)
+			.then(dateDifferences => {
+				resolve(dateDifferences);
 			})
 			.catch(error => console.log(error));
 	});
@@ -175,4 +126,4 @@ function fill() {
 	
 module.exports.fill = fill;
 module.exports.formsCompared  = formsCompared;
-module.exports.fracSignup = fracSignup;
+module.exports.fractionedSignup = fractionedSignup;
