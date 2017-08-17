@@ -10,17 +10,17 @@ const General = require('../general.js');
 eventRoutes.post('/new', getEmailFromToken, (request, response) => {
     let payload = request.body;
     if (payload.category === undefined || payload.action === undefined){
-        response.status(400).send("malformed request");
+        response.status(400).send({error: true, message: "malformed request"});
         return;
     }
 
     let event = new EventManager.Entry(payload.category, payload.action, response.locals.email);
     
     event.insert()
-        .then(() => response.status(200).send("event saved"))
+        .then(() => response.status(200).send({error: false}))
         .catch(error => {
             console.log(error);
-            response.status(503).send("error");
+            response.status(503).send({error: true, message: "error"});
         });
 });
 
