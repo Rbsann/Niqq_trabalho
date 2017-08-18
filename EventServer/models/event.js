@@ -23,7 +23,7 @@ knex.schema.createTableIfNotExists(tableName, table => {
 		table.string('email', 60).nullable();
 		table.string('category', 40).notNull();
 		table.string('action', 40).notNull();
-		table.string('from', 40).notNull();  // from "app" or "site"
+		table.string('sender', 40).notNull();  // from "app" or "site"
 		table.dateTime('timestamp').notNull();
 	})
 	.catch(error => console.log(error));
@@ -61,7 +61,7 @@ class Entry {
 		this.email = email;
 		this.category = category;
 		this.action = action;
-		this.from = sender;
+		this.sender = sender;
 		this.timestamp = new Date();
 	}
 
