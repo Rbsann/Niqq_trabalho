@@ -8,7 +8,7 @@ var pageSchema = new Schema({
 	imageUrl: { type: String, default: null, maxlength: 100 },
   isForm: { type: Boolean},
   classified: { type: Boolean, default: false },
-  html: { type: String, default: null, maxlength: 10000 }
+  html: { type: String, default: null, maxlength: 500000 }
 });
 
 // Export catalog model
