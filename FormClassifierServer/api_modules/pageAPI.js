@@ -1,10 +1,13 @@
 // Import modules
 var bodyParser = require('body-parser');
 var Page = require("../models/page.js");
-const pageRoutes = require('express').Router();
+const express = require("express");
+const pageRoutes = express.Router();
 
 // JSON request and response middleware
 pageRoutes.use(bodyParser.json());
+
+pageRoutes.use("/", express.static("static"));
 
 /// Put new unclassified urls in the bank
 /// - Request data: {urls: [String]}
@@ -52,7 +55,7 @@ pageRoutes.post("/classify", (request, response) => {
   if (url === undefined || url === null || isForm === undefined || isForm === null) 
     response.status(400).send("Malformed request");
 
-  Page.classify(payload.url, payload.isForm)
+  Page.classify(url, isForm)
     .then(_ => {
       response.send({urlClassified: true});
     })
