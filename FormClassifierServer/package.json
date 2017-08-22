@@ -1,0 +1,13 @@
+{
+  "name": "niqq-backend",
+  "version": "1.0.1",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  },
+  "scripts": {
+    "start": "nodemon server.js dev"
+  }
+}
