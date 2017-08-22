@@ -4,10 +4,11 @@ var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 var pageSchema = new Schema({
-	url: { type: String, required: true, unique: true, maxlength: 100 },
+	url: { type: String, required: true, unique: true, maxlength: 200 },
 	imageUrl: { type: String, default: null, maxlength: 100 },
   isForm: { type: Boolean},
-  classified: { type: Boolean, default: false }
+  classified: { type: Boolean, default: false },
+  html: { type: String, default: null, maxlength: 10000 }
 });
 
 // Export catalog model
@@ -19,6 +20,25 @@ module.exports.updateImageUrl = function(url, imageUrl) {
     this.findOne({url: url})
       .then(page => {
         page.imageUrl = imageUrl;
+        page.save()
+          .then(_ => {
+            resolve(true);
+          })
+          .catch(error => { 
+            reject(error);
+          });
+      })
+      .catch(error => { 
+        reject(error);
+      });
+  });
+};
+
+module.exports.updateHtml = function(url, html) {
+  return new Promise((resolve, reject) => {
+    this.findOne({url: url})
+      .then(page => {
+        page.html = html;
         page.save()
           .then(_ => {
             resolve(true);
@@ -107,6 +127,32 @@ module.exports.getPageToScreenshot = function(){
         // console.log("Getting document #"+random);
         // Again query all users but only fetch one offset by our random #
         this.findOne({classified: false, imageUrl: null}).skip(random)
+          .then(result => {
+            // console.log(result);
+            resolve(result);
+          })
+          .catch(error => {
+            reject(error);
+          });
+      })
+      .catch(error => {
+        reject(error);
+      });
+  });
+};
+
+
+module.exports.getPageToHtml = function(){
+  return new Promise((resolve, reject) => {
+    // Get the count of all users
+    this.find({html: null}).count()
+      .then(count => {
+        // console.log("Number of found entries: "+ count);
+        // Get a random entry
+        var random = Math.floor(Math.random() * count);
+        // console.log("Getting document #"+random);
+        // Again query all users but only fetch one offset by our random #
+        this.findOne({html: null}).skip(random)
           .then(result => {
             // console.log(result);
             resolve(result);

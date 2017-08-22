@@ -103,4 +103,39 @@ pageRoutes.post("/screenshot", (request, response) => {
   }
 });
 
+/// Get a random unclassified url without html to update 
+/// - Request data: none
+/// - Response data: {url: String}
+pageRoutes.get("/html", (request, response) => {
+  Page.getPageToHtml()
+    .then(page => {
+      response.send({url: page.url});
+    })
+    .catch(error => {
+      console.log(error);
+      response.status(500).send("Server error");
+    });
+});
+
+
+/// Save the url html
+/// - Request data: {url: String, html: String}
+/// - Response data: {htmlSaved: Boolean}
+pageRoutes.post("/html", (request, response) => {
+  var url = request.body.url;
+  var html = request.body.html;
+  if (url === undefined || url === null || html === undefined || html === null) 
+    response.status(400).send("Malformed request");
+  else {
+    Page.updateHtml(url, html)
+      .then(_ => {
+        response.send({htmlSaved: true});
+      })
+      .catch(error => {
+        console.log(error);
+        response.status(500).send({htmlSaved: false});
+      });
+  }
+});
+
 module.exports = pageRoutes;
