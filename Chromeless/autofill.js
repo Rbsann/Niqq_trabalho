@@ -1,6 +1,11 @@
 // Imports
 var Fuse = require("fuse.js");
+const cheerio = require('cheerio');
+var $;
 
+module.exports.loadHTML = function(html) {
+	$ = cheerio.load(html);
+};
 
 // Return array of page inputs
 module.exports.getInputs = function() {
@@ -10,35 +15,34 @@ module.exports.getInputs = function() {
 			// get jQuery element
 			var input = $(this);
 
-			if (input.is(':visible')) {
-				// get labels
-				var labels = [];
-				var labelParents = input.parents('label');
-				for (i = 0; i < labelParents.length; i++)
-					labels.push(labelParents[i].innerText);
-				var labelFors = $("label[for='" + input.attr('id') + "']");
-				for (i = 0; i < labelFors.length; i++)
-					labels.push(labelFors[i].innerText);
+			// get labels
+			var labels = [];
+			var labelParents = input.parents('label');
+			for (i = 0; i < labelParents.length; i++)
+				labels.push(labelParents[i].innerText);
+			var labelFors = $("label[for='" + input.attr('id') + "']");
+			for (i = 0; i < labelFors.length; i++)
+				labels.push(labelFors[i].innerText);
 
-				var input_data = {
-					'name': input.attr('name') || null,    // para consistencia com o catálogo
-					'type': input.attr('type') || null,
-					'id': input.attr('id') || null,
-					'placeholder': input.attr('placeholder') || null,
-					'title': input.attr('title') || null,
-					'value': input.val(),
-					'labels': labels,
-					'jQElement': input,
-					'domElement': input.get(0), // raw DOM element
-					'filled': false
-				};
+			var input_data = {
+				'name': input.attr('name') || null,    // para consistencia com o catálogo
+				'type': input.attr('type') || null,
+				'id': input.attr('id') || null,
+				'placeholder': input.attr('placeholder') || null,
+				'title': input.attr('title') || null,
+				'value': input.val(),
+				'labels': labels,
+				// 'jQElement': input,
+				// 'domElement': input.get(0), // raw DOM element
+				'filled': false
+			};
 
-				inputs.push(input_data);
-			}
+			inputs.push(input_data);
+			
 
 		}
 	);
-
+	
 	return inputs;
 };
 
@@ -49,57 +53,55 @@ module.exports.getSelects = function () {
 		// get jQuery element
 		var select = $(this);
 
-		if (select.is(':visible')) {
-			// get labels
-			var labels = [];
-			var labelParents = select.parents('label');
-			for (i = 0; i < labelParents.length; i++)
-				labels.push(labelParents[i].innerText);
-			var labelFors = $("label[for='" + select.attr('id') + "']");
-			for (i = 0; i < labelFors.length; i++)
-				labels.push(labelFors[i].innerText);
+		// get labels
+		var labels = [];
+		var labelParents = select.parents('label');
+		for (i = 0; i < labelParents.length; i++)
+			labels.push(labelParents[i].innerText);
+		var labelFors = $("label[for='" + select.attr('id') + "']");
+		for (i = 0; i < labelFors.length; i++)
+			labels.push(labelFors[i].innerText);
 
-			var selectData = {
-				'name': select.attr('name') || null,
-				'id': select.attr('id') || null,
-				'title': select.attr('title') || null,
-				'value': select.val(),
-				'labels': labels,
-				'jQElement': select,
-				'domElement': select.get(0), // raw DOM element
-				'options': [],
-				'filled': false
+		var selectData = {
+			'name': select.attr('name') || null,
+			'id': select.attr('id') || null,
+			'title': select.attr('title') || null,
+			'value': select.val(),
+			'labels': labels,
+			// 'jQElement': select,
+			// 'domElement': select.get(0), // raw DOM element
+			'options': [],
+			'filled': false
+		};
+
+		var numOptions = 0;
+		
+		select.children("option").each(function () {
+			var option = $(this);
+
+			var optionData = {
+				'value': option.attr('value') || null,
+				'text': option.text() || null,
+				// 'jQElement': option
 			};
 
-			var numOptions = 0;
-			
-			select.children("option").each(function () {
-				var option = $(this);
+			selectData.options.push(optionData);
 
-				var optionData = {
-					'value': option.attr('value') || null,
-					'text': option.text() || null,
-					'jQElement': option
-				};
+			if (numOptions++ > 1000)
+				return false;
+		});
 
-				selectData.options.push(optionData);
-
-				if (numOptions++ > 1000)
-					return false;
-			});
-
-			if (numOptions < 1000)
-				selects.push(selectData);
-		}
+		if (numOptions < 1000)
+			selects.push(selectData);
+		
 	});
 	return selects;
 };
 
-
 // Process form command
 // - Request data: inputs, selects
 // - Response data: mappedFields
-autofill.processForm((inputs, selects) => {
+module.exports.processForm = function(inputs, selects) {
   return new Promise((resolve, reject) => {
     processFormPromise([inputs, selects])
       .then(mappedFields => {
@@ -110,13 +112,16 @@ autofill.processForm((inputs, selects) => {
         reject("SERVER_ERROR");
       });
   });
-});
+};
 
 // Get form score command
 // - Request data: inputs, selects
 // - Response data: formScore
-autofill.getFormScore((inputs, selects) => {
+module.exports.getFormScore = function() {
   return new Promise((resolve, reject) => {
+		var inputs = module.exports.getInputs();
+		var selects = module.exports.getSelects();
+
     processFormPromise([inputs, selects])
       .then(calculateFormScorePromise)
       .then(formScore => {
@@ -127,10 +132,8 @@ autofill.getFormScore((inputs, selects) => {
         reject("SERVER_ERROR");
       });
   });
-});
+};
 
-
-module.exports = autofill;
 
 // Score calculation promise
 var calculateFormScorePromise = function (mappedFields) {
@@ -200,8 +203,9 @@ function FormProcessor(inputs, selects) {
 	// Mapeia campos de texto
 	function mapTextInput(searchResult, identifier, subIdentifier = undefined, numberOfInputs = 1) {
 		var numberFilled = 0;
+		// console.log("search result: ", searchResult);
 		for (var i = 0; numberFilled < numberOfInputs && i < searchResult.length; i++) {
-			if (!searchResult[i].filledValue && searchResult[i].type !== "radio") {
+			if (searchResult[i].type !== "radio") {
 				//console.log(searchResult[i]);
 				searchResult[i].filledValue = identifier;
 				numberFilled++;
@@ -327,12 +331,12 @@ function FormProcessor(inputs, selects) {
 		return new Promise((resolve, reject) => {
 			searchFields(inputs, ["email", "e-mail"])
 				.then((emailResult) => {
-					if (emailResult.length > 0) {
-						//console.log("Found email");
-						// console.log(emailResult);
+					if (emailResult.length > 0 && emailResult[0]) {
+						// console.log("Found email");
 						mapTextInput(emailResult, "email", undefined, 3);
 						resolve("FOUND_EMAIL");
 					} else {
+						// console.log("Not found email");
 						resolve("NOT_FOUND_EMAIL");
 					}
 				})
@@ -558,7 +562,7 @@ function FormProcessor(inputs, selects) {
 				this.mapAddressPromise()
 			])
 			.then(values => {
-				//console.log(values); // logs results of promises
+				// console.log(values); // logs results of promises
 				//resolve("FILLED_FORM");
 				resolve(processedFields);
 			})
@@ -588,8 +592,9 @@ function searchFields(inputs, fields) {
 			]
 		};
 
+		// console.log(inputs);
 		var fuse = new Fuse(inputs, searchOptions);
-
+	
 		var results = [];
 
 		// var resultScore = 1.0;
@@ -600,20 +605,26 @@ function searchFields(inputs, fields) {
 			results = results.concat(result);
 		}
 
-		// sort results by increasing score
-		results.sort(function (a, b) {
-			return a.score - b.score;
-		});
+		if(results.length === 0)
+			resolve([]);
+		else {
+			// console.log("results: ", results);
+			// sort results by increasing score
+			results.sort(function (a, b) {
+				return a.score - b.score;
+			});
 
-		// remove repeated and already filled results
-		var uniqueResults = [];
-		for (let resultIndex in results) {
-			let result = results[resultIndex].item;
-			if (uniqueResults.indexOf(result) < 0 && !result.filledValue)
-				uniqueResults.push(result);
+			// remove repeated and already filled results
+			var uniqueResults = [];
+			for (let resultIndex in results) {
+				let result = results[resultIndex];
+				if (uniqueResults.indexOf(result) < 0)
+					uniqueResults.push(result);
+			}
+
+			// console.log("unique results: ", uniqueResults);
+			resolve(uniqueResults);
 		}
-
-		resolve(uniqueResults);
 	});
 }
 
@@ -653,7 +664,7 @@ function searchOptions(inputs, fields) {
 		var uniqueResults = [];
 		for (let resultIndex in results) {
 			let result = results[resultIndex].item;
-			if (uniqueResults.indexOf(result) < 0 && !result.filledValue)
+			if (uniqueResults.indexOf(result) < 0)
 				uniqueResults.push(result);
 		}
 

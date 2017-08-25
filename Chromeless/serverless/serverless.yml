@@ -2,7 +2,7 @@ service: chromeless-serverless
 
 custom:
   stage: dev
-  debug: false
+  debug: "*"
   awsIotHost: a2dxcspiwa2zz4.iot.us-east-1.amazonaws.com
   chrome:
     functions:
@@ -12,7 +12,7 @@ provider:
   name: aws
   runtime: nodejs6.10
   stage: ${self:custom.stage}
-  region: us-east-1
+  region: us-east-2
   environment:
     DEBUG: ${self:custom.debug}
     AWS_IOT_HOST: ${self:custom.awsIotHost}
@@ -62,6 +62,7 @@ functions:
             - "-"
             - Ref: AWS::Region
             - -chromeless
+      CHROMELESS_S3_OBJECT_KEY_PREFIX: ""
       CHROMELESS_S3_BUCKET_URL:
         Fn::GetAtt:
           - Bucket
