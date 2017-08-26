@@ -6,6 +6,8 @@ const expect = chai.expect;
 //Testes
 const userApiTests = require('./userAPI.test.js');
 const autofillApiTests = require('./autofillAPI.test.js');
+const catalogApiTests=require('./catalogAPI.test');
+const emailApiTests=require('./emailAPI.test');
 
 var processAPIResponse = function(res) {
 	expect(res.statusCode).to.equal(200);
@@ -98,5 +100,12 @@ describe("API integration test", function() {
 
 	describe("AutofillAPI", function(){
 		autofillApiTests(user, processAPIResponse);
+	});
+	
+	describe("catalogAPI",function(){
+		catalogApiTests(user,processAPIResponse);
+	});
+	describe("EmailApi",function(){
+		emailApiTests(user,processAPIResponse);
 	});
 });
