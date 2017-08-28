@@ -138,4 +138,49 @@ pageRoutes.post("/html", (request, response) => {
   }
 });
 
+/// Clear html from all pages
+/// - Request data: {property: String, password: String}
+/// - Response data: {cleared: Boolean}
+pageRoutes.post("/clear", (request, response) => {
+  var property = request.body.property;
+  var password = request.body.password;
+  if (property === undefined || property === null || password === undefined || password === null) 
+    response.status(400).send("Malformed request");
+  else if (password !== "bleach"){
+    response.status(403).send("Incorrect password");
+  }
+  else {
+    if(property === "html") {
+      Page.clearAllHtmls()
+        .then(_ => {
+          response.send({cleared: true});
+        })
+        .catch(error => {
+          console.log(error);
+          response.status(500).send({cleared: false});
+        });
+    } else if (property === "screenshot") {
+      Page.clearAllScreenshots()
+        .then(_ => {
+          response.send({cleared: true});
+        })
+        .catch(error => {
+          console.log(error);
+          response.status(500).send({cleared: false});
+        });
+    } else if (property === "classification") {
+      Page.clearAllClassifications()
+        .then(_ => {
+          response.send({cleared: true});
+        })
+        .catch(error => {
+          console.log(error);
+          response.status(500).send({cleared: false});
+        });
+    } else {
+      response.status(400).send("Invalid property");
+    }
+  }
+});
+
 module.exports = pageRoutes;

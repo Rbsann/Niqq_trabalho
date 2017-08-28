@@ -167,4 +167,68 @@ module.exports.getPageToHtml = function(){
   });
 };
 
+module.exports.clearAllClassifications = function() {
+  return new Promise((resolve, reject) => {
+    this.find()
+      .then(pages => {
+        pages.forEach(function(page) {
+          page.classified = false;
+          page.save()
+          .then(_ => {
+            resolve(true);
+          })
+          .catch(error => { 
+            reject(error);
+          });
+        });
+      })
+      .catch(error => { 
+        reject(error);
+      });
+  });
+};
 
+
+module.exports.clearAllScreenshots = function() {
+  return new Promise((resolve, reject) => {
+    this.find()
+      .then(pages => {
+        pages.forEach(function(page) {
+          page.imageUrl = null;
+          page.save()
+          .then(_ => {
+            resolve(true);
+          })
+          .catch(error => { 
+            reject(error);
+          });
+        });
+      })
+      .catch(error => { 
+        reject(error);
+      });
+  });
+};
+
+
+
+module.exports.clearAllHtmls = function() {
+  return new Promise((resolve, reject) => {
+    this.find()
+      .then(pages => {
+        pages.forEach(function(page) {
+          page.html = null;
+          page.save()
+          .then(_ => {
+            resolve(true);
+          })
+          .catch(error => { 
+            reject(error);
+          });
+        });
+      })
+      .catch(error => { 
+        reject(error);
+      });
+  });
+};
