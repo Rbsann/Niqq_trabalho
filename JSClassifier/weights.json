@@ -1,0 +1,20 @@
+{
+    "href_auth_regex_facebook": -0.2148,
+    "href_reg_privac": -0.1652,
+    "inputs_reg_address": -0.1109,
+    "inputs_reg_cep": 0.3092,
+    "inputs_reg_date": 0.2472,
+    "inputs_reg_e?.?mail": 0.0015,
+    "inputs_reg_n[ao]me": -0.0025,
+    "inputs_reg_number": -0.0905,
+    "inputs_reg_password": -0.0280,
+    "inputs_reg_phone": 1.0160,
+    "inputs_reg_senha": -0.1474,
+    "inputs_reg_user": -0.0620,
+    "inputs_type_email": 0.0881,
+    "inputs_type_password": 0.9831,
+    "urlcadast": -0.6486,
+    "urlclient": 0.1870,
+    "urlregist": 0.6435,
+    "urlsign.?up": 0.7319
+}
