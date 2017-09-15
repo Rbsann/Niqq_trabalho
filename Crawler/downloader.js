@@ -3,31 +3,71 @@
 const puppeteer = require('puppeteer');
 const NinderClient = require('./ninderClient.js');
 
-let ninderClient = new NinderClient();
-
-//TODO: converter para sintaxe de promise
 class Downloader{
-    constructor(client = ninderClient){
-        this.page = await this.startBrowser();
+    constructor(){
+        this.browser;
+        this.basePath = 'images/';
     }
 
-    async startBrowser(){
-        const browser = await puppeteer.launch();
-        const page = await browser.newPage();
-        return page;
+    //Cria um browser e direciona para dada url
+    startBrowser(url){
+        let self = this;
+        return new Promise((resolve, reject) => {
+            puppeteer.launch()
+                .then(newBrowser => {
+                    self.browser = newBrowser;
+                    return newBrowser.newPage();
+                })    
+                .then(page => {
+                    self.page = page;
+                    return page.goto(url);
+                })
+                .then(_ => resolve(self.page))
+                .catch(err => reject(err));
+        });
     }
 
-    killBrowser(){
-        this.page.close();
+    //Tira uma screenshot da página, armazena no disco e retorna o caminho
+    getScreenshot(data, page, url){
+        let self = this;
+        return new Promise((resolve, reject) => {
+            console.log(url);
+            let imagesPath = self.basePath + url.match(/\.(.*?)\./)[1] + '.png';
+            page.screenshot({ path: imagesPath, fullPage: true })
+                .then(screenshot => {
+                    data.screenshot = imagesPath;
+                    resolve(page);
+                })
+                .catch(err => reject(err));
+        });
     }
 
-    // Takes an url and returns a screenshot and html code
-    async function getDataFrom(url) {
-        await this.page.goto(url);
-        let screenshot = await this.page.screenshot({ fullPage: true });
-        let html = await this.page.content();
-    
-        return [screenshot, html];
+    getHtml(data, page){
+        return new Promise((resolve, reject) => {
+            page.content()
+                .then(html => {
+                    data.html = html;
+                    resolve(page);
+                })
+                .catch(err => reject(err));
+        })
+    }
+    getDataFrom(url){
+        let self = this;
+        return new Promise((resolve,reject) => {
+            let data = {};
+            this.startBrowser(url)
+                .then(page => this.getScreenshot(data, page, url))
+                .then(page => this.getHtml(data, page))
+                .then(_ => {
+                    self.browser.close();
+                    resolve([data.screenshot, data.html]);
+                })
+                .catch(err => {
+                    self.browser.close();
+                    reject(err);
+                });
+        });
     }
 }
 

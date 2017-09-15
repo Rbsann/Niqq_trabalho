@@ -37,10 +37,15 @@ class NinderClient{
                 .catch(err => reject(err));
         });
     }
+
+    sendScreenshot(url, screenshot){
+        let self = this;
+    }
     getRequest(url){
         return new Promise((resolve,reject) => {
             request.get(url)
                 .end((err, response) => {
+                    console.log(response.body);
                     err ? reject(err) : resolve(response.body);
                 });
         });
