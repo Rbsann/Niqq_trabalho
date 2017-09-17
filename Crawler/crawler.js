@@ -8,9 +8,7 @@ const imagesDir = __dirname + '/images';
 function handleDirectories(){
     return new Promise((resolve, reject) => {
         fs.remove(imagesDir)
-          .then(() => {
-              return fs.mkdir(imagesDir);
-            })
+          .then(() => fs.mkdir(imagesDir))
           .then(() => resolve(true))
           .catch(err => reject(err));
     });
@@ -30,7 +28,5 @@ function run(){
 }
 
 handleDirectories()
-    .then(() => {
-        run();
-    })
+    .then(() => run())
     .catch(err => console.log(err));

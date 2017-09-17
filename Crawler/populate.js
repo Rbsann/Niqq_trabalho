@@ -23,8 +23,7 @@ class Populate{
                     return self.downloader.getDataFrom(url);
                 })
                 .then(data => {
-                    console.log(self.client);
-                    return Promise.all(
+                    Promise.all(
                         self.client.sendScreenshot(url, data[0]),
                         self.client.sendHtml(url, data[1])
                     );
@@ -39,8 +38,3 @@ class Populate{
 }
 
 module.exports = Populate;
-
-// let p = new Populate();
-// p.populateDataset()
-//     .then(data => console.log(data))
-//     .catch(err => console.log(err));

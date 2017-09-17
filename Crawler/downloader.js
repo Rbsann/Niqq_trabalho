@@ -65,7 +65,10 @@ class Downloader{
                     data.html = html;
                     resolve(page);
                 })
-                .catch(err => reject(err));
+                .catch(err => {
+                    console.log(err);
+                    reject(err);
+                });
         });
     }
     getDataFrom(url){

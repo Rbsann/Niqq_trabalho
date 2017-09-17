@@ -59,9 +59,7 @@ class NinderClient{
         return new Promise((resolve, reject) => {
             storage
                 .uploadFile(screenshot)
-                .then(storagePath => {
-                    return this.postScreenshot(url, storagePath);
-                })
+                .then(storagePath => self.postScreenshot(url, storagePath))
                 .then(response => resolve(true))
                 .catch(err => reject(err));
         });
@@ -78,7 +76,7 @@ class NinderClient{
         });
     }
     // Returns the next url from database without html code
-    getNextUrlToDownloadHtml(url){
+    getNextUrlToDownloadHtml(){
         return this.getRequest(this.htmlUrl);
     }
 

@@ -27,8 +27,8 @@ class Storage{
         let self = this;
         return new Promise((resolve, reject) => {
             self.bucket.upload(path, { public: true })
-                .then(file => {
-                    let url = self.baseFileUrl + file.name;
+                .then(files => {
+                    let url = self.baseFileUrl + files[0].name;
                     resolve(url);
                 })
                 .catch(error => reject(error));
