@@ -31,7 +31,9 @@ class Populate{
     }
 }
 
-let p = new Populate();
-p.populateDataset()
-    .then(data => console.log(data))
-    .catch(err => console.log(err));
+module.exports = Populate;
+
+// let p = new Populate();
+// p.populateDataset()
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err));

@@ -45,7 +45,8 @@ class NinderClient{
         return new Promise((resolve,reject) => {
             request.get(url)
                 .end((err, response) => {
-                    console.log(response.body);
+                    if(response.body)
+                        console.log(response.body);
                     err ? reject(err) : resolve(response.body);
                 });
         });

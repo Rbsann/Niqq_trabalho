@@ -20,19 +20,35 @@ class Downloader{
                 })    
                 .then(page => {
                     self.page = page;
-                    return page.goto(url);
+                    return page.goto(url, {timeout: 50000, waitUntil : "networkidle"});
                 })
-                .then(_ => resolve(self.page))
+                .then(response => {
+                    if(!response)
+                        reject("COULD_NOT_OPEN_URL");
+                    if(response.ok)
+                        resolve(self.page);
+                    else
+                        reject(response);
+                })
                 .catch(err => reject(err));
         });
+    }
+
+    fileName(url){
+        let name = url.match(/\.(.*?)\./);
+        let urlReference = name && name.length > 0 ? name[1] : "";
+        if(urlReference.length === 0)
+            urlReference = 'image' + Math.random(0,1000);
+        else
+            urlReference = urlReference.replace('/', '');
+        return this.basePath + urlReference + '.png';
     }
 
     //Tira uma screenshot da página, armazena no disco e retorna o caminho
     getScreenshot(data, page, url){
         let self = this;
         return new Promise((resolve, reject) => {
-            console.log(url);
-            let imagesPath = self.basePath + url.match(/\.(.*?)\./)[1] + '.png';
+            let imagesPath = self.fileName(url);
             page.screenshot({ path: imagesPath, fullPage: true })
                 .then(screenshot => {
                     data.screenshot = imagesPath;
@@ -50,7 +66,7 @@ class Downloader{
                     resolve(page);
                 })
                 .catch(err => reject(err));
-        })
+        });
     }
     getDataFrom(url){
         let self = this;
@@ -65,6 +81,9 @@ class Downloader{
                 })
                 .catch(err => {
                     self.browser.close();
+                    // TODO: implementar um sistema de logging para registrar URLs falhas
+                    if(err.ok === false)
+                        reject("COULD_NOT_LOAD_PAGE");
                     reject(err);
                 });
         });

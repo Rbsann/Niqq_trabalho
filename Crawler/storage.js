@@ -3,7 +3,6 @@
 const env = process.argv[2] || 'dev';
 let gcs;
 
-
 //TODO: obter keyfile da gcs
 if(env === 'dev'){
     gcs = require('@google-cloud/storage')({
