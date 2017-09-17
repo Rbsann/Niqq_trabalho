@@ -3,11 +3,10 @@
 const env = process.argv[2] || 'dev';
 let gcs;
 
-//TODO: obter keyfile da gcs
 if(env === 'dev'){
     gcs = require('@google-cloud/storage')({
         projectId: 'sophia-179715',
-        keyFilename: ''
+        keyFilename: './Sophia-01b9b48e4c11.json'
     });
 }else{
     gcs = require('@google-cloud/storage')();
@@ -25,10 +24,11 @@ class Storage{
 
     // path de um arquivo no disco
     uploadFile(path){
+        let self = this;
         return new Promise((resolve, reject) => {
-            this.bucket.upload(path, { public: true })
+            self.bucket.upload(path, { public: true })
                 .then(file => {
-                    let url = baseFileUrl + file.name;
+                    let url = self.baseFileUrl + file.name;
                     resolve(url);
                 })
                 .catch(error => reject(error));

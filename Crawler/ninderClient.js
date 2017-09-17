@@ -2,6 +2,9 @@
 
 const request = require('superagent');
 const gzip = require('../Chromeless/gzip.js');
+const Storage = require('./storage.js');
+
+let storage = new Storage();
 
 class NinderClient{
     constructor(serverUrl = 'https://tinder.niqq.co/'){
@@ -17,30 +20,53 @@ class NinderClient{
 
     // Envia a url e o código html comprimido para o servidor
     postHtml(url, zipped){
+        let self = this;
         return new Promise((resolve, reject) => {
             let requestBody = { url: url, html: zipped };
             request
-                .post(this.htmlUrl)
+                .post(self.htmlUrl)
                 .send(requestBody)
                 .end((err, response) => {
                     err ? reject(err) : resolve(response);
                 });
-
         });
     }
 
     sendHtml(url, html){
+        let self = this;
         return new Promise((resolve, reject) => {
-            this.processHtml(html)
-                .then(zipped => this.postHtml(url, zipped))
+            self.processHtml(html)
+                .then(zipped => self.postHtml(url, zipped))
                 .then(response => resolve(true))
                 .catch(err => reject(err));
         });
     }
 
+    postScreenshot(url, storagePath){
+        let self = this;
+        return new Promise((resolve, reject) => {
+            let requestBody = { url: url, imageUrl: storagePath };
+            request
+                .post(self.screenShotUrl)
+                .send(requestBody)
+                .end((err, response) => {
+                    err ? reject(err) : resolve(response);
+                });
+        });
+    }
     sendScreenshot(url, screenshot){
         let self = this;
+        return new Promise((resolve, reject) => {
+            storage
+                .uploadFile(screenshot)
+                .then(storagePath => {
+                    return this.postScreenshot(url, storagePath);
+                })
+                .then(response => resolve(true))
+                .catch(err => reject(err));
+        });
     }
+
     getRequest(url){
         return new Promise((resolve,reject) => {
             request.get(url)
