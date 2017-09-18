@@ -10,6 +10,7 @@ class NinderClient{
     constructor(serverUrl = 'https://tinder.niqq.co/'){
         this.screenShotUrl = serverUrl + 'screenshot';
         this.htmlUrl = serverUrl + 'html';
+        this.newUrl = serverUrl + 'new';
     }
 
     // Remove o conteúdo da tag head e retorna o html comprimido
@@ -84,6 +85,19 @@ class NinderClient{
     // Return the next url form database without screenshot
     getNextUrlToScreenshot(){
         return this.getRequest(this.screenShotUrl);
+    }
+
+    new(urls){
+        let self = this;
+        return new Promise((resolve, reject) => {
+            let requestBody = { urls: urls };
+            request
+                .post(self.newUrl)
+                .send(requestBody)
+                .end((err, response) => {
+                    err ? reject(err) : resolve(response);
+                });
+        });
     }
 }
 

@@ -1,8 +1,9 @@
 'use strict';
 
 const puppeteer = require('puppeteer');
+const NinderClient = require('./ninderClient.js');
+
 const search = "http://bing.com/search?q=instreamset:(url title):cadastro&count=20";
-let links = [];
 
 class UrlCatcher{
     constructor(){
@@ -48,14 +49,15 @@ search(numPage) {
 }
 
 function run(){
+    let ninderClient = new NinderClient();
     let catcher = new UrlCatcher();
     let links = [];
 
     for (let x = 1; x < 101; x = x + 20) {
         catcher.search(x)
-            .then((tempLinks) => {
-                console.log(tempLinks);
-                links.concat(tempLinks);
+            .then((tempLinks) => ninderClient.new(tempLinks))
+            .then((response) => {
+                console.log(response);
             })
             .catch(err => {
                 console.log(err);
