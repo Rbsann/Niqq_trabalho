@@ -65,6 +65,7 @@ class NinderClient{
         });
     }
 
+    // GET request genérica
     getRequest(url){
         return new Promise((resolve,reject) => {
             request.get(url)
