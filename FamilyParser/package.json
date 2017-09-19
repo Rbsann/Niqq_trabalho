@@ -1,0 +1,11 @@
+{
+  "name": "family-parser",
+  "version": "0.0.1",
+  "main": "parse.js",
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  },
+  "scripts": {
+    "start": "node parse.js"
+  }
+}
