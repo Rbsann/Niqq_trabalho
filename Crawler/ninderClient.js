@@ -87,7 +87,7 @@ class NinderClient{
         return this.getRequest(this.screenShotUrl);
     }
 
-    new(urls){
+    postNew(urls){
         let self = this;
         return new Promise((resolve, reject) => {
             let requestBody = { urls: urls };

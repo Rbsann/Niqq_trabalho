@@ -15,7 +15,7 @@ function handleDirectories(){
 }
 
 function run(){
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < 50; i++){
         let populate = new Populate();
         
         populate.populateDataset()

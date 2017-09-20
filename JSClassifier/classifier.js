@@ -1,5 +1,10 @@
 const weights = require('./weights.json');
 
+/*
+    Uso:
+        let classifier = new Classifier();
+        let classification = classifier.isForm(<array_de_features>);
+*/
 class Classifier{
     constructor(threshold = 0.5){
         this.weights = weights;

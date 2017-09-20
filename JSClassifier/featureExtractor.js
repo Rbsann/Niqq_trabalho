@@ -1,5 +1,10 @@
 const htmlParser =  require('htmlparser2');
 
+/*
+    Uso:
+        let extractor = new FeatureExtractor('www.niqq.com.br', <html_da_pagina>);
+        let feaures = extractor.getFeatures();
+*/
 class FeatureExtractor{
     constructor(url, html){
         this.features = {};
@@ -9,11 +14,10 @@ class FeatureExtractor{
         
         this.urlRegex = ['regist', 'cadast', 'client', 'sign.?up', ];
         this.inputTypes = ["password", "email"];
-        this.inputRegex = ["n[ao]me", "e?.?mail", "password", "senha", "date",
+        this.inputRegex = ["n[ao]me", "e?.?mail", "password", "senha",
                              "phone", "number", "user", "address", "cep"];
-        this.hrefRegex = ["privac"];
-        this.hrefAuthRegex = ["facebook"];
         this.attributesSearched = ["name", "placeholder", "id", "class"];
+        this.action_url_regex = ["create", "new","nov[oa]", "cadast", "edit", "salvar", "save"];
 
         this.prepare();
     }
@@ -22,8 +26,7 @@ class FeatureExtractor{
         this.initializeFeatureObject("url", this.urlRegex);
         this.initializeFeatureObject("inputs_type_", this.inputTypes);
         this.initializeFeatureObject("inputs_reg_", this.inputRegex);
-        this.initializeFeatureObject("href_reg_", this.hrefRegex);
-        this.initializeFeatureObject("href_auth_regex_", this.hrefAuthRegex);
+        this.initializeFeatureObject("href_auth_regex_", this.action_url_regex);
     }
     
     initializeFeatureObject(prefix, regexList){
@@ -88,26 +91,6 @@ class FeatureExtractor{
     
         if(infoText !== "")
             this.processInputAttr(infoText);
-    }
-    
-    processAuth(attrs){
-        if(attrs.href.match("auth")){
-            this.hrefAuthRegex.forEach(function(regex){
-                let key = "href_auth_regex_" + regex;
-                this.features[key] += this.matchCount(regex, attrs.href);
-            }, this);
-        }
-    }
-    
-    processLink(attrs){
-        if(attrs.href){
-            this.hrefRegex.forEach(function(regex){
-                let key = "href_reg_" + regex;
-                this.features[key] += this.matchCount(regex, attrs.href);
-    
-                this.processAuth(attrs);
-            }, this);
-        }
     }
     
     /*

@@ -35,12 +35,7 @@ class Downloader{
     }
 
     fileName(url){
-        let name = url.match(/\.(.*?)\./);
-        let urlReference = name && name.length > 0 ? name[1] : "";
-        if(urlReference.length === 0)
-            urlReference = 'image' + Math.random(0,1000);
-        else
-            urlReference = urlReference.replace('/', '');
+        let urlReference = url.substring(url.indexOf('.') + 1, url.indexOf('/'));
         return this.basePath + urlReference + '.png';
     }
 
