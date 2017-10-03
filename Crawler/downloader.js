@@ -13,14 +13,14 @@ class Downloader{
     startBrowser(url){
         let self = this;
         return new Promise((resolve, reject) => {
-            puppeteer.launch()
+            puppeteer.launch({ignoreHTTPSErrors: true})
                 .then(newBrowser => {
                     self.browser = newBrowser;
                     return newBrowser.newPage();
                 })    
                 .then(page => {
                     self.page = page;
-                    return page.goto(url, {timeout: 50000, waitUntil : "networkidle"});
+                    return page.goto(url, {timeout: 60000, waitUntil : "networkidle"});
                 })
                 .then(response => {
                     if(!response)
@@ -30,13 +30,18 @@ class Downloader{
                     else
                         reject(response);
                 })
-                .catch(err => reject(err));
+                .catch(err => {
+                    console.log("erro no start browser");
+                    reject(err);
+                });
         });
     }
 
     fileName(url){
-        let urlReference = url.substring(url.indexOf('.') + 1, url.indexOf('/'));
-        return this.basePath + urlReference + '.png';
+        let urlReference = url.match('^(?:http:\/\/|www\.|https:\/\/)([^\/]+)')[1];
+        if(urlReference.indexOf('www') > -1)
+            urlReference = urlReference.replace('www', '');
+        return this.basePath + urlReference.replace(/\./g, '') + '.png';
     }
 
     //Tira uma screenshot da página, armazena no disco e retorna o caminho

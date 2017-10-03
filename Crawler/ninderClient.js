@@ -28,7 +28,12 @@ class NinderClient{
                 .post(self.htmlUrl)
                 .send(requestBody)
                 .end((err, response) => {
-                    err ? reject(err) : resolve(response);
+                    if(err){
+                        reject(err);
+                    }else{
+                        resolve(response);
+                    }
+                    //err ? reject(err) : resolve(response);
                 });
         });
     }
@@ -51,7 +56,12 @@ class NinderClient{
                 .post(self.screenShotUrl)
                 .send(requestBody)
                 .end((err, response) => {
-                    err ? reject(err) : resolve(response);
+                    if(err){
+                        reject(err);
+                    }else{
+                        resolve(response);
+                    }
+                    // err ? reject(err) : resolve(response);
                 });
         });
     }
@@ -71,9 +81,11 @@ class NinderClient{
         return new Promise((resolve,reject) => {
             request.get(url)
                 .end((err, response) => {
-                    if(response.body)
-                        console.log(response.body);
-                    err ? reject(err) : resolve(response.body);
+                    if(err)
+                        reject(err);
+                    else
+                        resolve(response.body);
+                    // err ? reject(err) : resolve(response.body);
                 });
         });
     }
@@ -95,7 +107,12 @@ class NinderClient{
                 .post(self.newUrl)
                 .send(requestBody)
                 .end((err, response) => {
-                    err ? reject(err) : resolve(response);
+                    if(err){
+                        reject(err);
+                    }else{
+                        resolve(response);
+                    }
+                    // err ? reject(err) : resolve(response);
                 });
         });
     }

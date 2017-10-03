@@ -15,16 +15,20 @@ function handleDirectories(){
 }
 
 function run(){
-    for(let i = 0; i < 50; i++){
-        let populate = new Populate();
-        
-        populate.populateDataset()
-            .then(result => {
-                if(result === true)
-                    console.log("Operação finalizada com sucesso!");
-            })
-            .catch(err => console.log(err));
-    }
+    let populate = new Populate();
+    
+    populate.populateDataset()
+        .then(result => {
+            if(result === true){
+                console.log("Operação finalizada com sucesso!");
+                run();
+            }
+        })
+        .catch(err => {
+            //TODO: FIX
+            console.log(err);
+            run();
+        });
 }
 
 handleDirectories()

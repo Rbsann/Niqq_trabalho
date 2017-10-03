@@ -10,6 +10,13 @@ class Populate{
         self.downloader = new Downloader();
     }
 
+    tratar(url){
+        if(url.indexOf('http://') < 0 && url.indexOf('https://') < 0)
+            return 'http://' + url;
+            // return (url.indexOf('www') < 0 ? 'http://www.' + url : 'http://' + url);
+        return url;
+    }
+
     /*
         Popula o servidor com dados passíveis de classificação manual.
     */
@@ -20,7 +27,7 @@ class Populate{
             self.client.getNextUrlToDownloadHtml()
                 .then(response => {
                     url = response.url;
-                    return self.downloader.getDataFrom(url);
+                    return self.downloader.getDataFrom(self.tratar(url));
                 })
                 .then(data => {
                     Promise.all(
