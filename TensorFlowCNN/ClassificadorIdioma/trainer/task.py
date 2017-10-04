@@ -6,15 +6,24 @@ import datetime
 import util
 from model import TextCNN
 from tensorflow.contrib import learn
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--portuguese_data", help="Path to portuguese sentences training data")
+parser.add_argument("--spanish_data", help="Path to spanish sentences training data")
+parser.add_argument("--output_dir", help="Path to export models and other files generated during training")
+
+args = parser.parse_args()
+
+spanish_data_file = args.spanish_data
+portuguese_data_file = args.portuguese_data
+output_dir = args.output_dir
 
 # This is a modification of Denny Britz's original implementation
 # https://github.com/dennybritz/cnn-text-classification-tf
 
 # Parameters
 # ==================================================
-
-spanish_data_file = os.environ['SPANISH_FILE_PATH']
-portuguese_data_file = os.environ['PORTUGUESE_FILE_PATH']
 
 # Data loading params
 tf.flags.DEFINE_float("dev_sample_percentage", .1, "Percentage of the training data to use for validation")
@@ -109,7 +118,7 @@ with tf.Graph().as_default():
 
         # Output directory for models and summaries
         timestamp = str(int(time.time()))
-        out_dir = os.path.abspath(os.path.join(os.path.curdir, "runs", timestamp))
+        out_dir = os.path.abspath(os.path.join(output_dir, "runs", timestamp))
         print("Writing to {}\n".format(out_dir))
 
         # Summaries for loss and accuracy

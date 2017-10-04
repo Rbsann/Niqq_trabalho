@@ -3,6 +3,9 @@ import re
 import itertools
 from collections import Counter
 
+# A lib padrão de IO do python não consegue acessar arquivos da cloud storage
+from tensorflow.python.lib.io import file_io
+
 # This is a modification of Denny Britz's original implementation
 # https://github.com/dennybritz/cnn-text-classification-tf
 
@@ -33,9 +36,9 @@ def load_data_and_labels(spanish_data_file, portuguese_data_file):
     Returns split sentences and labels.
     """
     # Load data from files
-    spanish_examples = list(open(spanish_data_file, "r").readlines())
+    spanish_examples = list(file_io.FileIO(spanish_data_file, "r").readlines())
     spanish_examples = [s.strip() for s in spanish_examples]
-    portuguese_examples = list(open(portuguese_data_file, "r").readlines())
+    portuguese_examples = list(file_io.FileIO(portuguese_data_file, "r").readlines())
     portuguese_examples = [s.strip() for s in portuguese_examples]
     # Split by words
     x_text = spanish_examples + portuguese_examples
