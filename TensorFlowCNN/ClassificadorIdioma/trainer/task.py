@@ -6,9 +6,10 @@ import os
 import time
 import datetime
 import util
+import argparse
 from model import TextCNN
 from tensorflow.contrib import learn
-import argparse
+from tensorflow.python.lib.io import file_io
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--portuguese_data", help="Path to portuguese sentences training data")
@@ -139,8 +140,11 @@ with tf.Graph().as_default():
         # Checkpoint directory. Tensorflow assumes this directory already exists so we need to create it
         checkpoint_dir = os.path.join(out_dir, "checkpoints")
         checkpoint_prefix = os.path.join(checkpoint_dir, "model")
-        if not os.path.exists(checkpoint_dir):
-            os.makedirs(checkpoint_dir)
+        
+        # The name is file_exists but it actually tests if the path exists, whether its a file or directory.
+        if not file_io.file_exists(checkpoint_dir):
+            # os.makedirs(checkpoint_dir)
+            file_io.recursive_create_dir(checkpoint_dir)
         saver = tf.train.Saver(tf.global_variables(), max_to_keep=FLAGS.num_checkpoints)
 
         # Write vocabulary
