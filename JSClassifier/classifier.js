@@ -3,7 +3,8 @@ const weights = require('./weights.json');
 /*
     Uso:
         let classifier = new Classifier();
-        let classification = classifier.isForm(<array_de_features>);
+        classifier.isForm(<array_de_features>)
+            .then(classification => {})
 */
 class Classifier{
     constructor(threshold = 0.5){
@@ -17,7 +18,9 @@ class Classifier{
             let expression = self.getExpression(features);
             let e = Math.exp(expression);
             let classification = e / (1 + e);
-            return resolve(classification >= self.threshold);
+            // console.log(expression);
+            // return resolve(classification >= self.threshold);
+            resolve(classification);
         });
     }
 

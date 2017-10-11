@@ -3,7 +3,8 @@ const htmlParser =  require('htmlparser2');
 /*
     Uso:
         let extractor = new FeatureExtractor('www.niqq.com.br', <html_da_pagina>);
-        let feaures = extractor.getFeatures();
+        extractor.getFeatures()
+            .then(features => {}
 */
 class FeatureExtractor{
     constructor(url, html){
@@ -42,8 +43,8 @@ class FeatureExtractor{
             onopentag: function(name, attrs){
                 if(name === "input")
                     self.parseInput(attrs);
-                if(name === "a")
-                    self.processLink(attrs);
+                // if(name === "a")
+                //     self.processLink(attrs);
             }
         }, { decodeEntities: true });
     }
@@ -103,7 +104,7 @@ class FeatureExtractor{
             self.extractUrlFeaturesFrom(self.url);
             let binFeatures = {};
             Object.keys(self.features).forEach(function(key){
-                console.log(key);
+                // console.log(key);
                 binFeatures[key] = self.features[key] > 0 ? 1 : 0;
             }, this);
             resolve(binFeatures);
@@ -111,4 +112,4 @@ class FeatureExtractor{
     }
 }
 
-module.exports.featureExtractor = FeatureExtractor;
+module.exports = FeatureExtractor;

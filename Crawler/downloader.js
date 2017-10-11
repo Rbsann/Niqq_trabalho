@@ -37,6 +37,10 @@ class Downloader{
         });
     }
 
+    stopBrowser() {
+        this.browser.close();
+    }
+
     fileName(url){
         let urlReference = url.match('^(?:http:\/\/|www\.|https:\/\/)([^\/]+)')[1];
         if(urlReference.indexOf('www') > -1)
