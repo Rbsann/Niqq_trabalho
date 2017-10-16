@@ -244,6 +244,16 @@
 			}
 
 			var zoomedIn = false;
+			function toggleZoom() {
+				if (zoomedIn) {
+					$("#screenshot").removeClass("zoom");
+					zoomedIn = false;
+				} else {
+					$("#screenshot").addClass("zoom");
+					zoomedIn = true;
+				}
+			}
+
 			$(document).ready(function() {
 				spinner = new Spinner();
 				var screenshotHammer = new Hammer(document.getElementById("screenshot"));
@@ -251,6 +261,13 @@
 				// detect keypresses
 				$(document).keypress(function(e) {
 					switch(e.keyCode) {
+						case 32: // spacebar
+							toggleZoom();
+							break;
+						case 66: // b
+						case 98: // B
+							loadPreviousPage();
+							break;
 						case 74: // J
 						case 106: // j
 							classifyAsForm(false)
@@ -289,13 +306,7 @@
 
 				// Zoom
 				$("#screenshot").on("click", function() {
-					if (zoomedIn) {
-						$("#screenshot").removeClass("zoom");
-						zoomedIn = false;
-					} else {
-						$("#screenshot").addClass("zoom");
-						zoomedIn = true;
-					}
+					toggleZoom();
 				})
 
 				// Back
