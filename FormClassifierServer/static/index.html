@@ -45,9 +45,25 @@
 			#screenshot-container {
 				overflow: hidden;
 			}
+			.fullscreen {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100vh;
+				width: 100vw;
+				z-index: 1000;
+				background: #000;
+				text-align: center;
+				line-height: 100vh;
+			}
 			#screenshot {
 				max-width: 100%;
 				height: auto;
+			}
+			.fullscreen > #screenshot{
+				max-height: 100%;
+				max-width: 100%;
+				vertical-align: middle;
 			}
 			.zoom {
 				transform: scale(1.5);
@@ -243,14 +259,41 @@
 				(new Image()).src = nextPage.imageUrl;
 			}
 
-			var zoomedIn = false;
+			var zoomState = 0;
 			function toggleZoom() {
-				if (zoomedIn) {
-					$("#screenshot").removeClass("zoom");
-					zoomedIn = false;
-				} else {
-					$("#screenshot").addClass("zoom");
-					zoomedIn = true;
+				switch(zoomState) {
+					case 0:
+						$("#screenshot").addClass("zoom");
+						zoomState = 1;
+						break;
+					case 1:
+						$("#screenshot").removeClass("zoom");
+						zoomState = 0;
+						break;
+				}
+			}
+
+			var fullScreenState = 0;
+			function toggleFullScreen() {
+				switch(fullScreenState) {
+					case 0:
+						$("#screenshot-container").addClass("fullscreen");
+						if (document.documentElement.mozRequestFullScreen) {
+							document.documentElement.mozRequestFullScreen();
+						} else {
+							document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+						}
+						fullScreenState = 1;
+						break;
+					case 1:
+						$("#screenshot-container").removeClass("fullscreen");
+						if (document.mozCancelFullScreen) {
+							document.mozCancelFullScreen();
+						} else {
+							document.webkitCancelFullScreen();
+						}
+						fullScreenState = 0;
+						break;
 				}
 			}
 
@@ -264,9 +307,13 @@
 						case 32: // spacebar
 							toggleZoom();
 							break;
-						case 66: // b
-						case 98: // B
+						case 66: // B
+						case 98: // b
 							loadPreviousPage();
+							break;
+						case 70: // F
+						case 102: // f
+							toggleFullScreen();
 							break;
 						case 74: // J
 						case 106: // j
