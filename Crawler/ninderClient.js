@@ -40,11 +40,18 @@ class NinderClient{
 
     sendHtml(url, html){
         let self = this;
+        console.log("NinderClient: sending HTML");
         return new Promise((resolve, reject) => {
             self.processHtml(html)
                 .then(zipped => self.postHtml(url, zipped))
                 .then(response => resolve(true))
-                .catch(err => reject(err));
+                .catch(err => {
+                    if (err.message.indexOf("Payload") > -1) {
+                        reject(Error("ERR_HTML_TOO_LARGE"));
+                    } else {
+                        reject(err);
+                    }
+                });
         });
     }
 
@@ -67,9 +74,9 @@ class NinderClient{
     }
     sendScreenshot(url, screenshot){
         let self = this;
+        console.log("NinderClient: sending screenshot", screenshot);
         return new Promise((resolve, reject) => {
-            storage
-                .uploadFile(screenshot)
+            storage.uploadFile(screenshot)
                 .then(storagePath => self.postScreenshot(url, storagePath))
                 .then(response => resolve(true))
                 .catch(err => reject(err));
