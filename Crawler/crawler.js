@@ -14,18 +14,12 @@ function handleDirectories(){
     });
 }
 
+let populate = new Populate();
+
 function run(){
-    let populate = new Populate();
-    
     populate.populateDataset()
-        .then(result => {
-            if(result === true){
-                console.log("Operação finalizada com sucesso!");
-                run();
-            }
-        })
+        .then(_ => run())
         .catch(err => {
-            //TODO: FIX
             console.log(err);
             run();
         });
