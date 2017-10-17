@@ -3,9 +3,18 @@
 const puppeteer = require('puppeteer');
 const NinderClient = require('./ninderClient.js');
 
-class Downloader{
+var randomString = function(length) {
+    var text = "";
+    var alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
+    for (var i = 0; i < length; i++) {
+        text += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+    }
+    return text;
+};
+
+class Downloader {
     constructor(){
-        this.browser;
+        this.browser = null;
         this.basePath = 'images/';
     }
 
@@ -45,7 +54,7 @@ class Downloader{
         let urlReference = url.match('^(?:http:\/\/|www\.|https:\/\/)([^\/]+)')[1];
         if(urlReference.indexOf('www') > -1)
             urlReference = urlReference.replace('www', '');
-        return this.basePath + urlReference.replace(/\./g, '') + '.png';
+        return this.basePath + urlReference.replace(/\./g, '') + '_' + randomString(10) + '.png';
     }
 
     //Tira uma screenshot da página, armazena no disco e retorna o caminho
