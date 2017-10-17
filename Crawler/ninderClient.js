@@ -7,7 +7,7 @@ const Storage = require('./storage.js');
 let storage = new Storage();
 
 class NinderClient{
-    constructor(serverUrl = 'https://tinder.niqq.co/'){
+    constructor(serverUrl = 'https://ninder.niqq.co/'){
         this.screenShotUrl = serverUrl + 'screenshot';
         this.htmlUrl = serverUrl + 'html';
         this.newUrl = serverUrl + 'new';
