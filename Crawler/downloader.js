@@ -13,95 +13,147 @@ var randomString = function(length) {
 };
 
 class Downloader {
-    constructor(){
+    constructor() {
         this.browser = null;
+        this.page = null;
         this.basePath = 'images/';
     }
 
-    //Cria um browser e direciona para dada url
-    startBrowser(url){
+    // creates browser and page
+    initialize() {
         let self = this;
         return new Promise((resolve, reject) => {
-            puppeteer.launch({ignoreHTTPSErrors: true})
-                .then(newBrowser => {
-                    self.browser = newBrowser;
-                    return newBrowser.newPage();
-                })    
-                .then(page => {
-                    self.page = page;
-                    return page.goto(url, {timeout: 60000, waitUntil : "networkidle"});
-                })
-                .then(response => {
-                    if(!response)
-                        reject("COULD_NOT_OPEN_URL");
-                    if(response.ok)
-                        resolve(self.page);
-                    else
-                        reject(response);
-                })
-                .catch(err => {
-                    console.log("erro no start browser");
-                    reject(err);
-                });
+            self.createBrowser()
+                .then(_ => self.createPage())
+                .then(_ => resolve(true))
+                .catch(error => reject(error));
         });
     }
 
-    stopBrowser() {
-        this.browser.close();
+    // instantiate puppeteer browser object
+    createBrowser() {
+        let self = this;
+        return new Promise((resolve, reject) => {
+            if (self.browser !== null) {
+                resolve(self.browser);
+            } else {
+                console.log("Downloader: creating browser");
+                puppeteer.launch({ignoreHTTPSErrors: true})
+                    .then(browser => {
+                        self.browser = browser;
+                        resolve(browser);
+                    })
+                    .catch(error => reject(error));
+            }
+        });
     }
 
-    fileName(url){
+    createPage() {
+        let self = this;
+        return new Promise((resolve, reject) => {
+            if (self.browser === null) {
+                reject(Error("ERR_BROWSER_NOT_STARTED"));
+            } else if (self.page !== null) {
+                resolve(self.page);
+            } else {
+                console.log("Downloader: creating page");
+                self.browser.newPage()
+                    .then(page => {
+                        self.page = page;
+                        resolve(page);
+                    })
+                    .catch(error => reject(error));
+            }
+        });
+    }
+
+    navigateToURL(url) {
+        let self = this;
+        return new Promise((resolve, reject) => {
+            if (self.page === null) {
+                reject(Error("ERR_PAGE_NOT_CREATED"));
+            } else {
+                console.log("Downloader: navigating to", url);
+                self.page.goto(url, { timeout: 15000 , waitUntil: 'networkidle' })
+                    .then(_ => {
+                        resolve(true);
+                        // if (response && response.ok) {
+                        //     resolve(true);
+                        // } else {
+                        //     reject(Error("ERR_LOADING_URL"));
+                        // }
+                    })
+                    .catch(error => reject(error));
+            }
+        });
+    }
+
+    closeBrowser() {
+        console.log("Downloader: closing browser");
+        return this.browser.close();
+    }
+
+    //Tira uma screenshot da página, armazena no disco e retorna o caminho
+    getScreenshot(imagePath) {
+        let self = this;
+        return new Promise((resolve, reject) => {
+            if (self.page === null) {
+                reject(Error("ERR_PAGE_NOT_CREATED"));
+            } else {
+                console.log("Downloader: taking screenshot");
+                self.page.screenshot({ path: imagePath, fullPage: true })
+                    .then(_ => resolve(imagePath))
+                    .catch(err => reject(err));
+            }
+        });
+    }
+
+    getHtml(data, page) {
+        let self = this;
+        return new Promise((resolve, reject) => {
+            if (self.page === null) {
+                reject(Error("ERR_PAGE_NOT_CREATED"));
+            } else {
+                console.log("Downloader: getting HTML");
+                self.page.content()
+                    .then(html => resolve(html))
+                    .catch(err => reject(err));
+            }
+        });
+    }
+
+    fileName(url) {
         let urlReference = url.match('^(?:http:\/\/|www\.|https:\/\/)([^\/]+)')[1];
         if(urlReference.indexOf('www') > -1)
             urlReference = urlReference.replace('www', '');
         return this.basePath + urlReference.replace(/\./g, '') + '_' + randomString(10) + '.png';
     }
 
-    //Tira uma screenshot da página, armazena no disco e retorna o caminho
-    getScreenshot(data, page, url){
-        let self = this;
-        return new Promise((resolve, reject) => {
-            let imagesPath = self.fileName(url);
-            page.screenshot({ path: imagesPath, fullPage: true })
-                .then(screenshot => {
-                    data.screenshot = imagesPath;
-                    resolve(page);
-                })
-                .catch(err => reject(err));
-        });
-    }
-
-    getHtml(data, page){
-        return new Promise((resolve, reject) => {
-            page.content()
-                .then(html => {
-                    data.html = html;
-                    resolve(page);
-                })
-                .catch(err => {
-                    console.log(err);
-                    reject(err);
-                });
-        });
-    }
-    getDataFrom(url){
+    getDataFrom(url) {
         let self = this;
         return new Promise((resolve,reject) => {
-            let data = {};
-            this.startBrowser(url)
-                .then(page => this.getScreenshot(data, page, url))
-                .then(page => this.getHtml(data, page))
-                .then(_ => {
-                    self.browser.close();
-                    resolve([data.screenshot, data.html]);
-                })
-                .catch(err => {
-                    self.browser.close();
-                    // TODO: implementar um sistema de logging para registrar URLs falhas
-                    if(err.ok === false)
-                        reject("COULD_NOT_LOAD_PAGE");
-                    reject(err);
-                });
+            if (this.browser === null) {
+                reject(Error("ERR_BROWSER_NOT_CREATED"));
+            } else {
+                console.log("Downloader: getting data from", url);
+
+                let data = {
+                    screenshot: null,
+                    html: null
+                };
+
+                this.navigateToURL(url)
+                    .then(_ => this.getScreenshot(self.fileName(url)))
+                    .then(screenshot => {
+                        data.screenshot = screenshot;
+                        return this.getHtml();
+                    })
+                    .then(html => {
+                        data.html = html;
+                        resolve(data);
+                    })
+                    .catch(error => reject(error));
+            }
         });
     }
 }
