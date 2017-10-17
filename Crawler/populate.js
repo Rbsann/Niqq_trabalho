@@ -3,17 +3,20 @@
 const Downloader = require('./downloader.js');
 const NinderClient = require('./ninderClient.js');
 
-var timeoutPromise = function(durationMs) {
+const timeoutPromise = function(durationMs) {
     return new Promise((resolve, reject) => {
         setTimeout(_ => reject(Error("ERR_POPULATE_TIMEOUT")), durationMs);      
     });
 };
 
+const ninderClient = new NinderClient();
+
 class Populate {
-    constructor() {
+    constructor(idNumber) {
         let self = this;
-        self.client = new NinderClient();
-        self.downloader = new Downloader();
+        
+        self.downloader = new Downloader(idNumber);
+        self.idNumber = idNumber;
     }
 
     tratar(url){
@@ -29,24 +32,24 @@ class Populate {
     populateDataset() {
         const self = this;
         let populatePromise = new Promise((resolve, reject) => {
-            console.log("\nPopulate: getting next url");
+            console.log(`\Populate ${self.idNumber}: getting next url`);
             let url = "";
             self.downloader.initialize()
-                .then(_ => self.client.getNextUrlToDownloadHtml())
+                .then(_ => ninderClient.getNextUrlToDownloadHtml())
                 .then(response => {
                     url = response.url;
                     return self.downloader.getDataFrom(self.tratar(url));
                 })
                 .then(data => Promise.all([
-                        self.client.sendScreenshot(url, data.screenshot),
-                        self.client.sendHtml(url, data.html)
-                    ]))
+                    ninderClient.sendScreenshot(url, data.screenshot),
+                    ninderClient.sendHtml(url, data.html)
+                ]))
                 .then(_ => {
-                    console.log("Populate: completed with success URL", url);
+                    console.log(`Populate ${self.idNumber}: completed with success URL`, url);
                     resolve(true);
                 })
                 .catch(error => {
-                    console.log("Populate: failed with error");
+                    console.log(`Populate ${self.idNumber}: failed with error`);
                     reject(error);
                 });
         });

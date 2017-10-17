@@ -1,6 +1,6 @@
 'use-strict';
 
-const env = process.argv[2] || 'dev';
+const env = 'dev';
 let gcs;
 
 if(env === 'dev'){

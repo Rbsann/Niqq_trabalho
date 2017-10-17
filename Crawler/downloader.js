@@ -13,10 +13,11 @@ var randomString = function(length) {
 };
 
 class Downloader {
-    constructor() {
+    constructor(idNumber) {
         this.browser = null;
         this.page = null;
         this.basePath = 'images/';
+        this.idNumber = idNumber;
     }
 
     // creates browser and page
@@ -37,7 +38,7 @@ class Downloader {
             if (self.browser !== null) {
                 resolve(self.browser);
             } else {
-                console.log("Downloader: creating browser");
+                console.log(`Downloader ${self.idNumber}: creating browser`);
                 puppeteer.launch({ignoreHTTPSErrors: true})
                     .then(browser => {
                         self.browser = browser;
@@ -56,7 +57,7 @@ class Downloader {
             } else if (self.page !== null) {
                 resolve(self.page);
             } else {
-                console.log("Downloader: creating page");
+                console.log(`Downloader ${self.idNumber}: creating page`);
                 self.browser.newPage()
                     .then(page => {
                         self.page = page;
@@ -73,7 +74,7 @@ class Downloader {
             if (self.page === null) {
                 reject(Error("ERR_PAGE_NOT_CREATED"));
             } else {
-                console.log("Downloader: navigating to", url);
+                console.log(`Downloader ${self.idNumber}: navigating to`, url);
                 self.page.goto(url, { timeout: 15000 , waitUntil: 'networkidle' })
                     .then(_ => {
                         resolve(true);
@@ -89,7 +90,7 @@ class Downloader {
     }
 
     closeBrowser() {
-        console.log("Downloader: closing browser");
+        console.log(`Downloader ${self.idNumber}: closing browser`);
         return this.browser.close();
     }
 
@@ -100,7 +101,7 @@ class Downloader {
             if (self.page === null) {
                 reject(Error("ERR_PAGE_NOT_CREATED"));
             } else {
-                console.log("Downloader: taking screenshot");
+                console.log(`Downloader ${self.idNumber}: taking screenshot`);
                 self.page.screenshot({ path: imagePath, fullPage: true })
                     .then(_ => resolve(imagePath))
                     .catch(err => reject(err));
@@ -114,7 +115,7 @@ class Downloader {
             if (self.page === null) {
                 reject(Error("ERR_PAGE_NOT_CREATED"));
             } else {
-                console.log("Downloader: getting HTML");
+                console.log(`Downloader ${self.idNumber}: getting HTML`);
                 self.page.content()
                     .then(html => resolve(html))
                     .catch(err => reject(err));
@@ -135,7 +136,7 @@ class Downloader {
             if (this.browser === null) {
                 reject(Error("ERR_BROWSER_NOT_CREATED"));
             } else {
-                console.log("Downloader: getting data from", url);
+                console.log(`Downloader ${self.idNumber}: getting data from`, url);
 
                 let data = {
                     screenshot: null,
