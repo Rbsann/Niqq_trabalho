@@ -45,17 +45,24 @@ def main():
     Obtém, trata e salva o dataset pronto para treinamento.
     """
     data = []
+    labels = []
 
     for page in download_pages():
         html = get_html_from_64_string(page["html"])
         if(html is not None):
             html = clean_html(html.lower())
-            data.append({
-                "text": html,
-                "label": [1] if page["isForm"] else [0]
-            })
-    dataset = np.array(data)
-    np.savez("dataset", dataset=dataset)
+            data.append(html)
+            labels.append(1 if page["isForm"] else 0)
+    
+    dataset_file = open("dataset", "w")
+    for site in data:
+        dataset_file.write(site.encode("utf-8").strip())
+    dataset_file.close()
+
+    label_file = open("labels", "w")
+    for label in labels:
+        label_file.write("{}\n".format(str(label)))
+    label_file.close()
 
 if __name__ == '__main__':
     main()
