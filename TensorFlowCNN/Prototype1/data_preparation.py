@@ -22,7 +22,7 @@ def connect_to_database():
     return collection
 
 def download_pages():
-    query = {"classified" : True, "isForm": True, "html": {"$exists": True }}
+    query = {"classified" : True, "html": {"$exists": True }}
     collection = connect_to_database()
     return collection.find(query, no_cursor_timeout=True)
 
