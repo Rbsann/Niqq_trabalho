@@ -15,8 +15,10 @@ batch_size = 64
 num_epochs = 200
 
 def train_model(args):
+    print("Loading dataset...")
     text, labels = util.load_features(args.dataset, args.labels)
-    
+    print("Building vocabulary...")
+
     # Build vocabulary
     max_document_length = max([len(x.split(" ")) for x in text])
     print(max_document_length)
@@ -33,6 +35,7 @@ def train_model(args):
     with tf.Graph().as_default():
         session_conf = tf.ConfigProto(allow_soft_placement=True)
         sess = tf.Session(config=session_conf)
+        print("Starting training...")
         with sess.as_default():
             formCnn = FormNet(
                 x_train.shape[1],
@@ -42,8 +45,7 @@ def train_model(args):
             optimizer = tf.train.AdamOptimizer(1e-3)
             grads_and_vars = optimizer.compute_gradients(formCnn.loss)
             #atualiza os parametros
-            train_op = optimizer.apply_gradients(grads_and_vars, global_step=global_step)
-
+            train_op = optimizer.apply_gradients(grads_and_vars, global_step=global_step)   
             vocab_processor.save(os.path.join(args.export_dir, "vocabulary"))
             sess.run(tf.global_variables_initializer())
 
@@ -63,19 +65,20 @@ def train_model(args):
                 """
                 Evaluates model on a dev set
                 """
+                print(x_batch)
+                print(y_batch)
                 feed_dict = {
                     formCnn.input_tensor: x_batch,
                     formCnn.output_tensor: y_batch,
                     formCnn.dropout: 1.0
                 }
-                step, loss, accuracy = sess.run(
-                    [global_step, formCnn.loss, formCnn.accuracy],
+                step, loss, accuracy = sess.run([global_step, formCnn.loss, formCnn.accuracy],
                     feed_dict)
                 print("Accuracy: {}\t Loss {}".format(accuracy, loss))
             
             # Generate batches
-            batches = util.batch_iter(
-                list(zip(x_train, y_train)), batch_size, num_epochs)
+            batches = util.batch_iter(list(zip(x_train, y_train)), batch_size, num_epochs)
+
             # Training loop. For each batch...
             for batch in batches:
                 x_batch, y_batch = zip(*batch)

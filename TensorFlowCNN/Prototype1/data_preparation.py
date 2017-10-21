@@ -3,11 +3,14 @@
 from pymongo import MongoClient
 from collections import Counter
 from feature_extractor import getAllFeatures
+from lxml.html.clean import Cleaner
 from collections import Counter
 import numpy as np
 import zlib
+import lxml
 import base64
 import re
+import htmlmin
 
 def get_html_from_64_string(compressed_code):
     if compressed_code is None or len(compressed_code) < 100:
@@ -34,11 +37,14 @@ def sort_dict(features):
     return ordered
 
 def clean_html(html):
-    # Remove comentários e código javascript
-    patterns = [r"<!--(.|\s|\n)*?-->", r"<script>(.|\s|\n)*?<\/script>", r"style=\"(.|\s|\n)*?\""]
-    for pattern in patterns:
-        html = re.sub(pattern, "", html)
-    return html
+    cleaner = Cleaner()
+    cleaner.javascript = True
+    cleaner.style = True
+    cleaner.comments = True
+    cleaner.embedded = True
+    html = cleaner.clean_html(html)
+    
+    return htmlmin.minify(html.decode("utf-8"), remove_empty_space=True)
 
 def main():
     """
@@ -50,7 +56,7 @@ def main():
     for page in download_pages():
         html = get_html_from_64_string(page["html"])
         if(html is not None):
-            html = clean_html(html.lower())
+            html = clean_html(html.lower().encode("utf-8"))
             data.append(html)
             labels.append(1 if page["isForm"] else 0)
     
