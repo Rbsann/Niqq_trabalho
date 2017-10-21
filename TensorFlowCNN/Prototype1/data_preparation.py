@@ -55,14 +55,15 @@ def main():
 
     for page in download_pages():
         html = get_html_from_64_string(page["html"])
-        if(html is not None):
+        if(html is not None and len(html) > 100):
             html = clean_html(html.lower().encode("utf-8"))
             data.append(html)
             labels.append(1 if page["isForm"] else 0)
     
     dataset_file = open("dataset", "w")
     for site in data:
-        dataset_file.write(site.encode("utf-8").strip())
+        dataset_file.write(site.encode("utf-8"))
+        dataset_file.write("\n")
     dataset_file.close()
 
     label_file = open("labels", "w")

@@ -5,19 +5,12 @@ import numpy as np
 
 def load_features(dataset_path = "../dataset", labels_path = "../labels"):
     text = list(file_io.FileIO(dataset_path, "r").readlines())
-    cleaned_text = list()
-    for line in text:
-        stripped = line.strip()
-        if len(stripped) > 1:
-            cleaned_text.append(stripped)
-    
     labels_file = list(file_io.FileIO(labels_path, "r").readlines())
     labels = list()
 
     for label in labels_file:
         labels.append([1] if label == "1\n" else [0])
-    
-    return cleaned_text, labels
+    return text, labels
 
 def batch_iter(data, batch_size, num_epochs, shuffle=True):
     data = np.array(data)

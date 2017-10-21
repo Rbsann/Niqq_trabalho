@@ -17,6 +17,7 @@ num_epochs = 200
 def train_model(args):
     print("Loading dataset...")
     text, labels = util.load_features(args.dataset, args.labels)
+    print(labels)
     print("Building vocabulary...")
 
     # Build vocabulary
