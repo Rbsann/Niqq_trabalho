@@ -14,6 +14,23 @@ dropout_prob = 0.5
 batch_size = 64
 num_epochs = 200
 
+def _write_assets(assets_directory, assets_filename, vocab):
+    """Writes asset files to be used with SavedModel.
+    Args:
+        assets_directory: The directory to which the assets should be written.
+        assets_filename: Name of the file to which the asset contents should be
+            written.
+    Returns:
+        The path to which the assets file was written.
+    """
+    if not file_io.file_exists(assets_directory):
+        file_io.recursive_create_dir(assets_directory)
+
+        path = os.path.join(
+            tf.compat.as_bytes(assets_directory), tf.compat.as_bytes(assets_filename))
+    file_io.write_string_to_file(path, vocab)
+    return path
+
 def train_model(args):
     print("Loading dataset...")
     text, labels = util.load_features(args.dataset, args.labels)
@@ -26,13 +43,18 @@ def train_model(args):
     vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
     x = np.array(list(vocab_processor.fit_transform(text)))
 
+    
+
     # TODO: use cross-validation here
     dev_sample_index = -1 * int(percentage_test_data * float(len(labels)))
     x_train, x_dev = x[:dev_sample_index], x[dev_sample_index:]
     y_train, y_dev = labels[:dev_sample_index], labels[dev_sample_index:]
     print("Vocabulary Size: {:d}".format(len(vocab_processor.vocabulary_)))
     print("Train/Dev split: {:d}/{:d}".format(len(y_train), len(y_dev)))
-
+    
+    #Para salvar o modelo
+    builder = tf.saved_model.builder.SavedModelBuilder(args.export_dir)
+    
     with tf.Graph().as_default():
         session_conf = tf.ConfigProto(allow_soft_placement=True)
         sess = tf.Session(config=session_conf)
@@ -48,6 +70,17 @@ def train_model(args):
             #atualiza os parametros
             train_op = optimizer.apply_gradients(grads_and_vars, global_step=global_step)   
             vocab_processor.save(os.path.join(args.export_dir, "vocabulary"))
+
+            # Set up the assets collection.
+            assets_filepath = tf.constant(os.path.join(args.export_dir, "vocabulary"))
+            tf.add_to_collection(tf.GraphKeys.ASSET_FILEPATHS, assets_filepath)
+            filename_tensor = tf.Variable(
+                os.path.join(args.export_dir, "vocabulary"),
+                name="filename_tensor",
+                trainable=False,
+                collections=[])
+            assign_filename_op = filename_tensor.assign(os.path.join(args.export_dir, "vocabulary"))
+
             sess.run(tf.global_variables_initializer())
 
             def train_step(x_batch, y_batch):
@@ -92,7 +125,17 @@ def train_model(args):
                 # if current_step % FLAGS.checkpoint_every == 0:
                 #     path = saver.save(sess, checkpoint_prefix, global_step=current_step)
                 #     print("Saved model checkpoint to {}\n".format(path))
-
+            builder.add_meta_graph_and_variables(
+                sess, [tf.saved_model.tag_constants.SERVING],
+                signature_def_map={
+                    "serving_default": tf.saved_model.signature_def_utils.predict_signature_def(
+                        inputs={"input_x": formCnn.input_tensor},
+                        outputs={"output": formCnn.output_tensor}
+                    )
+                },
+                assets_collection=tf.get_collection(tf.GraphKeys.ASSET_FILEPATHS)
+            )
+    builder.save()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

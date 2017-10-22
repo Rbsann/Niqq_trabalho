@@ -27,7 +27,7 @@ def connect_to_database():
 def download_pages():
     query = {"classified" : True, "html": {"$exists": True }}
     collection = connect_to_database()
-    return collection.find(query, no_cursor_timeout=True)
+    return collection.find(query, no_cursor_timeout=True).limit(50)
 
 def sort_dict(features):
     keys = sorted(features.keys())
