@@ -6,9 +6,9 @@ import googleapiclient.discovery
 # Basta definir a seguinte variável de ambiente:
 # export GOOGLE_APPLICATION_CREDENTIALS=<path_to_service_account_file>
 
-
-html = [[0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [0], [1], [0], [0], [0], [0], [0], [1], [0], [0], [0], [1]]
-
+instance = open('instance', 'r')
+html = instance.readlines()[0]
+instance.close()
 
 def predict_json(project="sophia-179715", model="formtest", instances=None, version=None):
     """Send json data to a deployed model for prediction.
@@ -38,14 +38,11 @@ def predict_json(project="sophia-179715", model="formtest", instances=None, vers
         name=name,
         body={'instances': instances}
     ).execute()
-
     if 'error' in response:
         raise RuntimeError(response['error'])
 
     return response['predictions']
 
-body = {
-    "input_x": html
-}
+body = {"input_x": html,"dropout": "0.5"}
 
 print(predict_json(instances=body))

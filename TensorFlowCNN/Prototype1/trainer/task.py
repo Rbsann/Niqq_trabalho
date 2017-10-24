@@ -7,6 +7,9 @@ import util
 import argparse
 import os
 import datetime
+import sys
+
+np.set_printoptions(threshold=sys.maxsize)
 
 percentage_test_data = 0.1
 embedding_size = 128
@@ -34,16 +37,13 @@ def _write_assets(assets_directory, assets_filename, vocab):
 def train_model(args):
     print("Loading dataset...")
     text, labels = util.load_features(args.dataset, args.labels)
-    print(labels)
-    print("Building vocabulary...")
+    print(len(text))
+    print(len(labels))
 
     # Build vocabulary
     max_document_length = max([len(x.split(" ")) for x in text])
-    print(max_document_length)
     vocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)
     x = np.array(list(vocab_processor.fit_transform(text)))
-
-    
 
     # TODO: use cross-validation here
     dev_sample_index = -1 * int(percentage_test_data * float(len(labels)))
@@ -107,9 +107,7 @@ def train_model(args):
                     formCnn.dropout: 1.0
                 }
                 step, loss, accuracy = sess.run([global_step, formCnn.loss, formCnn.accuracy],
-                    feed_dict)
-                print("Accuracy: {}\t Loss {}".format(accuracy, loss))
-            
+                    feed_dict)            
             # Generate batches
             batches = util.batch_iter(list(zip(x_train, y_train)), batch_size, num_epochs)
 
@@ -129,8 +127,9 @@ def train_model(args):
                 sess, [tf.saved_model.tag_constants.SERVING],
                 signature_def_map={
                     "serving_default": tf.saved_model.signature_def_utils.predict_signature_def(
-                        inputs={"input_x": formCnn.input_tensor},
-                        outputs={"output": formCnn.output_tensor}
+                        inputs={"input_x": formCnn.input_tensor,
+                                "dropout": formCnn.dropout},
+                        outputs={"predictions": formCnn.predictions}
                     )
                 },
                 assets_collection=tf.get_collection(tf.GraphKeys.ASSET_FILEPATHS)
