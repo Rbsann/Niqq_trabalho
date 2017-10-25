@@ -51,6 +51,7 @@ class FormNet():
                 "W",
                 shape=[self.num_filters, self.num_classes],
                 initializer=tf.contrib.layers.xavier_initializer())
+            
             b = tf.Variable(tf.constant(0.1, shape=[self.num_classes]), name="b")
             l2_loss += tf.nn.l2_loss(W)
             l2_loss += tf.nn.l2_loss(b)
@@ -64,5 +65,3 @@ class FormNet():
             with tf.name_scope("accuracy"):
                 correct_predictions = tf.equal(self.predictions, tf.argmax(self.output_tensor, 1))
                 self.accuracy = tf.reduce_mean(tf.cast(correct_predictions, "float"), name="accuracy")
-
-

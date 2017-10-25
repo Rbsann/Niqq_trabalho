@@ -10,7 +10,7 @@ def load_features(dataset_path = "../dataset", labels_path = "../labels"):
 
     for label in labels_file:
         labels.append([1] if label == "1\n" else [0])
-    return text, labels
+    return [text, labels]
 
 def batch_iter(data, batch_size, num_epochs, shuffle=True):
     data = np.array(data)
