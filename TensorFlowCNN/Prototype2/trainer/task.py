@@ -13,7 +13,6 @@ import sys
 np.set_printoptions(threshold=sys.maxsize)
 
 embedding_size = 128
-dropout_prob = 0.5
 batch_size = 64
 num_epochs = 200
 
@@ -49,7 +48,6 @@ def train_model(args):
 
     iteracao = 0
     builder = tf.saved_model.builder.SavedModelBuilder(args.export_dir)
-    # TODO: use cross-validation here
     kf = KFold(n_splits=10, shuffle=True)
     losses = list()
     accuracies = list()
@@ -96,23 +94,20 @@ def train_model(args):
                 def train_step(x_batch, y_batch):
                     feed_dict = {
                         formCnn.input_tensor: x_batch,
-                        formCnn.output_tensor: y_batch,
-                        formCnn.dropout: dropout_prob
+                        formCnn.output_tensor: y_batch
                     }
                     _, step, loss, accuracy = sess.run(
                         [train_op, global_step, formCnn.loss, formCnn.accuracy],
                         feed_dict)
                     print("Accuracy: {} \t Loss: {}".format(accuracy, loss))
                 
-                #Faz basicamente a mesma coisa da função de cima, mas sem dropout pois é para avaliação
                 def dev_step(x_batch, y_batch, writer=None):
                     """
                     Evaluates model on a dev set
                     """
                     feed_dict = {
                         formCnn.input_tensor: x_batch,
-                        formCnn.output_tensor: y_batch,
-                        formCnn.dropout: 1.0
+                        formCnn.output_tensor: y_batch
                     }
                     step, loss, accuracy = sess.run([global_step, formCnn.loss, formCnn.accuracy],
                         feed_dict)
@@ -138,8 +133,7 @@ def train_model(args):
         sess, [tf.saved_model.tag_constants.SERVING],
         signature_def_map={
             "serving_default": tf.saved_model.signature_def_utils.predict_signature_def(
-                inputs={"input_x": formCnn.input_tensor,
-                        "dropout": formCnn.dropout},
+                inputs={"input_x": formCnn.input_tensor},
                 outputs={"predictions": formCnn.predictions}
             )
         },
